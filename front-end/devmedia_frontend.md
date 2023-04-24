@@ -1104,6 +1104,155 @@ Para que a página que criamos tenha as características que desejamos, precisam
 
 #### 1. Introdução
 
+Para mudar a aparência de uma página web é necessário utilizar uma linguagem de estilo chamada CSS (Cascading Style Sheets - Folha de Estilo em Cascata). Com ela podemos mudar o visual dos elementos que compõem um documento HTML.
+
+É fundamental para um desenvolvedor web ter conhecimentos de CSS.
+
+É muito importante destacar as responsabilidades de cada linguagem na construção de uma página web. Enquanto o HTML lida com a estrutura, o CSS lida com a aparência.
+
+CSS é uma linguagem fundamental para o desenvolvimento de páginas web. Alterar a aparência de uma aplicação é responsabilidade do CSS, que é usado para estilizar os elementos HTML de uma página
+
+```html
+<div>
+    <a href="#">Contato</a>
+</div>
+```
+
+```css
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+}
+```
+
+![cssintr](/home/thiago/Downloads/PROGRAMACAO/devMedia/front-end/imagens/cssintr.png)
+
+#### 2. Sintaxe do CSS
+
+Como vimos na aula passada, o CSS tem como tarefa alterar a aparência de uma página web. Veremos a seguir como é a sintaxe do CSS e como podemos usá-lo em uma página web:
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <style>
+        h1 {
+            font-size: 28px;
+            color: blue;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Introdução ao CSS</h1>
+        <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    </body>
+</html>
+```
+
+![estruturacss](/home/thiago/Downloads/PROGRAMACAO/devMedia/front-end/imagens/estruturacss.png)
+
+Cada estilo aplicado no CSS altera uma característica do elemento.
+
+É fundamental utilizar a sintaxe do CSS de forma correta para que os estilos sejam aplicados na página. Todos os estilos devem estar dentro de uma chave de abertura e uma chave de fechamento. Além disso, cada estilo é representado por uma propriedade e seu valor. Essa regra vale para qualquer elemento que terá a aparência mudada no código CSS.
+
+#### 3. Meu primeiro código CSS
+
+Agora que vimos como é a sintaxe de um código CSS e como é importante implementá-la corretamente, veremos como o código CSS é usado em uma página HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <style>
+        h1 {
+            font-size: 48px;
+            color: blue;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado.</p>
+</body>
+</html>
+```
+
+![primeirocodigocss](/home/thiago/Downloads/PROGRAMACAO/devMedia/front-end/imagens/primeirocodigocss.png)
+
+Cada propriedade no CSS nos permite alterar uma característica de um elemento no HTML.
+
+Um código CSS deve estar com a sintaxe correta e também ficar dentro da tag **style** para que os estilos sejam aplicados de forma correta.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <style>
+        h1 {
+            font-size: 48px;
+            color: blue;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado.</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+![primeirocodigocss2](/home/thiago/Downloads/PROGRAMACAO/devMedia/front-end/imagens/primeirocodigocss2.png)
+
+As propriedades font-size e color normalmente são aplicadas em textos como foram vistos os exemplos das tags h1 (título) e p (parágrafo). Quando essas propriedades são usadas em outros elementos, seus estilos são aplicados nos textos que estiverem dentro desses elementos.
+
+#### 4. Padrões de cor
+
+Padrões de cores é um assunto muito relevante para um programador front-end. Isso porque as cores são constantemente usadas em todo tipo de projeto. Sendo assim, é um conhecimento fundamental para sua carreira como desenvolvedor front-end.
+
+É muito importante que você conheça os principais padrões de cor que são usados no CSS.
+
+O padrão **nominal** utiliza o nome das cores em inglês.
+
+O padrão **RGB** (red, green, blue) utiliza valores de 0 a 255 para indicar o quanto de cada cor se quer ao estilizar um elemento.
+
+Tanto a cor RGB quanto a Hexadecimal utilizam as cores vermelha, verde e azul para criar outras cores. Essas cores são utilizadas principalmente nas propriedades color e background-color.
+
+- __Utilizando um seletor de cores__
+
+Como vimos, não precisamos decorar cores RGB ou Hexadecimal, podemos utilizar uma ferramenta para selecionar a cor que queremos. Seguem duas ferramentas seletoras de cores:
+
+1. Site do Mozilla [[Seletor de cores - CSS | MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Colors/Color_picker_tool)]
+2. Site Pick Color From Image [[Color Picker online | HEX Color Picker | HTML Color Picker](https://imagecolorpicker.com/)]
+
+#### 5. CSS em arquivo externo
+
+
+
+
+
 
 
 
