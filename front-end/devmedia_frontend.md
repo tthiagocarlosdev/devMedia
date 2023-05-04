@@ -1249,6 +1249,125 @@ Como vimos, não precisamos decorar cores RGB ou Hexadecimal, podemos utilizar u
 
 #### 5. CSS em arquivo externo
 
+Vimos nas aulas anteriores que adicionamos CSS por meio da tag <style>. No entanto, o mais indicado é aplicar o código de estilo por meio de um arquivo CSS externo.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado.</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+      font-size: 48px;
+      color: blue;
+}
+
+p {
+      font-size: 20px;
+}
+```
+
+Quando usamos a tag <style> dentro do arquivo HTML estamos usando **CSS incorporado** (ou interno). Já quando colocamos os estilos em um arquivo CSS separado estamos usando **CSS externo**.
+
+### Vinculando arquivo CSS externo de outra pasta
+
+Já sabemos que para adicionar estilos em uma página é necessário vincular um arquivo CSS externo ao HTML do projeto.
+
+```html
+<!DOCTYPE html>
+…
+    <link rel="stylesheet" href="estilo.css">
+…
+</html>
+```
+
+No entanto, para casos em que o arquivo.css esteja salvo em outra pasta precisaremos utilizar uma sintaxe levemente diferente.
+
+Dividir o seu projeto em pastas é uma ótima prática, pois deixará os arquivos mais organizados. Isso facilita a alteração/evolução do código.
+
+```css
+/* Link HTML */
+<link rel="stylesheet" href="css/estilos.css">
+}
+```
+
+Utilizar um arquivo CSS externo deixa a manutenção de um projeto mais fácil. Além de termos arquivos mais fáceis de manter, não temos todo o código (estrutura e estilo) misturado em um mesmo arquivo. É uma boa prática separar os códigos HTML e CSS em arquivos distintos, deixando cada arquivo com uma única responsabilidade
+
+#### 6. Propriedades de fonte
+
+É muito importante para o programador front-end conhecer as propriedades CSS a fim de ter diversas opções de estilos para usar em suas páginas web. No flow a seguir veremos mais algumas propriedades CSS, que são bastantes utilizadas:
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 48px;
+    font-family: 'Verdana';
+}
+```
+
+Existem muitas famílias de fontes no CSS. Algumas delas são fontes padrão, ou seja, já vem nativamente no navegador. Já outras são externas onde se torna necessário instalar essas fontes ou usar um link externo para usá-las
+
+No artigo [Lista de fontes padrão do CSS](https://www.devmedia.com.br/lista-de-fontes-padrao-no-css/43215) você vai conferir a lista das fontes padrão mais utilizadas na linguagem.
+
+**Propriedade font-weight**
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+       font-size: 48px;
+       font-family: 'Verdana';
+ }
+
+p {
+       font-size: 28px;
+       font-weight: bold
+}
+```
+
+**Propriedade font-style**
+
+
+
+
+
 
 
 
