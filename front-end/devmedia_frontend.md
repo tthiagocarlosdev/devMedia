@@ -1364,6 +1364,512 @@ p {
 
 **Propriedade font-style**
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+      font-size: 48px;
+      font-family: 'Verdana';
+}
+
+p {
+      font-size: 28px;
+      font-weight: bold;
+      font-style: italic;
+}
+```
+
+**Propriedade text-decoration**
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+<a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+- underline
+
+  ```css
+  h1 {
+      font-size: 48px;
+      font-family: Verdana;
+      text-decoration: underline;
+  }
+  
+  p {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+  }
+  
+  span {
+     font-weight: bold;
+  }
+  ```
+
+  
+
+- overline
+
+  ```css
+  h1 {
+      font-size: 48px;
+      font-family: Verdana;
+      text-decoration: overline;
+  }
+  
+  p {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+  }
+  
+  span {
+     font-weight: bold;
+  }
+  
+  a {
+      font-size: 24px;
+      text-decoration: overline;
+  }
+  ```
+
+  
+
+- line-trrough
+
+  ```css
+  h1 {
+      font-size: 48px;
+      font-family: Verdana;
+      text-decoration: line-through;
+  }
+  
+  p {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+      text-decoration: line-through;
+  }
+  
+  span {
+      font-weight: bold;
+  }
+  
+  a {
+      font-size: 24px;
+      text-decoration: line-through;
+  }
+  ```
+
+  
+
+- none
+
+  ```css
+  h1 {
+      font-size: 48px;
+      font-family: Verdana;
+      text-decoration: underline;
+  }
+  
+  p {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+  }
+  
+  span {
+     font-weight: bold;
+  }
+  
+  a {
+      font-size: 24px;
+      text-decoration: none;
+  }
+  ```
+
+  
+
+Existem outras propriedades que são muito importantes na estilização de textos.
+
+**Propriedade text-align**
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+- left
+
+  ```css
+  h1 {
+      font-size: 48px;
+      font-family: 'Verdana';
+      text-decoration: underline;
+      text-align: left;
+  }
+  
+  p {
+      font-size: 28px;
+      font-weight: bold;
+      font-style: italic;
+  }
+  
+  a {
+     font-size: 28px;
+     text-decoration: none;
+  }
+  ```
+
+  
+
+- center
+
+  ```css
+  h1 {
+          font-size: 48px;
+          font-family: 'Verdana';
+          text-decoration: underline;
+          text-align: center;
+    }
+  
+   p {
+          font-size: 28px;
+          font-weight: bold;
+          font-style: italic;
+  }
+  
+  a {
+         font-size: 28px;
+         text-decoration: none;
+  }
+  ```
+
+  
+
+- right
+
+  ```css
+  h1 {
+      font-size: 48px;
+      font-family: 'Verdana';
+      text-decoration: underline;
+      text-align: right;
+  }
+  
+  p {
+      font-size: 28px;
+      font-weight: bold;
+      font-style: italic;
+  }
+  
+  a {
+     font-size: 28px;
+     text-decoration: none;
+  }
+  ```
+
+  
+
+**Propriedade line-height**
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+```css
+h1 {
+        font-size: 48px;
+        font-family: 'Verdana';
+        text-decoration: underline;
+        text-align: center;
+  }
+
+ p {
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 48px;
+}
+
+a {
+      font-size: 28px;
+      text-decoration: none;
+}
+```
+
+A seguir veremos como elementos de textos recebem estilos através de um container:
+
+**Estilizando textos dentro de uma div**
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Estilos para textos</h1>
+        <h2>Estilizando textos dentro de um container.</h2>
+        <p>Podemos estilizar os elementos de texto dentro de uma div definindo os estilos diretamente na div.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    color: #ff2200;
+}
+
+h1 {
+    font-size: 28px;
+    color: #0022ff
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+```
+
+### Exemplo Prático
+
+Agora veremos um exemplo de uma página de artigo que contém apenas elementos de texto. Nessa página teremos elementos que recebem os estilos que vimos no decorrer dessa aula.
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Linguagem de estilos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>O que é CSS?</h1>
+    <h2>Nesse artigo vamos aprender o que é CSS e como usá-lo</h2>
+    <p>CSS é chamado de linguagem de estilos <span>(Cascading Style Sheet)</span> e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos.</p>
+    <p>O CSS foi desenvolvido pelo W3C <span>(World Wide Web Consortium)</span> em 1996, por uma razão bem simples. O HTML não foi projetado para ter tags que ajudariam a formatar a página. Você deveria apenas escrever a marcação para o site.</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 32px;
+    font-family: 'Verdana';
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Verdana';
+    font-weight: normal;
+    color: #3f4df3;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Verdana';
+}
+
+span {
+    font-weight: bold;
+}
+```
+
+
+
+As fontes representam uma parte muito importante nas páginas web, visto que basicamente todos os sites possuem texto em suas páginas. Aprender a usar propriedades para estilizar fontes é fundamental para o desenvolvedor web deixar os textos com um visual mais apresentável
+
+#### 7. Exemplo prático
+
+Até aqui vimos diversas propriedades que mudam a aparência de elementos de texto na tela.
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Receita: Bolo de Chocolate</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Receita para bolo de chocolate</h1>
+        <h2>Receita simples e prática do bolo mais querido dos brasileiros</h2>
+        <img src="bolo-chocolate.jpg" alt="Bolo de Chocolate">
+    </div>
+    <div>
+        <h3>Ingredientes</h3>
+        <p> Massa, 4 colheres (sopa) de chocolate em pó, 2 colheres (sopa) de manteiga, 3 xícaras (chá) de farinha de trigo,4 ovos, Massa, 2 colheres (sopa) de fermento, 1 xícara (chá) de leite e 3 colheres (sopa) de açúcar</p>
+    </div>
+    <div>
+        <h3>Modo de fazer</h3>
+        <p>1 - Bata por 5 minutos em um liquidificador os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite</p>
+        <p>2 - Adicione o fermento e misture com uma espátula delicadamente.</p>
+        <p>3 - Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    font-family: Verdana;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: #88100f;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #88100f;
+}
+
+p {
+    font-size: 14px;
+    line-height: 28px;
+}
+```
+
+Ao definir estilos de texto para uma div, todos os elementos de texto que estão dentro dela terão a aparência mudada por esses estilos
+
+Ao decorrer desse curso vimos diversas propriedades úteis no CSS. Elas serão muito utilizadas daqui para frente nos seus projetos e estudos.
+
+Com o que vimos até aqui, já é possível melhorar os estilos de suas páginas, principalmente dos textos. Conhecendo os estilos aprendidos nas aulas, você dá mais um passo na sua carreira para programador front-end.
+
+As propriedades de texto são muito importantes na estilização de páginas web. Isso porque praticamente todo tipo de projeto front-end terá elementos de texto nas suas páginas. Aprender a usar essas propriedades é fundamental para o desenvolvedor front-end deixar os textos com um visual mais apresentável.
+
+#### 8. Faça você mesmo
+
+Nesta aula o objetivo é você mesmo criar o exemplo.
+
+### Construindo o projeto
+
+No flow a seguir vemos como um projeto web deve ser construído:
+
+### Camadas para criar um projeto
+
+1a Camada - Criar a estrutura de pastas e o arquivo HTML
+
+![Faça voce](https://www.devmedia.com.br/arquivos/cursos/css_intro_2426/aula8/27.png)
+
+2a Camada - Criar o código HTML da página
+
+![Faça voce](https://www.devmedia.com.br/arquivos/cursos/css_intro_2426/aula8/36.png)
+
+3a Camada - Criar o código CSS da página
+
+![Faça voce](https://www.devmedia.com.br/arquivos/cursos/css_intro_2426/aula8/55.png)
+
+Parabéns! Você agora conhece os fundamentos do CSS! Durante o curso você aprendeu:
+
+- O que é CSS
+- A sintaxe do código CSS
+- Propriedades de texto e de cor
+- Criar e estilizar uma página web
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
