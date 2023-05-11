@@ -1834,39 +1834,437 @@ Parabéns! Você agora conhece os fundamentos do CSS! Durante o curso você apre
 - Propriedades de texto e de cor
 - Criar e estilizar uma página web
 
+#### CSS: Propriedades
 
+##### Introdução: 1. Conceito de propriedades
 
+As propriedades representam características dos elementos das páginas web. Quando há uma propriedade com um valor definido, temos um estilo do elemento sendo configurado, o que altera sua aparência na página
 
+![img](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula1/fig1.png)
 
+##### Propriedades: 2. Cor
 
+Uma coisa muito importante na hora de estilizar uma página web é saber alterar as cores de um elemento. Para isso, temos duas propriedades muito conhecidas no CSS que abordamos no curso anterior: color e background-color.
 
+Agora vamos abordar as propriedades, começando pela propriedade `color`:
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades de cor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Propriedades de cor</h1>
+    <p>Temos duas propriedades muito utilizadas no CSS para manipular cores: color e background-color.</p>
+</body>
+</html>
+```
 
+```css
+h1 {
+    color: blue;
+}
 
+p {
+    color: red;
+}
+```
 
+Na **Figura 1** vemos que a propriedade color é responsável por alterar a cor dos elementos de texto. Basta utilizar a propriedade color e o valor da cor que se deseja definir no texto.
 
+![Alterando a cor dos textos](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula2/fig1.png)
 
+Agora veremos a propriedade `background-color`:
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades de cor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Guia de CSS</h1>
+    <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. Vem aprender CSS com a DevMedia. No link abaixo você confere mais sobre essa linguagem de estilo.</p>
+    <a href="https://www.devmedia.com.br/css/">Guia de CSS</a>
+</body>
+</html>
+```
 
+```css
+h1 {
+    font-size: 24px;
+}
 
+p {
+    font-size: 18px;
+}
 
+a {
+    font-size: 18px;
+    color: white;
+    background-color: green;
+}
+```
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Tecnologias front-end</h1>
+    <h2>HTML, CSS e JavaScript estão em alta no mercado</h2>
+    <div>
+        <p>Para se tornar um desenvolvedor front-end você precisará conhecer as seguintes tecnologias: HTML, CSS e JavaScript. Com elas é possível construir aplicações web e atender a demanda que o mercado pede.</p>
+        <p>Abaixo você tem um plano de estudo com essas tecnologias, clique no link e conheça cada uma delas de maneira mais aprofundada.</p>
+        <a href="https://www.devmedia.com.br/programacao/front-end">Plano de estudo Front-End</a>
+    </div>
+</body>
+</html>
+```
 
+```css
+h1 {
+    font-size: 32px;
+}
 
+h2 {
+    font-size: 24px;
+}
 
+div {
+    background-color: #0000ff;
+}
 
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
 
+a {
+    font-size: 18px;
+    color: #ffffff;
+}
+```
 
+A seguir veremos como mudar a cor de fundo da tag `body`, que é a tag que contém todos os elementos que são visíveis na tela:
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedade CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Background-color</h1>
+    <p>Utilizamos essa propriedade para alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. Para isso, basta atribuir a cor desejada à propriedade background-color, declarada dentro do seletor no qual ela deve ser aplicada.</p>
+</body>
+</html>
+```
 
+```css
+body {
+    background-color: #1053ac;
+}
 
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+}
 
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
+```
 
+Trabalhar com cores é essencial para o desenvolvedor front-end. Vimos que no CSS temos duas formas para manipular cores de elementos. Uma delas é com a propriedade color, onde alteramos a cor dos textos e a outra forma é com a propriedade background-color, que nos permite mudar a cor de fundo dos elementos.
 
+##### Propriedades: 3. Fonte
 
+É muito importante para o programador front-end conhecer as propriedades CSS a fim de ter diversas opções de estilos para usar em suas páginas web. A seguir veremos mais algumas propriedades CSS, que são bastantes utilizadas na estilização de elementos HTML:
 
+![Aula Fonte](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula3/7.png)
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O CSS é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+```
 
+```css
+h1 {
+    font-size: 48px;
+    font-family: 'Verdana';
+}
+```
+
+Existem muitas famílias de fontes no CSS. Algumas delas são fontes padrão, ou seja, já vem nativamente no navegador. Já outras são externas onde se torna necessário instalar essas fontes ou usar um link externo para usá-las.
+
+No artigo [Lista de fontes padrão do CSS](https://www.devmedia.com.br/lista-de-fontes-padrao-no-css/43215) você vai conferir a lista das fontes padrão mais utilizadas na linguagem.
+
+- Propriedade `font-weight`:
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o CSS e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com <span>desenvolvimento web</span>. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+```
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+span {
+    font-weight: bold;
+}
+```
+
+![Aplicando negrito em partes do texto](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula3/fig1.png)
+
+- Propriedade `text-decoration`:
+
+![Propriedades de fonte](https://www.devmedia.com.br/arquivos/cursos/css_intro_2426/aula6/28.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+     <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+<a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+span {
+   font-weight: bold;
+}
+```
+
+- Propriedade `text-align`:
+
+Existem outras propriedades que são muito importantes na estilização de textos. A seguir veremos a propriedade que é responsável pelo alinhamento de textos:
+
+![Aula Fonte](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula3/41.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+}
+```
+
+- Propriedade `line-height`:
+
+Propriedade no CSS que é responsável por definir a altura das linhas de textos:
+
+![Aula Fonte](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula3/46.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao CSS</h1>
+    <h2>Linguagem de estilos</h2>
+    <p>Aprenda o que é o <span>CSS</span> e como ele funciona. Comece a criar os seus primeiros estilos formatando elementos de texto. O <span>CSS</span> é uma linguagem fundamental para quem quer trabalhar com desenvolvimento web. Abaixo você tem o ponto de partida para o seu aprendizado</p>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 48px;
+    font-family: Verdana;
+    text-decoration: underline;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: Verdana;
+    color: gray;
+}
+
+p {
+    font-size: 24px;
+    font-family: Verdana;
+    line-height: 48px;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+```
+
+- Elemento `div`:
+
+A seguir veremos como elementos de textos recebem estilos através de um `container`:
+
+![Aula Fonte](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula3/59.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Estilos de fonte</h1>
+
+    <div>
+        <p>No CSS temos diversas propriedades que servem para estilizar textos nas páginas web. Algumas delas são font-size, font-family, color etc. Para conhecer mais dessas fontes, clique no link abaixo.</p>
+        <a href="https://www.devmedia.com.br/estilizando-fontes-com-css/24226">Estilizando fontes no CSS</a>
+    </div>
+
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 36px;
+    font-family: Arial;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div {
+    font-size: 24px;
+    font-family: Arial;
+}
+```
+
+Ao utilizar as propriedades **font-size** e **line-height** inserimos um número seguido por **px**. Pixel (px) é uma unidade de medida. Existem outras como, por exemplo, cm (centímetros), mm (milímetros), in (polegadas), entre outras, porém, pixel (px) é a mais utilizada nos códigos CSS.
+
+As fontes representam uma parte muito importante nas páginas web, visto que basicamente todos os sites possuem texto em suas páginas. Aprender a usar propriedades para fontes como font-size e font-family é fundamental para o desenvolvedor web deixar os textos com uma aparência mais apresentável.
+
+##### Propriedades 4. Altura e largura:
 
 
 
