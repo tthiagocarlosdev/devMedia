@@ -2266,6 +2266,260 @@ As fontes representam uma parte muito importante nas páginas web, visto que bas
 
 ##### Propriedades 4. Altura e largura:
 
+No CSS temos duas propriedades que definem a área que um elemento ocupa na tela: `height` (altura) e `width` (largura).
+
+![Aula Tamanho](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula4/3.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedades de Tamanho</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Propriedades de Tamanho</h1>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    height: 100px;
+    width: 400px;
+    background-color: #00FF00;
+}
+```
+
+As propriedades `height` e `width` podem ser usadas em qualquer elemento do HTML.
+
+![Aula Tamanho](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula4/12.png)
+
+![Aula Tamanho](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula4/15.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da pesquisa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <img src="homem-aranha.jpg"/>
+        <h1>Homem-Aranha é o herói mais querido dos fãs</h1>
+        <p>Pesquisa feita com mais de 3 mil entrevistados revelaram que o herói da Marvel é o preferido do mundo dos super-heróis com 48% da preferência do público. Logo atrás vem a dupla da DC, Super-Homem e Batman, com 23% e 12% do percentual dos votos respectivamente.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 32px;
+    font-family: 'Arial';
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Arial';
+}
+
+img {
+    height: 375px;
+    width: 500px;
+}
+```
+
+Ao utilizar `height` e `width` em uma imagem é importante ter atenção com as dimensões (altura e largura) originais da imagem. 
+
+Também é possível definir apenas a largura ou a altura de uma imagem no CSS. Essa é uma forma de deixar uma imagem proporcional, pois o outro valor não definido será ajustado automaticamente.
+
+As propriedades height e width são importantes pois com elas definimos o espaço que um elemento ocupa na tela. Isso nos permite fazer ajustes na tela, como por exemplo diminuir o tamanho de uma imagem que ocupa mais espaço do que deveria. Height e width são umas das propriedades mais usadas no CSS.
+
+##### Propriedades 5. Margem
+
+Nessa aula veremos propriedades que são usadas para criar margens entre elementos. Essas propriedades são muito úteis na estilização da página, pois evitam que os elementos fiquem “colados” uns nos outros.
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/2.png)
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/6.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>PS5: Sony realizará PlayStation Showcase em 9 de setembro</h1>
+    <p>A Sony divulgou nesta quinta-feira (2) um novo PlayStation Showcase 2021, evento que contará com os futuros lançamentos da empresa para PlayStation 5. A transmissão ao vivo ocorrerá no dia 9 de setembro (quinta-feira), nos canais oficiais da marca no YouTube e Twitch.</p>
+</body>
+</html>
+```
+
+```css
+h1 {
+    font-size: 20px;
+    font-family: Verdana;
+    text-align: center;
+    margin: 60px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+    text-align: justify;
+    margin: 60px;
+}
+```
+
+Agora veremos propriedades mais específicas que também aplicam margem em elementos. No flow a seguir vamos conhecer as propriedades `margin-top`, `margin-bottom`, `margin-right` e `margin-left`:
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/13.png)
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/22.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>5 mitos sobre alergias e intolerâncias a alimentos</h1>
+        <h2>Nem sempre ter sintomas após comer um alimento é sinal de alergia</h2>
+    </div>
+    <div>
+        <img src="alimentos.jpg">
+        <img src="alimentos2.jpg">
+        <p>De acordo com pesquisas recentes, até 35% das pessoas se diagnosticam erroneamente (ou a seus filhos) com uma intolerância alimentar ou alergia e, em seguida, tentam lidar com isso sozinhas, em vez de procurar aconselhamento médico adequado.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: Verdana;
+    color: #313131;
+}
+
+img {
+    width: 280px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+    text-align: justify;
+}
+```
+
+Agora veremos formas mais resumidas de utilizar a propriedade `margin`. É importante conhecer essas formas porque são bastante usadas na estilização de páginas web:
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/28.png)
+
+No flow a seguir veremos uma forma que é muito útil para centralizar elementos em uma página web:
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/33.png)
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/38.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Tecnologias no desenvolvimento front-end</h1>
+        <h2>As tecnologias front-end são essenciais para a construção de páginas web. A utilização delas em conjunto nos permite criar diversos tipos de páginas web.</h2>
+        <h3>HTML5</h3>
+        <p>HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML.</p>
+        <h3>CSS3</h3>
+        <p>CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets, pela qual se define estilos para um projeto web. Com efeitos de transição, imagem, imagem de fundo/background e outros, pode-se criar estilos únicos para seus projetos web.</p>
+        <h3>JavaScript</h3>
+        <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: Verdana;
+    color: #777777;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Verdana;
+    color: #ff4400;
+}
+
+p {
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: justify;
+}
+```
+
+Sempre que precisar definir todas as margens de um elemento utilize a propriedade **margin** ao invés de especificar cada uma das margens. Veja o exemplo abaixo:
+_margin: 20px 45px 50px 60px;_
+Dessa forma o código fica mais legível e fácil de manter
+
+No flow a seguir veremos sobre a remoção de margens, quando utilizamos o valor 0:
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/41.png)
+
+![Aula Margem](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula5/44.png)
+
+As propriedades de margem são muito úteis quando precisamos distanciar elementos. Com elas podemos deixar o layout de uma página mais agradável, evitando que os elementos fiquem "colados" entre si.
+
+
+
+
+
+
+
 
 
 
