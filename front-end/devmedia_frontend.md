@@ -2514,6 +2514,102 @@ No flow a seguir veremos sobre a remoção de margens, quando utilizamos o valor
 
 As propriedades de margem são muito úteis quando precisamos distanciar elementos. Com elas podemos deixar o layout de uma página mais agradável, evitando que os elementos fiquem "colados" entre si.
 
+##### Propriedades 6. Borda
+
+Nessa aula veremos propriedades que são usadas para criar bordas nos elementos. Essas propriedades são muito usadas na estilização de elementos, pois com elas criamos linhas que ficam ao redor do elemento.
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/2.png)
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/3.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Evento debate acesso a testes genéticos e medicina de precisão</h1>
+        <p>Estima-se que 6% a 8% da população mundial de 7,8 bilhões de pessoas são afetadas por alguma doença genética, sendo que ao menos 4 entre 10 pacientes recebem um diagnóstico errado ao menos uma vez, complicando seus quadros clínicos. Por meio da Medicina Genética, dispõe-se de conhecimento para oferecer agilidade, personalização e precisão no diagnóstico e tratamento dos pacientes diagnosticados com estas doenças. Este contexto também se aplica para as chamadas síndromes hereditárias de câncer. Por sua vez, é um conhecimento que ainda não chegou a uma grande parcela dos profissionais de saúde e não é realidade para os pacientes no SUS.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    width: 600px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #454545;
+}
+
+p{
+    font-size: 24px;
+    text-align: center;
+}
+```
+
+Agora veremos a sintaxe das propriedades de borda. Vamos abordar como elas são aplicadas nos elementos:
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/10.png)
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/12.png)
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/15.png)
+
+Agora veremos como definir bordas utilizando uma propriedade que aplica as características de borda uma vez só:
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/23.png)
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/29.png)
+
+A ordem dos valores não altera a aparência da borda do elemento. Porém, para seguir questões de boas práticas, é indicado usar a forma padrão de declaração dos valores da borda.
+
+Propriedades específicas que aplicam bordas em cada um dos lados de um elemento:
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/33.png)
+
+![Aula Borda](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula6/39.png)
+
+Utilize a propriedade **border** quando todas as bordas tiverem os mesmos valores. Isso oferece as seguintes vantagens:
+
+- código menor e mais fácil de manter
+- conter todos os valores de borda em uma propriedade só
+
+As propriedades de borda são muito utilizadas quando precisamos definir o contorno de elementos. Com elas podemos deixar a estilização mais agradável, definindo as características da borda (largura, estilo e cor) de um elemento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
