@@ -2582,37 +2582,125 @@ Utilize a propriedade **border** quando todas as bordas tiverem os mesmos valore
 
 As propriedades de borda são muito utilizadas quando precisamos definir o contorno de elementos. Com elas podemos deixar a estilização mais agradável, definindo as características da borda (largura, estilo e cor) de um elemento.
 
+##### Propriedades 7. Espaçamento interno
 
+Nessa aula veremos a propriedade `padding` que é usada para criar espaçamento interno nos elementos. Essa propriedade é muito utilizada, pois com ela podemos criar espaços ao redor do conteúdo de um elemento.
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/3.png)
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/6.png)
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <a href="https://www.devmedia.com.br/css">Guia de CSS</a>
+</body>
+</html>
+```
 
+```css
+a {
+    font-family: Verdana;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #3198c2;
+    color: #ffffff;
+    border: 2px solid black;
+    padding: 20px;
+}
+```
 
+Uma comparação entre as propriedades `margin` e `padding`, mostrando no que são diferentes.
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/11.png)
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/15.png)
 
+Resumo das diferenças entre as propriedades `margin` e `padding`:
 
+- Padding:
+  - Espaço dentro do elemento
+  - Fica dentro da borda
+- Margin:
+  - Espaço fora do elemento
+  - Fica fora da borda
 
+Agora veremos propriedades mais específicas que também aplicam espaçamento interno em elementos. Vamos conhecer as propriedades `padding-top`, `padding-bottom`, `padding-right` e `padding-left`:
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/20.png)
 
+Agora veremos formas mais resumidas de utilizar a propriedade `padding`. É importante conhecer essas formas porque são bastante usadas na estilização de páginas web:
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/30.png)
 
+![Aula Espaçamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula7/32.png)
 
+A forma compacta da propriedade padding é muito utilizada, pois deixa o código mais legível e fácil de manter.
 
+As propriedades de espaçamento interno são muito utilizadas para estilizar páginas web, pois com elas podemos criar espaços ao redor do conteúdo de um elemento. Isso faz com que as bordas do elemento não fiquem grudadas no seu conteúdo.
 
+##### Propriedades 8. Arredondamento de bordas
 
+Nessa aula veremos a propriedade `border-radius` que serve para arredondar os cantos das bordas de um elemento.
 
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/4.png)
 
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/7.png)
 
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bordas No CSS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
 
+    <div id="teste">
+        <p>Elemento <span>div</span></p>
+    </div>
+</body>
+</html>
+```
 
+```css
+div {
+    width: 200px;
+    padding: 5px;
+    border: 8px solid #000;
+    border-radius: 15px;
+}
 
+p {
+    font-size: 24px;
+    text-align: center;
+}
+```
 
+Quando a propriedade border-radius tem um único valor, ele é usado para arredondar todos os quatro cantos do elemento.
 
+Agora veremos como usar a propriedade `border-radius` para aplicar valores diferentes para cada canto do elemento.
 
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/10.png)
 
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/11.png)
 
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/13.png)
 
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/14.png)
+
+![Aula Arredondamento](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula8/15.png)
+
+Um estilo muito usado com a propriedade `border-radius` é o arredondamento das bordas de apenas um lado do elemento. Essa estilização é utilizada em diversos elementos, especialmente títulos e subtítulos, o que pode melhorar a aparência do elemento na página.
+
+##### Propriedades 9. União de estilos
 
 
 
