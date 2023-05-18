@@ -2702,6 +2702,152 @@ Um estilo muito usado com a propriedade `border-radius` é o arredondamento das 
 
 ##### Propriedades 9. União de estilos
 
+Vamos aprender sobre a união de estilos no CSS. 
+
+![Aula União](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula9/2.png)
+
+![Aula União](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula9/4.png)
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <span>Tecnologias Front-End</span>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <a href="https://www.devmedia.com.br/programacao/front-end">Guia Front-End</a>
+</body>
+</html>
+```
+
+```css
+span, li, a {
+    font-size: 24px;
+    font-family: Verdana;
+    color: #2255ee;
+}
+```
+
+A união de estilos nos oferece a vantagem de não replicar código CSS para os elementos que tenham os mesmos estilos.
+
+A união de estilos no CSS é muito útil pois nos permite aplicar estilos em diversos elementos de uma vez só. Além disso, usar a união de estilos deixa o código mais legível e fácil de manter.
+
+##### Propriedades 10. Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Barbearia Stylus</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div>
+            <img src="img/logotipo.jpg">
+            <h1>O lugar que faz seu estilo</h1>
+            <h2>Venha conhecer nossos serviços e ver todas as vantagens de assinar o nosso plano.</h2>
+        </div>
+        <div>
+            <h3>NOSSOS SERVIÇOS</h3>
+            <p>Somos especializados em cortes masculinos oferecendo um serviço moderno e de qualidade. Temos uma grande variedade de tipos de corte especiais para nossos clientes. Também temos um plano que oferece muitas vantagens para nossa clientela.</p>
+        </div>
+        <div>
+            <h3>CONTATO</h3>
+            <p>Você pode entrar em contato conosco através do email <span>contato@barbeariastylus.com.br</span> ou através do telefone <span>(21) 99999-9999</span> (WhatsApp)</p>
+            <a href="https://api.whatsapp.com/send?phone=999999999&text=Send20%a20%quote">Fale conosco no WhatsApp</a>
+        </div>
+    </body>
+</html>
+```
+
+```css
+body {
+    background-color: #f1f1f1;
+}
+
+img {
+    width: 190px;
+}
+
+div {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Verdana;
+    color: #606062;
+    padding: 10px;
+    border: 5px solid #606062;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Verdana;
+    color: #7a797b;
+    margin: 35px 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: normal;
+    color: #606062;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-top: 2px solid #606062;
+    border-bottom: 2px solid #606062;
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana;
+    text-align: justify;
+    line-height: 32px;
+    color: #616163;
+    margin-bottom: 35px;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    font-size: 16px;
+    font-family: 'Verdana';
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #25D366;
+    border-radius: 25px;
+}
+```
+
+![img](https://www.devmedia.com.br/arquivos/cursos/CSS_propriedades/aula11/layout_completo.png)
+
+Com as propriedades vistas nesse curso, você terá mais recursos na hora de estilizar uma página web. Conhecendo e praticando os estilos aprendidos nas aulas, você avança na sua carreira como programador front-end.
+
+As propriedades de texto são usadas em quase todos os elementos de uma página web. Vimos no exemplo da aula diversos estilos de texto sendo aplicados nos elementos. As propriedades `font-size` e `font-family` geralmente são usadas em todos os textos para que eles fiquem de acordo com o design da página.
+
+##### Propriedades 11. Faça você mesmo
+
+
+
+
+
 
 
 
