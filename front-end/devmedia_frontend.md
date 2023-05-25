@@ -2846,17 +2846,322 @@ As propriedades de texto são usadas em quase todos os elementos de uma página 
 
 
 
+### 4ª Missão - Avance na construção de páginas web estilizadas.
+
+#### HTML - Listas
+
+##### HTML - Listas: 1. Introdução
+
+Em várias situações do nosso dia a dia utilizamos as listas. Lista de compras, lista de passo a passo, lista de afazeres e etc. No universo da programação não é tão diferente e neste curso você vai aprender sobre:
+
+- Listas ordenadas;
+- Listas não ordenadas;
+- Listas de definição.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s2.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s3.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s4.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s5.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s6.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s7.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s8.jpg)
+
+- Lista ordenada
+
+```html
+<!-- Preparo da torta salgada -->
+<ol>
+ <li>Misture os ingredientes</li>
+ <li>Unte a forma com manteiga e farinha de trigo</li>
+ <li>Espalhe o recheio na forma</li>
+ <li>Leve ao forno preaquecido a 180º C</li>
+</ol>
+```
+
+- Lista não ordenada
+
+```html
+<!-- Características do Smartphone -->
+  <ul>
+   <li>Tela de 6.7 polegadas</li>
+   <li>Câmera de 32MP</li>
+   <li>128GB de armazenamento</li>
+</ul>
+```
+
+- Lista de definição
+
+```html
+<!-- Termo seguido da sua definição -->
+<dl>
+ <dt>Amor</dt>
+ <dd>
+  Forte afeição por outra pessoa
+ </dd>
+
+ <dt>Ética</dt>
+ <dd>
+  Conjunto de regras e preceitos
+  de ordem valorativa e moral.
+ </dd>
+</dl>
+```
+
+- O que não é uma lista?
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s001.jpg)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula1/s003.jpg)
+
+O uso das listas permite organizar um conjunto de itens em uma página HTML.
+
+##### HTML - Listas: 2. Listas Ordenadas
+
+Como vimos, o objetivo da lista ordenada é indicar uma sequência de itens dentro do documento HTML.
+
+### Sintaxe
+
+Uma lista ordenada se inicia e se encerra respectivamente através das tags `<ol>` e `</ol>`.
+
+Um item da lista se inicia e se encerra respectivamente através das tags `<li>` e `</li>`.
+
+Dentro de um item podemos utilizar qualquer elemento HTML que quisermos como títulos, parágrafos, imagens e até mesmo outras listas (chamamos de aninhamento).
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista ordenada</title>
+</head>
+<body>
+  <ol>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+  </ol>
+</body>
+</html>
+```
+
+### Atributo de Marcação (type)
+
+Uma lista ordenada pode ser identificada pelo seu marcador e, por padrão, ele vem definido como ordenação numérica. Podemos também alterar o padrão por outros quatro tipos: numerais romanos ou ordenação alfabética e ambos os casos podem ser usados na forma minúscula ou maiúscula.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula2/s02.jpg)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista ordenada</title>
+</head>
+<body>
+    <ol type="I">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+</body>
+</html>
+```
+
+### Ponto de partida (start)
+
+Podemos definir um ponto de partida para a classificação dos itens, dessa forma a numeração começará a partir de um número especificado no atributo `start`.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista ordenada</title>
+</head>
+<body>
+    <ol start="3">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+</body>
+</html>
+```
+
+### Invertendo a Ordem (reversed)
+
+Através do atributo `reversed` informamos que o comportamento da nossa lista será de maneira reversa.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista ordenada</title>
+</head>
+<body>
+    <ol reversed>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+</body>
+</html>
+```
+
+### Exemplo prático
+
+A utilização de listas ordenadas pode ser útil, por exemplo, se quisermos definir um cronograma de estudos (sabemos que existem pré-requisitos entre um assunto e outro).
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista Aninhada</title>
+</head>
+<body>
+  <!-- Cronograma de estudos -->
+  <ol>
+    <li>
+      <h3>FRONT-END</h3>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+      </ol>
+    </li>
+    <li>
+      <h3>BACK-END</h3>
+      <ol>
+        <li>Lógica de programação com PHP</li>
+        <li>Estrutura de dados com PHP</li>
+        <li>Orientação a objetos com PHP</li>
+      </ol>
+    </li>
+  </ol>
+</body>
+</html>
+```
+
+Nesta aula nós aprendemos sobre as listas ordenadas no HTML, conhecemos suas tags básicas, seus atributos e entendemos melhor o seu uso prático.
 
 
 
+##### HTML - Listas: 3. Listas não ordenadas
+
+O objetivo da lista não ordenada é agrupar itens dentro do documento HTML, sem se preocupar com a sequência deles.
+
+### Sintaxe
+
+Uma lista não ordenada se inicia e se encerra respectivamente através das tags `<ul>` e `</ul>`.
+
+Um item da lista se inicia e se encerra respectivamente através das tags `<li>` e `</li>`.
+
+Dentro de um item, assim como na lista ordenada, podemos utilizar qualquer elemento HTML que quisermos (títulos, parágrafos, imagens etc.).
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de pré-requisitos</title>
+</head>
+<body>
+    <ul>
+        <li>Laravel</li>
+        <li>Controle de versão Git</li>
+        <li>Orientação a objetos</li>
+        <li>Arquitetura MVC</li>
+    </ul>
+</body>
+</html>
+```
+
+### Atributo de Marcação (type)
+
+A principal diferença entre a lista não ordenada e a lista ordenada está na maneira com que os itens de cada lista são apresentados.
+
+A lista **não ordenada** coloca marcadores antes de cada elemento, enquanto a **lista ordenada** enumera os itens.
+
+Nas listas não ordenadas também podemos alterar seu marcador padrão, que inicialmente é setado como `disc` (círculos pretos).
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/Listas_HTML/aula3/s02.jpg)
+
+- Alterando marcação
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de pré-requisitos</title>
+</head>
+<body>
+    <ul type="circle">
+        <li>Laravel</li>
+        <li>Controle de versão Git</li>
+        <li>Orientação a objetos</li>
+        <li>Arquitetura MVC</li>
+    </ul>
+</body>
+</html>
+```
+
+- Lista sem marcação
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista sem marcação</title>
+</head>
+<body>
+    <ul type="none">
+        <li>Laravel</li>
+        <li>Controle de versão Git</li>
+        <li>Orientação a objetos</li>
+        <li>Arquitetura MVC</li>
+    </ul>
+</body>
+</html>
+```
+
+### Exemplo prático
+
+A utilização de listas não ordenadas pode ser útil, por exemplo, se quisermos separar os produtos de um site por categoria.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categorizando produtos</title>
+</head>
+<body>
+<ul>
+    <li>
+        <h3>Eletrodomésticos</h3>
+        <ul type="circle">
+            <li>Torradeiras</li>
+            <li>Fornos e Fogões</li>
+            <li>Geladeiras</li>
+        </ul>
+    </li>
+    <li>
+        <h3>Hardware</h3>
+        <ul type="circle">
+            <li>Placas de vídeo</li>
+            <li>Placas de Som</li>
+            <li>Processadores</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
+```
 
 
 
-
-
-
-
-
+##### HTML - Listas: 4. Listas de definição
 
 
 
