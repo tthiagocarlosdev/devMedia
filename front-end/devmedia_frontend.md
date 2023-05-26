@@ -3163,6 +3163,160 @@ A utilização de listas não ordenadas pode ser útil, por exemplo, se quisermo
 
 ##### HTML - Listas: 4. Listas de definição
 
+O objetivo da lista de definição é exibir termos e suas respectivas definições.
+
+### Sintaxe
+
+A estrutura de uma lista de definição é composta pelas seguintes tags:
+
+- `<dl> </dl>` - abertura e fechamento de uma lista;
+- `<dt> </dt>` - abertura e fechamento de um termo;
+- `<dd> </dd>` - abertura e fechamento de uma descrição.
+
+Podemos utilizar tags HTML na estrutura de uma lista de definição, como vimos nas listas anteriores.
+Um item da lista de definição é formado por um termo e uma ou mais definições.
+
+```html
+<!DOCTYPE html>
+ <html>
+ <head>
+     <title>Lista de Definição</title>
+ </head>
+ <body>
+ <dl>
+     <dt>Front-End</dt>
+     <dd>Toda parte visual de um site, onde o usuário interage diretamente.</dd>
+
+     <dt>Back-End</dt>
+     <dd>Estrutura por trás das aplicações, que suporta todas as ações do usuário.</dd>
+ </dl>
+ </body>
+ </html>
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de definição</title>
+</head>
+<body>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada na construção de páginas Web</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo usada para definir a apresentação de um documento HTML</dd>
+
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação utilizada em páginas web.</dd>
+    </dl>
+</body>
+</html>
+```
+
+### Exemplo prático
+
+Para este exemplo prático vamos nos basear em um dicionário, onde temos um termo seguido de suas definições.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de definição em formato dicionário</title>
+</head>
+<body>
+<dl>
+  <dt> <h2>Empatia</h2></dt>
+  <dd> <p>Identificação de um sujeito com outro.</p> </dd>
+  <dd> <p>Se colocar no lugar de outra pessoa a fim de entendê-la.</p> </dd>
+  <dd> <p>Etimologia (origem da palavra empatia). Do grego empátheia; pelo inglês empathy.</p> </dd>
+  <dd> <a href="https://www.dicio.com.br/empatia/" target="_blank">ver mais </a> </dd>
+
+  <dt> <h2>Ética</h2></dt>
+  <dd> <p>Conjunto de regras e preceitos de ordem valorativa e moral de um indivíduo.</p> </dd>
+  <dd> <p>O que é moralmente bom ou mau, certo ou errado.</p> </dd>
+  <dd> <p>Etimologia (origem da palavra ética). Do latim ethica; pelo grego éthikós.</p> </dd>
+  <dd> <a href="https://www.dicio.com.br/etica/" target="_blank">ver mais </a> </dd>
+</dl>
+</body>
+</html>
+```
+
+Aprendemos sobre as listas de definição no HTML, conhecemos suas tags básicas e pudemos entender melhor o seu uso prático.
+
+##### HTML - Listas: 5. Praticando
+
+Agora que já sabemos como criar listas, vamos construir um exemplo e nele vamos mostrar dois mapas de estudos, um para back-end e outro para front-end.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de estudos</title>
+</head>
+<body>
+    <h1>Mapa de Estudos</h1>
+    <h2>Comece a carreira como desenvolvedor back-end ou front-and. Você decide!</h2>
+    <ul type="square">
+        <li>
+            <h3>Front-End</h3>
+            <ol type="i">
+                <li>
+                    <h3>HTML</h3>
+                    <ol type="1">
+                        <li>Introdução</li>
+                        <li>Tag p</li>
+                        <li>Tag pre</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <ol type="1">
+                        <li>Introdução</li>
+                        <li>Seletores</li>
+                        <li>Box Model</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <h3>Back-End</h3>
+            <ol type="i">
+                <li>
+                    <h3>Lógica de programação</h3>
+                    <ol type="1">
+                        <li>Algoritmos</li>
+                        <li>Tipos de dados</li>
+                        <li>Operadores</li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Estrutura de dados</h3>
+                    <ol type="1">
+                        <li>Listas</li>
+                        <li>Filas</li>
+                        <li>Pilhas</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
+```
+
+Parabéns!! Você aprendeu sobre os tipos de listas e daqui para frente utilize esse recurso em praticamente todas as suas páginas, visto que este é um dos elementos principais de estrutura de um documento HTML.
+
+
+
+
+
+
+
 
 
 
