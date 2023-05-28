@@ -3313,6 +3313,133 @@ Parabéns!! Você aprendeu sobre os tipos de listas e daqui para frente utilize 
 
 
 
+#### CSS - Seletores - Estilização através de seletores
+
+##### CSS - Seletores: 1. Introdução
+
+Ao estilizar páginas muitas vezes lidamos com a seguinte situação: como definir estilos diferentes para dois elementos de tags iguais?
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula1/8.jpg)
+
+Seletores são fundamentais para estilizar elementos HTML. Você pode utilizar seletores de tag ou de classe para definir estilos na sua página.
+
+Neste curso você vai aprender:
+
+- Estilizar elementos pela tag
+- Estilizar elementos pela classe
+- Utilizar um mesmo estilo para mais de um elemento
+
+É comum em um código CSS utilizarmos diversos seletores para definir os estilos dos elementos. Os seletores de tag geralmente são usados para estilos globais, enquanto os seletores de classe são usados para estilos mais específicos.
+
+##### CSS - Seletores: 2. Seletor de Tag
+
+Nos cursos anteriores aprendemos a utilizar o seletor de tag.
+
+![Seletores CSS](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula2/20.jpg)
+
+![Seletores CSS](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula2/28.jpg)
+
+```css
+p {
+  font-size: 28px;
+  color: #ff2200;
+  text-align: center;
+}
+```
+
+![Seletores CSS](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula2/34.jpg)
+
+O seletor tem esse nome porque a ideia é 'selecionar' um elemento da página para ser estilizado. Quando falamos que o seletor é 'de tag', estamos dizendo que a seleção do elemento que será estilizado será feita através da tag HTML.
+
+### Exemplo Prático
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aluguel de brinquedos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Espaço Kids - Aluguel de brinquedos</h1>
+        <h2>O brinquedo certo para sua festa é aqui!</h2>
+    </div>
+    <div>
+        <img src="imagem-banner.jpg" alt="Banner Aluguel de Brinquedos">
+    </div>
+    <div>
+        <p>No Espaço temos uma diversidade de brinquedos para deixar a sua festa <span>mais animada</span>! Fazemos locação diária de brinquedos e temos <span>pacotes</span> muito interessantes para a sua programação!
+        </p>
+        <p>Você pode visitar nossa loja localizada na rua <span>Santos Afonso</span>, no Centro. Caso prefira, entre em contato conosco através de um dos e-mails abaixo:
+        </p>
+        <p><a href="mailto:espacokidsloja@email.com">Loja</a> <a href="mailto:espacokidscontato@email.com">Escritório</a></p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    width: 600px;
+    margin: 10px auto;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #bd4348;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+span {
+    font-weight: bold;
+    color: #bd4348;
+}
+
+a {
+    background-color: #bd4348;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+```
+
+É uma prática muito comum utilizar os seletores de tag para definir estilos. Isso acontece porque muitas páginas possuem elementos que têm um padrão de design semelhante. Assim, o seletor de tag é útil nessa situação, pois com ele definimos o mesmo estilo para elementos iguais.
+
+
+
+##### CSS - Seletores: 3. Seletor de Classe
+
+PAREI
+
+##### CSS - Seletores: 4. Reaproveitando classes
+
+##### CSS - Seletores: 5. Agrupando seletores
+
+##### CSS - Seletores: 6. Descendência de elementos
+
+##### CSS - Seletores: 7. Exemplo prático
+
+##### CSS - Seletores: 8. Faça você mesmo
+
+
+
+
+
 
 
 
