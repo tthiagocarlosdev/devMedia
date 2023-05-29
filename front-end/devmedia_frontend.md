@@ -3424,11 +3424,240 @@ a {
 
 ##### CSS - Seletores: 3. Seletor de Classe
 
-PAREI
+Vimos na aula anterior sobre o seletor de tag, que é responsável por definir estilos globais para elementos iguais em uma página.
+
+Agora veremos o seletor de classe, que permite definir estilos específicos na página.
+
+![Seletor de Classe](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula3/70.jpg)
+
+![Seletor de Classe](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula3/72.jpg)
+
+![Seletor de Classe](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula3/74.jpg)
+
+A palavra **class** utilizada na tag de abertura do elemento span é chamada de atributo no HTML.
+
+![Seletor de Classe](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula3/80.jpg)
+
+### Exemplo Prático
+
+Veja no flow a seguir uma página de tattoaria que possui elementos estilizados por seletores de classe:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tattoaria Skull</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <img class="imagem-logotipo" src="img/logo.png">
+        <h1>Muito mais que um simples estúdio de tatuagem</h1>
+        <h2>Viemos para reinventar, criar experiências únicas e aproximar pessoas de grandes artistas!</h2>
+    </div>
+    <div>
+        <img src="img/banner.jpg">
+        <p>Estamos há mais de <span class="texto-negrito">20 anos</span> fazendo tatuagens dos mais diversos tipos. Nossos serviços são reconhecidos por toda a comunidade. São mais de <span class="texto-negrito">300 tatuagens diárias</span> feitas no nosso estúdio. Nossos profissionais são extremamente zelosos pelo trabalho e estão sem dispostos a oferecer o melhor resultado possível aos nossos clientes. Nosso <span class="texto-vermelho">comprometimento com a clientela</span> é nossa prioridade máxima.</p>
+    </div>
+    <div>
+        <p>Nos siga nas redes sociais</p>
+        <p>
+            <a href="https://www.facebook.com/">
+                <img class="imagem-rede-social" src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="imagem-rede-social" src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/">
+                <img class="imagem-rede-social" src="img/twitter.png" alt="Twitter">
+            </a>
+        </p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+    line-height: 28px;
+}
+
+h1 {
+    font-size: 21px;
+}
+
+h2 {
+    color: #757575;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagem-logotipo {
+    width: 150px;
+}
+
+.texto-negrito {
+    font-weight: bold;
+}
+
+.texto-vermelho {
+    color: #ff2200;
+}
+
+.imagem-rede-social {
+    width: 40px;
+}
+```
+
+
 
 ##### CSS - Seletores: 4. Reaproveitando classes
 
+![Reaproveitando classes](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula4/56.jpg)
+
+```html
+<div>
+    <h1>Switch é console mais vendido da história da Nintendo</h1>
+    <h2 class="texto-azul">De forma oficial a Nintendo revelou que o Switch quebrou recordes de venda, ultrapassando o Wii</h2>
+    <p>Agora é oficial: o <span class="texto-negrito">Switch</span> é o console mais vendido da Nintendo de todos os tempos. O video game ultrapassou o <span class="texto-negrito">Wii</span>, que até então estava no topo da lista. A informação foi revelada pela Nintendo, em um relatório financeiro divulgado. De acordo com o documento, o Switch vendeu 103,54 milhões de unidades até o dia 31 de dezembro de 2021, ficando acima dos 101, 63 milhões do <span class="texto-azul">saudoso Wii</span>.</p>
+</div>
+```
+
+Abaixo veremos como utilizar mais de uma classe em um elemento:
+
+![Reaproveitando classes](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula4/63.jpg)
+
+![Reaproveitando classes](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula4/64.jpg)
+
+É uma prática muito comum reaproveitar estilos para elementos específicos. Um exemplo é criar uma classe para estilizar um botão. Na página, podemos usar essa classe em todos os elementos que queremos deixar com a aparência de um botão.
+
+### Exemplo prático 02
+
+A seguir um exemplo de uma página de cursos que contém elementos que reaproveitam estilos no CSS:
+
+![Reaproveitando classes](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula4/69.jpg)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de idiomas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="secao-topo">
+        <img class="img-logotipo" src="img/logo.png">
+        <h1>Um novo jeito de aprender idiomas</h1>
+        <h2 class="texto-azul">Somos comprometidos com a qualidade de ensino para te ajudar nesse desafio</h2>
+    </div>
+
+    <div class="secao-idioma secao-azul">
+        <img src="img/ingles.jpg" class="img-bandeira-idioma" alt="inglês">
+        <h3>Inglês</h3>
+        <p>O inglês é o idioma mais falado no mundo! é imprescindível ter esse idioma no seus conhecimentos.</p>
+    </div>
+    <div class="secao-idioma">
+        <img src="img/espanhol.jpg" class="img-bandeira-idioma" alt="espanhol">
+        <h3>Espanhol</h3>
+        <p>O Brasil é cercado por países falantes da língua espanhola, o que mostra a importância desse idioma.</p>
+    </div>
+    <div class="secao-idioma secao-azul">
+        <img src="img/frances.jpg" class="img-bandeira-idioma" alt="francês">
+        <h3>Francês</h3>
+        <p>O número de vaga pedindo francês têm aumentado consideravelmente no mercado de trabalho.</p>
+    </div>
+    <div class="secao-rodape">
+        <p class="texto-azul">"Quem investe o seu tempo aprendendo um novo idioma está abrindo portas para o futuro."</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+body {
+    font-family: Tahoma;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.secao-topo {
+    margin: 0 auto;
+    background: #dfdfdf;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.img-logotipo {
+    width: 150px;
+    background-color: #fff;
+}
+
+.secao-idioma {
+    width: 650px;
+    margin: 20px auto 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.secao-azul {
+    background-color: #0291dd;
+    color: #fff;
+}
+
+.secao-rodape {
+    width: 350px;
+    margin: 15px auto 0;
+}
+
+.texto-azul {
+    color: #0291dd;
+}
+
+.img-bandeira-idioma {
+    width: 30px;
+}
+```
+
+Reaproveitar classes é muito vantajoso na hora de estilizar as páginas web, pois evitamos a replicação de código e deixamos o CSS mais fácil de manter. O reaproveitamento de classes é uma prática muito utilizada no desenvolvimento front-end.
+
+
+
 ##### CSS - Seletores: 5. Agrupando seletores
+
+PAREI
 
 ##### CSS - Seletores: 6. Descendência de elementos
 
