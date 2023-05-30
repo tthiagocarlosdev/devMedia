@@ -3657,11 +3657,248 @@ Reaproveitar classes é muito vantajoso na hora de estilizar as páginas web, po
 
 ##### CSS - Seletores: 5. Agrupando seletores
 
-PAREI
+- A seguir como agrupar os seletores de tag:
+
+![Agrupando seletores](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula5/2.jpg)
+
+![Agrupando seletores](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula5/7.jpg)
+
+- Como agrupar os seletores de classe:
+
+![Agrupando seletores](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula5/9.jpg)
+
+![Agrupando seletores](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula5/14.jpg)
+
+Ao agrupar seletores CSS (tag ou classe) você deixa o seu código CSS menor e mais fácil de dar manutenção.
+
+### Exemplo prático 03
+
+Um exemplo de uma página sobre a série televisiva Fargo, em que foram agrupados seletores de tag e de classe:
+
+![Agrupando seletores](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula5/20.jpg)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fargo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Fargo (série televisiva)</h1>
+        <h2>Uma série que mistura humor negro com drama criminal</h2>
+        <img src="img/banner.jpg" alt="Fargo">
+    </div>
+    <div>
+        <h3>Enredo</h3>
+        <p class="texto-enredo">Fargo é uma série de televisão americana de humor ácido e drama, criada por Noah Hawley, para a FX. A série é inspirada no filme Fargo, que conta com Joel, Ethan Coen e Hawley. A série estreou em 15 de Abril de 2014 no canal FX, seguindo um formato em que cada temporada se passa em uma diferente era, com diferentes acontecimentos e novos personagens, apesar de haver uma pequena ligação entre os histórias.</p>
+        <h3>Temporadas de Fargo</h3>
+        <h4>1ª temporada</h4>
+        <p class="texto-temporada">Em janeiro de 2006, Lorne Malvo (Billy Bob Thornton) chega à pequena Bemidji, uma cidade do estado do Minesota e, com sua malícia e violência, começa a influenciar a população, inclusive o vendedor Lester Nygaard (Martin Freeman). </p>
+        <h4>2ª temporada</h4>
+        <p class="texto-temporada">Narrando uma história diferente por temporada, a série apresenta na segunda a trajetória do policial Lou Solverson (Patrick Wilson) de 33 anos e recém-vindo da Guerra do Vietnã, personagem vivido pelo vencedor do Oscar, Keith Carradine, na primeira temporada. </p>
+        <h4>3ª temporada</h4>
+        <p class="texto-temporada">Em 2010, o agente de condicional da cidade de St. Cloud, Ray Stussy (Ewan McGregor), e sua namorada Nikki Swango (Mary Elizabeth Winstead), que está em condicional, sonham em ter uma vida melhor.</p>
+        <h4>4ª temporada</h4>
+        <p class="texto-temporada">Em 1950, a organização criminosa Cannon Limited, liderada por Loy Cannon (Chris Rock), ameaça usurpar o território controlado pela Fadda Family, liderada por Josto Fadda (Jason Schwartzman), em Kansas City, Missouri. </p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    width: 600px;
+    margin: 25px auto;
+    font-family: Verdana;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2, h4 {
+    color: #37719b;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 5px;
+    border-left: 2px solid #37719b;
+}
+
+.texto-enredo, .texto-temporada {
+    text-align: justify;
+    line-height: 24px;
+}
+
+.texto-enredo {
+    color: #0a436c;
+    margin-top: 0;
+}
+
+.texto-temporada {
+    color: #212121;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+```
+
+É muito comum encontrar em diversos projetos códigos CSS que agrupam tags ou classes. Por isso, entender como funciona o agrupamento de seletores é fundamental para o desenvolvedor front-end, pois é uma das tarefas do profissional dar manutenção em códigos CSS que utilizam esse conceito.
+
+
 
 ##### CSS - Seletores: 6. Descendência de elementos
 
+A seguir vemos como agrupar os seletores de tag:
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/45.jpg)
+
+Ao combinar seletores de tag para definir estilos é importante verificar a estrutura HTML para que apenas os elementos desejados recebam o estilo. Isso acontece porque ao aplicar um estilo em uma combinação de tags, ela valerá em toda a página. Por exemplo, se combinarmos as tags **div** e **p**, estamos estilizando todos os parágrafos que estão dentro de uma **div** nessa página.
+
+- A seguir como combinar os seletores de classe:
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/55.jpg)
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/56.jpg)
+
+- Seletores de classe e de tag ao mesmo tempo:
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/63.jpg)
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/65.jpg)
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/66.jpg)
+
+- Seletores de classe e de tag:
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/75.jpg)
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/76.jpg)
+
+### Exemplo prático 04
+
+A seguir veremos o exemplo da página de um clube que contém elementos iguais com estilos diferentes:
+
+![Descendência de elementos](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula6/81.jpg)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clube Mega Ville</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Clube Mega Ville</h1>
+        <h2>Um lugar para se divertir e relaxar.</h2>
+    </div>
+    <div class="secao-banner">
+        <img src="img/banner.jpg" alt="Clube Mega Ville">
+    </div>
+    <div>
+        <p>O clube <span>Mega Ville</span> oferece há mais de 20 anos o melhor local para lazer e diversão. Venha nos visitar um dia e desfrute de todos os serviços que podemos oferecer para você, seus amigos e sua família!</p>
+        <span class="texto-destaque">Venha e agende uma visita!</span>
+    </div>
+    <div class="secao-conteudo">
+        <img src="img/piscinas.jpg" alt="Piscinas do clube">
+        <h3>Piscinas de todos os tamanhos</h3>
+        <p>No Mega Ville temos piscina para todos os públicos. São mais de <span>15 piscinas</span> dos tamanhos mais variados para receber os nossos clientes.</p>
+        <img src="img/areas-cobertas.jpg" alt="Áreas cobertas">
+        <h3>Mais de 30 áreas cobertas</h3>
+        <p>Temos áreas cobertas espalhadas por todo o clube, e cada uma delas para a uma certa finalidade. O que você precisar poderá fazer aqui.</p>
+        <img src="img/area-criancas.jpg" alt="Área para crianças">
+        <h3>Área exclusiva para crianças</h3>
+        <p>As crianças têm um espaço <span>amplo</span> e <span>seguro</span> para desfrutar. Contamos com uma equipe que cobre toda a área monitorando as atividades no local.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+div {
+    width: 600px;
+    margin: 10px auto;
+    font-family: Verdana;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+p span{
+    font-weight: bold;
+    color: #0aa8f9;
+}
+
+.secao-banner {
+    border-top: 1px solid #0aa8f9;
+    border-bottom: 1px solid #0aa8f9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.secao-banner img {
+    width: 600px;
+}
+
+.texto-destaque {
+    font-style: italic;
+    border-left: 2px solid #000;
+    padding-left: 5px;
+}
+
+.secao-conteudo  {
+    margin-top: 30px;
+}
+
+.secao-conteudo img {
+    border: 10px solid #0aa8f9;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+```
+
+A descendência de elementos é muito utilizada na estilização de elementos das páginas web. É muito importante para o desenvolvedor front-end saber como combinar seletores de tag e de classe, visto que boa parte dos projetos utiliza esse conceito.
+
+
+
 ##### CSS - Seletores: 7. Exemplo prático
+
+PAREI
 
 ##### CSS - Seletores: 8. Faça você mesmo
 
