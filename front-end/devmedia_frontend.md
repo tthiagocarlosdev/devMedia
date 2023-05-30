@@ -3898,9 +3898,252 @@ A descendência de elementos é muito utilizada na estilização de elementos da
 
 ##### CSS - Seletores: 7. Exemplo prático
 
-PAREI
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/css_seletores/aula7/2.jpg)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Padaria Plus</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="secao">
+        <img class="imagem-logotipo" src="img/logo.png" alt="Logotipo Padaria Plus">
+        <p>
+            <a href="#sobre">Sobre</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </p>
+    </div>
+    <div class="secao" id="sobre">
+        <h1>O melhor de nossos pães e bolos para você</h1>
+        <h2>Desde 2001, o lugar mais gostoso da cidade</h2>
+        <img class="imagem-banner" src="img/produtos-padaria.jpg">
+    </div>
+    <div class="secao secao-destaque" id="produtos">
+        <h3>Veja nossos produtos abaixo</h3>
+        <h4>Pães</h4>
+        <p>Temos um processo de fabricação 100% caseiro. Esse foi um dos maiores motivos que fizeram com que a Padaria Plus crescesse com as proporções que temos hoje. Temos um pão único de pura qualidade.</p>
+        <img src="img/paes.jpg" alt="">
+        <h4>Bolos</h4>
+        <p>Uma viagem para a Itália nos fez conhecer alguns ingredientes que são essenciais para que a massa do bolo fique macia e gostosa. Hoje temos um produto incomparável.</p>
+        <img src="img/bolos.jpg" alt="">
+    </div>
+    <div class="secao" id="contato">
+        <h3>Contato</h3>
+        <p>Estamos localizados na Avenida Santos Agoz Nº 456</p>
+        <p>Nosso telefone: <span>(99) 99999-9999</span></p>
+        <p>Estamos funcionando nos seguintes horários:</p>
+        <p>Segunda à sexta: <span>7h às 16h</span></p>
+        <p>Sábados e domingos: <span>7h às 13h</span></p>
+        <p>Feriados: <span>8h às 12h</span></p>
+    </div>
+</body>
+</html>
+```
+
+```css
+body {
+    margin: 0;
+    background-color: #f4f0e5;
+    font-family: Tahoma;
+}
+
+.secao {
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.imagem-logotipo {
+    width: 200px;
+}
+
+a {
+    margin: 0 10px;
+    color: #542f0c;
+}
+
+h1 {
+    font-size: 28px;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-top: 1px solid #de8e37;
+}
+
+h2 {
+    font-weight: normal;
+    color: #de8e37;
+    margin-top: 10px;
+}
+
+.imagem-banner {
+    width: 700px;
+}
+
+.secao-destaque {
+    background-color: #de8e37;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.secao-destaque h3 {
+    font-size: 24px;
+}
+
+.secao-destaque h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao-destaque p {
+    width: 500px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.secao-destaque img {
+    width: 400px;
+}
+
+span {
+    font-weight: bold;
+}
+```
+
+Todos os projetos que estilizam os elementos de páginas web fazem uso de seletores. Isso mostra a importância de entender como os eles podem ser usados nos códigos CSS. Podemos usar um único seletor, agrupar seletores diferentes, combinar múltiplos seletores. Isso é feito de acordo com o layout que a página tem.
+
+
 
 ##### CSS - Seletores: 8. Faça você mesmo
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Padaria</title>
+</head>
+<body>
+    <div class="secao">
+        <img class="imagem_logo_tipo" src="./img/logo.png" alt="Logotipo Padaria">
+        <p>
+            <a href="#">Sobre</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </p>
+    </div>
+    <div class="secao">
+        <h1>O melhor de nossos pães e bolos para você</h1>
+        <h2>Desde 2001, o lugar mais gostoso da cidade</h2>
+        <img class="imagem_produtos" src="./img/produtos-padaria.jpg" alt="produtos">
+    </div>
+    <div class="secao secao_destaque">
+        <h3>Veja nossos produtos abaixo</h3>
+        <h4>Pães</h4>
+        <p>Temos um processo de fabricação 100% caseiro. Esse foi um dos maiores motivos que fizeram com que a Padaria Plus crescesse com as proporções que temos hoje. Temos um pão único de pura qualidade.</p>
+        <img src="./img/paes.jpg" alt="pães">
+        <h4>Bolos</h4>
+        <p>Uma viagem para a Itália nos fez conhecer alguns ingredientes que são essenciais para que a massa do bolo fique macia e gostosa. Hoje temos um produto incomparável.</p>
+        <img src="./img/bolos.jpg" alt="bolos">
+    </div>
+    <div class="secao">
+        <h3>Contato</h3>
+        <p>Estamos localizados na Avenida Santos Agoz Nº 456</p>
+        <p>Nosso telefone: <span>(99) 99999-9999</span></p>
+        <p>Estamos funcionando nos seguintes horários:</p>
+        <p>Segunda à sexta: <span>7h às 16h</span></p>
+        <p>Sábados e domingos: <span>7h às 13h</span></p>
+        <p>Feriados: <span>8h às 12h</span></p>
+    </div>
+</body>
+</html>
+```
+
+```css
+body{
+    background-color: #eee3d4;
+}
+
+.secao{
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagem_logo_tipo{
+    width: 200px;
+}
+
+.secao a {
+    margin: 0 10px;
+    color: #542f0c;
+}
+
+.secao h1{
+    border-top: 1px solid #de8e37;
+    padding-top: 30px;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.secao h2{
+    color: #de8e37;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.imagem_produtos{
+    width: 700px;
+}
+
+.secao_destaque{
+    padding: 15px 0;
+    background-color: #de8e37;
+    color:#fff;
+}
+
+.secao_destaque h3{
+    font-size: 24px;
+}
+
+.secao_destaque h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao_destaque p{
+    line-height: 30px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.secao_destaque img{
+    width: 400px;
+}
+
+span{
+    font-weight: bold;
+}
+```
+
+Parabéns, você deu mais um passo na sua carreira de programador Front-end!!!
+Você já é capaz de:
+
+- Utilizar seletores de tag e de classe
+- Agrupar seletores CSS
+- Combinar seletores de tags e classe
+
+##### Projeto - Construa a página de uma imobiliária
 
 
 
