@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios css</title>
     <style>
+        body{
+            background-color: #785520;
+        }
         div img {
             width: 160px;
             margin-top: 40px;
@@ -19,6 +22,7 @@
 
         .paragrafo{
             font-size: 20px;
+            font-family: Verdana;
             text-align: justify;
         }
 
@@ -35,7 +39,41 @@
             color: #454545;
             text-decoration: underline;
         }
-    </style>
+        .texto-destaque{
+            font-weight: bold;
+            font-style: italic;
+            color: #2f2f2f;
+        }
+        img{
+            height: 500px;
+            width: 700px;
+            border: 2px solid #757575;
+        }
+        h1{
+            margin-bottom: 35px;
+        }
+        .paragrafo-noticia{
+            color: rgb(255, 60, 35);
+            text-align: justify;
+        }
+        p span{
+            color: rgb(0,25,125);
+            text-decoration: underline;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        p a{
+            color: #785520;
+            background-color: #e5e5e5;
+            padding: 4px;
+        }
+        .titulo{
+            font-size: 24px;
+            font-family: Arial;
+            line-height: 32px;
+        }
+
+    </style> 
 </head>
 <body>
     <div class="secao-servicos">
@@ -53,5 +91,9 @@
         <img src="img/logo-rodape.jpg">
         <p>Site desenvolvido pela agência mix</p>
     </div>
+    <p class="texto-principal">Os oradores são um grupo de eruditos nômades da série animada, que mantêm histórias e tradições orais. Eles são perseguidos pela Igreja, que os veem como feiticeiros e responsáveis pela ira de <span class="destaque">Drácula</span>. <span class="destaque">Trevor Belmont</span> ajudou-os a se esconderem antes que os agentes da Igreja viessem matá-los. São muito defensivos em relação à sua prática de recitar oralmente a história. Eles desprezam a ideia de escrever história no papel, explicado nas palavras do Ancião: "A história é uma coisa viva, o papel está morto".</p>
+    <p class="texto-secundario">Conhecidos membros dos oradores são os <span class="destaque">Sypha Belnades</span> e seu avô.</p>
+    <a href="#link">Link 1</a>
+    <p><a href="#link2">Link 2</a></p>
 </body>
 </html>
