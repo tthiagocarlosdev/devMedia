@@ -1,10 +1,10 @@
+/* GERAIS */
 *{
     margin: 0;
 }
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background-color: lightskyblue; */
 }
 
 .secao{
@@ -19,6 +19,12 @@ p{
     font-size: 18px;
     line-height: 28px;
 }
+
+span{
+    font-weight: bold;
+}
+
+/* 1ª SECAO */
 
 .secao-links{
     background-color: #afddfb;
@@ -42,14 +48,14 @@ p{
     border-bottom: 2px solid #1d1d1d;
 }
 
+/* 2ª SECAO */
+
 .secao-banner{
     margin-top: 50px;
     padding-top: 0;
 }
 
-span{
-    font-weight: bold;
-}
+/* 3ª SECAO */
 
 .secao-sobre h1{
     color: #1d1d1d;
@@ -69,6 +75,8 @@ span{
 .texto-azul{
     color: #1d80c1;
 }
+
+/* 4ª SECAO */
 
 .secao-servicos{
     background-color: #1d80c1;
@@ -102,14 +110,52 @@ span{
     font-size: 22px;
 }
 
-/* PAREI 5ª SECAO */
+/* 5ª SECAO */
 
 .secao-corretores h2{
     color: #1d80c1;
     font-size: 28px;
     line-height: 42px;
+    margin-bottom: 5px;
 }
 
 .secao-corretores img{
     width: 450px;
+}
+
+/* 6ª SECAO */
+.secao-contato h2{
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 5px;
+}
+
+.secao-contato{
+    background-color: #1d80c1;
+    color: #ffffff;
+}
+
+.secao-contato p{
+    background-color: #1d1d1d;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.secao-contato ul{
+    margin: 40px auto;
+    width: 300px;
+}
+
+.secao-contato li{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.secao-contato a{
+    background-color: #ffffff;
+    color: #1d80c1;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
