@@ -4171,6 +4171,240 @@ Ao criar esse projeto, você vai poder colocar em prática os seguintes conceito
 - 6ª seção
   - Contato
 
+- Código do projeto
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A imobiliária que te ajuda a conquistar o sonho da casa nova">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Imobiliária Santos</title>
+</head>
+<body>
+    <div class="secao secao-links">
+        <img src="./img/logo.png" alt="">
+        <p>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#corretores">Corretores</a>
+            <a href="#contato">Contato</a>
+        </p>
+    </div>
+    <div class="secao secao-banner">
+        <img src="./img/banner.jpg" alt="">
+    </div>
+    <div class="secao secao-sobre" id="sobre">
+        <h1>Encontre o imóvel dos seus sonhos</h1>
+        <h2 class="subtitulo">A imobiliária que te ajuda no sonho do seu imóvel</h2>
+        <img src="./img/imovel-assinatura.jpg" alt="">
+        <p>Há <span class="texto-azul">10 anos</span> no ramo temos conquistado a confiança de <span class="texto-azul">inúmeros clientes</span>. Isso porque procuramos sempre as melhores condições tanto para quem quer comprar, como para quem quer vender ou alugar. Oferecemos um <span class="texto-azul">serviço de qualidade</span> servindo como ponte entre as partes interessadas.</p>
+    </div>
+    <div class="secao secao-servicos" id="servicos">
+        <h2 class="subtitulo-branco">SERVIÇOS</h2>
+        <p>Contamos com diversos <span class="texto-amarelo">serviços imobiliários</span> e também prestamos suporte em cada uma das etapas necessárias de cada serviço. Aqui na <span class="texto-amarelo">Imobiliária Santos</span> podemos te ajudar com a seguinte gama de assuntos relativos a imóveis:</p>
+        <ul>
+            <li>Venda</li>
+            <li>Aluguel</li>
+            <li>Financiamento</li>
+            <li>Parcerias</li>
+        </ul>
+    </div>
+    <div class="secao secao-corretores" id="corretores">
+        <h2>CORRETORES</h2>
+        <img src="./img/corretores.jpg" alt="">
+        <p>A <span class="texto-azul">imobiliária Santos</span> conta com um time de profissionais qualificados que têm vários anos de experiência no mercado. Para entrar em contato com um de nossos corretores, basta clicar no link a seguir: <a href="mailto:corretores@email.com">Corretores</a></p>
+    </div>
+    <div class="secao secao-contato" id="contato">
+        <h2 class="subtitulo-branco">CONTATO</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.254844548052!2d-43.364712467659004!3d-22.98234139602229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-904!5e0!3m2!1spt-BR!2sbr!4v1642532754862!5m2!1spt-BR!2sbr" width="720" height="400" frameborder="0"></iframe>
+        <p>Se ficou interessado em nos conhecer ou se tiver dúvidas entre em <span class="texto-amarelo">contato</span> conosco através de um dos telefones abaixo:</p>
+        <ul type="none">
+            <li><a href="tel:+">Escritório Barra da Tijuca</a></li>
+            <li><a href="tel:+">Escritório Centro/RJ</a></li>
+            <li><a href="tel:+">Escritório Méier</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+```
+
+```css
+/* GERAIS */
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secao{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+p{
+    margin: 10px auto;
+    width: 980px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.texto-azul{
+    color: #1d80c1;
+}
+
+.texto-amarelo{
+    color: #fff81b;
+}
+
+/* 1ª SECAO */
+
+.secao-links{
+    background-color: #afddfb;
+}
+
+.secao-links img{
+    width: 150px;
+}
+
+.secao-links p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.secao-links a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #1d1d1d;
+    margin: 0 10px;
+    border-bottom: 2px solid #1d1d1d;
+}
+
+/* 2ª SECAO */
+
+.secao-banner{
+    margin-top: 50px;
+    padding-top: 0;
+}
+
+/* 3ª SECAO */
+
+.secao-sobre h1{
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+
+.subtitulo{
+    color: #1c81c0;
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.secao-sobre img{
+    width: 450px;
+}
+
+/* 4ª SECAO */
+
+.secao-servicos{
+    background-color: #1d80c1;
+}
+
+.subtitulo-branco{
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.secao-servicos p{
+    color: #ffffff;
+    line-height: 42px;
+    font-size: 22px;
+    width: 700px;
+    text-align: center;
+}
+
+.secao-servicos ul{
+    margin: 40px auto;
+    width: 135px;
+}
+
+.secao-servicos li{
+    color: #ffffff;
+    line-height: 42px;
+    text-align: left;
+    font-size: 22px;
+}
+
+/* 5ª SECAO */
+
+.secao-corretores h2{
+    color: #1d80c1;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+
+.secao-corretores img{
+    width: 450px;
+}
+
+/* 6ª SECAO */
+
+.secao-contato{
+    background-color: #1d80c1;
+}
+
+.secao-contato h2{
+    margin-bottom: 5px;
+}
+
+.secao-contato p{
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.secao-contato ul{
+    margin: 40px auto;
+    width: 300px;
+}
+
+.secao-contato li{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.secao-contato a{
+    background-color: #ffffff;
+    color: #1d80c1;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+```
+
+
+
+### 5ª Missão - Aprenda a construir um website com imagens e efeitos de fundo
+
+
+
 
 
 
