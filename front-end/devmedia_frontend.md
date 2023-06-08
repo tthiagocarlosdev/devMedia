@@ -4447,15 +4447,741 @@ span{
 
 ### 5ª Missão - Aprenda a construir um website com imagens e efeitos de fundo
 
+#### CSS - background: Preenchendo o fundo de um elemento
+
+##### CSS - background: 1. Introdução
+
+É muito comum alterarmos o fundo de um elemento com uma cor ou inserindo uma imagem para que ele tenha um maior destaque na página.
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_background/aula1/2.jpg)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_background/aula1/4.jpg)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_background/aula1/5.jpg)
+
+Além de inserir a imagem no fundo da página, também é comum que ela seja inserida em boxes, cards e seções.
+
+Neste curso vamos aprender a utilizar as propriedades:
+
+- background-image
+- background-repeat
+- background-position
+- background
+- background-size
+- background-attachment
+
+É muito comum usarmos as propriedades de background para estilizar uma página. Através de background conseguimos, por exemplo, criar seções diferentes, dar mais destaque a um determinado elemento, criar cards etc.
 
 
 
+##### CSS - background: 2. Relembrando background-color
+
+![Relembrando](https://www.devmedia.com.br/arquivos/cursos/css_background/aula2/15.jpg)
+
+![Relembrando](https://www.devmedia.com.br/arquivos/cursos/css_background/aula2/16.jpg)
+
+![Relembrando](https://www.devmedia.com.br/arquivos/cursos/css_background/aula2/17.jpg)
+
+```css
+body{
+
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+  }
+
+  div{
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+```
+
+```html
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>background-color</title>
+  </head>
+  <body>
+    <div>
+      <h1>Cão</h1>
+      <img src="./img/img-cachorro.jpg" alt="cachorro">
+      <p>O cão, no Brasil também chamado de cachorro, é um mamífero carnívoro da família dos canídeos, subespécie do lobo, e talvez o mais antigo animal domesticado pelo ser humano.</p>
+    </div>
+  </body>
+  </html>
+```
+
+### Exemplo prático
+
+```html
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>HBO - Senhor dos anéis</title>
+  </head>
+  <body>
+    <div class="topo">
+      <h1>HBO Max</h1>
+    </div>
+
+    <div class="conteudo">
+      <h2>O senhor dos anéis - os anéis de poder</h2>
+      <img src="img/capa.jpg" alt="capa">
+
+      <p>Os Anéis de Poder, eram artefatos mágicos na obra de J.R.R.Tolkien na série O Senhor dos Anéis. </p>
+
+      <p> Os Anéis do poder foram os anéis mágicos feitos pelos Elfos durante a Segunda Era para que pudessem se curar, construir e compreender. Os Três, os maiores dentre os Anéis Élficos, foram forjados pelo ferreiro élfico Celebrimbor.</p>
+
+      <span class="texto-destaque">Em breve na HBO</span>
+    </div>
+
+  </body>
+  </html>
+```
+
+```css
+body {
+    margin: 0;
+    background-color: #250553;
+  }
+
+  .topo {
+    background-color: #02021c;
+    /* height: 50px; */
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .conteudo {
+    color: #cfcfcf;
+    padding: 20px 80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+  }
+  img {
+    height: 400px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .texto-destaque {
+    background-color: #b535f6;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+  }
+```
+
+Uma forma de diferenciar as seções da página é através da propriedade background-color. Por exemplo, utilizamos background-color para deixar o topo da página diferente das demais seções, dessa forma o usuário apenas olhando para a página vai conseguir entender que se trata de uma seção independente.
 
 
 
+##### CSS - background: 3. Background-image
+
+![Background-image](https://www.devmedia.com.br/arquivos/cursos/css_background/aula3/32.jpg)
+
+Uma imagem pode ter diversas extensões como, por exemplo, .jpg, .jpeg e .png. Sempre que inserir a imagem na propriedade background-image você deve escrever exatamente a extensão do arquivo, do contrário a imagem não será exibida na sua página.
+
+### Onde salvar a imagem?
+
+Já sabemos que é necessário ter uma imagem para preencher o fundo de um elemento, abaixo você vai aprender sobre onde essa imagem deve ser salva:
+
+![Background-image](https://www.devmedia.com.br/arquivos/cursos/css_background/aula3/40.jpg)
+
+![Background-image](https://www.devmedia.com.br/arquivos/cursos/css_background/aula3/42.jpg)
+
+Podemos inserir a propriedade background-image em estilos criados utilizando qualquer tipo de seletor, por exemplo, seletores de tag ou seletores de classe.
+
+No **Código abaixo** você vê dois códigos utilizados para inserir uma imagem na propriedade background-image, um onde a imagem foi salva na pasta principal e outro que foi salva na pasta img dentro da pasta principal:
+
+```css
+/* Imagem salva na pasta principal do projeto */
+.secao-1 {
+  background-image: url('./img-fundo.jpg');
+  width: 320px;
+  height: 200px;
+}
+
+/* Imagem salva dentro da pasta img */
+.secao-2 {
+  background-image: url('./img/img-fundo.jpg');
+  width: 320px;
+  height: 200px;
+}
+```
+
+A propriedade background-image pode ser utilizada em qualquer tag HTML porém o seu uso é mais comum em divs, body e em tags semânticas que você vai conhecer mais à frente.
+
+Além de exibir uma imagem que está salva na pasta do projeto, também podemos exibir uma imagem de um outro site colocando a URL entre aspas:
+
+```css
+.card {
+    background-image: url('https://www.devmedia.com.br/arquivos/cursos/css_background/embed/aula3/img-fundo.jpg');
+    width: 320px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 10px auto;
+    color: #fff;
+}
+```
+
+### Acessando imagens em diferentes pastas
+
+Já sabemos que para acessar as imagens salvas em uma pasta é necessário escrever o nome da pasta e logo depois o nome do arquivo que será utilizado:
+
+```css
+/* Imagem salva na pasta img */
+.secao-2 {
+  background-image: url('img/img-fundo.jpg');
+  ...
+}
+```
+
+No entanto, para casos em que a pasta com as imagens esteja em um nível diferente do arquivo.css precisaremos utilizar uma sintaxe levemente diferente.
+
+![Background-image](https://www.devmedia.com.br/arquivos/cursos/css_background/aula3/47.png)
+
+![Background-image](https://www.devmedia.com.br/arquivos/cursos/css_background/aula3/48.png)
+
+![Background-image](https://www.devmedia.com.br/arquivos/cursos/css_background/aula3/50.png)
+
+A sintaxe "../" significa "voltar um nível" na hierarquia de pastas.
+
+```css
+/* Link HTML */
+<link rel="stylesheet" href="css/estilos.css">
+
+…
+/* Código CSS */
+div {
+  background-image: url('../img/img-fundo.jpg');
+  …
+}
+```
+
+### Exemplo prático
+
+```html
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Jogo de 2023</title>
+  </head>
+  <body>
+    <div class="secao-topo">
+      <p>Jogo mais esperado de 2023</p>
+    </div>
+    <div class="secao">
+      <h1>ALAN WAKE II</h1>
+
+      <img src="img/img2.jpg" alt="">
+
+      <p>
+        Alan Wake 2 é um jogo de <span>terror de sobrevivência</span> com uma atmosfera intensa e uma história psicológica distorcida, em camadas — é a tão esperada sequência do premiado thriller psicológico de 2010 da Remedy Entertainment, Alan Wake, e Alan Wake Remastered de 2020.
+      </p>
+
+      <div class="box-compra">
+        <p>Faça agora a sua reserva clicando no link abaixo</p>
+        <a href="https://www.epicgames.com/store/pt-BR/p/alan-wake-2">
+          RESERVAR AGORA
+        </a>
+      </div>
+    </div>
+  </body>
+  </html>
+```
+
+```css
+body{
+    margin: 0;
+    background-image: url('img/img1.jpg');
+  }
+  .secao {
+    padding: 10px 20px;
+    width: 600px;
+    margin: 0 auto;
+    color: rgb(201, 201, 201);
+  }
+
+  .secao-topo {
+    background-color: #0078f2;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .secao-topo p {
+    margin: 0;
+    font-size: 22px;
+    color: #fff
+  }
+  img {
+    width: 100%;
+  }
+
+  p {
+    line-height: 28px;
+    font-size: 18px;
+  }
+
+  span {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .box-compra {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 350px;
+    padding: 0 20px 20px;
+  }
+
+  a {
+    background-color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 20px;
+  }
+```
+
+O uso de background-image é muito comum em divs que dividem seções de uma página. Isso faz com que o usuário consiga identificar onde uma seção começa e termina. Além disso, a página fica com um design mais atraente
 
 
 
+##### CSS - background: Estilizando a imagem de fundo
+
+Ao preencher o fundo de um elemento com uma imagem, por padrão ela se repete para poder preencher todo espaço do elemento.
+
+### Background-image
+
+Abaixo algumas propriedades que podemos usar para alterar este comportamento:
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/59.png)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/60.png)
+
+```css
+/* Imagem sendo repetida para preencher o fundo do elemento. */
+body {
+  background-image: url('img/fundo-floresta.jpg');
+}
+
+/* A imagem não se repete. */
+body {
+  background-image: url('img/fundo-floresta.jpg');
+  background-repeat: no-repeat;
+}
+
+/* Imagem sendo repetida horizontalmente. */
+body {
+  background-image: url('img/fundo-floresta.jpg');
+  background-repeat: repeat-x;
+}
+
+/* Imagem sendo repetida verticalmente. */
+body {
+  background-image: url('img/fundo-floresta.jpg');
+  background-repeat: repeat-y;
+}
+```
+
+Ao utilizar a propriedade `background-repeat` para não repetir a imagem ou então para repetir apenas em uma direção, podemos preencher o espaço que a imagem não ocupa utilizando `background-color`.
+
+```css
+body {
+  background-image: url('img/fundo-floresta.jpg');
+  background-repeat: no-repeat;
+  background-color: darkgreen;
+}
+```
+
+### Background-position
+
+Abaixo você vai aprender a posicionar a imagem de fundo utilizando a propriedade `background-position`:
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/66.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/67.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/68.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/69.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/70.jpg)
+
+```css
+background-position: top;
+background-position: center;
+background-position: bottom;
+background-position: right top;
+background-position: right center;
+background-position: right bottom;
+background-position: center top;
+background-position: center center;
+background-position: center bottom;
+```
+
+Além desses valores a propriedade background-position possui diversos outros valores, porém essas são as mais usadas.
+
+### Background-size
+
+Além de posicionar a imagem também podemos definir o tamanho dela:
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/75.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/78.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/80.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/81.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/82.jpg)
+
+```css
+/* Ocupa todo espaço do elemento e exibe parte da imagem se for necessário */
+background-size: cover;
+
+/* Estica a imagem ao máximo possível exibindo a imagem por completo */
+background-size: contain;
+
+/* Define o percentual de largura e altura com relação ao elemento, que a imagem ocupará */
+background-size: 50% 70%;
+
+/* Define a largura e altura da imagem em píxel */
+background-size: 300px 150px;
+```
+
+Quando inserimos uma imagem no fundo de um elemento, ao rolar a página a imagem também segue.
+
+Podemos deixar essa imagem estática.
+
+![Utilizando a propriedade background-attachment](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/fig3.jpg)
+
+```css
+body {
+    background-image: url('img/fundo-floresta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+```
+
+### Efeito Parallax
+
+Através da propriedade background-attchment: fixed você pode aplicar nas imagens de fundo um efeito conhecido como efeito Parallax.
+
+Veja o comportamento de uma página com o efeito parallax aplicado às imagens de fundo:
+
+![img](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/anime4.gif)
+
+Perceba que o efeito aplicado na página gera uma experiência de navegação mais interessante e envolvente para os seus usuários.
+
+```css
+.secao-topo {
+  background-image: url("img/capa.jpg");
+  background-attachment: fixed;
+  min-height: 600px;
+  text-align: center;
+  padding: 50px;
+}
+```
+
+### Escrita Reduzida
+
+Forma resumida para definir as propriedades de `background`:
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/86.jpg)
+
+![Estilização](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/87.jpg)
+
+```css
+background: top right no-repeat #0f0 fixed url('img/fundo-floresta.jpg');
+```
+
+Utilizar a escrita reduzida pode facilitar no processo de criação dos estilos, porém para uma melhor leitura quando você for fazer a manutenção do estilo fica mais fácil se eles estiverem separados.
+
+### Exemplo prático
+
+Veja um exemplo prático de uma página em que alguns elementos possuem imagens de fundo com o efeito parallax aplicado:
+
+![img](https://www.devmedia.com.br/arquivos/cursos/css_background/aula4/anime4.gif)
+
+```html
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Doutor estranho 2</title>
+  </head>
+  <body>
+    <div class="secao-topo">
+      <h1>Doutor estranho 2</h1>
+      <h2>no multiverso da loucura</h2>
+    </div>
+
+    <div class="secao-conteudo">
+      <h3>Informações sobre o filme</h3>
+      <p>Elenco: Benedict Cumberbatch, Chiwetel Ejiofor, Elizabeth Olsen</p>
+      <p>Direção: Sam Raimi</p>
+      <p>Roteiro: Michael Waldron, Scott Derrickson</p>
+      <p>Título original: Doctor Strange in the Multiverse of Madness</p>
+
+      <img src="img/elenco1.jpg" alt="Benedict Cumberbatch">
+      <img src="img/elenco2.jpg" alt="Chiwetel Ejiofor">
+      <img src="img/elenco3.jpg" alt="Elizabeth Olsen">
+    </div>
+
+    <div class="secao-divulgacao"></div>
+
+    <div class="secao-conteudo">
+      <h3>Sinopse</h3>
+      <p>Em Doutor Estranho no Multiverso da Loucura, após derrotar Dormammu e enfrentar Thanos nos eventos de Vingadores: Ultimato, o Mago Supremo, Stephen Strange (Benedict Cumberbatch), e seu parceiro Wong (Benedict Wong), continuam suas pesquisas sobre a Joia do Tempo. Mas um velho amigo que virou inimigo coloca um ponto final nos seus planos e faz com que Strange desencadeie um mal indescritível, o obrigando a enfrentar uma nova e poderosa ameaça. O longa se conecta com a série do Disney+ WandaVision e tem relação também com Loki. O longa pertence a fase 4 do MCU onde a realidade do universo pode entrar em colapso por causa do mesmo feitiço que trouxe os vilões do Teioso para o mundo dos Vingadores e o Mago Supremo precisará contar com a ajuda de Wanda (Elizabeth Olsen), que vive isolada desde os eventos de WandaVision.</p>
+      <p><span>Em breve nos cinemas</span></p>
+    </div>
+  </body>
+  </html>
+```
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.secao-topo {
+  background-image: url("img/capa.jpg");
+  background-attachment: fixed;
+  min-height: 600px;
+  text-align: center;
+  padding: 50px;
+}
+
+h1, h2 {
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  width: 300px;
+}
+
+h1 {
+  background-color: #000;
+}
+
+h2 {
+  background-color: #f00;
+}
+
+.secao-conteudo {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.secao-conteudo img {
+  width: 200px;
+  height: 250px;
+}
+
+.secao-divulgacao {
+  background-image: url("img/img1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+}
+
+p {
+  line-height: 26px;
+}
+
+span{
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 25px;
+}
+```
+
+A imagem de fundo é utilizada para decorar a página, ou seja, complementar o seu conteúdo. Ao utilizar as propriedades que a estiliza nós melhoramos essa decoração e deixamos a página mais profissional.
+
+
+
+##### CSS - background: Exemplo prático
+
+![img](https://www.devmedia.com.br/arquivos/cursos/css_background/aula5/anime1.gif)
+
+```html
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Senhor lei - advocacia</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="secao-topo">
+      <p class="secao-largura-limitada">Senhor Lei</p>
+    </div>
+
+    <div class="secao-background-capa">
+      <div class="secao-largura-limitada secao-background-conteudo">
+        <h1>Fernando Junior</h1>
+        <h2>Consultor jurídico pessoal</h2>
+      </div>
+    </div>
+
+    <div class="secao-largura-limitada secao-conteudo">
+      <h3>Sobre nós</h3>
+      <p>Há 30 anos atuando em diversas áreas legais sempre com princípios e valores. Temos compromisso com a verdade e focamos nos interesses de nossos clientes.</p>
+      <img class="img-conteudo" src="img/img1.jpg" alt="Imagem 1">
+      <img class="img-conteudo" src="img/img2.jpg" alt="Imagem 2">
+      <img class="img-conteudo" src="img/img3.jpg" alt="Imagem 3">
+      <p><span>Nosso compromisso é com você</span></p>
+    </div>
+
+    <div class="secao-background-divisao">
+      <div class="secao-largura-limitada">
+        <h3>Atuação</h3>
+      </div>
+    </div>
+
+    <div class="secao-largura-limitada secao-conteudo">
+      <h3>Áreas de atuação</h3>
+      <p>Atuamos nas seguintes áreas do Direito:</p>
+       <ul>
+          <li>Direito do Consumidor;</li>
+          <li>Direito de Família;</li>
+          <li>Direito do Trabalho;</li>
+          <li>Direito Civil e de Contratos;</li>
+          <li>Direito Cartorário;</li>
+          <li>Direito Previdenciário;</li>
+          <li>Direito Criminal (crimes de menor gravidade).</li>
+       </ul>
+    </div>
+
+    <div class="secao-background-divisao">
+      <div class="secao-largura-limitada">
+        <h3>Contato</h3>
+      </div>
+    </div>
+
+    <div class="secao-largura-limitada secao-conteudo">
+      <h3>Fale conosco</h3>
+       <ul>
+          <li>Telefone: (21) 99999-8888</li>
+          <li>E-mail: senhorlei@lei.com.br</li>
+          <li>Endereço: Avenida Ayrton Senna 3000.</li>
+       </ul>
+    </div>
+  </body>
+  </html>
+```
+
+```css
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Topo */
+.secao-topo {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.secao-largura-limitada {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.secao-topo p {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Seção inicial com imagem de fundo */
+.secao-background-capa {
+  min-height: 500px;
+  background-image: url('img/capa.jpg');
+  background-size: cover;
+}
+.secao-background-conteudo {
+  text-align: right;
+  padding: 50px 20px;
+}
+
+/* Seção conteúdo */
+.secao-conteudo {
+  padding: 50px 20px;
+}
+.img-conteudo {
+  width: 250px;
+  height: 180px;
+}
+
+.secao-conteudo span {
+  border-left: 1px solid;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/* Seção com imagem de fundo e texto */
+.secao-background-divisao {
+  padding: 50px 0;
+  text-align: center;
+  background-image: url('img/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.secao-background-divisao h3{
+  font-size: 36px;
+  background-color: #fff;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+```
+
+Perceba que a página criada é simples e possui poucos elementos na tela, porém ao inserir uma imagem de fundo na primeira div e depois nas duas divs, a página se tornou mais atraente e profissional.
+
+
+
+##### CSS - background: Faça você mesmo
 
 
 
