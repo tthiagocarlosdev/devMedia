@@ -1,0 +1,118 @@
+# Resumo - 5ª Missão - Aprenda a construir um website com imagens e efeitos de fundo
+
+## CSS Background
+
+- Preencher o fundo com uma cor:
+
+  - Nominal
+
+    ```css
+    background-color: aqua;
+    ```
+
+  - Hexadecimal
+
+    ```css
+    background-color: #d5d5d5;
+    ```
+
+  - RGB
+
+    ```css
+    background-color: rgb(255, 230, 200);
+    ```
+
+
+
+- Preencher o fundo de um elemento com uma imagem:
+
+  - Imagem na mesma pasta
+
+    ```css
+    background-image: url('img.jpg');
+    ```
+
+  - Imagem em pasta diferente
+
+    ```css
+    background-image: url('images/img.jpg');
+    ```
+
+  - Imagem externa
+
+    ```css
+    background-image: url('https://img.jpg');
+    ```
+
+- Propriedades do `background-image`
+
+  - `background-repeat`
+
+    - Imagem não se repete
+
+       ```css
+       background-repeat: no-repeat;
+       ```
+
+    - Imagem se repete horizontalmente
+
+      ```css
+      background-repeat: repeat-x;
+      ```
+
+    - Imagem se repete verticalmente
+
+      ```css
+      background-repeat: repeat-y;
+      ```
+
+  - `background-position`
+
+    - Centralizada
+
+      ```css
+      background-position: center;
+      ```
+
+    - Direita
+
+      ```css
+      background-position: right;
+      ```
+
+    - Esquerda
+
+      ```css
+      background-position: left;
+      ```
+
+    - Na parte superior
+
+      ```css
+      background-position: top;
+      ```
+
+    - Na parte inferior
+
+      ```css
+      background-position: bottom;
+      ```
+
+    - Combinados
+
+      ```css
+      background-position: right top;
+      background-position: right center;
+      background-position: right bottom;
+      background-position: center top;
+      background-position: center center;
+      background-position: center bottom;
+      ```
+
+      
+
+  - `background-size`
+
+  - `background`
+
+  - `background-attachment`
