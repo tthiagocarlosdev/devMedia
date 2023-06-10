@@ -98,7 +98,7 @@ Seja em sites estáticos ou dinâmicos, o front-end vai sempre se preocupar com 
 
 As responsabilidades do front-end estão sempre ligadas à interação do usuário, por exemplo, é responsabilidade do front-end exibir e coletar informações. Já o back-end tem a responsabilidade de armazenar e fornecer informações para o front-end.
 
-PAREI
+
 
 ### 2ª Missão - Aprenda a construir seu primeiro documento HTML
 
@@ -189,6 +189,10 @@ Escrevemos o HTML em um editor de texto feito para programadores.
 #### 3. O que é o HTML?
 
 HTML (Hyper Text Markup Language) é a linguagem que usamos para estruturar as páginas web de um site.
+
+![Slide 2](https://www.devmedia.com.br/arquivos/Salas/Linguagem/HTML/63/40591/slide2.png)
+
+![Slide 3](https://www.devmedia.com.br/arquivos/Salas/Linguagem/HTML/63/40591/slide3.png)
 
 Escrevemos código HTML utilizando tags, como <h1></h1> ou <p></p>, e dentro delas adicionamos o conteúdo que desejamos que o navegador exiba para quem estiver acessando a página web.
 
@@ -388,6 +392,8 @@ Existem poucos elementos que possuem apenas tag de abertura, a maioria possui ta
 vem com a experiência, mas uma boa documentação ajuda a acelerar esse conhecimento.
 
 Elementos sem tag de fechamento tendem a depender mais de atributos.
+
+PAREI - revisão
 
 #### HTML: Tags básicas
 
