@@ -2,7 +2,7 @@
 
 ## CSS Background
 
-- Preencher o fundo com uma cor:
+- ### Preencher o fundo com uma cor:
 
   - Nominal
 
@@ -22,9 +22,7 @@
     background-color: rgb(255, 230, 200);
     ```
 
-
-
-- Preencher o fundo de um elemento com uma imagem:
+- ### Preencher o fundo de um elemento com uma imagem:
 
   - Imagem na mesma pasta
 
@@ -44,9 +42,9 @@
     background-image: url('https://img.jpg');
     ```
 
-- Propriedades do `background-image`
+- ### Propriedades do `background-image`
 
-  - `background-repeat`
+  - `background-repeat` - repete ou não a imagem.
 
     - Imagem não se repete
 
@@ -66,7 +64,7 @@
       background-repeat: repeat-y;
       ```
 
-  - `background-position`
+  - `background-position` - posiciona a imagem na tela.
 
     - Centralizada
 
@@ -109,10 +107,50 @@
       background-position: center bottom;
       ```
 
-      
+  - `background-size` - altera o tamanho da imagem.
 
-  - `background-size`
+    - `cover` - Ocupa todo espaço do elemento e exibe parte da imagem se for necessário
 
-  - `background`
-
-  - `background-attachment`
+      ```css
+      background-size: cover;
+      ```
+  
+    - `contain` - Estica a imagem ao máximo possível exibindo a imagem por completo sem perder sua proporção
+  
+      ```css
+      background-size: contain;
+      ```
+  
+    - `50% 70%` - Define o percentual de largura e altura com relação ao elemento, que a imagem ocupará
+  
+      ```css
+      background-size: 50% 70%;
+      ```
+  
+    - `300px 150px` - Define a largura e altura da imagem em píxel
+  
+      ```css
+      background-size: 300px 150px
+      ```
+  
+  - `background-attachment` - Podemos deixar a imagem estática.
+  
+    ```css
+    background-attachment:fixed;
+    ```
+  
+  - `background` - Forma resumida para definir as propriedades:
+  
+    ```css
+    background: #0f0 url('img/image.jpg') no-repeat top right fixed;
+    ```
+  
+    ```css
+    background-color: #0f0;
+    background-image: url('img/image.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    ```
+  
+    

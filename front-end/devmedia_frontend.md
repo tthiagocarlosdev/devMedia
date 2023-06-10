@@ -4868,7 +4868,7 @@ Além de posicionar a imagem também podemos definir o tamanho dela:
 /* Ocupa todo espaço do elemento e exibe parte da imagem se for necessário */
 background-size: cover;
 
-/* Estica a imagem ao máximo possível exibindo a imagem por completo */
+/* Estica a imagem ao máximo possível exibindo a imagem por completo sem perder sua proporção*/
 background-size: contain;
 
 /* Define o percentual de largura e altura com relação ao elemento, que a imagem ocupará */
