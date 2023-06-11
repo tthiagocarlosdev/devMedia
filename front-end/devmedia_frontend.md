@@ -393,7 +393,7 @@ vem com a experiência, mas uma boa documentação ajuda a acelerar esse conheci
 
 Elementos sem tag de fechamento tendem a depender mais de atributos.
 
-PAREI - revisão
+
 
 #### HTML: Tags básicas
 
@@ -403,21 +403,41 @@ Neste curso vamos aprender a utilizar as tags básicas do HTML e para isso vamos
 
 ![projeto01](/home/thiago/Downloads/PROGRAMACAO/devMedia/front-end/projeto01/imagens/projeto01.png)
 
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula1/s2.png)
+
+
+
+
+
 Aprender as tags básicas é essencial para se criar uma página web.
 
 #### 2. Entendendo o exemplo
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula2/s3.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula2/s5.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula2/s6.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula2/s7.png)
 
 Agora que conhecemos o nosso exemplo ficará mais fácil aprendermos cada tag básica.
 
 #### 3. Relembrando o conceito de Tags HTML
 
-No curso anterior aprendemos o que são tags e elementos HTML, porém por serem conceitos importantes vamos relembrar no **Flow** abaixo.
+No curso anterior aprendemos o que são tags e elementos HTML, porém por serem conceitos importantes vamos relembrar abaixo:
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula3/s3.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula3/s4.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula3/s5.png)
 
 É através das tags HTML que o navegador vai saber como exibir um conteúdo para o usuário.
 
 #### 4. Tag title
 
-O título de uma página web permite que o usuário identifique o tipo de conteúdo que ele pode esperar dentro daquela página. Esse título pode ser definido por meio da tag title.
+O título de uma página web permite que o usuário identifique o tipo de conteúdo que ele pode esperar dentro daquela página. Esse título pode ser definido por meio da tag `title`.
 
 ```html
 <!DOCTYPE html>
@@ -433,9 +453,19 @@ O título de uma página web permite que o usuário identifique o tipo de conte�
 </html>
 ```
 
-Caso a tag title não seja definida no arquivo html, o título que aparecerá na aba da página será o **nome do arquivo**.
+![flow](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4_new/3.jpg)
 
-A tag title é muito importante para o documento HTML. Além dela indicar qual o conteúdo que será abordado na página, ela é importante para os mecanismos de busca como o Google por exemplo.
+Posicionamento da tag `title`:
+
+![flow](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4_new/12.jpg)
+
+![flow](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4_new/13.jpg)
+
+![flow](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4_new/14.jpg)
+
+Caso a tag `title` não seja definida no arquivo html, o título que aparecerá na aba da página será o **nome do arquivo**.
+
+A tag `title` é muito importante para o documento HTML. Além dela indicar qual o conteúdo que será abordado na página, ela é importante para os mecanismos de busca como o Google por exemplo.
 
 #### 5. Tags h1, h2, h3, h4, h5 e h6
 
@@ -451,6 +481,14 @@ Veja abaixo onde posicionar e como utilizar as tags h1, h2, h3, h4, h5 e h6:
 <h5>Título de nível 5</h5>
 <h6>Título de nível 6</h6>
 ```
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4/s9.png)
+
+Posicionamento das tags `h1` a `h6`:
+
+![Slide 2](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4/31.png)
+
+![Slide 2](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula4/s13.png)
 
 Assim como as tags h1 à h6, as tags p, a, img, div, span e iframe que veremos nas próximas aulas, devem ser inseridas entre as tags de abertura e fechamento do elemento body.
 
@@ -470,7 +508,13 @@ Ao separar o conteúdo da página em parágrafos garantimos a acessibilidade à 
 
 Criar links em uma página web significa utilizar a tag **<a>**. 
 
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula6/s3.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula6/s10.png)
+
 Além de abrir um link externo como por exemplo uma nova página, um número de telefone ou um endereço de e-mail, um link pode enviar o usuário para uma parte específica do próprio site.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula6/s03.png)
 
 Exemplos de links:
 
@@ -508,6 +552,14 @@ A tag <a> é utilizada para enviar o usuário para outra página, ligar para um 
 
 Para exibir uma imagem na página é muito simples basta utilizar a tag **<img>** .
 
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula7/s6.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula7/s8.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula7/s9.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula7/s12.png)
+
 Para exibir uma imagem local é necessário que ela esteja no mesmo diretório do seu projeto.
 
 É possível exibir uma imagem que não esteja na mesma pasta do arquivo que a exibe, desde que ela esteja dentro do diretório do projeto.
@@ -531,6 +583,10 @@ A tag <img> exibe uma imagem na página.
 
 Uma das tags mais utilizadas no HTML é a tag **<div>.** Ela é usada para agrupar elementos.
 
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula8/s2.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula8/s3.png)
+
 Exemplo do uso da tag **div**:
 
 ```html
@@ -549,6 +605,8 @@ Utilizamos a tag div para organizar melhor nosso documento HTML.
 
 Em uma frase às vezes é necessário que algumas palavras recebam algum tipo de destaque. Nesse caso utilizamos a tag span para definir quais são essas palavras. 
 
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula9_new/s2.png)
+
 Exemplo do uso da tag span:
 
 ```html
@@ -565,7 +623,11 @@ Exemplo do uso da tag span:
 
 Como vimos <span> não possui aparência visual, porém mais a frente quando você estudar CSS ela poderá ser estilizada. 
 
+![Exemplo de uso das tags span antes e depois de serem estilizadas](https://www.devmedia.com.br/arquivos/cursos/HTML_tags/aula9_new/fig1.png)
+
 Utilizamos a tag span para marcar textos e com isso organizar melhor nosso documento HTML, além de inserir estilos CSS a elas.
+
+missão 2 html tags básicas - PAREI
 
 #### 11. Tag iframe
 
