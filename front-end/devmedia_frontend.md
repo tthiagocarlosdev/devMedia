@@ -5251,7 +5251,333 @@ Perceba que a página criada é simples e possui poucos elementos na tela, poré
 
 ##### CSS - background: Faça você mesmo
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Senhor lei - advocacia</title>
+</head>
+<body>
+    <div class="secao-topo">
+        <p class="secao-largura-limitada">Senhor lei</p>
+    </div>
+    <div class="secao-background-capa">
+        <div class="secao-largura-limitada secao-background-conteudo">
+            <h1>Fernando Junior</h1>
+            <h2>Consultor jurídico pessoal</h2>
+        </div>
+    </div>
+    <div class="secao-largura-limitada secao-conteudo">
+        <h3>Sobre nós</h3>
+        <p>Há 30 anos atuando em diversas áreas legais sempre com princípios e valores. Temos compromisso com a verdade e focamos nos interesses de nossos clientes.</p>
+        <img class="img-conteudo" src="./img/img1.jpg" alt="Imagem 1">
+        <img class="img-conteudo" src="./img/img2.jpg" alt="Imagem 2">
+        <img class="img-conteudo" src="./img/img3.jpg" alt="Imagem 3">
+        <p><span>Nosso compromisso é com você</span></p>
+    </div>
+    <div class="secao-background-divisao">
+        <div class="secao-largura-limitada">
+            <h3>Atuação</h3>
+        </div>
+    </div>
+    <div class="secao-largura-limitada secao-conteudo">
+        <h3>Áreas de atuação</h3>
+        <p>Atuamos nas seguintes áreas do Direito:</p>
+        <ul>
+            <li>Direito do Consumidor;</li>
+            <li>Direito de Família;</li>
+            <li>Direito do Trabalho;</li>
+            <li>Direito Civil e de Contratos;</li>
+            <li>Direito Cartorário;</li>
+            <li>Direito Previdenciário;</li>
+            <li>Direito Criminal (crimes de menor gravidade).</li>
+        </ul>
+    </div>
+    <div class="secao-background-divisao">
+        <div class="secao-largura-limitada">
+            <h3>Contato</h3>
+        </div>
+    </div>
+    <div class="secao-largura-limitada secao-conteudo">
+        <h3>Fale conosco</h3>
+        <ul>
+            <li>Telefone: (21) 99999-8888</li>
+            <li>Email: senhorlei@lei.com.br</li>
+            <li>Endereço: Avenida Ayrton Senna 3000.</li>
+        </ul>
+    </div>
 
+    
+</body>
+</html>
+```
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+.secao-topo{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.secao-largura-limitada{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.secao-topo p{
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+.secao-background-capa{
+    min-height: 500px;
+    background-image: url('../img/capa.jpg');
+    background-size: cover;
+}
+
+.secao-background-conteudo{
+    text-align: right;
+    padding: 50px 20px;
+
+}
+
+.secao-conteudo{
+    padding: 50px 20px;
+}
+
+.img-conteudo{
+    width: 250px;
+    height: 180px;
+}
+
+.secao-conteudo span{
+    border-left: 1px solid;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.secao-background-divisao{
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('../img/fundo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-background-divisao h3{
+    font-size: 36px;
+    background-color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+```
+
+#### CSS Caixas (Box Model)
+
+##### CSS Caixas (Box Model): 1. Introdução
+
+Neste curso veremos como modificar elementos HTML na nossa página através do CSS, mas para isso, precisamos entender o que significa modificar um elemento HTML.
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula1/2.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula1/3.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula1/9.png)
+
+**A situação demonstrada nesse exemplo pode ser resolvida de outras maneiras, tais como uso de largura mínima e máxima ou mesmo cálculo de tamanho. Um mesmo problema pode ser resolvido de várias maneiras.**
+
+Neste curso você aprende os seguintes conceitos:
+
+- Largura mínima e máxima
+- Altura mínima e máxima
+- Tamanhos relativos
+- Visibilidade do elemento
+- Adicionando sombra ao elemento
+
+**Através das propriedades de modificação do CSS podemos ajustar nossos elementos HTML para tirar melhor proveito das páginas, resolver problemas que podem quebrar nosso HTML e até mesmo melhorar o visual do conteúdo exibido no navegador.**
+
+##### CSS Caixas (Box Model): 2. Valores Relativos
+
+Aprendendo como utilizar valores relativos no CSS.
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/21.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/23.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/24.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/26.png)
+
+### Porcentagem - Sintaxe
+
+Agora que você já entende o conceito de valores relativos, veja como utilizar o valor relativo de porcentagem para alterar elementos HTML através do CSS:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/28.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/29.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/33.png)
+
+Conheça outro tipo de valor relativo, o `vw` e o `vh`:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/35.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/36.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/37.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/38.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/39.png)
+
+Como melhor utilizar `vw` e o `vh`:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/41.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/44.png)
+
+Como calcular valores no CSS utilizando o calc:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/50.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/51.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/53.png)
+
+Como utilizar o `calc`:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/58.png)
+
+**Utilizar valores relativos nos permite construir páginas capazes de se ajustarem a diversos tamanhos de tela.**
+
+### Exemplo prático
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula2/60.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ex_class02.css"/>
+    <title>Jardim botânico</title>
+</head>
+<body>
+    <div class="topo">
+        <span>Jardim botânico</span>
+    </div>
+    <div class="limita-largura">
+        <div class="area apresentacao">
+            <h2>Bem-vindo</h2>
+
+            <img src="head.jpg">
+
+            <p>O Instituto de Pesquisas Jardim Botânico do Rio de Janeiro é uma das mais belas e bem preservadas áreas verdes da cidade, é um exemplo da diversidade da flora brasileira e estrangeira. Nele podem ser observadas cerca de 6 500 espécies (algumas ameaçadas de extinção), distribuídas por uma área de 54 hectares, ao ar livre e em estufas. A instituição é responsável pela coordenação da Lista de Espécies da Flora do Brasil e pela avaliação de risco de extinção destas espécies.</p>
+
+            <p>A instituição abriga, ainda, monumentos de valor histórico, artístico e arqueológico e a mais completa biblioteca do país especializada em botânica, com mais de 32 000 volumes e o maior herbário do Brasil, que possui 600 mil amostras desidratadas (número de 2014, com uma média de 20 mil novas amostras incorporadas anualmente[3]) completamente informatizadas e disponíveis para o público na página da instituição.</p>
+
+            <p>O Jardim Botânico do Rio de Janeiro é aberto à visitação pública em horário restrito de funcionamento e mediante cobrança de taxa. O espaço pode ser explorado através de mapa informativo que contém os roteiros delimitados por "Aleias", ao invés de ruas, pois os caminhos são ladeados de árvores. Além do "Guia de Visitação" adquirido no Centro de Visitantes, há também guias credenciados para se fazer o passeio.
+            </p>
+
+            <p>
+                Em ponto central no encontro das aléias, constitui-se numa das mais belas atrações do jardim. Fabricado na Inglaterra, é constituído por duas bacias. Na maior delas, quatro figuras representam a música, a poesia, a ciência e a arte. O chafariz foi originalmente instalado na Lapa até que, com a reformulação do Passeio Público (1905), foi instalado no jardim.
+            </p>
+        </div>
+        <div class="area galeria">
+            <h2>Galeria</h2>
+
+            <div class="area-tres-imagens">
+                <img src="1.jpg">
+                <img src="2.jpg">
+                <img src="3.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="rodape">
+        Jardim Botânico - 2022 ©
+    </div>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.limita-largura {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.topo, .rodape {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: #1d6e4d;
+    color: #fff;
+    font-size: 20px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.area {
+    width: calc(100% - 70px);
+    margin: 20px 35px;
+}
+
+.apresentacao img, .area p, .area-tres-imagens {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.area-tres-imagens {
+    display: flex;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    margin: 0 1.5px;
+}
+```
+
+**É importante saber que você pode utilizar as propriedades min-width, max-width, min-height e max-height em qualquer elemento HTML, mas usamos as imagens por ser mais simples de mostrar o resultado.**
+
+**Através de valores relativos e do calc podemos construir visuais mais dinâmicos, capazes de se adaptar aos mais diversos tipos de página e tela sem problemas. O uso de valores relativos é essencial para quem deseja construir páginas que funcionem em uma grande variedade de dispositivos.**
+
+
+
+##### CSS Caixas (Box Model): 3. Definindo o tamanho dos elementos
+
+##### CSS Caixas (Box Model): 4. Overflow
+
+##### CSS Caixas (Box Model): 5. Exibindo e ocultando elementos
+
+##### CSS Caixas (Box Model): 6. Box-Sizing
+
+##### CSS Caixas (Box Model): 7. Box-Shadow
+
+##### CSS Caixas (Box Model): 8. Exemplo prático
+
+##### CSS Caixas (Box Model): 9. Faça você mesmo
 
 
 
