@@ -5567,9 +5567,542 @@ body {
 
 ##### CSS Caixas (Box Model): 3. Definindo o tamanho dos elementos
 
+Como funciona a definição de largura mínima e máxima:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula3/86.png)
+
+```css
+.area-noticias {
+ width: 100%;
+ min-width: 600px;
+ max-width: 1024px;
+}
+```
+
+Como definir os valores mínimos e máximos da altura:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula3/93.png)
+
+```css
+.imagem-noticias {
+ height: auto;
+ min-height: 480px;
+ max-height: 640px;
+}
+```
+
+Agora que você entende o comportamento de `min-width` e `max-width`, veja como utilizar essas propriedades:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula3/4.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula3/5.png)
+
+Como utilizar `min-height` e `max-height`:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula3/8.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula3/9.png)
+
+### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <title>Jardim botânico</title>
+</head>
+<body>
+    <div class="topo">
+        <span>Jardim botânico</span>
+    </div>
+    <div class="limita-largura">
+        <div class="area apresentacao">
+            <h2>Bem-vindo</h2>
+
+            <img src="https://www.devmedia.com.br/arquivos/cursos/css_elementos/embed/head.jpg">
+
+            <p>O Instituto de Pesquisas Jardim Botânico do Rio de Janeiro é uma das mais belas e bem preservadas áreas verdes da cidade, é um exemplo da diversidade da flora brasileira e estrangeira. Nele podem ser observadas cerca de 6 500 espécies (algumas ameaçadas de extinção), distribuídas por uma área de 54 hectares, ao ar livre e em estufas. A instituição é responsável pela coordenação da Lista de Espécies da Flora do Brasil e pela avaliação de risco de extinção destas espécies.</p>
+
+            <p>A instituição abriga, ainda, monumentos de valor histórico, artístico e arqueológico e a mais completa biblioteca do país especializada em botânica, com mais de 32 000 volumes e o maior herbário do Brasil, que possui 600 mil amostras desidratadas (número de 2014, com uma média de 20 mil novas amostras incorporadas anualmente[3]) completamente informatizadas e disponíveis para o público na página da instituição.</p>
+
+            <p>O Jardim Botânico do Rio de Janeiro é aberto à visitação pública em horário restrito de funcionamento e mediante cobrança de taxa. O espaço pode ser explorado através de mapa informativo que contém os roteiros delimitados por "Aleias", ao invés de ruas, pois os caminhos são ladeados de árvores. Além do "Guia de Visitação" adquirido no Centro de Visitantes, há também guias credenciados para se fazer o passeio.
+            </p>
+
+            <p>
+                Em ponto central no encontro das aléias, constitui-se numa das mais belas atrações do jardim. Fabricado na Inglaterra, é constituído por duas bacias. Na maior delas, quatro figuras representam a música, a poesia, a ciência e a arte. O chafariz foi originalmente instalado na Lapa até que, com a reformulação do Passeio Público (1905), foi instalado no jardim.
+            </p>
+        </div>
+        <div class="area galeria">
+            <h2>Galeria</h2>
+
+            <div class="area-tres-imagens">
+                <img src="https://www.devmedia.com.br/arquivos/cursos/css_elementos/embed/1.jpg">
+                <img src="https://www.devmedia.com.br/arquivos/cursos/css_elementos/embed/2.jpg">
+                <img src="https://www.devmedia.com.br/arquivos/cursos/css_elementos/embed/3.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="rodape">
+        Jardim Botânico - 2022 ©
+    </div>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.limita-largura {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo, .rodape {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: #1d6e4d;
+    color: #fff;
+    font-size: 20px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.area {
+    width: calc(100% - 70px);
+    margin: 20px 35px;
+}
+
+.apresentacao img, .area p, .area-tres-imagens {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.area-tres-imagens {
+    display: flex;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    margin: 0 1.5px;
+}
+```
+
+**O uso de min-width e max-width permite a construção de páginas visualmente dinâmicas, ou seja, que se ajustam a qualquer tela. Isso permite construir sites que podem ser vistos bem em computadores, tablets e smartphones.**
+
+
+
 ##### CSS Caixas (Box Model): 4. Overflow
 
+Como adicionar barra de rolagem a conteúdos muito grandes:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/24.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/25.png)
+
+Como utilizar o overflow no CSS:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/29.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/30.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/32.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/34.png)
+
+```css
+div {
+ overflow: scroll;
+}
+```
+
+Entendendo a sintaxe do `overflow`:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/38.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/39.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/40.png)
+
+```css
+div {
+ overflow-x: scroll;
+ overflow-y: scroll;
+}
+```
+
+Simplificando o `overflow-x` e `overflow-y` usando apenas a propriedade `overflow`:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/47.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula4/48.png)
+
+```css
+p {
+ overflow: auto scroll;
+}
+```
+
+### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ex_class04.css"/>
+    <title>Bioparque</title>
+</head>
+<body>
+    <div class="topo">
+        <span>Bioparque</span>
+    </div>
+    <div class="limita-largura">
+        <div class="area apresentacao">
+            <h2>Sobre o Bioparque</h2>
+
+            <p>Diferente de tudo que você conhece sobre o antigo zoológico, o BioParque do Rio veio escrever um novo capítulo na história da conservação de espécies no Brasil e ser o cenário de diversas lembranças inesquecíveis que você vai construir com sua família!</p>
+
+            <p>O BioParque do Rio está na Quinta da Boa Vista, no coração de São Cristóvão, também conhecido como Bairro Imperial. Local da antiga residência da família real, hoje a Quinta da Boa Vista reúne história, natureza, cultura e lazer, além de ser um dos maiores parques urbanos do Rio de Janeiro, com cerca de 155 mil metros quadrados.</p>
+
+            <p>O mundo mudou, por isso, não podíamos continuar o mesmo! Deixando de lado toda a antiga concepção de zoológicos e coleções de animais, o BioParque do Rio prioriza o bem-estar e a conservação de espécies!</p>
+
+            <p>Baseado no tripé de pesquisa, conservação e educação, contamos com uma equipe especializada que irá enriquecer sua visita com conhecimentos sobre a fauna e flora.</p>
+
+            <p>Aproveite visitas ilimitadas durante o ano, descontos especiais nos produtos do parque e horários exclusivos, além de contribuir diretamente para nossos projetos de conservação!</p>
+
+            <p>Você conhece os Animáximos? Eva e seus cinco amigos: Jack, Beca, Leo, Tom e Cati embarcam em aventuras radicais contra os vilões do meio ambiente em conteúdos que prometem muita diversão e aprendizado para a turminha.</p>
+
+            <p>Bem-vindo a um novo conceito de zoológico. Diferente de tudo que você conhece sobre o antigo zoológico, o BioParque do Rio veio escrever um novo capítulo na história da conservação de espécies no Brasil e ser o cenário de diversas lembranças inesquecíveis que você vai construir com sua família!</p>
+        </div>
+        <div class="area galeria">
+            <h2>Fotos</h2>
+
+            <div class="area-tres-imagens">
+                <img src="1.jpg">
+                <img src="2.jpg">
+                <img src="3.jpg">
+                <img src="4.jpg">
+                <img src="5.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="rodape">
+        Bioparque - 2022 ©
+    </div>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.limita-largura {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo, .rodape {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: #ff8014;
+    color: #fff;
+    font-size: 20px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.apresentacao {
+    width: calc(100% - 70px);
+    overflow-y: scroll;
+    height: 315px;
+}
+
+.galeria{
+    width: calc(100% - 70px);
+}
+
+.area {
+    margin: 20px 35px;
+}
+
+.apresentacao img, .area p, .area-tres-imagens {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.area-tres-imagens {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    margin: 0 1.5px;
+}
+```
+
+**O uso de overflow nos permite criar barras de rolagem para adicionarmos conteúdos maiores dentro de áreas menores sem que isso quebre a página e sem ter que remover parte do conteúdo.**
+
+
+
 ##### CSS Caixas (Box Model): 5. Exibindo e ocultando elementos
+
+Tipos de exibição de um elemento:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/62.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/65.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/66.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/67.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/68.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/69.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/70.png)
+
+Como podemos manipular o tipo de exibição através do CSS:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/76.png)
+
+Como funciona a propriedade `display`:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/79.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/80.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/81.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/83.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/84.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/88.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/89.png)
+
+```css
+div {
+ display: inline;
+}
+
+span {
+ display: block;
+}
+
+img {
+ display: none;
+}
+```
+
+Outra propriedade do CSS utilizada para exibir e ocultar elementos HTML:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/2.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/3.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/6.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/7.png)
+
+Como utilizar `visibility` no código CSS:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/11.png)
+
+```css
+div {
+ visibility: visible;
+}
+
+span {
+ visibility: hidden;
+}
+```
+
+Através do CSS também é possível alterar a opacidade de um elemento HTML:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/15.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/16.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_modf_elements/aula5/17.png)
+
+```css
+div {
+ opacity: 100%;
+}
+
+span {
+ opacity: 50%;
+}
+
+img {
+ opacity: 0%;
+}
+```
+
+### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex_class05.css">
+</head>
+<body>
+    <div class="topo">
+        <ul class="links">
+            <li><a href="#boasvindas">Boas Vindas</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+    <img src="home.jpg">
+    <div class="main">
+        <div class="area" id="boasvindas">
+        <h2>Bem-vindo a DeliveryExpress</h2>
+
+        <p>Entrega rápida é com a DeliveryExpress, envie suas enconmedas conosco e tenha garantia de entrega rápida e segura! A DeliveryExpress entrega o que você precisar</p>
+        </div>
+        <div class="area" id="sobre">
+            <h2>Quem é a DeliveryExpress?</h2>
+            <p>Somos uma das maiores empresas de logística e transportes de cargas expressas fracionadas do país e uma das maiores operadoras de e-commerce. Fazemos parte do grupo GeoPost, segunda maior rede de entrega de encomendas internacionais da Europa, que opera por meio da marca internacional DPDgroup.</p>
+
+            <img src="1.png">
+
+            <p>Somos transportadores. Somos pessoas. Somos 7000 colaboradores diretos e indiretos que tem como objetivo fazer chegar até você, sua encomenda. Somos mais de 2.500 veículos, caminhões e carretas que coletam e entregam sua encomenda, seja qual for ela, pequena ou grande, com o melhor prazo, a melhor qualidade e total segurança, te informando sobre cada etapa.</p>
+
+            <p>Somos o melhor caminho entre você e sua encomenda.</p>
+        </div>
+        <div class="area" id="contato">
+            <h2>Contato</h2>
+
+            <h3>Dúvidas?</h3>
+
+            <p>Entre em contato conosco pelos seguintes canais:</p>
+            <ul>
+                <li>
+                    <a href="mailto: contato@deliveryexpress.com.br">contato@deliveryexpress.com.br</a>
+                </li>
+                <li>
+                    <a href="tel:+5521999999999">(21) 99999-9999</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps/place/Transcommerce+%2FJadLog+servi%C3%A7o+de+entregas+r%C3%A1pidas/@-22.8914995,-43.6054397,11z/data=!4m9!1m2!2m1!1sjadlog!3m5!1s0x9bdce63e40dcd9:0x52cd0b9ce71973a2!8m2!3d-23.0053998!4d-43.4365075!15sCgZqYWRsb2ciA4gBAVoIIgZqYWRsb2eSAR10cmFuc3BvcnRhdGlvbl9lc2NvcnRfc2VydmljZQ">Av. Salvador Allende, 6700</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background: #23b4eb;
+    text-align: center;
+    height: 48px;
+}
+.main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.area {
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+
+img {
+    width: 100%;
+}
+
+#sobre img {
+    margin: 20px 10px;
+    width: calc(100% - 20px);
+}
+
+.area h2, .area h3, .area p {
+    padding: 0 12px;
+}
+
+.area p {
+    line-height: 25px;
+}
+
+.area h2 {
+    margin: 15px 0;
+}
+
+.area h3 {
+    margin: 12px 0;
+}
+
+
+.links li {
+    display: inline;
+    padding: 0 12px;
+}
+
+.links li a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.links {
+    padding: 14px 0;
+}
+
+#contato ul {
+    margin: 0 12px;
+}
+
+#contato ul, #contato ul li {
+    display: inline;
+}
+
+#contato ul li a {
+    background: #23b4eb;
+    color: #fff;
+    padding: 10px;
+}
+
+#contato p {
+    height: 40px;
+}
+```
+
+**Através do uso de propriedades como display, visibility e opacity podemos controlar como e quando um elemento deve ser exibido na página. O uso dessas propriedades nos dá um controle maior sobre o comportamento dos elementos HTML, nos permitindo definir como eles vão afetar a nossa página.**
+
+
 
 ##### CSS Caixas (Box Model): 6. Box-Sizing
 

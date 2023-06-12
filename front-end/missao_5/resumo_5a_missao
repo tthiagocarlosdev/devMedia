@@ -158,7 +158,74 @@
     ## CSS Caixas (Box Model)
     
     - Largura mínima e máxima
+    
+    ```css
+     min-width: 600px;
+     max-width: 1024px;
+    ```
+    
     - Altura mínima e máxima
+    
+    ```css
+     min-height: 480px;
+     max-height: 640px;
+    ```
+    
+    
+    
     - Tamanhos relativos
+    
+    ```css
+    div {
+     overflow: scroll;
+    }
+    ```
+    
+    ```css
+    div {
+     overflow-x: scroll;
+     overflow-y: scroll;
+    }
+    ```
+    
+    ```css
+    p {
+     overflow: auto scroll;
+    }
+    ```
+    
+    
+    
     - Visibilidade do elemento
+    
+    ```css
+    div {
+     display: inline;
+    }
+    
+    span {
+     display: block;
+    }
+    
+    img {
+     display: none;
+    }
+    ```
+    
+    ```css
+    div {
+     visibility: visible;
+    }
+    
+    span {
+     visibility: hidden;
+    }
+    ```
+    
+    
+    
+    
+    
+    
+    
     - Adicionando sombra ao elemento
