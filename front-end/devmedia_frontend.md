@@ -6537,6 +6537,170 @@ h1 {
 
 ##### CSS Caixas (Box Model): 8. Exemplo prático
 
+**Os conceitos aprendidos neste curso podem ser utilizados individualmente ou em conjunto na construção de uma página.**
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Superman & Lois</title>
+  <link rel="stylesheet" href="ex_class08.css"/>
+</head>
+<body>
+  <div class="topo">
+    <div>
+        Superman & Lois
+        <span>
+            <a href="#sinopse">Sinopse</a>
+            <a href="#disponibilidade">Disponibilidade</a>
+        </span>
+    </div>
+  </div>
+
+  <img class="img-capa" src="img/capa.jpg" alt="Capa de Superman e Lois">
+
+  <div id="sinopse" class="secao">
+    <h2>Sinopse</h2>
+    <p>Após anos enfrentando supervilões megalomaníacos, monstros destruidores e invasores alienígenas, o Homem de Aço e a famosa jornalista Lois Lane retornam à idílica cidade de Smallville para criar os filhos adolescentes, Jonathan e Jordan.</p><p>Na estreia da série, Superman e Lois retornam a Smallville para enfrentar um de seus maiores desafios: criar dois meninos sendo pais que trabalham.</p>
+  </div>
+
+  <div id="disponibilidade" class="secao">
+    <h2>Disponibilidade</h2>
+    <img src="img/tv.jpg" alt="Logo da HBO Max e Warner">
+    <p>Superman & Lois já conta com duas temporadas e está sendo transmitido pelo canal de TV Warner Channel e no serviço de Streaming HBO Max. Os novos episódios da série saem aos sábados.</p>
+  </div>
+
+  <div class="secao">
+    <p>Confira abaixo algumas imagens da série:</p>
+    <div class="galeria">
+      <img class="imagem-sombra" src="img/1.png" alt="Superman">
+      <img class="imagem-sombra" src="img/2.jpg" alt="Clark e Jordan">
+      <img class="imagem-sombra" src="img/3.jpg" alt="Lois e Clark">
+      <img class="imagem-sombra" src="img/4.jpg" alt="Jonathan e Lois">
+      <img class="imagem-sombra" src="img/5.jpg" alt="Lois e Jordan">
+      <img class="imagem-sombra" src="img/6.jpg" alt="Jordan e Jonathan">
+    </div>
+    <div class="informacao">
+      <p>Assista Superman & Lois na <a href="https://play.hbomax.com/page/urn:hbo:page:GYICZHwryn4a3iAEAAAFc:type:episode">HBO Max</a></p>
+    </div>
+  </div>
+
+  <div class="rodape">HBO Max - 2022</div>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+}
+
+html,body {
+    height: 100%;
+}
+
+.topo {
+    width: 100%;
+    font-size: 22px;
+    font-family: sans-serif;
+    background: #4710c1;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.topo div {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo span {
+    margin: 0 30px;
+}
+
+.topo a {
+    color: #4710c1;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 6px;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.img-capa {
+    width: 100%;
+}
+
+.secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.secao h2 {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.secao p {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 12px 0;
+}
+
+.secao img {
+    width: 100%;
+}
+
+.secao a {
+    color: blue;
+}
+
+
+.galeria {
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 auto 20px auto;
+}
+
+.galeria img {
+    width: 315px;
+    margin: 10px;
+}
+
+.imagem-sombra {
+    box-shadow: 10px 10px 10px #939393;
+}
+
+.informacao {
+    margin: 15px auto;
+}
+
+.rodape {
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+    background: #4710c1;
+    color: #fff;
+    padding: 12px 0;
+}
+```
+
+**A página da série Superman & Lois apresenta de maneira prática o uso dos recursos aprendidos no curso em uma situação real. Durante o curso e através desta página podemos perceber como os conceitos aprendidos podem ser aplicados em diversas situações.**
+
+
+
+
+
+
+
 ##### CSS Caixas (Box Model): 9. Faça você mesmo
 
 
