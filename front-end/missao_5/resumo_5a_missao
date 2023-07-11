@@ -155,77 +155,187 @@
   
     
     
-    ## CSS Caixas (Box Model)
-    
-    - Largura mínima e máxima
-    
+
+## CSS Caixas (Box Model)
+
+- ### Largura mínima e máxima
+
+```css
+ min-width: 600px;
+ max-width: 1024px;
+```
+
+- ### Altura mínima e máxima
+
+```css
+ min-height: 480px;
+ max-height: 640px;
+```
+
+- Altura 
+
+- ### Garantir que os tamanhos definidos no width/height sejam respeitados
+
+```css
+box-sizing: border-box;
+```
+
+
+
+- ### Tamanhos relativos
+
+  - Barra scroll horizontal e vertical sempre visível:
+
+  ```css
+  div {
+  	overflow: scroll;
+  }
+  ```
+
+  - Barra scroll horizontal visível se necessário:
+
+  ```css
+  div {
+  	overflow: auto;
+  }
+  ```
+
+  - Barra scroll horizontal sempre visível:
+
+  ```css
+  div{
+      overflow-x: scroll;
+  }
+  ```
+
+  - Barra scroll vertical sempre visível:
+
+  ```css
+  div {
+  	overflow-y: scroll;
+  }
+  ```
+
+  - Define a barra horizontal e vertical:
+
+  ```css
+  p {
+  	overflow: auto scroll;
+  }
+  ```
+
+  
+
+- ### Visibilidade do elemento
+
+```css
+div {
+ display: inline;
+}
+
+span {
+ display: block;
+}
+
+img {
+ display: none;
+}
+```
+
+display nome remove a visibilidade do elemento e também o espaço.
+
+```css
+div {
+ visibility: visible;
+}
+
+span {
+ visibility: hidden;
+}
+```
+
+visibility hidden remove a visibilidade do elemento, mas deixa o espaço do mesmo.
+
+- Transparência do elemento:
+
+```css
+opacity: 50%;
+```
+
+
+
+- ### Adicionando sombra ao elemento
+
+  - Deslocamento x e y
+
     ```css
-     min-width: 600px;
-     max-width: 1024px;
+    box-shadow: 10px 20px;
     ```
-    
-    - Altura mínima e máxima
-    
+
+  - Aplicando desfoque
+
     ```css
-     min-height: 480px;
-     max-height: 640px;
+    box-shadow: 10px 20px 30px;
     ```
-    
-    
-    
-    - Tamanhos relativos
-    
+
+  - Expansão da sombra
+
     ```css
-    div {
-     overflow: scroll;
-    }
+    box-shadow: 10px 20px 30px 40px;
     ```
-    
+
+  - Cor da sombra
+
     ```css
-    div {
-     overflow-x: scroll;
-     overflow-y: scroll;
-    }
-    ```
-    
-    ```css
-    p {
-     overflow: auto scroll;
-    }
-    ```
-    
-    
-    
-    - Visibilidade do elemento
-    
-    ```css
-    div {
-     display: inline;
-    }
-    
-    span {
-     display: block;
+    img {
+     box-shadow: 10px 20px 30px 40px red;
     }
     
     img {
-     display: none;
+     box-shadow: 10px 20px 30px 40px #ff0000;
+    }
+    
+    img {
+     box-shadow: 10px 20px 30px 40px RGB(255,0,0);
     }
     ```
-    
+
+  - Sombra interna
+
     ```css
     div {
-     visibility: visible;
+     box-shadow: 10px 20px 30px 40px #ff0000 inset;
     }
     
-    span {
-     visibility: hidden;
+    div {
+     box-shadow: inset 10px 20px 30px 40px #ff0000;
     }
     ```
+
     
-    
-    
-    
-    
-    
-    
-    - Adicionando sombra ao elemento
+
+Questão #8839
+
+Especificando o CSS de uma imagem
+
+Complete o código seguindo as especificações abaixo na ordem em que aparecem:
+
+\- A imagem deve ocupar metade da largura do seu elemento pai
+\- A largura máxima deve ser de 450px
+\- A imagem deve ter uma sombra deslocada 15px para direita e 30px para baixo
+\- A sombra da imagem deve ter desfoque de 12px e deve ser expandida em 5px
+\- A sombra deve ter a cor verde RGB (0, 255, 0)
+
+resposta:
+
+```css
+img{
+    width: 50%;
+ 	max-width: 450px;
+ 	box-shadow: 15px 30px 12px 5px rgb(0, 250, 0);
+}
+```
+
+
+
+- 
