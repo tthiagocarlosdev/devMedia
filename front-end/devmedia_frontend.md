@@ -6852,5 +6852,175 @@ html,body {
 }
 ```
 
+#### CSS: Position fixed
+
+##### 1. Elementos fixos na tela
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula1/2.jpg)
+
+##### 2. Fixando elementos na prática
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula2/11.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position fixed</title>
+    <link rel="stylesheet" href="./ex_class02.css">
+</head>
+<body>
+    <div class="div_fixa">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</body>
+</html>
+```
+
+```css
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.div_fixa{
+    position: fixed;
+    border: 2px solid red;
+}
+```
+
+##### 3. Movendo elementos
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula3/22.jpg)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula3/23.jpg)
+
+```css
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.div_fixa{
+    position: fixed;
+    border: 2px solid red;
+    right: 100px;
+}
+```
+
+##### 4. Movendo elementos na parte inferior da página
+
+```css
+.div_fixa{
+    position: fixed;
+    border: 2px solid red;
+    right: 35px;
+    bottom: 20px;
+}
+```
+
+##### 5. Conhecendo as propriedades top e left
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/40.jpg)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/42.jpg)
+
+```css
+.div_fixa {
+  position: fixed;
+  border: 2px solid red;
+  top: 450px;
+  left: 300px;
+}
+```
+
+- ### Funcionamento das propriedades
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/44.jpg)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/45.jpg)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/46.jpg)
+
+- ### Observações
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/48.jpg)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/CSS_positionfix/aula5/49.jpg)
+
+##### 6. Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Prático</title>
+    <link rel="stylesheet" href="./ex_class06.css">
+</head>
+<body>
+    <div class="secao topo">
+        <h1>Carros & Cia.</h1>
+        <p class="paragrafo paragrafo-topo">
+          <a class="link-topo" href="#sobre">Sobre</a>
+          <a class="link-topo" href="#consultores">Consultores</a>
+          <a class="link-topo" href="#endereco">Endereço</a>
+        </p>
+    </div>
+
+</body>
+</html>
+```
+
+```css
+.topo {
+    width: 100%;
+    background-color: #000;
+    border-bottom: 1px solid #d5960054;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+
+h1{
+    color: rgb(180, 180, 0);
+}
+
+.link-topo{
+    color:rgb(180, 180, 0);
+}
+```
+
+#### CSS: Position relative e absolute
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
