@@ -7010,6 +7010,30 @@ h1{
 
 #### CSS: Position relative e absolute
 
+##### 1. Reposicionando elementos na tela
+
+Nesta aula veremos como retirar um elemento do fluxo padrão do HTML e posicioná-lo em outro lugar da nossa página web:
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula1/2.jpg)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula1/4.jpg)
+
+**Aprender a posicionar elementos livremente na página HTML é algo essencial no desenvolvimento web. Com os recursos que veremos nas próximas aulas você será capaz de construir layouts como a página da DevMedia mostrada no flow anterior.**
+
+
+
+
+
+##### 2. Como mover elementos livremente na página
+
+##### 3. Position absolute resolve tudo?
+
+##### 4. Position relative
+
+##### 5. Relative e absolute
+
+##### 6. Exemplo prático
+
 
 
 

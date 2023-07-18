@@ -27,7 +27,7 @@
   - Imagem na mesma pasta
 
     ```css
-    background-image: url('img.jpg');
+    background-image: url('img.jpg');kX7js513ymuZ40CEKW
     ```
 
   - Imagem em pasta diferente
@@ -312,30 +312,59 @@ opacity: 50%;
     }
     ```
 
+
+
+
+## CSS Posicionamento
+
+- ### Position Fixed
+
+  ```css
+  div{
+      position: fixed;
+  }
+  ```
+
+  - #### Movendo Elementos: direita da página
+
+    ```css
+    div{
+        position: fixed;
+        right: 100px;
+    }
+    ```
+
+  - #### Movendo Elementos: inferior da página
+
+    ```css
+    div{
+        position: fixed;
+        bottom: 20px;
+    }
+    ```
+
+  - #### Movendo Elementos: topo da página
+
+    ```css
+    div{
+        position: fixed;
+        top: 450px;
+    }
+    ```
+
+  - #### Movendo Elementos: esquerda da página
+
+    ```css
+    div{
+        position: fixed;
+        left: 300px;
+    }
+    ```
+
     
 
-Questão #8839
-
-Especificando o CSS de uma imagem
-
-Complete o código seguindo as especificações abaixo na ordem em que aparecem:
-
-\- A imagem deve ocupar metade da largura do seu elemento pai
-\- A largura máxima deve ser de 450px
-\- A imagem deve ter uma sombra deslocada 15px para direita e 30px para baixo
-\- A sombra da imagem deve ter desfoque de 12px e deve ser expandida em 5px
-\- A sombra deve ter a cor verde RGB (0, 255, 0)
-
-resposta:
-
-```css
-img{
-    width: 50%;
- 	max-width: 450px;
- 	box-shadow: 15px 30px 12px 5px rgb(0, 250, 0);
-}
-```
 
 
 
-- 
+
+- ### Positions Relative e Absolute
