@@ -7022,15 +7022,407 @@ Nesta aula veremos como retirar um elemento do fluxo padrão do HTML e posicion�
 
 
 
-
-
 ##### 2. Como mover elementos livremente na página
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula2/8.jpg)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula2/9.jpg)
+
+### Absolute não é igual a fixed
+
+A propriedade `position` com o valor `absolute`, diferente do valor `fixed`, não deixa os elementos fixos na tela se o usuário utilizar o scroll da página.
+
+### Recapitulando
+
+Relembraremos como usar as propriedades `top`, `bottom`, `left` e `right` em conjunto com a propriedade `position`:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula2/11.jpg)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula2/14.jpg)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula2/15.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class02</title>
+    <link rel="stylesheet" href="ex_class02.css">
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Subtítulo</h2>
+    <p>Parágrafo</p>
+    <img src="https://www.devmedia.com.br/shop/img/selo.png" alt="Selo">
+</body>
+</html>
+```
+
+```css
+img {
+    width: 100px;
+}
+
+h2 {
+    color: #ff0000;
+    position: absolute;
+    top: 125px;
+    left: 110px;
+}
+```
+
+
+
+
 
 ##### 3. Position absolute resolve tudo?
 
+Na aula anterior vimos que podemos usar o `position: absolute;` para reposicionar elementos em nossa página fora do fluxo padrão do HTML. Será que podemos construir páginas usando somente o valor `absolute`?
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula3/23.jpg)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula3/24.jpg)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula3/25.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class03</title>
+    <link rel="stylesheet" href="ex_class03.css">
+</head>
+<body>
+    <p class="texto">Se usarmos somente o position absolute para posicionar um elemento, qualquer alteração no código nosso código poderá quebrar nosso layout.</p>
+
+    <div class="container">
+        <h1>Título</h1>
+        <h2>Subtítulo</h2>
+        <p>Parágrafo</p>
+        <img src="https://www.devmedia.com.br/shop/img/selo.png" alt="Selo">
+    </div>
+</body>
+</html>
+```
+
+```css
+.texto {
+    color: #ff0000;
+    font-size: 22px;
+  }
+  .container {
+    margin-top: 30px;
+    border: 2px solid;
+    background: #ecececbf;
+    width: 320px;
+    height: 400px;
+    padding: 10px;
+  }
+  img {
+    width: 100px;
+    position: absolute;
+    top: 6px;
+    left: 275px
+  }
+```
+
+
+
 ##### 4. Position relative
 
+Abaixo conheceremos o `position relative` e entenderemos como ele pode ser útil para posicionarmos corretamente um elemento com `position absolute`:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/33.jpg)
+
+### Usando o relative para limitar o absolute
+
+A propriedade `position` com o valor `relative` também permite que um elemento seja reposicionado na página, mas diferentemente dos valores `fixed` e `absolute`, não remove o elemento do fluxo padrão do HTML:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/35.jpg)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/37.jpg)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/40.jpg)
+
+### Position relative resolveu o problema?
+
+Abaixo entenderemos por que o selo passou a respeitar os limites da div mesmo se incluirmos mais elementos na página:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/44.jpg)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/45.jpg)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/46.jpg)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula4/47.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class04</title>
+    <link rel="stylesheet" href="ex_class04.css">
+</head>
+<body>
+    <p class="texto">Se usarmos somente o position absolute para posicionar um elemento, qualquer alteração no código nosso código poderá quebrar nosso layout.</p>
+    <p class="texto">Mesmo com a inclusão deste parágrafo, o selo permaneceu alinhado no canto superior direito da div.</p>
+
+    <div class="container">
+        <h1>Título</h1>
+        <h2>Subtítulo</h2>
+        <p>Parágrafo</p>
+        <img src="https://www.devmedia.com.br/shop/img/selo.png" alt="Selo">
+    </div>
+</body>
+</html>
+```
+
+```css
+.texto {
+    color: #ff0000;
+    font-size: 22px;
+  }
+  .container {
+    position: relative;
+    margin-top: 30px;
+    border: 2px solid;
+    background: #ecececbf;
+    width: 320px;
+    height: 400px;
+    padding: 10px;
+  }
+  img {
+    width: 100px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+  }
+```
+
+
+
 ##### 5. Relative e absolute
+
+Neste primeiro exemplo posicionaremos quatro caixas em nossa div, uma caixa em cada canto:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula5/49.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class05</title>
+    <link rel="stylesheet" href="ex_class05.css">
+</head>
+<body>
+    <h1>Posicionando elementos nos cantos</h1>
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+    </div>
+</body>
+</html>
+```
+
+```css
+h1 {
+  text-align: center;
+}
+.container {
+  border: 2px solid;
+  background: #ececec;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+.box-1, .box-2, .box-3, .box-4 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.box-1 {
+  background-color: red;
+  left: 0;
+  top: 0
+}
+.box-2 {
+  background-color: black;
+  left: 0;
+  bottom: 0
+}
+.box-3 {
+  background-color: green;
+  top: 0;
+  right: 0;
+}
+.box-4 {
+  background-color: blue;
+  right: 0;
+  bottom: 0;
+}
+```
+
+### Exemplo 2
+
+Neste segundo exemplo alinharemos uma imagem e um texto em nossa página:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula5/56.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class05</title>
+    <link rel="stylesheet" href="ex_class05.css">
+</head>
+<body>
+    <div>
+        <img src="http://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula-5/girl-balao-pensamento.png" alt="Balão de Pensamento">
+        <p>Ouvi dizer que a DevMedia é a melhor plataforma para aprender a programar!</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+
+div {
+  position: relative;
+}
+
+p {
+  width: 430px;
+  font-family: cursive;
+  font-size: 34px;
+  text-align: center;
+  color: #000000ad;
+  margin: 0;
+  position: absolute;
+  top: 140px;
+  left: 157px;
+}
+```
+
+### Exemplo 3
+
+Agora posicionaremos um rótulo para uma caixa de texto:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula5/62.jpg)
+
+```html
+<div class="container03">
+        <span class="rotulo">Rótulo</span>
+        <p>Como você pode observar acima, com o conhecimento que adquirimos até aqui, podemos criar rótulos para o nosso container.</p>
+</div>
+```
+
+```css
+.container03 {
+  width: 500px;
+  padding: 30px;
+  border: 5px solid;
+  margin-top: 50px;
+  font-size: 18px;
+  position: relative;
+}
+.rotulo {
+  width: 60px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+}
+```
+
+### Exemplo 4
+
+Agora posicionaremos os elementos dos itens de uma lista para ficarem lado a lado, conforme mostra o flow a seguir:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula5/68.png)
+
+```html
+ <ul class="lista">
+        <h2>Lista de Compromissos</h2>
+        <li>
+          <span>01</span>
+          <small>Janeiro</small>
+          <p>Reunião com a equipe técnica</p>
+        </li>
+        <li>
+          <span>02</span>
+          <small>Janeiro</small>
+          <p>Almoço com investidores</p>
+        </li>
+        <li>
+          <span>03</span>
+          <small>Janeiro</small>
+          <p>Revisão do material publicitário</p>
+        </li>
+        <li>
+          <span>04</span>
+          <small>Janeiro</small>
+          <p>Aniversário de casamento</p>
+        </li>
+    </ul>
+```
+
+```css
+.lista {
+  max-width: 425px;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.lista h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.lista li span {
+  font-size: 40px;
+  /* border-top: 1px solid gray; */
+}
+
+.lista li p {
+  width: 250px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: -5px;
+  left: 125px;
+}
+
+.lista li {
+  position: relative;
+  list-style: none;
+}
+
+.lista li small {
+  position: absolute;
+  top: 15px;
+  left: 55px;
+}
+```
+
+
 
 ##### 6. Exemplo prático
 
