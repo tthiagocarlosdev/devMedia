@@ -363,8 +363,70 @@ opacity: 50%;
 
     
 
-
-
-
-
 - ### Positions Relative e Absolute
+
+  - #### Position Absolute
+
+    ```css
+    div{
+        position: absolute;
+    }
+    ```
+
+    - ##### Possíveis combinações
+
+      ```css
+      div{
+          position: absolute;
+          top: 85px;
+          left: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          top: 85px;
+          right: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          top: 85px;
+          right: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          bottom: 85px;
+          left: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          bottom: 85px;
+          right: 100px;
+      }
+      ```
+
+      
+
+  - #### Position Relative
+
+    ```css
+    div{
+        position: absolute;
+    }
+    ```
+
+    
+
+    
+
+    

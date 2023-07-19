@@ -7075,8 +7075,6 @@ h2 {
 
 
 
-
-
 ##### 3. Position absolute resolve tudo?
 
 Na aula anterior vimos que podemos usar o `position: absolute;` para reposicionar elementos em nossa página fora do fluxo padrão do HTML. Será que podemos construir páginas usando somente o valor `absolute`?
@@ -7426,7 +7424,107 @@ Agora posicionaremos os elementos dos itens de uma lista para ficarem lado a lad
 
 ##### 6. Exemplo prático
 
+Vamos analisar uma página de pedidos de pizza e veremos como a propriedade `position` do CSS foi usada para criar o layout dela:
 
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_posicionamento_eric/aula6/68.jpg)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class06</title>
+    <link rel="stylesheet" href="ex_class06.css">
+</head>
+<body>
+  <h1>Escolha um combo e faça seu pedido</h1>
+
+  <div class="container">
+    <p class="icone">1</p>
+    <h3>Pizza alho + Refri 1,5l</h3>
+    <p class="ingredientes">Massa fininha e crocante com muita muçarela, molho de tomate, alho frito, orégano e assada no forno a lenha.</p>
+    <a class="btn-fazer-pedido" href="#">Fazer pedido R$ 41,00</a>
+  </div>
+  
+  <div class="container">
+    <p class="icone">2</p>
+    <h3>Carne seca acebolada + Refri 2l</h3>
+    <p class="ingredientes">Massa fininha e crocante com muita muçarela, molho de tomate, carne seca, cebola, orégano e assada no forno a lenha.</p>
+    <a class="btn-fazer-pedido" href="#">Fazer pedido R$ 48,00</a>
+  </div>
+  
+  <div class="container">
+    <p class="icone">3</p>
+    <h3>Queijo brie com geleia de pimenta + Refri 1,5l</h3>
+    <p class="ingredientes">Massa fininha e crocante com muita muçarela, molho de tomate, quijo brie, geleia de pimenta, orégano e assada no forno a lenha.</p>
+    <a class="btn-fazer-pedido" href="#">Fazer pedido R$ 53,00</a>
+  </div>
+  
+  <div class="container">
+    <p class="icone">4</p>
+    <h3>Meio a Meio - Calabresa e Pepperoni + Refri 2l</h3>
+    <p class="ingredientes">Massa fininha e crocante com muita muçarela, molho de tomate, calabresa, pepperoni, molho do chef, orégano e assada no forno a lenha.</p>
+    <a class="btn-fazer-pedido" href="#">Fazer pedido R$ 64,00</a>
+  </div>
+</body>
+</html>
+```
+
+```css
+.container{
+  width: 700px;
+  border: 3px solid #ff1700;
+  margin: 50px auto;
+  padding: 30px 30px 60px;
+  position: relative;
+}
+
+h1{
+  text-align: center;
+  color: #ff1700;
+}
+
+h3{
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.ingredientes{
+  font-size: 20px;
+}
+
+.icone{
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+  background-color: #ff1700;
+  color: #fff700;
+  border-radius: 50%;
+  padding-top: 20px;
+  position:absolute;
+  top: -45px;
+  left: -25px;
+}
+
+.btn-fazer-pedido{
+  border: none;
+  border-radius: 5px;
+  color: #fff700;
+  font-weight: 800;
+  font-size: 18px;
+  background-color: #ff1700;
+  text-decoration: none;
+  width: 240px;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  bottom: -26px;
+  right: 10px;
+}
+```
 
 
 
