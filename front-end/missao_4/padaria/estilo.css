@@ -1,0 +1,66 @@
+body{
+    background-color: #eee3d4;
+}
+
+.secao{
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagem_logo_tipo{
+    width: 200px;
+}
+
+.secao a {
+    margin: 0 10px;
+    color: #542f0c;
+}
+
+.secao h1{
+    border-top: 1px solid #de8e37;
+    padding-top: 30px;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.secao h2{
+    color: #de8e37;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.imagem_produtos{
+    width: 700px;
+}
+
+.secao_destaque{
+    padding: 15px 0;
+    background-color: #de8e37;
+    color:#fff;
+}
+
+.secao_destaque h3{
+    font-size: 24px;
+}
+
+.secao_destaque h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao_destaque p{
+    line-height: 30px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.secao_destaque img{
+    width: 400px;
+}
+
+span{
+    font-weight: bold;
+}
