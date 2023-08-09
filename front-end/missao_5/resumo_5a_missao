@@ -1,0 +1,432 @@
+# Resumo - 5ª Missão - Aprenda a construir um website com imagens e efeitos de fundo
+
+## CSS Background
+
+- ### Preencher o fundo com uma cor:
+
+  - Nominal
+
+    ```css
+    background-color: aqua;
+    ```
+
+  - Hexadecimal
+
+    ```css
+    background-color: #d5d5d5;
+    ```
+
+  - RGB
+
+    ```css
+    background-color: rgb(255, 230, 200);
+    ```
+
+- ### Preencher o fundo de um elemento com uma imagem:
+
+  - Imagem na mesma pasta
+
+    ```css
+    background-image: url('img.jpg');kX7js513ymuZ40CEKW
+    ```
+
+  - Imagem em pasta diferente
+
+    ```css
+    background-image: url('images/img.jpg');
+    ```
+
+  - Imagem externa
+
+    ```css
+    background-image: url('https://img.jpg');
+    ```
+
+- ### Propriedades do `background-image`
+
+  - `background-repeat` - repete ou não a imagem.
+
+    - Imagem não se repete
+
+       ```css
+       background-repeat: no-repeat;
+       ```
+
+    - Imagem se repete horizontalmente
+
+      ```css
+      background-repeat: repeat-x;
+      ```
+
+    - Imagem se repete verticalmente
+
+      ```css
+      background-repeat: repeat-y;
+      ```
+
+  - `background-position` - posiciona a imagem na tela.
+
+    - Centralizada
+
+      ```css
+      background-position: center;
+      ```
+
+    - Direita
+
+      ```css
+      background-position: right;
+      ```
+
+    - Esquerda
+
+      ```css
+      background-position: left;
+      ```
+
+    - Na parte superior
+
+      ```css
+      background-position: top;
+      ```
+
+    - Na parte inferior
+
+      ```css
+      background-position: bottom;
+      ```
+
+    - Combinados
+
+      ```css
+      background-position: right top;
+      background-position: right center;
+      background-position: right bottom;
+      background-position: center top;
+      background-position: center center;
+      background-position: center bottom;
+      ```
+
+  - `background-size` - altera o tamanho da imagem.
+
+    - `cover` - Ocupa todo espaço do elemento e exibe parte da imagem se for necessário
+
+      ```css
+      background-size: cover;
+      ```
+  
+    - `contain` - Estica a imagem ao máximo possível exibindo a imagem por completo sem perder sua proporção
+  
+      ```css
+      background-size: contain;
+      ```
+  
+    - `50% 70%` - Define o percentual de largura e altura com relação ao elemento, que a imagem ocupará
+  
+      ```css
+      background-size: 50% 70%;
+      ```
+  
+    - `300px 150px` - Define a largura e altura da imagem em píxel
+  
+      ```css
+      background-size: 300px 150px
+      ```
+  
+  - `background-attachment` - Podemos deixar a imagem estática.
+  
+    ```css
+    background-attachment:fixed;
+    ```
+  
+  - `background` - Forma resumida para definir as propriedades:
+  
+    ```css
+    background: #0f0 url('img/image.jpg') no-repeat top right fixed;
+    ```
+  
+    ```css
+    background-color: #0f0;
+    background-image: url('img/image.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    ```
+  
+    
+    
+
+## CSS Caixas (Box Model)
+
+- ### Largura mínima e máxima
+
+```css
+ min-width: 600px;
+ max-width: 1024px;
+```
+
+- ### Altura mínima e máxima
+
+```css
+ min-height: 480px;
+ max-height: 640px;
+```
+
+- Altura 
+
+- ### Garantir que os tamanhos definidos no width/height sejam respeitados
+
+```css
+box-sizing: border-box;
+```
+
+
+
+- ### Tamanhos relativos
+
+  - Barra scroll horizontal e vertical sempre visível:
+
+  ```css
+  div {
+  	overflow: scroll;
+  }
+  ```
+
+  - Barra scroll horizontal visível se necessário:
+
+  ```css
+  div {
+  	overflow: auto;
+  }
+  ```
+
+  - Barra scroll horizontal sempre visível:
+
+  ```css
+  div{
+      overflow-x: scroll;
+  }
+  ```
+
+  - Barra scroll vertical sempre visível:
+
+  ```css
+  div {
+  	overflow-y: scroll;
+  }
+  ```
+
+  - Define a barra horizontal e vertical:
+
+  ```css
+  p {
+  	overflow: auto scroll;
+  }
+  ```
+
+  
+
+- ### Visibilidade do elemento
+
+```css
+div {
+ display: inline;
+}
+
+span {
+ display: block;
+}
+
+img {
+ display: none;
+}
+```
+
+display nome remove a visibilidade do elemento e também o espaço.
+
+```css
+div {
+ visibility: visible;
+}
+
+span {
+ visibility: hidden;
+}
+```
+
+visibility hidden remove a visibilidade do elemento, mas deixa o espaço do mesmo.
+
+- Transparência do elemento:
+
+```css
+opacity: 50%;
+```
+
+
+
+- ### Adicionando sombra ao elemento
+
+  - Deslocamento x e y
+
+    ```css
+    box-shadow: 10px 20px;
+    ```
+
+  - Aplicando desfoque
+
+    ```css
+    box-shadow: 10px 20px 30px;
+    ```
+
+  - Expansão da sombra
+
+    ```css
+    box-shadow: 10px 20px 30px 40px;
+    ```
+
+  - Cor da sombra
+
+    ```css
+    img {
+     box-shadow: 10px 20px 30px 40px red;
+    }
+    
+    img {
+     box-shadow: 10px 20px 30px 40px #ff0000;
+    }
+    
+    img {
+     box-shadow: 10px 20px 30px 40px RGB(255,0,0);
+    }
+    ```
+
+  - Sombra interna
+
+    ```css
+    div {
+     box-shadow: 10px 20px 30px 40px #ff0000 inset;
+    }
+    
+    div {
+     box-shadow: inset 10px 20px 30px 40px #ff0000;
+    }
+    ```
+
+
+
+
+## CSS Posicionamento
+
+- ### Position Fixed
+
+  ```css
+  div{
+      position: fixed;
+  }
+  ```
+
+  - #### Movendo Elementos: direita da página
+
+    ```css
+    div{
+        position: fixed;
+        right: 100px;
+    }
+    ```
+
+  - #### Movendo Elementos: inferior da página
+
+    ```css
+    div{
+        position: fixed;
+        bottom: 20px;
+    }
+    ```
+
+  - #### Movendo Elementos: topo da página
+
+    ```css
+    div{
+        position: fixed;
+        top: 450px;
+    }
+    ```
+
+  - #### Movendo Elementos: esquerda da página
+
+    ```css
+    div{
+        position: fixed;
+        left: 300px;
+    }
+    ```
+
+    
+
+- ### Positions Relative e Absolute
+
+  - #### Position Absolute
+
+    ```css
+    div{
+        position: absolute;
+    }
+    ```
+
+    - ##### Possíveis combinações
+
+      ```css
+      div{
+          position: absolute;
+          top: 85px;
+          left: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          top: 85px;
+          right: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          top: 85px;
+          right: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          bottom: 85px;
+          left: 100px;
+      }
+      ```
+
+      ```css
+      div{
+          position: absolute;
+          bottom: 85px;
+          right: 100px;
+      }
+      ```
+
+      
+
+  - #### Position Relative
+
+    ```css
+    div{
+        position: absolute;
+    }
+    ```
+
+    
+
+    
+
+    
