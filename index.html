@@ -3,63 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Projetos devMedia</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-size: 16px;
-        }
-        :root {
-            --blue: rgb(71, 148, 236 );
-            --dark-blue: rgb(0, 75, 161);
-            --white: rgb(255, 255, 255);
-            --black: rgb(0, 0, 0);
-            --background-model: rgba(0,0,0,0.8);
-            --background-box-model:rgb(68, 103, 246);
-            --modal-button: rgb(242, 129, 129);
-            --modal-button-hover: rgb(0, 128, 0);
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            width: 100vw;
-        }
-
-        .links-buttons {
-            text-decoration: none;
-            width: 20rem;
-            height: 5rem;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            margin-left: 2rem;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-
-            border: 0;
-            border-radius: 5px;
-
-            background-color: var(--dark-blue);
-            color: var(--white);
-
-            font-size: 2rem;
-            font-weight: 600;
-
-            transition: background-color 0.5s;
-            cursor: pointer;
-        }
-  
-        .links-buttons:hover {
-            background-color: var(--modal-button-hover)
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -67,13 +12,28 @@
             <h1>Projetos DevMedia</h1>
         </header>
         <div class="links">
-            <h2>Missão 4</h2>
-            <a class="links-buttons" href="/devMedia/front-end/missao_4/projeto-imobiliaria/index.html" target="_blank">Imobiliária</a>
-            <h2>Missão 5</h2>
-            <a class="links-buttons" href="/devMedia/front-end/missao_5/projeto-cafeteria/index.html" target="_blank">Padaria</a>
+            <div class="projetos">
+                <h2>Missão 4</h2>
+                <a class="links-buttons" href="/devMedia/front-end/missao_4/projeto-imobiliaria/index.html" target="_blank">Imobiliária</a>
+            </div>
+            <div class="projetos">
+                <h2>Missão 5</h2>
+                <a class="links-buttons" href="/devMedia/front-end/missao_5/projeto-cafeteria/index.html" target="_blank">Padaria</a>
+            </div>
         </div>
+
+        <footer class="box-footer">
+            <p class="footer-title"> Desenvolvido por tthiagocarlosdev </p>
+            <ul class="links-social-media">
+              <li> <a href="https://github.com/tthiagocarlosdev" target="_blank"> <i class="fa-brands fa-github"></i> </a></li>
+              <li> <a href="mailto:tthiagocarlos.dev@gmail.com" target="_blank"> <i class="fa-sharp fa-solid fa-g"></i> </a></li>
+              <li> <a href="https://www.youtube.com/channel/UCZN-uQtc4UDQt_tLu-I7Wpw" target="_blank"> <i class="fa-brands fa-youtube"></i> </a></li>
+              <li> <a href="https://www.instagram.com/tthiagocarlos.dev/" target="_blank"> <i class="fa-brands fa-instagram"></i>  </a></li>
+              <li> <a href="https://www.linkedin.com/in/thiago-carlos-80a480244" target="_blank"> <i class="fa-brands fa-linkedin"></i>  </a></li>
+            </ul>
+          </footer>
     </div>
-    
+    <script src="https://kit.fontawesome.com/bec2f6bc88.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
