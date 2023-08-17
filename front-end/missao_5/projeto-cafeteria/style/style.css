@@ -19,3 +19,129 @@ body {
     --gray: #666;
     --light_gray: #ACACAC;
 }
+
+.container{
+    width: 100vw;
+}
+
+#secao-topo{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--brown);
+    width: 100%;
+    z-index: 1;
+}
+
+#secao-topo img{
+    height: 100px;
+    margin-left: 15%;
+}
+
+.links-topo{
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    right: 15%;
+}
+
+.links-topo a{
+    text-decoration: none;
+    color: var(--light_brown);
+    font-weight: bold;
+    text-shadow: 5px 6px 3px var(--black);
+    margin-right: 10px;
+}
+
+#secao-banner{
+    background-image: url('../assets/parallax-imagem1.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    color: var(--white);
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+#secao-informacoes{
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.imagem02{
+    background-image: url('../assets/parallax-imagem2.jpg');
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+}
+
+.imagem03{
+    background-image: url('../assets/parallax-imagem3.jpg');
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+}
+
+#secao-contatos{
+    background-image: url('../assets/parallax-imagem4.png');
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+#secao-horarios{
+    background-image: url('../assets/cafeteria.jpg');
+    background-color: var(--white);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-texto{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 20px;
+    background-color: var(--white);
+
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    color: var(--light_brown);
+}
+
+h3{
+    font-family: 'Fraunces', serif;
+    background-color: var(--brown);
+    color: var(--white);
+    width: 500px;
+    padding: 10px;
+    top: 45%;
+    margin: 0 auto;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    color: var(--gray);
+}
