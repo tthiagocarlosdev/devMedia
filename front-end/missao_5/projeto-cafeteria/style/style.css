@@ -1,5 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap'); */
 
+/* PAREI - ESPECIFICAÇÕES DO PROJETO */
+
 *{
     margin: 0;
     padding: 0;
@@ -24,17 +26,15 @@ body {
     width: 100vw;
 }
 
-#secao-topo{
+header{
     position: fixed;
     top: 0;
-    display: flex;
     align-items: center;
     background-color: var(--brown);
     width: 100%;
-    z-index: 1;
 }
 
-#secao-topo img{
+header img{
     height: 100px;
     margin-left: 15%;
 }
@@ -43,6 +43,7 @@ body {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     right: 15%;
+    top: 35%;
 }
 
 .links-topo a{
@@ -54,22 +55,86 @@ body {
 }
 
 #secao-banner{
-    background-image: url('../assets/parallax-imagem1.png');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
+        /* background-image: url('../assets/parallax-imagem1.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh; */
 }
 
 h1{
+    font-family: 'Fraunces', serif;
     color: var(--white);
     position: absolute;
     top: 45%;
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: normal;
 }
+
+.container-texto{
+    background-color: var(--white);
+}
+.container-texto h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: var(--light_brown);
+}
+.container-texto p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: var(--gray);
+    line-height: 32px;
+}
+
+.container-imagem-parallax h3{
+    background-color: var(--brown);
+    width: 40%;
+    font-family: 'Fraunces', serif;
+    color: var(--light_gray);
+    line-height: 32px;
+    text-align: center;
+    
+}
+
+#secao-contatos h2{
+    background-color: var(--brown);
+    width: 40%;
+    font-family: 'Oswald', sans-serif;
+    color: var(--white);
+    text-align: center;
+}
+
+.box-contatos p{
+    background-color: var(--brown);
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    line-height: 32px;
+    width: 50%;
+}
+
+
+#secao-horarios h2{
+    font-family: 'Oswald', sans-serif;
+    color: var(--white);
+}
+
+.lista h3{
+    color: var(--white);
+}
+
+.lista p{
+    color: var(--light_gray);
+}
+
+.lista span{
+    color: var(--light_brown);
+}
+
+
 
 #secao-informacoes{
     background-color: var(--white);
@@ -78,7 +143,10 @@ h1{
     padding: 80px 0;
 }
 
-.imagem02{
+
+
+
+/* .imagem02{
     background-image: url('../assets/parallax-imagem2.jpg');
     background-color: var(--white);
     background-position: center;
@@ -116,17 +184,16 @@ h1{
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
-}
+} */
 
 .container-texto{
     margin: 0 auto;
     max-width: 1024px;
     padding: 0 20px;
     background-color: var(--white);
-
 }
 
-h2{
+/* h2{
     font-family: 'Oswald', sans-serif;
     color: var(--light_brown);
 }
@@ -144,4 +211,26 @@ h3{
 p{
     font-family: 'Lato', sans-serif;
     color: var(--gray);
+} */
+
+footer{
+    position: relative;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    padding: 16px;
+}
+
+footer a{
+    position: absolute;
+    background-color: var(--light_brown);
+    top: -30px;
+    right: 60px;
+    height: 65px;
+}
+
+footer span{
+    color: var(--light_brown);
 }
