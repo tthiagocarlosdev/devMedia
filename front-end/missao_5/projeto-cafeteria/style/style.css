@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* PAREI: 2º passo: Especificações do Projeto
+ - 10. Espaçamento dos elementos do projeto */
 
 /* font-family: 'Fraunces', serif; */
 /* font-family: 'Lato', sans-serif; */
@@ -24,7 +26,7 @@
     width: 100vw;
 }
 
-/* topo */
+/* seção topo seção topo seção topo seção topo*/
 header{
     width: 100%;
     position: fixed;
@@ -39,7 +41,6 @@ header img{
 
 .links-topo{
     position: absolute;
-    font-family: 'Oswald', sans-serif;
     right: 15%;
     top: 35%;
 }
@@ -47,6 +48,7 @@ header img{
 .links-topo a{
     text-decoration: none;
     color: var(--light_brown);
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-shadow: 5px 6px 3px var(--black);
     margin-right: 10px;
@@ -75,9 +77,45 @@ h1{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-imagem-parallax h3{
+    font-family: 'Fraunces', serif;
+    color: var(--white);
+    font-style: italic;
+    background-color: var(--brown);
+    width: 400px;
+    text-align: center;
+    padding: 8px 16px;
 }
 
 /* seção informações */
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    height: 40vh;
+}
+
+.container-texto h2{
+    font-family: 'Oswald', sans-serif;
+    color: var(--light_brown);
+    padding: 16px;
+}
+
+.container-texto p{
+    width: 1024px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Lato', sans-serif;
+    color: var(--gray);
+}
+
 .imagem02{
     background-image: url('../assets/parallax-imagem2.jpg');
     background-color: var(--white);
@@ -94,12 +132,57 @@ h1{
 
 
 /* seção contatos seção contatos seção contatos seção contatos seção contatos */
+
+#secao-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#secao-contatos h2{
+    width: 400px;
+    text-align: center;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 8px;
+    position: absolute;
+    top: 8%;
+}
+
+.box-contatos{
+    width: 400px;
+    text-align: center;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 8px;
+    position: absolute;
+    bottom: 7.5%;
+}
+
 .imagem04{
     background-image: url('../assets/parallax-imagem4.png');
     height: 100vh;
     width: 100%;
 }
 /* seção horários seção horários seção horários seção horários */
+#secao-horarios{
+    flex-direction: column;
+}
+
+#secao-horarios h2{
+    color: var(--white);
+}
+
+.lista h3{
+    font-style: normal;
+}
+
+.lista span{
+    color: var(--light_brown);
+}
+
 .imagem05{
     background-image: url('../assets/cafeteria.jpg');
     height: 100vh;
@@ -113,7 +196,7 @@ h1{
 .lista li div{
     width: 70%;
     height: 1px;
-    background-color: #acacac;
+    background-color: var(--light_gray);
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -124,6 +207,7 @@ h1{
     position: absolute;
     top: 0;
     right: 0;
+    color: var(--light_gray);
 }
 
 /* rodapé rodapé rodapé rodapé rodapé rodapé rodapé rodapé */
@@ -148,101 +232,3 @@ footer a{
 footer span{
     color: var(--light_brown);
 }
-
-/* PAREI - 2º passo: Especificações do Projeto */
-
-.container-texto{
-    /* padding: 80px 80px;
-    font-size: 16px;
-    line-height: 34px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #666; */
-}
-
-
-/* 
-#secao-informacoes{
-
-}
-.container-texto{
-    margin: 0 auto;
-    max-width: 1024px;
-    padding: 0 20px;
-    background-color: var(--white);
-}
-
-.container-texto{
-    background-color: var(--white);
-}
-.container-texto h2{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    color: var(--light_brown);
-}
-.container-texto p{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    color: var(--gray);
-    line-height: 32px;
-}
-
-
-
-
-.container-imagem-parallax h3{
-    background-color: var(--brown);
-    width: 40%;
-    font-family: 'Fraunces', serif;
-    color: var(--light_gray);
-    line-height: 32px;
-    text-align: center;
-    
-}
-
-#secao-contatos h2{
-    background-color: var(--brown);
-    width: 40%;
-    font-family: 'Oswald', sans-serif;
-    color: var(--white);
-    text-align: center;
-}
-
-.box-contatos p{
-    background-color: var(--brown);
-    color: var(--white);
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    line-height: 32px;
-    width: 50%;
-}
-
-
-#secao-horarios h2{
-    font-family: 'Oswald', sans-serif;
-    color: var(--white);
-} */
-
-
-
-
-
-/* h2{
-    font-family: 'Oswald', sans-serif;
-    color: var(--light_brown);
-}
-
-h3{
-    font-family: 'Fraunces', serif;
-    background-color: var(--brown);
-    color: var(--white);
-    width: 500px;
-    padding: 10px;
-    top: 45%;
-    margin: 0 auto;
-}
-
-p{
-    font-family: 'Lato', sans-serif;
-    color: var(--gray);
-} */
