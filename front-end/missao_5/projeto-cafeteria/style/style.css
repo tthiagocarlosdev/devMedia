@@ -150,16 +150,23 @@ h1{
     padding: 10px;
     position: absolute;
     top: 10%;
+    font-family: 'Oswald', sans-serif;
 }
 
 .box-contatos{
     width: 500px;
     text-align: center;
     background-color: var(--brown);
-    color: var(--white);
     padding: 10px;
     position: absolute;
     bottom: 8%;
+}
+
+.box-contatos p{
+    color: var(--white);
+    padding: 8px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 6px 10px var(--black);
 }
 
 .imagem04{
@@ -179,6 +186,11 @@ h1{
 #secao-horarios h2{
     width: 500px;
     color: var(--white);
+    /* font-family: 'Fraunces', serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-weight: normal;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -189,6 +201,7 @@ h1{
 
 .lista span{
     color: var(--light_brown);
+    font-family: 'Oswald', sans-serif;
     position: absolute;
     top: 0;
     right: 0;
@@ -203,15 +216,17 @@ h1{
 .lista li{
     position: relative;
     display: flex;
+    line-height: 54px;
 }
 
 .lista h3{
     font-style: normal;
     color: var(--white);
+    font-family: 'Oswald', sans-serif;
 }
 
 .lista li div{
-    width: 60%;
+    width: 70%;
     height: 1px;
     background-color: var(--light_gray);
     position: absolute;
@@ -226,27 +241,33 @@ h1{
     top: 0;
     right: 0;
     color: var(--light_gray);
+    font-family: 'Oswald', sans-serif;
 }
 
 /* rodapé rodapé rodapé rodapé rodapé rodapé rodapé rodapé */
 footer{
     position: relative;
     background-color: var(--black);
-    color: var(--white);
     font-weight: bold;
     text-align: center;
     line-height: 32px;
     padding: 20px 0px;
 }
 
+footer p{
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+}
+
 footer a{
     position: absolute;
     background-color: var(--light_brown);
     height: 65px;
-    bottom: 80px;
+    bottom: 70px;
     right: 60px;
 }
 
 footer span{
     color: var(--light_brown);
+    font-family: 'Oswald', sans-serif;
 }
