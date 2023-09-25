@@ -7528,7 +7528,232 @@ h3{
 
 
 
+## 6ª Missão - Aprenda a criar um website com tabelas informativas
 
+### 1 - Tabelas
+
+#### HTML: Tabelas
+
+##### 1. Introdução
+
+Quando precisamos organizar itens utilizando o formato de linhas e colunas em uma página HTML, a nossa melhor solução é o uso de tabelas.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s2.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class01 - Tabelas</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Jogo</td>
+            <td>Ano</td>
+        </tr>
+        <tr>
+            <td>Quantum Break</td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td>Gears 5</td>
+            <td>2019</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
+
+
+
+
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s3.png)
+
+### Por que são úteis?
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s02.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s03.png)
+
+### Quando não devemos usar?
+
+As tabelas podem ser muito úteis no HTML, mas existem casos em que é melhor não usá-las.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s003.jpg)
+
+### Estilizando tabelas
+
+Apesar de não ser o foco deste curso, as tabelas podem ser estilizadas com o uso de CSS. Veja no flow a seguir um exemplo de como a tabela mostrada anteriormente ficaria se fosse estilizada.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s_2.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula1/s_3.png)
+
+**Através do uso de tabelas podemos exibir dados de forma organizada em uma página HTML**
+
+##### 2. TABLE, TR, TD e TH
+
+Para criar uma tabela em HTML precisamos de pelo menos 4 tags, e são elas que vamos conhecer nessa aula.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula2/s3.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula2/s4.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula2/s5.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula2/s6.png)
+
+Como vimos, essas quatro tags nos permitiram criar uma tabela funcional no HTML.
+
+### Exemplo prático
+
+A utilização de tabelas pode ser útil, por exemplo, para exibir a classificação de clubes em uma competição
+
+Veja uma tabela sendo utilizada para mostrar os 5 primeiros colocados no Campeonato Brasileiro de futebol na **Figura 2**.
+
+```html
+<table>
+    <tr>
+        <th>#</th>
+        <th>Time</th>
+        <th>J</th>
+        <th>SG</th>
+        <th>PTS</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>30</td>
+        <td>22</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Internacional</td>
+        <td>30</td>
+        <td>20</td>
+        <td>56</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Atlético Mineiro</td>
+        <td>29</td>
+        <td>14</td>
+        <td>53</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Flamengo</td>
+        <td>29</td>
+        <td>11</td>
+        <td>52</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Palmeiras</td>
+        <td>29</td>
+        <td>17</td>
+        <td>51</td>
+    </tr>
+</table>
+```
+
+![Tabela de campeonato](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula2/fig2.png)
+
+**Com apenas quatro tags é possível criar uma tabela simples em HTML**
+
+##### 3. THEAD, TBODY, TFOOT
+
+Nós vimos na aula anterior as quatro tags básicas para construir uma tabela, agora veremos como dividir essa tabela em partes diferentes utilizando `<thead>`, `<tbody>` e `<tfoot>`.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula3/s3.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula3/s4.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula3/s5.png)
+
+**As tags `<thead>`, `<tbody>` e `<tfoot>` são sempre renderizadas nas suas respectivas posições, independente da ordem que foram escritas, porém, para fim de organização semântica e facilidade de leitura do código é recomendado a escrita na ordem mostrada nos exemplos.**
+
+**Com essas três tags podemos organizar uma tabela em HTML**
+
+##### 4. CAPTION
+
+Se você chegou até aqui então já sabe como criar e organizar uma tabela em HTML, agora vamos descobrir como dar títulos a ela.
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula4/s2.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula4/s3.png)
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula4/s4.png)
+
+Como vimos, através da tag `<caption>` podemos adicionar um título a nossa tabela.
+
+**Com o uso da tag caption podemos deixar nossa tabela ainda mais completa adicionando um título a ela.**
+
+##### 5. Praticando
+
+Agora que já sabemos como criar uma tabela completa: vamos construir um exemplo de uma tabela organizada, que exibe todas as chuvas de meteoros previstas para o segundo trimestre do ano.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class05 - Meteoros do 2º trimestre</title>
+</head>
+<body>
+    <table>
+        <caption>Meteoros do 2º Trimestre</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Início</th>
+                <th>Fim</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Líridas</td>
+                <td>23/05</td>
+                <td>26/05</td>
+            </tr>
+            <tr>
+                <td>Eta Aquáridas</td>
+                <td>31/05</td>
+                <td>02/06</td>
+            </tr>
+            <tr>
+                <td>Bootídeos de Junho</td>
+                <td>16/06</td>
+                <td>20/06</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+![Slide 1](https://www.devmedia.com.br/arquivos/cursos/HTML_table/aula5/s5.png)
+
+Parabéns! Você aprendeu a utilizar tabelas em HTML. Durante o curso você aprendeu:
+
+- table
+- tr
+- td
+- th
+- thead
+- tbody
+- tfoot
+- caption
+
+
+
+#### Exercícios
 
 
 
