@@ -24,3 +24,35 @@ li{
     background-color: rgba(70, 131, 180, 0.531);
     font-weight: bold;
 }
+
+.caixasModal{
+    width: 700px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.caixasModal::backdrop{
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.caixasModal button{
+    padding: 8px 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.caixasModal button:hover{
+    background-color: #2f86d6;
+    color: white;
+}
+.caixasModal a:hover{
+    font-size: 32px;
+    border: 1px solid;
+    padding: 8px 24px;
+    background-color: #2f86d6;
+    color: white;
+}
+
+.caixasModal span{
+    font-weight: bold;
+}

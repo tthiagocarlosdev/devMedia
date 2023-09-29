@@ -9,7 +9,11 @@
 <body>
     <h1>Especificações</h1>
     <div class="especificacoes">
+        Criar os links de navegação da página Home
         <ul>
+            <li>
+                <button class="links-especificacoes" id="abrirCaixaParei">PAREI</button>
+            </li>
             <li>
                 <a class="links-especificacoes" href="https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/provedor/passo2/fig1.png" target="_blank">Página home</a>
             </li>
@@ -41,7 +45,7 @@
                 <a class="links-especificacoes" href="https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/provedor/passo2/fig10.png" target="_blank">Sobra Tabela Home</a>
             </li>
             <li>
-                <a class="links-especificacoes" href="" target="_blank"></a>
+                <button class="links-especificacoes" id="abrirCaixaModal" >Espaçamento dos elementos</button>
             </li>
             <li>
                 <a class="links-especificacoes" href="" target="_blank"></a>
@@ -52,15 +56,29 @@
             <li>
                 <a class="links-especificacoes" href="" target="_blank"></a>
             </li>
-
         </ul>
+
+        <dialog class="caixasModal" id="caixaModal">
+            <h2>Espaçamento dos elementos</h2>
+            <p>Acesse esse <a href="https://www.devmedia.com.br/quest/etapa.php?id=164" target="_blank">link</a> e procure por <span>Espaçamento dos elementos</span></p>
+            <form method="dialog" >
+                <button>Fechar</button>
+            </form>
+        </dialog>
         
-        
+        <dialog class="caixasModal" id="caixaParei">
+            <h2>Espaçamento dos elementos</h2>
+            <p>Acesse esse <a href="https://www.devmedia.com.br/quest/etapa.php?id=165" target="_blank">link</a> e procure por <span>Criar os links de navegação da página Home</span></p>
+            <form method="dialog" >
+                <button>Fechar</button>
+            </form>
+        </dialog>
         
         
         
         
         
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
