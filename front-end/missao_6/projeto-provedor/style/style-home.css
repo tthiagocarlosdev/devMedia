@@ -1,0 +1,14 @@
+h1{
+    font-family: Poppins;
+}
+
+:root{
+    --white_fff:#fff;
+    --white_f1f3f7:#f1f3f7;
+    --white_f6f6f6:#f6f6f6;
+    --gray_a89f9f:#a89f9f;
+    --gray_233032:#233032;
+    --gray_a8a4a4:#a8a4a4;
+    --blue_2f86d6:#2f86d6;
+    --blue_rgba_47_134_214_1:rgba(47, 134, 214, 1);
+}

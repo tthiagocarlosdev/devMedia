@@ -1,0 +1,26 @@
+h1{
+    width: 100%;
+    background-color: slategray;
+    text-align: center;
+    padding: 16px 0;
+    margin-bottom: 48px;
+}
+
+li{
+    margin: 48px;
+}
+
+.links-especificacoes{
+    text-decoration: none;
+    color: white;
+    background-color: steelblue;
+    border: 1px solid black;
+    padding: 16px;
+    font-size: 24px;
+    margin: 8px;
+}
+
+.links-especificacoes:hover{
+    background-color: rgba(70, 131, 180, 0.531);
+    font-weight: bold;
+}
