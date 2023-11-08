@@ -56,3 +56,19 @@ li{
 .caixasModal span{
     font-weight: bold;
 }
+
+.passo_tres{
+    font-size: 24px;
+}
+
+.passo_tres h2{
+    width: 100%;
+    background-color: slategray;
+    text-align: center;
+    padding: 16px 0;
+    margin-bottom: 48px;
+}
+
+.concluido{
+    background-color: hsla(60, 100%, 50%, 0.500);
+}
