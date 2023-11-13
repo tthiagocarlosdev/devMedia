@@ -219,6 +219,7 @@ header{
 /* sectionInformacao sectionInformacao sectionInformacao */
 #sectionInformacao{
     background-color: var(--white_fff);
+    color: var(--black_000);
     padding: 100px 0;
 }
 
@@ -232,12 +233,44 @@ header{
 #sectionInformacao h2{
     width: 900px;
     text-align: center;
-    background-color: #a8a4a4;
+    font-size: 32px;
+}
+
+#sectionInformacao span{
+    font-size: 32px;
+    color: var(--blue_2f86d6);
 }
 
 #todasInformacoes{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0 0 0;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacao img{
+    height: 80px;
+}
+
+.informacao h3{
+    font-size: 18px;
+}
+
+.informacao p{
+    font: 16px;
+    text-align: center;
+}
+
+.informacaoPadding{
+    padding: 24px;
 }
 
 /* sectionPlanos sectionPlanos sectionPlanos sectionPlanos */
