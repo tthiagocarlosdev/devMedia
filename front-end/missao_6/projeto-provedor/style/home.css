@@ -269,14 +269,14 @@ header{
     text-align: center;
 }
 
-.informacaoPadding{
+.espacamentotInterno{
     padding: 24px;
 }
 
 /* sectionPlanos sectionPlanos sectionPlanos sectionPlanos */
 
 #sectionPlanos{
-    background-color: var(--white_fff);
+    background-color: var(--white_f6f6f6);
     padding: 100px 0;
     display: flex;
     flex-direction: column;
@@ -292,12 +292,48 @@ header{
 }
 
 #sectionPlanos h2{
-    width: 900px;
+    /* width: 900px; */
     text-align: center;
-    background-color: #a8a4a4;
+    font-size: 32px;
+}
+
+#sectionPlanos span{
+    font-size: 32px;
+    color: var(--blue_2f86d6);
+}
+
+table{
+    box-shadow: 5px 5px 30px 15px var(--blue_2f86d6);
+    margin-top: 80px;
+    width: 100%;
+    background-color: var(--white_fff);
+}
+
+table h3{
+    font-size: 18px;
+    color: var(--black_000);
+}
+
+table p{
+    font-size: 13px;
+    color: var(--gray_a89f9f);
+}
+
+.linhaImpar{
+    background-color: var(--white_f6f6f6);
+}
+
+.linhaPar{
+    background-color: var(--white_f1f3f7);
 }
 
 
+table td{
+    font-size: 16px;
+}
+
+
+/* footer footer footer footer footer footer footer  */
 footer{
     display: flex;
     flex-direction: column;
