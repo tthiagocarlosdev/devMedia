@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+@media(max-width:1080px){
+	html{
+		font-size: 90%;
+	}
+}
+
+@media(max-width:720px){
+	html{
+		font-size: 75%;
+	}
+}
+
+@media(max-width:600px){
+	html{
+		font-size: 60%;
+	}
+}
+
+@media(max-width:300px){
+	html{
+		font-size: 40%;
+	}
+}
+
+:root{
+    --black_000:#000000;
+    --white_fff:#fff;
+    --white_f1f3f7:#f1f3f7;
+    --white_f6f6f6:#f6f6f6;
+    --gray_a89f9f:#a89f9f;
+    --gray_233032:#233032;
+    --gray_a8a4a4:#a8a4a4;
+    --blue_2f86d6:#2f86d6;
+    --blue_rgba_47_134_214_1:rgba(47, 134, 214, 1);
+}
+
+body{
+    width: 100vw;
+    background-color: var(--white_fff);
+}
+
+img {
+    height: 6rem;
+}
+
+.largura_pagina{
+    width: 1024px;
+    border: yellowgreen solid 1px;
+    margin: 0 auto;
+}
+
+/* header header header header header header header  */
+header{
+    background-color: var(--blue_2f86d6);
+    width: 100%;
+    padding: 35px 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoMarca{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.logoMarca img{
+    grid-row: 1/3;
+    height: 6rem;
+}
+
+.logoMarca h1, .logoMarca h2 {
+    font-size: 32px;
+    color: var(--black_000);
+}
+
+.logoMarca p{
+    font-size: 16px;
+    color: var(--white_fff);
+    font-weight: bold;
+}
+
+#linksTopo{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#linksTopo a{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--white_fff);
+    padding: 8px;
+    transition: all 0.5s ease-out;
+}
+
+#linksTopo a:hover{
+    color: var(--white_fff);
+    font-size: 19.2px;
+    font-weight: bold;
+}
+
+/* main main main main main main main main  */
+main{
+    padding: 100px 0;
+}
+
+/* table table table table table table table table  */
+table{
+    width: 100%;
+    text-align: center;
+    /* background-color: var(--white_f1f3f7); */
+}
+
+table thead tr th{
+    background-color: var(--white_f1f3f7);
+}
+
+.cabecalhoTabela{
+    background-color: red;
+}
+
+tbody{
+    background-color: var(--white_fff);
+}
+
+.primeiraColuna{
+    background-color: var(--white_f1f3f7);
+    text-align: start;
+    padding: 16px 0 16px 24px;
+}
+
+#backGroundWhite{
+    background-color: var(--white_fff);
+}
+
+/* footer footer footer footer footer footer footer  */
+footer{
+    padding: 100px 0;
+    position: relative;
+    background-color: var(--blue_2f86d6);
+}
+
+#sectionContato, #informacoesDeContato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoMarcaFooter{
+    width: 350px;
+}
+
+#informacoesDeContato p{
+    font-size: 16px;
+    padding: 12px 0;
+    color: var(--white_fff);
+}
+
+#rodape{
+    padding: 20px 0;
+    background-color: var(--white_f1f3f7);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#rodape a{
+    text-decoration: none;
+    color: var(--blue_2f86d6);
+    font-size: 16px;
+}
+
+#rodape a:hover{
+    font-weight: bold;
+}

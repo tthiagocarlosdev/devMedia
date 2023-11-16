@@ -113,6 +113,7 @@ header{
 #linksTopo a:hover{
     color: var(--blue_2f86d6);
     font-size: 19.2px;
+    font-weight: bold;
 }
 
 /* banner banner banner banner banner banner banner  */
