@@ -25,6 +25,14 @@
     background-color: bisque;
 }
 
+.styleA{
+    background-color: violet;
+}
+
+.styleB{
+    background-color: azure;
+}
+
 header{
     background-color: var(--dark-blue);
 }

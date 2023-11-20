@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Data</title>
+</head>
+<body>
+    <h1>GitHub User Data</h1>
+    <div id="userData"></div>
+    <img src="" alt="">
+
+    <script>
+        // URL da API do GitHub
+        const apiUrl = 'https://api.github.com/users/tthiagocarlosdev';
+
+        // Elemento HTML onde exibiremos os dados
+        const userDataElement = document.getElementById('userData');
+
+        // Função para fazer a requisição à API e manipular os dados
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                // Manipular os dados recebidos
+                const username = data.login;
+                const name = data.name;
+                const bio = data.bio;
+                const avatar = data.avatar_url;
+
+                // Criar HTML para exibir os dados
+                const htmlContent = `
+                    <p><strong>Username:</strong> ${username}</p>
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Bio:</strong> ${bio}</p>
+                    <img src="${avatar}" alt="">
+                `;
+
+                // Adicionar o HTML ao elemento na página
+                userDataElement.innerHTML = htmlContent;
+            })
+            .catch(error => {
+                console.error('Erro ao obter dados:', error);
+                userDataElement.innerHTML = 'Erro ao obter dados do GitHub.';
+            });
+    </script>
+</body>
+</html>
