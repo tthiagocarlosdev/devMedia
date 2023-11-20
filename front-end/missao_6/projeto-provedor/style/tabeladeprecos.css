@@ -54,8 +54,7 @@ img {
 }
 
 .largura_pagina{
-    width: 1024px;
-    /* border: yellowgreen solid 1px; */
+    width: 64rem;
     margin: 0 auto;
 }
 
@@ -63,7 +62,7 @@ img {
 header{
     background-color: var(--blue_2f86d6);
     width: 100%;
-    padding: 35px 0;
+    padding: 2.188rem 0;
 }
 
 .header{
@@ -84,12 +83,12 @@ header{
 }
 
 .logoMarca h1, .logoMarca h2 {
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--black_000);
 }
 
 .logoMarca p{
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--white_fff);
     font-weight: bold;
 }
@@ -105,19 +104,19 @@ header{
     text-decoration: none;
     font-weight: 500;
     color: var(--white_fff);
-    padding: 8px;
+    padding: 0.5rem;
     transition: all 0.5s ease-out;
 }
 
 #linksTopo a:hover{
     color: var(--white_fff);
-    font-size: 19.2px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 /* main main main main main main main main  */
 main{
-    padding: 100px 0;
+    padding: 6.25rem 0;
 }
 
 /* table table table table table table table table  */
@@ -128,15 +127,15 @@ table{
 
 table thead tr th{
     background-color: var(--white_f1f3f7);
-    padding: 16px;
+    padding: 1rem;
 }
 
 table thead tr th p{
-    font-size: 13px;
+    font-size: 0.813rem;
     color: var(--gray_a89f9f);
 }
 table thead tr th h2{
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 tbody{
@@ -144,13 +143,13 @@ tbody{
 }
 
 tbody tr td{
-    box-shadow: 1px 1px var(--white_f1f3f7);
+    box-shadow: 0.063rem 0.063rem var(--white_f1f3f7);
 }
 
 .primeiraColuna{
     background-color: var(--white_f1f3f7);
     text-align: start;
-    padding: 16px 0 16px 24px;
+    padding: 1rem 0 1rem 1.5rem;
 }
 
 #backGroundWhite{
@@ -161,13 +160,13 @@ tbody tr td{
     display: inline-block;
     background-color: var(--blue_2f86d6);
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
 }
 
 /* footer footer footer footer footer footer footer  */
 footer{
-    padding: 100px 0;
+    padding: 6.25rem 0;
     position: relative;
     background-color: var(--blue_2f86d6);
 }
@@ -180,17 +179,17 @@ footer{
 }
 
 .logoMarcaFooter{
-    width: 350px;
+    width: 21.875rem;
 }
 
 #informacoesDeContato p{
-    font-size: 16px;
-    padding: 12px 0;
+    font-size: 1rem;
+    padding: 0.75rem 0;
     color: var(--white_fff);
 }
 
 #rodape{
-    padding: 20px 0;
+    padding: 1.25rem 0;
     background-color: var(--white_f1f3f7);
     width: 100%;
     position: absolute;
@@ -201,7 +200,7 @@ footer{
 #rodape a{
     text-decoration: none;
     color: var(--blue_2f86d6);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #rodape a:hover{
