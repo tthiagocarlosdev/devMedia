@@ -4,11 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub User Data</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100vw;
+            height: 300px;
+            background-color: tomato;
+            position: relative;
+        }
+        header h1{
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 115px;
+            left: 35%;
+            margin: auto;
+            text-shadow: 2px 2px black;
+        }
+
+        .cabecalho{
+            width: 100%;
+            background-color: bisque;
+            padding: 32px 0;
+        }
+        .cards{
+            width: 100%;
+            background-color: burlywood;
+            padding: 24px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 16px;
+        }
+        .card01{
+            background-color: red;
+        }
+        .card02{
+            background-color: aquamarine;
+        }
+        .card03{
+            background-color: chocolate;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>GitHub User Data</h1>
+    <header>
+        <h1>GitHub User Data</h1>
+    </header>
+    
     <div id="userData"></div>
     <img src="" alt="">
+
+    <section class="flexbox">
+        <div class="cabecalho">
+            <h2>Flexbox</h2>
+        </div>
+        <div class="cards">
+            <div class="card01 card">
+                <h2>Card Um</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorum quod tempora alias architecto officia.</p>
+                <button>Leia mais</button>
+            </div>
+            <div class="card02 card">
+                <h2>Card Dois</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorum quod tempora alias architecto officia.</p>
+                <button>Leia mais</button>
+            </div>
+            <div class="card03 card">
+                <h2>Card Três</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorum quod tempora alias architecto officia.</p>
+                <button>Leia mais</button>
+            </div>
+        </div>
+        
+    </section>
 
     <script>
         // URL da API do GitHub

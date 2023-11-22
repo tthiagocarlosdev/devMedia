@@ -7753,7 +7753,117 @@ Parabéns! Você aprendeu a utilizar tabelas em HTML. Durante o curso você apre
 
 
 
-#### Exercícios
+#### 
+
+## 7ª Missão - Aprenda a criar um site com layout flexível e navegação entre páginas
+
+### Flexbox
+
+#### 1. Introdução
+
+Vamos falar mais uma vez sobre o tema posicionamento e alinhamento de elementos HTML na página.
+
+Até esse momento utilizamos a **propriedade CSS position** para posicionar elementos na página. Essa é a forma mais simples de posicionamento.
+
+No entanto, essa propriedade não atende tão bem quando precisamos estruturar uma página com um layout um pouco mais complexo, que utilize muitos containers (chamados de **cards**). Principalmente quando o layout pedir muitos containers (cards), um ao lado do outro.
+
+Nesses casos, você precisará da ferramenta chamada **CSS Flexbox**, que na verdade, é a principal forma de posicionar elementos com CSS.
+
+- ##### Limitação do CSS position
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula1/12.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula1/13.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula1/14.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula1/15.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula1/16.png)
+
+
+
+####  2. CSS Flexbox
+
+Nesta aula aprenderemos o que é o Flexbox e os seus conceitos básicos. Mas antes disso veremos como resolver o problema apresentado na aula anterior referente a utilização do CSS position para posicionar elementos (cards).
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/23.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/24.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/26.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/27.png)
+
+- ##### Entendendo o código Flexbox
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/34.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/36.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/37.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/38.png)
+
+- ##### Introdução ao Flexbox
+
+A seguir veremos mais sobre a principal forma de posicionar elementos HTML, o Flexbox:
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/40.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/43.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/44.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/45.png)
+
+- ##### Páginas flexíveis
+
+A seguir veremos mais sobre o conceito de páginas flexíveis, e como elas se adaptam a diferentes tamanhos de tela:
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/48.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/56.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/57.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/58.png)
+
+- ##### Aplicando o Flexbox no conteúdo dos cards
+
+A ferramenta Flexbox pode ser usada tanto para posicionar os elementos do container pai, quanto para posicionar os elementos que estão dentro dos cards.
+
+Vamos ver como o Flexbox também pode ser aplicado diretamente nos cards:
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/65.png)
+
+![CSS Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula2/66.png)
+
+
+
+#### 3. display: flex e flex-direction
+
+PAREI
+
+#### 4. flex-wrap e flex-flow
+
+#### 5. justify-content
+
+#### 6. align-items
+
+#### 7. Propriedades dos elementos filhos
+
+#### 8. Primeiro exemplo prático
+
+#### 9. Segundo exemplo prático
+
+#### 10. Terceiro exemplo prático
+
+#### 11. Quarto exemplo prático
+
+#### 12. Quinto exemplo prático
+
+#### 13. Flexbox + CSS position
 
 
 
