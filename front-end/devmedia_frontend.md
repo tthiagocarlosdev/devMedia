@@ -8292,7 +8292,144 @@ Para gerar novos efeitos de posicionamento em elementos HTML podemos combinar ta
 
 #### 6. align-items
 
+Nesta aula aprenderemos sobre a propriedade `align-items`, que define como os elementos serão posicionados dentro do container, através dos valores `flex-start`, `flex-end`, `center` e `stretch`.
+
+Essa propriedade realiza o posicionamento dos elementos considerando o alinhamento atual do container, seja ele em linha ou em coluna.
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/157.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/158.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/161.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/162.png)
+
+```css
+.container-flex-start {
+   …
+   display: flex;
+   align-items: flex-start;
+}
+.container-center {
+   …
+   display: flex;
+   align-items: center;
+}
+.container-flex-end {
+   …
+   display: flex;
+   align-items: flex-end;
+}
+```
+
+##### align-items + flex-direction
+Para aplicar os efeitos de posicionamento do `align-items` em containers alinhados em coluna precisaremos combiná-lo com a propriedade `flex-direction: column`.
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/165.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/166.png)
+
+```css
+.container-column-flex-start {
+   …
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.container-column-center {
+   …
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.container-column-flex-end {
+   …
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+```
+
+##### align-items + justify-content
+Para gerar novos efeitos de posicionamento em elementos HTML podemos combinar também as propriedades align-items e justify-content.
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/170.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/171.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/172.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/173.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/174.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/175.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/176.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/177.png)
+
+```css
+.container-stretch-center {
+   …
+   display: flex;
+   align-items: stretch;
+   justify-content: center;
+}
+.container-center-center {
+   …
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container-center-space-between {
+   …
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.container-center-space-around {
+   …
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.container-center-space-evenly {
+   …
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+```
+
+##### Utilizando align-items no conteúdo dos cards
+Vamos agora mostrar um exemplo de como utilizar a propriedade align-items para alinhar o conteúdo em um card. 
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/179.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/180.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/181.png)
+
+![align-items](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula6/185.png)
+
+```css
+.card-center {
+   …
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+```
+
+
+
 #### 7. Propriedades dos elementos filhos
+
+PAREI
 
 #### 8. Primeiro exemplo prático
 
