@@ -8010,9 +8010,106 @@ Vamos agora mostrar um exemplo de como utilizar as propriedades `display: flex` 
 
 #### 4. flex-wrap e flex-flow
 
+Nesta aula aprenderemos sobre as propriedades `flex-wrap` e o `flex-flow`.
+
+O `flex-wrap` é uma propriedade que indica se os elementos de um container devem (ou não) quebrar linha, para ter o posicionamento ajustado.
+
+O `flex-flow` é uma propriedade CSS que funciona como uma forma abreviada das propriedades `flex-direction` e `flex-wrap`.
+
+Ambas as propriedades estão relacionadas ao uso da técnica Flexbox. Antes de abordarmos mais sobre o flex-wrap, vejamos a relação entre o `flex-wrap` e o `display: flex`.
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/102.png)
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/103.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class04</title>
+    <link rel="stylesheet" href="ex_class04.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Imagem Produto 1</div>
+        <div class="box2">Imagem Produto 2</div>
+        <div class="box3">Imagem Produto 3</div>
+      </div>
+</body>
+</html>
+```
+
+```css
+.container {
+    width: 450px;
+    padding: 40px 20px 20px;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.box1,
+.box2,
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid gray;
+}
+```
+
+
+
+##### flex-wrap:
+
+No flow a seguir conheceremos mais sobre a propriedade `flex-wrap` e como podemos utilizá-la para permitir quebras de linha em um container:
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/108.png)
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/109.png)
+
+```css
+.container-quebra-de-linha {
+   …
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.container-quebra-de-linha-reversa {
+   …
+   display: flex;
+   flex-wrap: wrap-reverse;
+}
+```
+
+##### flex-flow
+A propriedade `flex-flow` é uma abreviação de duas propriedades CSS: `flex-direction` e `flex-wrap`.
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/111.png)
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/112.png)
+
+![flex-wrap e flex-flow](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula4/113.png)
+
+```css
+.container-em-linha-sem-quebra-de-linha {
+   display: flex;
+   flex-flow: row nowrap;
+}
+
+.container-em-linha-com-quebra-de-linha {
+   …
+   display: flex;
+   flex-flow: row wrap;
+}
+```
+
 
 
 #### 5. justify-content
+
+
 
 #### 6. align-items
 
