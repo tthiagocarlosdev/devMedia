@@ -8109,6 +8109,185 @@ A propriedade `flex-flow` é uma abreviação de duas propriedades CSS: `flex-di
 
 #### 5. justify-content
 
+Nesta aula aprenderemos sobre a propriedade `justify-content` cujo objetivo é gerar um espaçamento entre os elementos de um container e também definir os seus posicionamentos.
+
+A relação entre o `justify-content`  e o `display: flex`:
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/116.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/117.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/119.png)
+
+##### Entendendo a propriedade
+Ao utilizar a técnica Flexbox em um container, o primeiro comportamento que esse container apresentará será ter seus elementos alinhados à esquerda. Esse comportamento acontece devido à propriedade `justify-content: flex-start`.
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/121.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/122.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/123.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/124.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/125.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/126.png)
+
+```css
+.container-flex-end {
+   …
+   display: flex;
+   justify-content: flex-end;
+}
+.container-center {
+   …
+   display: flex;
+   justify-content: center;
+}
+.container-space-between {
+   …
+   display: flex;
+   justify-content: space-between;
+}
+.container-space-around {
+   …
+   display: flex;
+   justify-content: space-around;
+}
+.container-space-evenly {
+   …
+   display: flex;
+   justify-content: space-evenly;
+}
+```
+
+##### justify-content + flex-direction
+Para aplicar os efeitos de posicionamento do `justify-content` em containers alinhados em coluna precisaremos combiná-lo com a propriedade `flex-direction`.
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/128.png)
+
+```css
+.container-column-flex-end {
+   …
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.container-column-center {
+   …
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.container-column-space-between {
+   …
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.container-column-space-around {
+   …
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.container-column-space-evenly {
+   …
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+```
+
+##### justify-content + flex-wrap
+Para gerar novos efeitos de posicionamento em elementos HTML podemos combinar também as propriedades `justify-content` e `flex-wrap`.
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/139.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/140.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/141.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/142.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/143.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/144.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/145.png)
+
+```css
+.container-wrap-flex-end {
+   …
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   gap: 30px;
+}
+.container-wrap-center {
+   …
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+}
+.container-wrap-space-between {
+   …
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 30px;
+}
+.container-wrap-space-around {
+   …
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 30px;
+}
+.container-wrap-space-evenly {
+   …
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap: 30px;
+}
+```
+
+##### Posicionando o conteúdo de um card com o justify-content
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/148.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/149.png)
+
+![justify-content](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula5/153.png)
+
+```css
+.card-center {
+  …
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-space-between {
+   …
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-space-around {
+   …
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+```
+
 
 
 #### 6. align-items
