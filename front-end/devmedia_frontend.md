@@ -7843,9 +7843,174 @@ Vamos ver como o Flexbox também pode ser aplicado diretamente nos cards:
 
 #### 3. display: flex e flex-direction
 
-PAREI
+Aprenderemos sobre o `display: flex` e como ele é utilizado para posicionar elementos.
+
+O `display: flex` é a propriedade CSS mais simples relacionada ao uso da ferramenta Flexbox.
+
+Antes de abordarmos mais sobre ele, relembraremos como utilizamos a propriedade display até o momento:
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/68.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/69.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/70.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/71.png)
+
+
+
+##### Usando Flexbox: primeiro exemplo
+
+Agora que revisamos o conteúdo sobre a propriedade display, começaremos a praticar o uso do Flexbox. Iniciaremos com um exemplo simples, mostrando como utilizar o display: flex.
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/74.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/75.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/77.png)
+
+##### Ajustando a largura dos cards com display: flex
+Um ponto importante no uso do display: flex é o ajuste da largura dos elementos (cards):
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/80.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/81.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class01</title>
+    <style>
+        .container {
+            padding: 40px 20px 20px;
+            background-color: black;
+            display: flex;
+        }
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Imagem Produto 1</div>
+        <div class="box2">Imagem Produto 2</div>
+        <div class="box3">Imagem Produto 3</div>
+    </div>
+</body>
+</html>
+```
+
+
+
+##### flex-direction
+
+Ao utilizar o display: flex em um container, por padrão, os elementos serão sempre alinhados lado a lado. Esse comportamento acontece devido à propriedade `flex-direction: row`.
+
+Vamos aprender mais sobre a propriedade flex-direction e como podemos utilizá-la para alinhar elementos em diversas direções:
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/85.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/86.png)
+
+```css
+.container-em-linha {
+  …
+  display: flex;
+  flex-direction: row;
+}
+.container-em-coluna {
+  …
+  display: flex;
+  flex-direction: column;
+}
+.container-em-linha-inversa {
+  …
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container-em-coluna-inversa {
+  …
+  display: flex;
+  flex-direction: column-reverse;
+}
+```
+
+##### Alinhando o conteúdo de um card
+Vamos agora mostrar um exemplo de como utilizar as propriedades `display: flex` e `flex-direction` para alinhar o conteúdo dentro de um card:
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/93.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/94.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/95.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/96.png)
+
+![Propriedades do Flexbox](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula3/97.png)
+
+- ##### ex_class03b
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class03b</title>
+    <link rel="stylesheet" href="ex_class03b.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Samsung Galaxy M53</h3>
+            <img src="https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-m53-128gb-azul-5g/magazineluiza/235499300/6ee9f793c7514fc2b8875754ee67e2ac.jpg"/>
+            <small>R$1.599,99</small>
+        </div>
+        <div class="card">
+          <h3>Motorola Edge 30</h3>
+          <img src="https://carrefourbr.vtexassets.com/arquivos/ids/74779691-1280-auto?v=637987785140000000&width=1280&height=auto&aspect=true"/>
+          <small>R$2.599,99</small>
+        </div>
+      </div>
+</body>
+</html>
+```
+
+```css
+.container {
+    padding: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card {
+    width: 300px;
+    height: 180px;
+    padding: 10px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card img{
+    width: 100px;
+  }
+```
+
+
 
 #### 4. flex-wrap e flex-flow
+
+
 
 #### 5. justify-content
 
