@@ -8429,9 +8429,269 @@ Vamos agora mostrar um exemplo de como utilizar a propriedade align-items para a
 
 #### 7. Propriedades dos elementos filhos
 
-PAREI
+Nesta aula aprenderemos sobre as propriedades `flex-grow`, `flex-shrink`, `flex-basis`, `flex`.
+
+Essas propriedades são de uso exclusivo dos elementos filhos, ou seja, elas deverão ser aplicadas no código CSS dos cards (ou no CSS do conteúdo dos cards).
+
+Iniciaremos pelo `flex-grow`. Essa propriedade indica como um elemento filho (o card) ocupará o espaço disponível, conforme a largura do container pai:
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/187.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/188.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/189.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/190.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/192.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/193.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_class07</title>
+    <link rel="stylesheet" href="ex_class07.css">
+</head>
+<body>
+    <div class="topo">
+        <h1>flex-grow</h1>
+    </div>
+    <div class="container">
+        <div class="cards">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Long-haired_German_shepherd_dog.jpg/1024px-Long-haired_German_shepherd_dog.jpg" />
+        </div>
+        <div class="cards">
+        <img src="https://s2.glbimg.com/-w8CFFSAmvD6o4yHGAIcCS5I6L4=/e.glbimg.com/og/ed/f/original/2019/05/20/1024px-norwich_terrier1.jpg" />
+        </div>
+        <div class="cards">
+        <img src="https://pixahive.com/wp-content/uploads/2020/09/Rottweiler-Face-on-Focus-110204-pixahive-1024x683.jpg" />
+        </div>
+        <div class="cards">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Cachorro_Preparado_%28156012015%29.jpeg/1024px-Cachorro_Preparado_%28156012015%29.jpeg" />
+        </div>
+        <div class="cards">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/000_American_Pit_Bull_Terrier.jpg/1024px-000_American_Pit_Bull_Terrier.jpg" />
+        </div>
+        <div class="cards">
+        <img src="https://www.protexinvet.com/userfiles/image/dog61.jpg" />
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```css
+.topo {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.topo h1{
+    font-size: 48px;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    padding: 80px 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cards {
+    width: 250px;
+    flex-grow: 1;
+}
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+}
+```
+
+##### Sintaxe da propriedade flex-grow:
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/196.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/197.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/200.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/201.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/202.png)
+
+```html
+<div class="container">
+  <div class="card card-um">Imagem Card 1</div>
+  <div class="card card-dois">Imagem Card 2</div>
+  <div class="card card-tres">Imagem Card 3</div>
+  <div class="card card-quatro">Imagem Card 4</div>
+  <div class="card card-cinco">Imagem Card 5</div>
+  <div class="card card-seis">Imagem Card 6</div>
+</div>
+```
+
+```css
+.container {
+  padding: 60px 30px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.card-tres {
+  flex-grow: 2;
+}
+.card-cinco {
+  flex-grow: 3;
+}
+```
+
+##### Crescimento dos cards conforme a sua largura original
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/204.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/205.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/206.png)
+
+```html
+<div class="containerGray">
+        <div class="cardGray cardGrayUm">Imagem Card 1</div>
+        <div class="cardGray cardGrayDois">Imagem Card 2</div>
+        <div class="cardGray cardGrayTres">Imagem Card 3</div>
+</div>
+```
+
+```css
+.containerGray{
+    margin: 50px 0;
+    background-color: gray;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardGray {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+.cardGrayUm {
+    width: 100px;
+    height: 100px;
+}
+.cardGrayDois {
+    width: 200px;
+    height: 100px;
+}
+.cardGrayTres {
+    width: 300px;
+    height: 100px;
+}
+```
+
+##### flex-shrink
+Agora vamos conhecer a propriedade `flex-shrink`. Essa propriedade indica como um elemento filho (o card) terá seu tamanho reduzido para continuar a caber em um container.
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/211.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/212.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/213.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/214.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/215.png)
+
+##### flex-basis
+Vejamos agora a propriedade `flex-basis`. Essa propriedade indica uma largura ou uma altura inicial para um elemento filho (o card), conforme o alinhamento do container:
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/217.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/218.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/219.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/220.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/221.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/222.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/223.png)
+
+```css
+.container {
+  padding: 60px 30px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  height: 200px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 200px;
+}
+```
+
+##### Flex
+A propriedade `flex` é uma abreviação das propriedades: `flex-grow`, `flex-shrink` e `flex-basis`.
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/225.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/226.png)
+
+![Propriedades dos elementos filhos](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula7/227.png)
+
+```css
+.container-em-linha-sem-quebra-de-linha {
+   padding: 40px 20px 20px;
+  background-color: black;
+  display: flex;
+}
+
+.card {
+  height: 200px;
+  background-color: white;
+  border: 1px solid gray;
+  flex: 1 1 auto;
+}
+```
+
+
 
 #### 8. Primeiro exemplo prático
+
+PAREI
 
 #### 9. Segundo exemplo prático
 

@@ -237,6 +237,76 @@
 }
 ```
 
+- flex-grow - elemento filho ocupará o espaço disponível, conforme a largura do elemento pai:
+
+```css
+.elementoPai{
+    display: flex;
+}
+.elementoFilho{
+    flex-grow: 1;
+}
+```
+
+- flex-grow não aplicado
+
+```css
+.elementoPai{
+    display: flex;
+}
+.elementoFilho{
+    flex-grow: 0;
+}
+```
+
+- flex-shrink - indica como um elemento filho terá seu tamanho reduzido para continuar a caber em um elemento pai:
+
+```css
+.elementoPai{
+    display: flex;
+}
+.elementoFilho{
+    flex-shrink: 1;
+}
+```
+
+- flex-basis - indica uma largura ou uma altura inicial para um elemento filho, conforme o alinhamento do elemento pai:
+
+  - define a largura inicial:
+
+  ```css
+  .elementoPai{
+      display: flex;
+      flex-direction: row;
+  }
+  .elementoFilho{
+      flex-basis: 1;
+  }
+  ```
+
+  - define a altura inicial:
+
+  ```css
+  .elementoPai{
+      display: flex;
+      flex-direction: column;
+  }
+  .elementoFilho{
+      flex-basis: 1;
+  }
+  ```
+
+- Flex - abreviação das propriedades: `flex-grow`, `flex-shrink` e `flex-basis`:
+
+```css
+.elementoPai{
+    display: flex;
+}
+.elementoFilho{
+    flex: 1 1 auto;
+}
+```
+
 
 
 

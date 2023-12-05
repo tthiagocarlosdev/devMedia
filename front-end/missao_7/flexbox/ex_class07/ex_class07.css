@@ -1,0 +1,82 @@
+.topo {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.topo h1{
+    font-size: 48px;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    padding: 80px 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cards {
+    width: 250px;
+    flex-grow: 1;
+}
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.containerEmBranco {
+    padding: 60px 30px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.cardEmBranco {
+    width: 200px;
+    height: 200px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+  
+.card-tres {
+    flex-grow: 2;
+}
+.card-cinco {
+    flex-grow: 3;
+}
+
+.containerGray{
+    margin: 50px 0;
+    background-color: gray;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardGray {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+.cardGrayUm {
+    width: 100px;
+    height: 100px;
+}
+.cardGrayDois {
+    width: 200px;
+    height: 100px;
+}
+.cardGrayTres {
+    width: 300px;
+    height: 100px;
+}
