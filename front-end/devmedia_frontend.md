@@ -8691,9 +8691,125 @@ A propriedade `flex` é uma abreviação das propriedades: `flex-grow`, `flex-sh
 
 #### 8. Primeiro exemplo prático
 
-PAREI
+![Primeiro exemplo prático](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula8/229.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático 01</title>
+    <link rel="stylesheet" href="ex_class08.css">
+</head>
+<body>
+    <header>
+        <h1>Primeiro Exemplo Prático</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+              <div class="container-imagem">
+                <img src="./img/thumb-curso1.png" />
+              </div>
+              <div class="container-info">
+                <h3>Publique seu site na internet</h3>
+                <p>
+                  Uma das tarefas mais comuns que você vai se deparar durante sua carreira de programador front-end é publicar o seu site.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="container-imagem">
+                <img src="./img/thumb-curso2.png" />
+              </div>
+              <div class="container-info">
+                <h3>Componentização de apps com Props + useState</h3>
+                <p>
+                  No React precisaremos passar informações entre componentes...
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="container-imagem">
+                <img src="./img/thumb-curso3.png" />
+              </div>
+              <div class="container-info">
+                <h3>Modificando o comportamento da página com State Hook e evento onClick
+                </h3>
+                <p>
+                  Uma das tarefas mais comuns do programador front-end é...
+                </p>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
+```
+
+```css
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(230, 230, 230);
+}
+
+header h1{
+    border-bottom: 2px solid black;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 280px;
+    background-color: #2f3237;
+    border-radius: 4px;
+}
+
+.container-imagem{
+    height: 150px;
+}
+
+.container-imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-info{
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+```
+
+
 
 #### 9. Segundo exemplo prático
+
+PAREI
 
 #### 10. Terceiro exemplo prático
 
