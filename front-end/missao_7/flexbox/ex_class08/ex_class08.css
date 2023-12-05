@@ -11,7 +11,7 @@ header{
     padding: 45px;
     text-align: center;
     font-size: 24px;
-    background-color: rgb(230, 230, 230);
+    background-color: #f1f1f1;
 }
 
 header h1{
@@ -28,6 +28,7 @@ header h1{
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 16px;
 }
 
 .card{
@@ -51,4 +52,5 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #f1f1f1;
 }

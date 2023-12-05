@@ -8802,6 +8802,7 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #f1f1f1;
 }
 ```
 
@@ -8809,9 +8810,231 @@ header h1{
 
 #### 9. Segundo exemplo prático
 
-PAREI
+![Segundo exemplo prático](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula9/250.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático 02</title>
+    <link rel="stylesheet" href="ex_class09.css">
+</head>
+<body>
+    <header>
+        <h1>Segundo Exemplo Prático</h1>
+    </header>
+    <div class="topo">
+        <h1>Happy<span>Lanches</span></h1>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="card-produto">
+                <div class="container-imagem">
+                    <img src="./img/coxinha.jpg"/>
+                </div>
+                <div class="container-info">
+                    <h3>Coxinha Gourmet</h3>
+                    <p>A coxinha mais saborosa de frango com catupiry</p>
+                    <small>Lanche</small>
+                </div>
+                <div class="container-preco">
+                    <span>R$10,00</span>
+                    <div class="container-icone">
+                        <img src="./img/carrinho.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produto">
+                <div class="container-imagem">
+                    <img src="./img/mousse.png"/>
+                </div>
+                <div class="container-info">
+                    <h3>Mousse de morango</h3>
+                    <p>Uma sobremesa muito saborosa para o pós-refeição</p>
+                    <small>Sobremesa</small>
+                </div>
+                <div class="container-preco">
+                    <span>R$9,50</span>
+                    <div class="container-icone">
+                        <img src="./img/carrinho.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produto">
+                <div class="container-imagem">
+                    <img src="./img/hamburger-artesanal.jpg"/>
+                </div>
+                <div class="container-info">
+                    <h3>Hambúrguer Artesanal</h3>
+                    <p>Excelente hambúrguer artesanal feito com a melhor carne Angus</p>
+                    <small>Lanche</small>
+                </div>
+                <div class="container-preco">
+                    <span>R$25,00</span>
+                    <div class="container-icone">
+                        <img src="./img/carrinho.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produto">
+                <div class="container-imagem">
+                    <img src="./img/pizza.png"/>
+                </div>
+                <div class="container-info">
+                    <h3>Pizza vegana</h3>
+                    <p>Esse é um dos sabores de pizza mais pedidos por quem é vegano</p>
+                    <small>Massas</small>
+                </div>
+                <div class="container-preco">
+                    <span>R$55,00</span>
+                    <div class="container-icone">
+                        <img src="./img/carrinho.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produto">
+                <div class="container-imagem">
+                    <img src="./img/limonada.jpg"/>
+                </div>
+                <div class="container-info">
+                    <h3>Limonada suave</h3>
+                    <p>A limonada é um suco refrescante e ideal para dias de intenso calor</p>
+                    <small>Bebida</small>
+                </div>
+                <div class="container-preco">
+                    <span>R$5,00</span>
+                    <div class="container-icone">
+                        <img src="./img/carrinho.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="card-produto">
+                <div class="container-imagem">
+                    <img src="./img/suco-de-laranja.jpg"/>
+                </div>
+                <div class="container-info">
+                    <h3>Suco de Laranja</h3>
+                    <p>É um suco bastante popular e que vai bem com qualquer lanche</p>
+                    <small>Bebida</small>
+                </div>
+                <div class="container-preco">
+                    <span>R$5,00</span>
+                    <div class="container-icone">
+                        <img src="./img/carrinho.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f1f1f1;
+    margin-bottom: 16px;
+}
+
+header h1{
+    border-bottom: 2px solid black;
+}
+
+.topo {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+.topo span{
+    font-size: 18px;
+    color: springgreen;
+}
+
+.main {
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-produto {
+    box-shadow: 2px 2px 10px black;
+    border-radius: 4px;
+    flex: 1 1 300px;
+}
+
+.container-imagem {
+    height: 200px;
+}
+
+.container-imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.container-info {
+    padding: 0px 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-info h3 {
+    font-size: 18px;
+}
+
+.container-preco {
+    padding: 10px;
+    border-top: 1px solid #c9c4c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-icone {
+    padding: 5px;
+    border: 1px solid #c9c4c4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+```
+
+
 
 #### 10. Terceiro exemplo prático
+
+PAREI
 
 #### 11. Quarto exemplo prático
 
