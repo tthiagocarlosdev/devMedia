@@ -9034,7 +9034,123 @@ header h1{
 
 #### 10. Terceiro exemplo prático
 
-PAREI
+![Terceiro exemplo prático](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula10/279.png)
+
+```html
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático 03</title>
+    <link rel="stylesheet" href="ex_class10.css">
+</head>
+<body>
+    <header>
+        <h1>Terceiro Exemplo Prático</h1>
+    </header>
+    <div class="containerTopo">
+        <div class="containerLogoMarca">
+            <div class="containerImagem">
+                <img src="./img/logo-icone.png" alt="">
+            </div>
+            <div>
+                <h1>AlfaTech</h1>
+                <p>Soluções em hospedagem</p>
+            </div>
+        </div>
+        <div class="containerLinksTopo">
+            <a href="#sectionInformacao">INFORMAÇÕES</a>
+            <a href="#sectionPlanos">PLANOS</a>
+            <a href="#sectionTabelaDePrecos">PREÇOS</a>
+            <a href="#sectionContato">CONTATO</a>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+header{
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f1f1f1;
+    margin-bottom: 16px;
+}
+
+header h1{
+    border-bottom: 2px solid black;
+}
+
+.containerTopo {
+    background-color: white;
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.containerLogoMarca {
+    max-width: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.containerLinksTopo {
+    max-width: 385px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.containerLinksTopo a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #233032;
+}
+
+.containerLinksTopo a:hover{
+    color: #2f86d6;
+}
+
+.containerImagem {
+    width: 100px;
+    height: 100px;
+}
+
+.containerImagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerLogoMarca p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2f86d6;
+}
+```
+
+
 
 #### 11. Quarto exemplo prático
 
