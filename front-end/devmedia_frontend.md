@@ -9154,7 +9154,102 @@ header h1{
 
 #### 11. Quarto exemplo prático
 
+![Quarto exemplo prático](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula11/2.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático 03</title>
+    <link rel="stylesheet" href="ex_class11.css">
+</head>
+<body>
+    <header>
+        <h1>Quarto Exemplo Prático</h1>
+    </header>
+    <div class="secaoBanner">
+        <div class="container">
+            <div class="containerTexto">
+                <p>Simples - Fácil de usar - 10x mais rápido!</p>
+                <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
+                <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa da lentidão na sua hospedagem.</p>
+            </div>
+            <div class="containerImagem">
+                <img src="./img/imagem-banner.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```html
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-color: #f1f1f1; */
+}
+
+header {
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f1f1f1;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    border-bottom: 2px solid black;
+}
+
+.secaoBanner {
+    background-color: #2f86d6;
+    padding: 50px 0px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerTexto {
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1 1 300px;
+}
+
+.containerImagem {
+    flex: 1 1 468px;
+}
+
+.containerImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+```
+
+
+
 #### 12. Quinto exemplo prático
+
+
 
 #### 13. Flexbox + CSS position
 

@@ -7,11 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     /* background-color: #f1f1f1; */
 }
 
-header{
+header {
     width: 100%;
     padding: 45px;
     text-align: center;
@@ -20,6 +20,38 @@ header{
     margin-bottom: 16px;
 }
 
-header h1{
+header h1 {
     border-bottom: 2px solid black;
+}
+
+.secaoBanner {
+    background-color: #2f86d6;
+    padding: 50px 0px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerTexto {
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1 1 300px;
+}
+
+.containerImagem {
+    flex: 1 1 468px;
+}
+
+.containerImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
