@@ -9249,6 +9249,142 @@ header h1 {
 
 #### 12. Quinto exemplo prático
 
+![Quinto exemplo prático](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula12/21.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático 05</title>
+    <link rel="stylesheet" href="ex_class12.css">
+</head>
+<body>
+    <header>
+        <h1>Quinto Exemplo Prático</h1>
+    </header>
+    <div class="container">
+        <h2>HORÁRIOS DE FUNCIONAMENTO</h2>
+        <ul class="listaHorarios">
+            <li>
+              <h3>SEGUNDA</h3>
+              <div></div>
+              <span>FECHADO</span>
+            </li>
+            <li>
+              <h3>TERÇA</h3>
+              <div></div>
+              <p>09:00 - 22:00</p>
+            </li>
+            <li>
+              <h3>QUARTA</h3>
+              <div></div>
+              <p>09:00 - 22:00</p>
+            </li>
+            <li>
+              <h3>QUINTA</h3>
+              <div></div>
+              <p>09:00 - 22:00</p>
+            </li>
+            <li>
+              <h3>SEXTA</h3>
+              <div></div>
+              <p>09:00 - 22:00</p>
+            </li>
+            <li>
+              <h3>SÁBADO</h3>
+              <div></div>
+              <p>12:00 - 22:00</p>
+            </li>
+            <li>
+              <h3>DOMINGO</h3>
+              <div></div>
+              <p>12:00 - 22:00</p>
+            </li>
+          </ul>
+    </div>
+    
+</body>
+</html>
+```
+
+```css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-color: #f1f1f1; */
+}
+
+header {
+    width: 100%;
+    padding: 45px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f1f1f1;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    border-bottom: 2px solid black;
+}
+
+.container {
+    padding: 100px 20px;
+    background-image: url("./img/imagem-de-fundo.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.container h2 {
+    margin-bottom: 30px;
+}
+
+.listaHorarios {
+    width: 100%;
+    max-width: 768px;
+}
+
+.listaHorarios li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.listaHorarios li div {
+    height: 1px;
+    background-color: gray;
+    flex: 1 1  auto;
+}
+
+.listaHorarios li h3 {
+    flex: 0 1 80px;
+}
+
+.listaHorarios li span , p {
+    flex: 0 1 100px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.listaHorarios li span {
+    color: #c4a47c;
+}
+```
+
 
 
 #### 13. Flexbox + CSS position
