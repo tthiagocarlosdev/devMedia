@@ -9389,7 +9389,137 @@ header h1 {
 
 #### 13. Flexbox + CSS position
 
+Nesta aula veremos como utilizar o `Flexbox` e o `CSS position` juntos.
 
+Como vimos, o `CSS position` é a ferramenta mais simples para posicionar elementos.
+
+Já o `Flexbox` é considerado a principal ferramenta do CSS para posicionamento, permitindo facilmente construir páginas com layouts flexíveis. Contudo, o `Flexbox` não substitui totalmente o `CSS position`.
+
+Ambas as ferramentas podem ser utilizadas em conjunto para gerar novos estilos na página.
+
+![Flexbox + CSS position](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula13/43.png)
+
+![Flexbox + CSS position](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula13/44.png)
+
+![Flexbox + CSS position](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula13/46.png)
+
+![Flexbox + CSS position](https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/aula13/47.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rodapé</title>
+    <link rel="stylesheet" href="ex_class13.css">
+</head>
+<body>
+    <div class="container_rodape">
+        <div class="container_imagem">
+            <img src="./img/logo.png">
+        </div>
+        <div class="container_contato">
+            <div>
+                <h3>ENDEREÇO</h3>
+                <p>Av. Bernardino de Campos, 98</p>
+                <p>São Paulo, SP - 23145-678</p>
+            </div>
+            <div>
+                <h3>CONTATO</h3>
+                <p>info@gelateria.com</p>
+                <p>Tel.: (11) 3456-7890</p>
+            </div>
+            <div>
+                <h3>HORÁRIOS</h3>
+                <p>Aberto todos os dias</p>
+                <p>10:00 - 22:00</p>
+            </div>
+        </div>
+        <div class="container_descricao">
+            <div>
+                <img src="./img/instagram.png"/>
+                <img src="./img/facebook.png"/>
+                <img src="./img/whatsapp.png"/>
+            </div>
+            <div>
+                <p>© Gelateria Gourmet</p>
+                <p>Criado por dev.com.br</p>
+            </div>
+            <a href="#topo"></a>
+        </div>
+    </div>
+      
+</body>
+</html>
+```
+
+```css
+.container_rodape {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container_imagem {
+    width: 100px;
+}
+
+.container_imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.container_contato {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container_contato div {
+    padding: 10px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    flex: 1 1 240px;
+    text-align: center;
+}
+
+.container_descricao {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container_descricao img {
+    width: 40px;
+    height: 40px;
+    padding-right: 8px;
+}
+
+.container_descricao a {
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/seta-para-cima.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #dddddd;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 85px;
+}
+```
 
 
 
