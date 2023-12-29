@@ -61,3 +61,37 @@ body {
 .linksDeNavegacao .linkTopo {
     text-transform: uppercase;
 }
+
+.containerPrincipal {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/missao_7/projeto-pousada/assets/img/img-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoContainerPrincipal {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    border-radius: 3px;
+    /* min-height: 250px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 16px;
+}
+
+.textoContainerPrincipal h1 {
+    font-size:72px;
+    padding: 24px;
+}
+
+.textoContainerPrincipal p {
+    font-size: 36px;
+    padding: 16px;
+}
