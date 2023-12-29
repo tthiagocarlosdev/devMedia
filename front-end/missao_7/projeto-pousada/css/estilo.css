@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 16px; */
+}
+
+body {
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    position: fixed;
+    /* border: 1px solid green; */
+}
+
+.larguraPagina {
+    max-width: 1024px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.boxTopo {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.linkPousadaSecreta {
+    flex: 1 1 350px;
+    padding: 16px;
+    /* background-color: bisque; */
+}
+
+.linksDeNavegacao {
+    /* background-color: turquoise; */
+    flex: 1 1 350px;
+    padding: 16px;
+    text-align: end;
+}
+
+.linkTopo {
+    text-decoration: none;
+    padding: 0 16px;
+    color: black;
+    font-size: 24px;
+}
+
+.linkPousadaSecreta span {
+    color: rgb(0, 0, 255);
+}
+
+.linksDeNavegacao .linkTopo {
+    text-transform: uppercase;
+}
