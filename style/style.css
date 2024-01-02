@@ -10,6 +10,33 @@
 
 @media(max-width:1080px){
 	html{
+		font-size: 90%;
+	}
+}
+
+@media(max-width:720px){
+	html{
+		font-size: 75%;
+	}
+}
+
+@media(max-width:600px){
+	html{
+		font-size: 60%;
+	}
+}
+
+@media(max-width:300px){
+	html{
+		font-size: 40%;
+	}
+}
+
+
+/* ================ */
+
+/* @media(max-width:1080px){
+	html{
 		font-size: 93.75%;
 	}
 }
@@ -30,7 +57,7 @@
 	html{
 		font-size: 75.5%;
 	}
-}
+} */
 
 :root {
     --white: #ffffff;
@@ -56,6 +83,8 @@
 
 .sectionProjetos{
     padding: 2rem;
+    width: 100%;
+    display: flex;
 }
 
 .backGroundSlateGray{
@@ -142,12 +171,13 @@ h2{
 
 .conteudo{
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
     width: 100%;
 }
 
 .nomeImagemProjeto{
-    flex: 1;
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,8 +194,8 @@ h2{
 }
 
 .descricao{
-    padding: 1rem 0 0 1rem;
-    flex: 1.5;
+    padding: 1rem 0 0 2rem;
+    flex: 1.5 1 50%;
 }
 
 .descricao p{
@@ -173,6 +203,7 @@ h2{
     font-weight: 500;
     line-height: 1.7rem;
     text-align: justify;
+    padding: 0.5rem;
 }
 
 .descricao span{
@@ -190,18 +221,30 @@ h2{
     line-height: 1.7rem;
 }
 
-.botaoDeAcessoAoProjeto{
+.boxAcessoAoProjeto {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+}
+
+.boxTextoBotaoDeAcessoAoProjeto {
+    flex: 1 1 50%;
+}
+
+.boxBotaoDeAcessoAoProjeto {
+    /* background-color: #DE7B5D; */
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .botaoDoLink {
     text-decoration: none;
     width: 10rem;
     height: 3.5rem;
-    margin-left: 2rem;
 
     display: flex;
     align-items: center;
@@ -229,6 +272,8 @@ h2{
 .rodape {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color:var(--royalBlue);
     padding: 1rem 0;
 }
