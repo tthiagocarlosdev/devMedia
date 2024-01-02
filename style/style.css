@@ -177,7 +177,7 @@ h2{
 }
 
 .nomeImagemProjeto{
-    flex: 1 1 50%;
+    flex: 1 1 235px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,8 +233,12 @@ h2{
     flex: 1 1 50%;
 }
 
+.descricao .textoAcessoAoProjeto {
+    font-weight: bold;
+    text-align: left;
+}
+
 .boxBotaoDeAcessoAoProjeto {
-    /* background-color: #DE7B5D; */
     flex: 1 1 40%;
     display: flex;
     justify-content: flex-end;
@@ -266,6 +270,18 @@ h2{
 
 .botaoDoLink:hover {
     background-color: var(--yellowGreen)
+}
+
+.fa-circle-arrow-up {
+    font-size: 4rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--yellowGreen);
+}
+
+.fa-circle-arrow-up:hover {
+    color: var(--salmon);
 }
 
 /* BOX-FOOTER - BOX-FOOTER - BOX-FOOTER - BOX-FOOTER - BOX-FOOTER */
