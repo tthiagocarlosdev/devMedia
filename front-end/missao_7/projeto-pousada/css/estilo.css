@@ -179,8 +179,6 @@ body {
 }
 
 .cardSobre {
-    /* background-color: thistle; */
-    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -200,3 +198,43 @@ body {
     width: 120px;
 }
 
+.footer {
+    background-color: green;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.containerDadosRodape {
+    border-bottom: 1px solid gray;
+    padding: 32px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardLinksRodape {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    flex: 1 1 236px;
+}
+
+.imagemRodape {
+    height: 45px;
+    padding-right: 8px;
+}
+
+.cardLinksRodape .linkRodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.containerCopyRightRodape {
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
