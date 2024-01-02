@@ -10,6 +10,7 @@
 
 body {
     width: 100vw;
+    color: gray;
 }
 
 .header {
@@ -18,7 +19,7 @@ body {
     background-color: white;
     position: fixed;
     top: 0;
-    /* border: 1px solid green; */
+    border-bottom: 1px solid gray;
 }
 
 .larguraPagina {
@@ -166,3 +167,36 @@ body {
     height: 450px;
     border: 0;
 }
+
+.containerSobreCards {
+    margin-top: 32px;
+    /* background-color: tomato; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cardSobre {
+    /* background-color: thistle; */
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 492px;
+    height: 150px;
+}
+
+.textoCardSobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.imagensCards {
+    height: 100%;
+    width: 120px;
+}
+
