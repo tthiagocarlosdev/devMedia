@@ -1,15 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Source Sans Pro', sans-serif;
-    /* font-size: 16px; */
+.containerImagemTopo {
+    background-image: url('../assets/img/img-fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 64px;
+    height: 120px;
+    width: 100%;
 }
 
-body {
-    width: 100vw;
-    color: gray;
-    background-color: tomato;
+.containerInformacoesDosQuartos {
+    /* background-color: plum; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxTituloInformacoes {
+    padding: 16px 16px 40px 16px;
+}
+
+.boxListaInformacoes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px 8px 60px;
+}
+
+.opcoesNaLista {
+    flex: 1 1 226px;
+    /* border: 1px solid red; */
+    padding-bottom: 8px;
 }

@@ -133,13 +133,14 @@ body {
     padding: 24px;
 }
 
-.cardLinksQuartos {
+.cardImagensQuartos {
     /* background-color: blueviolet; */
     flex: 1 1 250px;
 }
 
 .imagens {
-    width: 100%;
+    width: 312px;
+    height: 195px;
 }
 
 .cardLinkQuarto {
