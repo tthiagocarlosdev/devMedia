@@ -5,27 +5,33 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Source Sans Pro', sans-serif;
-    /* font-size: 16px; */
+}
+
+:root {
+    --white: #fff;
+    --gray: #808080;
+    --blue:#0000ff;
+    --transparentBlack:hsla(0, 0%, 0%, 0.3);
+    --green:#008000;
 }
 
 body {
     width: 100vw;
-    color: gray;
+    color: var(--gray);
 }
 
 .header {
     width: 100%;
     min-height: 60px;
-    background-color: white;
+    background-color: var(--white);
     position: fixed;
     top: 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--gray);
 }
 
 .larguraPagina {
     max-width: 1024px;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
 
 .boxTopo {
@@ -39,11 +45,9 @@ body {
 .linkPousadaSecreta {
     flex: 1 1 350px;
     padding: 16px;
-    /* background-color: bisque; */
 }
 
 .linksDeNavegacao {
-    /* background-color: turquoise; */
     flex: 1 1 350px;
     padding: 16px;
     text-align: end;
@@ -52,12 +56,12 @@ body {
 .linkTopo {
     text-decoration: none;
     padding: 0 16px;
-    color: gray;
+    color: var(--gray);
     font-size: 24px;
 }
 
 .linkPousadaSecreta span {
-    color: rgb(0, 0, 255);
+    color: var(--blue);
 }
 
 .linksDeNavegacao .linkTopo {
@@ -77,14 +81,14 @@ body {
 }
 
 .textoContainerPrincipal {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid white;
+    background-color: var(--transparentBlack);
+    border: 1px solid var(--white);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white);
     padding: 16px;
 }
 
@@ -99,14 +103,13 @@ body {
 }
 
 .containerApresentacao {
-    /* background-color: tomato; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 24px;
-    color: gray;
+    color: var(--gray);
 }
 
 .tituloDosContainers {
@@ -122,7 +125,6 @@ body {
 }
 
 .containerLinksQuartos {
-    /* background-color: coral; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -134,8 +136,12 @@ body {
 }
 
 .cardImagensQuartos {
-    /* background-color: blueviolet; */
     flex: 1 1 250px;
+}
+
+.cardImagem {
+    display: flex;
+    justify-content: center;
 }
 
 .imagens {
@@ -144,9 +150,8 @@ body {
 }
 
 .cardLinkQuarto {
-    /* background-color: burlywood; */
     width: 100%;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +160,7 @@ body {
 .linksCards {
     text-decoration: none;
     text-align: center;
-    color: gray;
+    color: var(--gray);
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
@@ -171,11 +176,10 @@ body {
 
 .containerSobreCards {
     margin-top: 32px;
-    /* background-color: tomato; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -200,17 +204,17 @@ body {
 }
 
 .footer {
-    background-color: green;
+    background-color: var(--green);
     margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white);
 }
 
 .containerDadosRodape {
-    border-bottom: 1px solid gray;
-    padding: 32px 0;
+    border-bottom: 1px solid var(--gray);
+    padding: 32px 8px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -219,6 +223,7 @@ body {
 .cardLinksRodape {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 50px;
     flex: 1 1 236px;
 }
@@ -230,7 +235,7 @@ body {
 
 .cardLinksRodape .linkRodape a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .containerCopyRightRodape {

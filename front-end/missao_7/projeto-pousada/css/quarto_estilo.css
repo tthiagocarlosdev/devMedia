@@ -8,8 +8,6 @@
 }
 
 .containerInformacoesDosQuartos {
-    /* background-color: plum; */
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +27,9 @@
 
 .opcoesNaLista {
     flex: 1 1 226px;
-    /* border: 1px solid red; */
     padding-bottom: 8px;
+}
+
+.opcoesNaListaFlex2 {
+    flex: 2 2 226px;
 }
