@@ -5,3 +5,15 @@
     font-family: sans-serif;
     text-decoration: none;
 }
+
+body {
+    background-color: peru;
+}
+
+.bannerSection {
+    background-image: url('../img/banner-topo.jpg');
+}
+
+.titleContainer {
+    border: 2px solid red;
+}
