@@ -6,14 +6,110 @@
     text-decoration: none;
 }
 
+:root {
+    --roxo: #3c184e;
+    --branco: #fff;
+    --sombreado: #1f26875e;
+    --sombreadoImagens: #0000005c;
+    --transparencia: #ffffffc4;
+}
+
 body {
     background-color: peru;
 }
 
+/* bannerSection bannerSection bannerSection bannerSection bannerSection */
 .bannerSection {
     background-image: url('../img/banner-topo.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.logoContainer {
+    color: var(--roxo);
+    max-width: 250px;
+}
+
+.firstParagraphOfTheLogo {
+    font-size: 35px;
+    margin-bottom: 0 0 5px 0;
+}
+
+.logoImage {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.secondParagraphOfTheLogo {
+    font-size: 14px;
+    text-align: center;
 }
 
 .titleContainer {
-    border: 2px solid red;
+    max-width: 1024px;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 70px auto 0 auto;
+    background-color: var(--transparencia);
+    box-shadow: 0 8px 32px var(--sombreado);
+}
+
+.titleContainer h1 {
+    color: var(--roxo);
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.titleParagraph {
+    color: var(--branco);
+    width: 200px;
+    padding: 10px 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--roxo);
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactUsButton {
+    color: var(--branco);
+}
+
+.socialMediaImages {
+    width: 20px;
+}
+
+/* servicesSection servicesSection servicesSection servicesSection */
+.servicesSection {
+    color: var(--roxo);
+}
+
+.serviceImages {
+    box-shadow: 5px 5px 10px var(--sombreado);
+}
+
+.services span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* socialNetworksSection socialNetworksSection socialNetworksSection socialNetworksSection */
+.socialNetworksSection {
+    color: var(--branco);
+}
+
+.whereAreWeSection {
+    color: var(--roxo);
+}
+
+.footerSection {
+    color: var(--branco);
+}
+
+.footerSection a {
+    color: var(--branco);
+    font-weight: bold;
 }
