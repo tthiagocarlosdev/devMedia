@@ -175,8 +175,29 @@
 /* whereAreWeSection whereAreWeSection whereAreWeSection whereAreWeSection whereAreWeSection */
 .whereAreWeSection {
     color: var(--roxo);
+    width: 100%;
+    padding: 120px 80px;
+    text-align: center;
 }
 
+.sectionTitleWhereWeAre {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+.paragraphOfTheSectionWhereWeAre {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+.iframeMapa {
+    width: 800px;
+    height: 450px;
+}
+
+/* footerSection footerSection footerSection footerSection footerSection footerSection */
 .footerSection {
     color: var(--branco);
 }
