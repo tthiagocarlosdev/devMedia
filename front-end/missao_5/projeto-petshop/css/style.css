@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: peru;
+    /* background-color: peru; */
 }
 
 /* bannerSection bannerSection bannerSection bannerSection bannerSection */
@@ -85,15 +85,40 @@ body {
 /* servicesSection servicesSection servicesSection servicesSection */
 .servicesSection {
     color: var(--roxo);
+    width: 100%;
+    padding: 120px 80px;
 }
 
-.serviceImages {
-    box-shadow: 5px 5px 10px var(--sombreado);
+.servicesSectionTitle {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+.containerServiceList {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.services {
+    font-size: 20px;
+    margin: 0 0 20px 0;
 }
 
 .services span {
     font-style: italic;
     font-weight: 700;
+}
+
+.serviceImageContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.serviceImages {
+    border-radius: 5px;
+    box-shadow: 3px 6px 10px 6px var(--sombreadoImagens);
 }
 
 /* socialNetworksSection socialNetworksSection socialNetworksSection socialNetworksSection */
