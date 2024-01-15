@@ -139,13 +139,37 @@
 }
 
 .socialMediaLinksContainer {
-    
+
 }
 
 .socialMediaImages {
     width: 50px;
     height: 50px;
     margin: 0 20px;
+}
+
+/* brandsSection brandsSection brandsSectionbrandsSectionbrandsSection brandsSection brandsSection */
+.brandsSection {
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.brandSectionTitle {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 45px 0;
+    color: var(--roxo);
+}
+
+.brandImageContainers {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.brandImages {
+    width: 148px;
+    height: 148px;
+    margin: 0 15px;
 }
 
 /* whereAreWeSection whereAreWeSection whereAreWeSection whereAreWeSection whereAreWeSection */
