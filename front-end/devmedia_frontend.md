@@ -9523,6 +9523,249 @@ Ambas as ferramentas podem ser utilizadas em conjunto para gerar novos estilos n
 
 
 
+## 9ª Missão - Aprenda a criar um site para o LinkBio do Neymar Jr.
+
+### CSS Pseudo-classes e Pseudo-elementos
+
+#### 1. Introdução
+
+Como utilizar pseudo-classes e pseudo-elementos para estilizar elementos HTML, afetando até mesmo seus comportamentos apenas com o uso de CSS.
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/3.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/4.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/5.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/6.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/8.png)
+
+
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/9.png)
+
+
+
+Porquê pseudo-classes são úteis:
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/15.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/13.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/14.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/18.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/16.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/17.png)
+
+O que são pseudo-elementos:
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/24.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/20.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/22.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/23.png)
+
+
+
+Porquê os pseudo-elementos são úteis:
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/28.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/26.png)
+
+![Aula 1](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/AULA1/27.png)
+
+__Pseudo-classes e Pseudo-elementos são utilizados não apenas para alterar o visual de elementos HTML, mas também são capazes de alterar comportamentos, tais como ocultar e exibir elementos dinamicamente, tudo isso usando apenas o CSS.__
+
+Vamos aprender os seguintes conceitos:
+
+- first-of-type
+- nth-of-type
+- last-of-type
+- first-child
+- last-child
+- nth-child
+- nth-last-child
+- first-letter
+- first-line
+- hover
+- Before
+- After
+
+__As pseudo-classes possuem diversas utilidades para o desenvolvedor, que vão desde definir o estilo dos estados de um elemento até alterá-lo de uma posição específica na estrutura, enquanto os pseudo-elementos tem como objetivo único permitir ao desenvolvedor alterar partes específicas de um elemento, tais como a primeira letra ou primeira linha de um parágrafo.__
+
+#### 2. Pseudo-classes de Estado
+
+Como utilizar as pseudo-classes `hover` e `visited` para estilizar elementos:
+
+Como o `hover` funciona:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/36.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/37.png)
+
+__Apesar de ser mais vista em links e botões, a pseudo-classe hover é compatível com outros elementos HTML tais como divs, spans, tabelas, entre outros.__
+
+Como o `visited` funciona:
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/39.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/40.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/41.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/42.png)
+
+__A pseudo-classe :visited é exclusiva para uso em links - a tag a - pois estiliza especificamente links que já foram visitados.__
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/44.png)
+
+![Aula 2](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula2/45.png)
+
+##### Exemplo prático
+
+Exemplo prático utilizando estes conceitos:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5</title>
+    <link rel="stylesheet" href="ex_class02.css">
+</head>
+<body>
+    <header>
+        PlayStation 5
+    </header>
+    <main>
+        <img class="imagem-capa" src="img/bannertv-ps5.jpg">
+        <h1>PS5: A Nova geração do PlayStation</h1>
+        <section>
+            <h2>Novidades do PlayStation 5</h2>
+            <p>O PlayStation 5 é o novo console da Sony, com CPU AMD Zen 2, de 3,5 GHz, e o SSD personalizado de 825 GB, que proporciona carregamento praticamente instantâneo dos jogos do PS5 instalados e segundo a Sony, o videogame mais rápido do mundo.<br><br>O PS5 será lançado em duas versões: um modelo padrão com unidade de disco Blu-ray Ultra HD e uma edição digital sem unidade de disco. A experiência de jogo para ambos os modelos será a mesma.<br><br>O controle sem fio DualSense que acompanhará o PlayStation 5, irá aprofundar a sensação de imersão durante os jogos com seu feedback tátil imersivo e gatilhos dinâmicos e adaptáveis.<br><br><a href="https://www.playstation.com/pt-br/ps5/" target="_blank">Saiba mais</a></p>
+        </section>
+        <section>
+            <h2>Especificações</h2>
+            <ul>
+                <li>Resolução 4K</li>
+                <li>Suporte a 120hz</li>
+                <li>HDR</li>
+                <li>Raytracing</li>
+                <li>SSD Ultrarrápido</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Jogos</h2>
+            <div class="imagens-jogos">
+                <div class="tres-imagens">
+                    <img src="img/banner-jogo-01.jpg" alt="Spiderman Miles Morales">
+                    <img src="img/banner-jogo-02.jpg" alt="Horizon Forbidden West">
+                    <img src="img/banner-jogo-03.jpg" alt="Ratchet and Clank - Rift Apart">
+                </div>
+                <div class="tres-imagens">
+                    <img src="img/banner-jogo-04.jpg" alt="Gran Turismo 7">
+                    <img src="img/banner-jogo-05.jpg" alt="Returnal">
+                    <img src="img/banner-jogo-06.jpg" alt="Destruction All-Stars">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright PlayStation - 2022
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imagem-capa {
+    width: 100%;
+}
+
+header, footer {
+    width: 100%;
+    height: 42px;
+    font-size: 22px;
+    color: #fff;
+    background: #1b0fdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+section {
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+}
+
+.imagens-jogos img {
+    width: calc((100% - 9px) / 3);
+    box-sizing: border-box;
+}
+
+.imagens-jogos img:hover {
+    border: 3px solid #1b0fdf;
+}
+
+ul {
+    margin: 0 20px;
+}
+
+a {
+    color: #1b0fdf;
+}
+
+a:visited {
+    color: #00894a;
+}
+```
+
+__Utilizar pseudo-classes de estado permite ao desenvolvedor um nível maior de controle sobre o comportamento dos elementos, como definir uma cor diferente para um link já acessado.__
+
+
+
+#### 3. Pseudo-classes Estruturais: of-type
+
+
+
+#### 4. Pseudo-classes Estruturais: child
+
+#### 5. Pseudo-elementos: alterando partes de um elemento
+
+#### 6. Pseudo-elementos: adicionando conteúdos a um elemento
+
+#### 7. Exemplo prático
+
+#### 8. Faça você mesmo
+
 
 
 
