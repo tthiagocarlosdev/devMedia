@@ -9754,9 +9754,311 @@ __Utilizar pseudo-classes de estado permite ao desenvolvedor um nível maior de 
 
 #### 3. Pseudo-classes Estruturais: of-type
 
+Como utilizar as mais diversas pseudo-classes `of-type` para estilizar elementos:
+
+Utilidade do uso de pseudo-classes estruturais do tipo `of-type`:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/69.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/70.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/71.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/72.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/73.png)
+
+Como funcionam as pseudo-classes `of-type`:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/2.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/3.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/5.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/6.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/7.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/8.png)
+
+O que fazer se quiser estilizar o último elemento de uma área específica:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/11.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/12.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/13.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/14.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/15.png)
+
+Conhecendo o uso e o funcionamento das pseudo-classes do tipo `of-type`:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/18.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/20.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/23.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/25.png)
+
+
+
+```css
+p: first-of-type {
+    color: red;
+}
+p: last-of-type {
+    color: red;
+}
+p: nth-of-type(2) {
+    color: red;
+}
+div:nth-of-type(4) {
+    background-color: #eb6565;
+}
+```
+
+Pparâmetros que podem ser utilizados junto da `nth-of-type`:
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/30.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/31.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/32.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/33.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/34.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/35.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/36.png)
+
+```css
+div:nth-of-type(odd) {
+    background-color: #eb6565;
+}
+
+div:nth-of-type(even) {
+    background-color: #60c4ff;
+}
+```
+
+__É importante lembrar que as pseudo-classes of-type se referem sempre ao elemento pai, e que para estilizar uma área específica deve ser informado antes da pseudo-classe a classe ou o seletor da área que se deseja estilizar:__
+
+```css
+.primeira-area p:last-of-type {
+    color: red;
+}
+```
+
+##### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+    <link rel="stylesheet" type="text/css" href="ex_class03.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo da GameStore">
+        <span class="titulo-logo"><span class="logo-destaque">Game</span>Store</span>
+    </header>
+    <main>
+        <section>
+            <h1>Bem-vindo a GameStore</h1>
+
+            <img class="banner" src="img/banner.png" alt="Banner de Halo Infinite">
+        </section>
+        <section class="quem-somos limita-area">
+            <h2>Quem somos</h2>
+
+            <p>A Game Store é uma loja de jogos que está no mercado desde 2000 trazendo os melhores jogos para as mais diversas plataformas.</p>
+            <p>São milhares de jogos pra você conferir e incluem jogos de todas as gerações Xbox, PlayStation e consoles Nintendo. Venha conferir.</p>
+            <p>A GameStore está sempre atualizada para trazer o melhor dos jogos até você!</p>
+        </section>
+        <section class="limita-area">
+            <h2>Os jogos mais vendidos da GameStore</h2>
+
+            <p>Confira na tabela abaixo os 10 jogos mais vendidos da GameStore: </p>
+
+            <table>
+                <thead>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Publicadora</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Halo Infinite</td>
+                        <td>Xbox Game Studios</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Elden Ring</td>
+                        <td>FromSoftware</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Horizon Forbidden West</td>
+                        <td>PlayStation Studios</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Microsoft Flight Simulator</td>
+                        <td>Xbox Game Studios</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nintendo Switch Sports</td>
+                        <td>Nintendo</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>The Legend of Zelda: Four Swords</td>
+                        <td>Capcom</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Gears 5</td>
+                        <td>Xbox Game Studios</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Forza Horizon 5</td>
+                        <td>Xbox Game Studios</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Gran Turismo 7</td>
+                        <td>PlayStation Studios</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Halo: The Master Chief Collection</td>
+                        <td>Xbox Game Studios</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        Copyright 2022 © - GameStore™
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5700cb;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 90px;
+}
+
+.titulo-logo {
+    margin: 0 10px;
+}
+
+.logo-destaque {
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.limita-area {
+    max-width: 1024px;
+}
+
+h1,h2 {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 25px;
+}
+
+.banner {
+    width: 100%;
+}
+
+p {
+    line-height: 32px;
+}
+
+.quem-somos p:last-of-type {
+    display: inline;
+    background: #9154e3;
+    padding: 10px 5px;
+}
+
+table {
+    width: 100%;
+    margin: 25px 0;
+    background: #dfdfdf;
+}
+
+thead {
+    background: #5a5a5a;
+}
+
+th,td {
+    padding: 6px;
+    color: #fff;
+}
+
+tbody tr:nth-of-type(odd) {
+    background: #5700cb;
+}
+
+tbody tr:nth-of-type(even) {
+    background: #9154e3;
+}
+```
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/51.png)
+
+![Aula 3](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula3/56.png)
+
+__O uso de pseudo-classes do tipo of-type permite ao desenvolvedor estilizar elementos irmãos dentro de um mesmo pai. Através dessas pseudo-classes é possível aplicar estilos com base na posição desses elementos dentro do seus pais, e até mesmo criar o famoso efeito zebrado em tabelas e listas.__
+
 
 
 #### 4. Pseudo-classes Estruturais: child
+
+PAREI
 
 #### 5. Pseudo-elementos: alterando partes de um elemento
 
