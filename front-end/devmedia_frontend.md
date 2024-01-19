@@ -10058,9 +10058,251 @@ __O uso de pseudo-classes do tipo of-type permite ao desenvolvedor estilizar ele
 
 #### 4. Pseudo-classes Estruturais: child
 
-PAREI
+Como utilizar as mais diversas pseudo-classes estruturais `child` para estilizar elementos:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/59.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/60.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/61.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/62.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/63.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/64.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/65.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/67.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/70.png)
+
+O funcionamento do `first-child`:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/3.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/4.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/5.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/6.png)
+
+O funcionamento do `last-child`:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/8.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/9.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/10.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/11.png)
+
+Uso do `nth-child` para estilizar posições específicas:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/13.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/14.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/15.png)
+
+Como utilizar `odd` e `even` junto do `nth-child`:
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/17.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/18.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/19.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/20.png)
+
+![Aula 4](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula4/21.png)
+
+__Os tipos child devem ser utilizados quando queremos estilizar elementos caso eles estejam em posições específicas com base em seus elementos pai, por exemplo: estilizar um elemento somente se ele for o 2º parágrafo dentro de um elemento pai, ou a primeira imagem dentro de um elemento pai.__
+
+##### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameReview</title>
+    <link rel="stylesheet" type="text/css" href="ex_class04.css">
+</head>
+<body>
+    <header>
+        <span class="titulo-logo"><span class="logo-destaque">Game</span>Review</span>
+    </header>
+    <main>
+        <section>
+            <img src="img/banner.png" alt="Imagem de capa">
+        </section>
+        <section class="quem-somos limita-area">
+            <h2>Quem somos</h2>
+
+            <p>A Game Store é um site especilizado em análise de jogos das mais diversas plataformas.</p>
+            <p>As nossas reviews são feitas por jogadores experientes e são compostas por uma análise profunda de acada elemento de gameplay.</p>
+            <p>A GameReview faz review de verdade!</p>
+        </section>
+        <section class="limita-area">
+            <h2>Nossos critérios</h2>
+
+            <p>Analisamos os jogos inicialmente pela sua Gameplay, pois é isso que o torna diferente de outras mídias.</p>
+            <p>Outro ponto muito importante, quando aplicável, é a análise da história do jogo.</p>
+            <p>A parte final fica por conta dos gráficos e de questões técnicas como bugs.</p>
+
+            <span class="mais-informacoes">Compartilhamos mais detalhes sobre nossos critérios nas nossas redes sociais.</span>
+        </section>
+        <section class="limita-area">
+            <h2>Os jogos mais bem avaliados da GameReview</h2>
+
+            <p>Confira abaixo os 5 jogos mais bem avaliados da GameReview:</p>
+
+            <div class="jogos-avaliados">
+                <figure>
+                    <span>1º</span>
+                    <img src="img/zelda.jpg" alt="The Legend of Zelda: Skyward Sword - 98">
+                    <figcaption>The Legend of Zelda: Skyward Sword - 98</figcaption>
+                </figure>
+
+                <figure>
+                    <span>2º</span>
+                    <img src="img/halo.jpg" alt="Halo: Combat Evolved - 97">
+                    <figcaption>Halo: Combat Evolved - 97</figcaption>
+                </figure>
+
+                <figure>
+                    <span>3º</span>
+                    <img src="img/spiderman.jpg" alt="Marvel's Spider-man - 95">
+                    <figcaption>Marvel's Spider-man - 95</figcaption>
+                </figure>
+
+                <figure>
+                    <span>4º</span>
+                    <img src="img/daysgone.jpg" alt="Days Gone - 94">
+                    <figcaption>Days Gone - 94</figcaption>
+                </figure>
+
+                <figure>
+                    <span>5º</span>
+                    <img src="img/quantumbreak.jpg" alt="Quantum Break - 94">
+                    <figcaption>Quantum Break - 94</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright 2022 © - GameReview™
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ed5a0e;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.titulo-logo {
+    margin: 0 10px;
+}
+
+.logo-destaque {
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.limita-area {
+    max-width: 1024px;
+}
+
+img {
+    width: 350px;
+}
+
+img:first-child {
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 25px;
+}
+
+p {
+    line-height: 32px;
+}
+
+p:last-child {
+    display: inline;
+    background: #f88143;
+    padding: 10px 5px;
+}
+
+.mais-informacoes {
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 2px solid #ed5a0e;
+}
+
+.jogos-avaliados {
+    width: 100%;
+    display: flex;
+    margin: 25px 0px;
+    overflow-x: scroll;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+figcaption, figure span {
+    margin: 12px 0;
+    padding: 12px 5px;
+    text-align: center;
+    background: #ed5a0e;
+}
+```
+
+__O uso de pseudo-classes do tipo child permite ao desenvolvedor criar estilos que só serão aplicados caso o elemento esteja em uma posição específica dentro do elemento pai. Através de algumas dessas pseudo-classes podemos, por exemplo, definir uma largura de uma imagem apenas se ela for o último elemento dentro de uma div, ou mesmo alterar a cor de fundo de um parágrafo apenas se ele foi o segundo elemento filho de uma área.__
+
+
 
 #### 5. Pseudo-elementos: alterando partes de um elemento
+
+
 
 #### 6. Pseudo-elementos: adicionando conteúdos a um elemento
 

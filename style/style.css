@@ -87,13 +87,14 @@
     display: flex;
 }
 
-.backGroundSlateGray{
+section:nth-child(odd) {
     background-color: var(--slateGray);
 }
 
-.backGroundCornflowerBlue{
+section:nth-child(even) {
     background-color: var(--rosyBrown);
 }
+
 
 .larguraDaPagina{
     width: 1024px;
