@@ -10302,6 +10302,183 @@ __O uso de pseudo-classes do tipo child permite ao desenvolvedor criar estilos q
 
 #### 5. Pseudo-elementos: alterando partes de um elemento
 
+Como utilizar dois pseudo-elementos para estilizar a parte de um texto em um elemento.
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/41.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/43.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/44.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/45.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/46.png)
+
+Como alterar a primeira letra de um texto utilizando pseudo-elementos:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/49.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/50.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/51.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/52.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/53.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/54.png)
+
+```css
+article::first-letter {
+    font-size: 32px;
+}
+```
+
+__Ao declarar um pseudo-elemento, é possível fazer utilizando duas sintaxes:__
+
+```css
+article:first-letter {
+ //Utilizando 1 sinal de : (dois pontos)
+}
+```
+
+__ou__
+
+```css
+article::first-letter {
+ //Utilizando 2 sinais de :: (dois pontos)
+}
+```
+
+__A melhor forma de escrever é utilizando dois pontos (::) para ficar mais fácil diferenciar uma pseudo-classe de um pseudo-elemento.__
+
+Como utilizar o pseudo-elemento `first-line` para estilizar a primeira linha de um texto:
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/56.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/57.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/58.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/59.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/60.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/61.png)
+
+![Aula 5](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula5/62.png)
+
+```css
+article::first-line {
+  background: yellow;
+}
+```
+
+__Pseudo-elementos são usados para estilizar parte de elementos de maneira simples e com um código limpo. Através de first-letter e first-line é possível deixar os textos com visual mais interessante sem a necessidade de fazer alterações na estrutura HTML.__
+
+##### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas</title>
+    <link rel="stylesheet" type="text/css" href="ex_class05.css">
+</head>
+<body>
+    <header>
+        <span class="titulo-logo">Poemas</span>
+    </header>
+    <h1>Soneto do amigo</h1>
+    <div>
+        <img src="img/amigo.png">
+    </div>
+    <article>
+        <section>
+            <p>Enfim, depois de tanto erro passado<br>Tantas retaliações, tanto perigo<br>Eis que ressurge noutro o velho amigo<br>Nunca perdido, sempre reencontrado.</p>
+        </section>
+        <section>
+            <p>É bom sentá-lo novamente ao lado<br>Com olhos que contêm o olhar antigo<br>Sempre comigo um pouco atribulado<br>E como sempre singular comigo.</p>
+        </section>
+        <section>
+            <p>Um bicho igual a mim, simples e humano<br>Sabendo se mover e comover<br>E a disfarçar com o meu próprio engano.</p>
+        </section>
+        <section>
+            <p>O amigo: um ser que a vida não explica<br>Que só se vai ao ver outro nascer<br>E o espelho de minha alma multiplica...</p>
+            <span>Vinicius de Moraes</span>
+        </section>
+    </article>
+    <footer>
+        Copyright 2022 © - Poemas™
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0ea6ed;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.titulo-logo {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 25px 0 0px 0;
+    text-align: center;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+
+article {
+    text-align: center;
+}
+
+section {
+    max-width: 950px;
+    margin: 32px auto;
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+section::first-line {
+    font-style: italic;
+}
+
+p {
+    line-height: 32px;
+}
+```
+
+__O uso de pseudo-elementos para alterar partes de um texto permite ao desenvolvedor estilizar partes de um texto sem a necessidade de alterar o código HTML da página.__
+
 
 
 #### 6. Pseudo-elementos: adicionando conteúdos a um elemento
