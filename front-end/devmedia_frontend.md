@@ -10483,6 +10483,237 @@ __O uso de pseudo-elementos para alterar partes de um texto permite ao desenvolv
 
 #### 6. Pseudo-elementos: adicionando conteúdos a um elemento
 
+Como utilizar dois pseudo-elementos para adicionar um conteúdo antes ou depois de um elemento.
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/3.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/4.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/5.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/6.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/7.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/8.png)
+
+Agora que você já sabe que é possível adicionar um conteúdo antes de um elemento sem precisar criar um novo elemento HTML ou utilizar uma classe.
+
+##### Pseudo-elemento before:
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/11.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/12.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/13.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/14.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/15.png)
+
+##### Como utilizar o `before`:
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/17.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/18.png)
+
+##### Como exibir uma imagem através do `before`:
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/23.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/24.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/25.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/27.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/29.png)
+
+##### O que o fazer quando o tamanho da imagem é maior do que o espaço definido para o `before`:
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/31.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/32.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/35.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/36.png)
+
+##### Como adicionar conteúdos depois de um elemento, pseudo-elementos `after`:
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/38.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/39.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/40.png)
+
+![Aula 6](https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/41.png)
+
+Os pseudo-elementos `before` e `after` não podem ser utilizados com o seletor img. Para contornar isso adicione a tag img dentro do elemento semântico figure e aplique o pseudo-elemento desejado nele. 
+
+```html
+<figure>
+   <img src="carro.jpg">
+</figure>
+```
+
+```css
+figure::after {
+    content: "Imagem protegida";
+    width: 250px;
+    height: 32px;
+}
+```
+
+__Os pseudo-elementos before e after tem o display:inline definido como padrão, portanto, será necessário alterar esse display caso queira exibir imagens através desses pseudo-elementos.__
+
+##### Exemplo prático
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes da Marvel</title>
+    <link rel="stylesheet" type="text/css" href="ex_class06.css">
+</head>
+<body>
+    <header>
+        <span class="titulo-logo">Marvel Studios</span>
+    </header>
+    <main>
+        <section>
+            <h2>Filmes em destaque</h2>
+
+            <div class="destaque">
+                <figure>
+                    <img src="img/thor.jpg">
+                </figure>
+                <figure>
+                    <img src="img/estranho.jpg">
+                </figure>
+                <figure>
+                    <img src="img/noway.jpg">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Sobre a fase 4</h2>
+
+            <p>A Fase Quatro apresenta todas as produções da Marvel Studios programadas para serem lançadas de 2021 até 2023. É a primeira fase da franquia a incluir séries de televisão, com a Marvel Studios desenvolvendo várias séries de eventos para o serviço de streaming Disney+, além dos filmes que já estava definido para produzir.</p>
+            <p>A série WandaVision deu início à fase, estreou em janeiro de 2021, enquanto Black Widow será o primeiro filme da fase, com estreia à 9 de julho de 2021 pela Walt Disney Studios Motion Pictures.</p>
+            <p>Os filmes da fase incluem Black Widow com Scarlett Johansson retornando como Natasha Romanoff / Viúva Negra, Shang-Chi and the Legend of the Ten Rings estrelando Simu Liu como Shang-Chi, filme conjunto Eternals, um terceiro filme do Spider-Man intitulado Spider-Man: No Way Home da Sony Pictures com Tom Holland retornando como Peter Parker / Homem-Aranha, Thor: Love and Thunder com Chris Hemsworth retornando como Thor, e concluindo com outra sequência, Doctor Strange in the Multiverse of Madness, com Benedict Cumberbatch retornando como Dr. Stephen Strange.</p>
+        </section>
+        <section>
+            <h2>Links para outros filmes da Marvel</h2>
+
+            <ul>
+                <li><a href="https://www.marvel.com/movies/fantastic-four">Quarteto Fantástico</a></li>
+                <li><a href="https://www.marvel.com/movies/blade">Blade</a></li>
+                <li><a href="https://www.marvel.com/movies/black-panther-wakanda-forever">Pantera Negra: Wakanda pra sempre</a></li>
+                <li><a href="https://www.marvel.com/movies/ant-man-and-the-wasp-quantumania">Homem formiga e Vespa: Quantumania</a></li>
+                <li><a href="https://www.marvel.com/movies/the-marvels">The Marvels</a></li>
+        </section>
+    </main>
+    <footer>
+        Copyright 2022 © - Marvel Studios™
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e62429;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.titulo-logo {
+    margin: 0 10px;
+}
+
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 32px 0 0 0;
+}
+
+.destaque {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+
+figure {
+    width: calc((100% / 3) - 3px);
+    margin: 0 3px;
+}
+
+img {
+    width: 100%;
+}
+
+figure::after {
+    content: "Propriedade da Marvel™";
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    background: #e62429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    line-height: 32px;
+    margin: 25px 0 0 0;
+}
+
+ul {
+    margin: 25px 0 25px 0;
+    line-height: 32px;
+    list-style: none;
+}
+
+li, a {
+    display: flex;
+    align-items: center;
+}
+
+a::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("img/link.png");
+    margin: 0 6px 0 0;
+}
+```
+
+__O uso de pseudo-elementos para adicionar conteúdos extras a um elemento permite ao desenvolvedor adicionar conteúdos de maneira automática como, por exemplo, exibir uma imagem em todos os links da página. Com isso, sempre que um novo link for adicionado, a imagem será exibida automaticamente.__
+
+
+
+
+
 #### 7. Exemplo prático
 
 #### 8. Faça você mesmo
