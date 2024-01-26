@@ -73,7 +73,7 @@ section:nth-child(even) {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 8rem;
+    min-height: 10rem;
 }
 
 .boxTitle {
@@ -248,13 +248,17 @@ h2{
 
 .fa-circle-arrow-up:hover {
     color: var(--orange);
+    background-color: var(--black);
+    border-radius: 50%;
 }
 
 /* BOX-FOOTER - BOX-FOOTER - BOX-FOOTER - BOX-FOOTER - BOX-FOOTER */
 .rodape {
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     background-color:var(--black);
     padding: 1rem 0;
