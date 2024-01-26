@@ -11022,7 +11022,277 @@ __A página da cidade de Paraty apresenta o uso das pseudo-classes e pseudo-elem
 
 #### 8. Faça você mesmo
 
+__Quando dividimos um site em etapas, estamos utilizando a técnica mente programadora. A técnica **mente programadora** consiste em dividir um problema em partes menores e dessa forma focar e resolver melhor cada problema individualmente. __
 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visite Paraty</title>
+    <link rel="stylesheet" href="ex_class08.css">
+</head>
+<body>
+    <header id="header">
+        <div class="limitaSecao">
+            <img src="./img/logo.png" alt="Logo">
+            <nav>
+                <a class="linksDeNavegacao" href="#sobre">Sobre</a>
+                <a class="linksDeNavegacao" href="#pontos">Pontos turísticos</a>
+                <a class="linksDeNavegacao" href="#galeria">Galeria</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="secaoCapa">
+        <div>
+            <h1>Paraty</h1>
+            <h2>Venha visitar</h2>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="limitaSecao secaoDestaque">
+            <h3>Sobre a cidade</h3>
+            <img src="./img/Praca-Matriz.jpg" alt="Praça matriz">
+            <p>Paraty é um pedacinho do passado brasileiro, que nos remete ao período colonial, através de suas fortificações, ruas, casarões preservados e sua cultura. A história de Paraty é marcada por importantes acontecimentos ao longo dos séculos, como a participação nos ciclos da cana, do ouro e do café. A partir de agora, você é nosso convidado especial para relembrar toda esta trajetória, que levou Paraty a se tornar um Patrimônio Histórico Nacional.</p>
+            <p>As terras em que hoje a cidade de Paraty se encontra, eram ocupadas na época do descobrimento pelos índios Guaianás, e logo depois pertenceriam à Capitania de São Vicente. A trilha aberta pelos Guaianás ligando o litoral ao interior do Brasil atraíram os colonos da Capitania de São Vicente, que no século XVI iniciaram o povoamento de Paraty em um morro próximo à foz do Rio Perequê-Açu. Ao se instalarem neste morro, surgiram as primeiras construções em Paraty de que se tem notícia, incluindo a capela de São Roque, padroeiro deste povoado na época. Em 1646, o povoado transferiu-se para um local maior e plano, entre os rios Perequê-Açu e Patitiba, onde se desenvolveu e deu origem ao atual Centro Histórico. Este novo local fora doado por Dona Maria Jácome de Melo, sob duas condições: a primeira, de que se edificassem uma capela sob invocação de Nossa Senhora dos Remédios a quem era devota, e a outra, que não se molestassem os índios que aqui viviam. A partir daí o morro do núcleo de São Roque passou a se chamar Morro da Vila Velha.</p>
+            <p>Somente em meados do século XX que Paraty retoma seu desenvolvimento através do Ciclo do Turismo, que se tornou a principal fonte de renda e base da economia local. Com a reabertura da estrada Paraty-Cunha em 1954, que a ligava ao Estado de São Paulo, e a abertura da BR-101 na década de 1970 que liga Rio de Janeiro a Santos, a cidade foi redescoberta e tornou-se um polo de atração turística. Em 1958 o conjunto histórico de Paraty foi tombado pelo IPHAN – Instituto do Patrimônio Histórico e Artístico Nacional. Hoje a cidade tem sua vocação principal no Turismo, recebe dezenas de eventos anualmente, e tornou-se um dos principais polos turísticos do Brasil. Paraty se destaca não só pela sua rica cultura, mas também pelas riquezas naturais e sua excelente gastronomia e vida noturna. Venha descobrir os encantos de Paraty!</p>
+        </div>
+    </section>
+
+    <section id="pontos" class="secaoPontos">
+        <div class="limitaSecao secaoDestque">
+            <h3>Pontos turísticos</h3>
+            <img src="./img/Casa-da-Cultura.jpg" alt="Casa da cultura">
+            <p>Conheça alguns dos pontos mais atrativos de paraty para você visitar:</p>
+            <ul>
+                <li>Câmara municipal</li>
+                <li>Caminho do Ouro</li>
+                <li>Capela da Generosa</li>
+                <li>Casa da Cultura</li>
+                <li>Chafariz da pedreira</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <dic class="limitaSecao">
+            <h3>Galeria de fotos</h3>
+            <p>Confira algumas belíssimas imagens da cidade na galeria abaixo:</p>
+
+            <div class="galeria">
+                <img src="./img/Caminho-do-Ouro.jpg" alt="Caminho do Ouro">
+                <img src="./img/Ilha-do-Cedro.jpg" alt="Ilha do Cedro">
+                <img src="./img/Lagoa-Azul.jpg" alt="Lagoa Azul">
+                <img src="./img/Cachoeira.jpg" alt="Cachoeira">
+                <img src="./img/Cais.jpg" alt="Cais">
+                <img src="./img/Poco-Ingleses.jpg" alt="Poco Ingleses">
+            </div>
+        </dic>
+    </section>
+    <a href="#header"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
+    <footer>
+        <div class="limitaSecao">
+            Copyright 2022 © - Prefeitura de Paraty™
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/bec2f6bc88.js" crossorigin="anonymous"></script>
+</body>
+</html>
+```
+
+```css
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.limitaSecao {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav {
+    font-size: 18px;
+}
+
+.linksDeNavegacao {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    position: relative;
+}
+
+.linksDeNavegacao::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    right: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.linksDeNavegacao:hover::after {
+    width: 100%;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.secaoCapa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url("./img/bg-estacao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secaoCapa::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.secaoCapa div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 60px 20px;
+    z-index: 1;
+}
+
+.secaoCapa h1 {
+    font-size: 80px;
+}
+
+.secaoCapa h2 {
+    font-size: 35px;
+}
+
+.secaoCapa h1, .secaoCapa h2 {
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.secaoDestaque img:first-of-type {
+    width: 100%;
+}
+
+.secaoDestaque p::first-letter, .secaoPontos p::first-letter {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.secaoPontos {
+    background-color: #e9e9e9;
+}
+
+h3 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+p {
+    line-height: 32px;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 12px 0px 0px 0px;
+}
+
+li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("./img/seta.png");
+    margin: 0 6px 0 0;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    opacity: 0.6;
+}
+
+.galeria img:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin: 25px 0 0 0;
+    background-color: #f5c002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-circle-arrow-up {
+    font-size: 4rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #f5c002;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.fa-circle-arrow-up:hover {
+    color: #000;
+    background-color: #f5c002;
+}
+```
 
 
 
