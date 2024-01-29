@@ -1,0 +1,101 @@
+# Resumo Pseudo-classes e Pseudo-elementos
+
+- 
+- first-child
+- last-child
+- nth-child
+- nth-last-child
+- Before
+- After
+
+## Pseudo-classes
+
+Definir o estilo dos estados de um elemento até alterá-lo de uma posição específica na estrutura.
+
+### De estado
+
+- Quando o mouse passar por cima do elemento:
+
+```css
+p:hover {
+    border-left: 3px solid blue;
+}
+```
+
+- Quando o link for acessado. Exclusivo apenas para links:
+
+```css
+a:visited {
+    color: red;
+}
+```
+
+### Estrutural
+
+Estiliza o elemento baseado na sua posição.
+
+- Estilo aplicado ao __primeiro__ elemento do tipo:
+
+```css
+first-of-type {
+    color: green;
+}
+```
+
+- Estilo aplicado ao __úlitimo__ elemento do tipo:
+
+```css
+p:last-of-type {
+    color: black;
+}
+```
+
+- Estio aplicado ao elemento definido no seletor na posição indicada:
+
+```css
+p: nth-of-type(2) {
+ 	color: blue;   
+}
+```
+
+- Aplica o estilo em todos os elementos __ímpares__:
+
+```css
+div:nth-of-type(odd) {
+    color: white;
+}
+```
+
+- Aplica o estilo em todos os elementos __pares__:
+
+```css
+div:nth-of-type(even) {
+	color: pink;   
+}
+```
+
+#### Estrutural child
+
+4. Pseudo-classes Estruturais: child PAREI
+
+## Pseudo-elementos
+
+Alterar partes específicas de um elemento, tais como a primeira letra ou primeira linha de um parágrafo.
+
+- Primeira letra do parágrafo:
+
+```css
+p:first-letter {
+
+}
+```
+
+- Primeira linha do parágrafo:
+
+```css
+p::first-line {
+  
+}
+```
+
+- 
