@@ -48,3 +48,34 @@ p:nth-child(odd) {
 .q8897 tbody tr:nth-of-type(even) {
     background-color: red;
 }
+
+.q8900 section img {
+    width: 80px;
+}
+
+.q8900 section img:first-child {
+    width: 100%;
+}
+
+.q8901 section p:last-of-type {
+    background-color: white;
+    color: red;
+}
+
+.q8937 img {
+    width: 350px;
+    height: 100px;
+    background-color: pink;
+}
+
+.q8937 img:hover {
+    border: 3px solid blue;
+}
+
+section img:last-child {
+    width: 100%;
+}
+
+.q8910 section span:last-of-type {
+    border: solid red 3px;
+}
