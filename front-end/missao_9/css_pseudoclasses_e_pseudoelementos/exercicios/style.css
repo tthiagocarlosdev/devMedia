@@ -33,7 +33,8 @@ pre code {
     border-left: 3px solid blue;
 }
 
-.q8923
-p::first-line {
-    font-style: italic;
+p:nth-child(2) {
+    background-color: red;
 }
+
+
