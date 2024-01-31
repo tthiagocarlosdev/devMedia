@@ -79,19 +79,22 @@
     </pre>
 
     <h2 class="questoes">Questão #8892</h2>
-    <section>
-        <h2>Sobre</h2>
-        <p>Somos um site especializado em venda de celulares desde 2006</p>
-    </section>
-    <section>
-        <h2>Galeria</h2>
-         <div>
-              <img src="1.jpg">
-              <img src="2.jpg">
-              <img src="3.jpg">
-        </div>
-        <p>Na galeria acima você conferiu alguns dos nossos produtos.</p>
-    </section>
+    <div class="q8892">
+        <section>
+            <h2>Sobre</h2>
+            <p>Somos um site especializado em venda de celulares desde 2006</p>
+        </section>
+        <section>
+            <h2>Galeria</h2>
+             <div>
+                  <img src="1.jpg">
+                  <img src="2.jpg">
+                  <img src="3.jpg">
+            </div>
+            <p>Na galeria acima você conferiu alguns dos nossos produtos.</p>
+        </section>
+    </div>
+    
     <pre>
         <code>
             p:nth-child(2) {
@@ -354,7 +357,7 @@
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #8941</h2>
+    <h2 class="questoes">Questão #8910</h2>
     <div class="q8910">
         <section>
             <h1>Bem-vindo ao nosso Website</h1>
@@ -495,112 +498,233 @@
     </table>
     <pre>
         <code>
+            .q8929 tbody tr:nth-of-type(odd) {
+                color: blue;
+            }
             
+            .q8929 tbody tr:nth-of-type(even) {
+                color: green;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8939</h2>
     <pre>
         <code>
-            
+            div p::first-line {
+                font-style: italic;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8912</h2>
+    <table class="q8912">
+        <thead>
+            <th>Jogo</th>
+            <th>Plataforma</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Halo Infinite</td>
+                <td>Xbox Series X</td>
+            </tr>
+            <tr>
+                <td>Uncharted 4</td>
+                <td>PS4</td>
+            </tr>
+            <tr>
+                <td>The Legend of Zelda: Skyward Sword HD</td>
+                <td>Switch</td>
+            </tr>
+        </tbody>
+    </table>
+
     <pre>
         <code>
+            .q8912 tbody tr:nth-child(odd) {
+                background-color: yellow;
+            }
             
+            .q8912 tbody tr:nth-child(even) {
+                background-color: green;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8893</h2>
+    <div class="q8893">
+        <img src="https://www.edublin.com.br/wp-content/uploads/2017/06/trim-l3-712x430.jpg" alt="">
+    </div>
     <pre>
         <code>
+            .q8893 img {
+                opacity: 0.5;
+            }
             
+            .q8893 img:hover {
+                opacity: 1;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8924</h2>
+    <div class="q8924">
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>Lorem ipsum dolor sit amet.</span>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+    </div>
     <pre>
         <code>
-            
+            .q8924 section p:nth-child(3) {
+                color: red;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8928</h2>
+    <section class="q8928">
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    
     <pre>
         <code>
-            
+            .q8928 div p:nth-of-type(3) {
+                color: red;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8933</h2>
+    <div class="q8933">
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eum minima error!</p>
+        </section>
+    </div>
     <pre>
         <code>
-            
+            .q8933 section:last-child {
+                background-color: blue;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8916</h2>
+    <section class="q8916">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
     <pre>
         <code>
-            
+            .q8916 div p:nth-child(even) {
+                font-style: italic;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8925</h2>
+    <div class="q8925">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="https://images.unsplash.com/photo-1530538095376-a4936b35b5f0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXJsYW5kYXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <img src="https://s1.1zoom.me/b5050/774/Ireland_Donegal_Bay_Crag_Moss_Clouds_549813_1920x1080.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, dolorem!</p>
+    </div>
     <pre>
         <code>
-            
+            .q8925 img:last-of-type {
+                background-color: red;
+                padding: 20px;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8922</h2>
+    <section class="q8922">
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
     <pre>
         <code>
-            
+            .q8922 div:hover {
+                background-color: blue;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8918</h2>
+    <div class="q8918">
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <img src="https://images.unsplash.com/photo-1530538095376-a4936b35b5f0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXJsYW5kYXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <img src="https://s1.1zoom.me/b5050/774/Ireland_Donegal_Bay_Crag_Moss_Clouds_549813_1920x1080.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, dolorem!</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <img src="https://images.unsplash.com/photo-1530538095376-a4936b35b5f0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXJsYW5kYXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <img src="https://s1.1zoom.me/b5050/774/Ireland_Donegal_Bay_Crag_Moss_Clouds_549813_1920x1080.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, dolorem!</p>
+        </section>
+    </div>
+
     <pre>
         <code>
-            
+            .q8918 section img:last-of-type {
+                padding-bottom: 10px;
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8902</h2>
     <pre>
         <code>
-            
+            img:nth-child(2) {
+    
+            }
         </code>
     </pre>
 
-    <h2 class="questoes">Questão #</h2>
+    <h2 class="questoes">Questão #8894</h2>
     <pre>
         <code>
-            
-        </code>
-    </pre>
-
-    <h2 class="questoes">Questão #</h2>
-    <pre>
-        <code>
-            
-        </code>
-    </pre>
-
-    <h2 class="questoes">Questão #</h2>
-    <pre>
-        <code>
-            
-        </code>
-    </pre>
-
-    <h2 class="questoes">Questão #</h2>
-    <pre>
-        <code>
-            
+            a:visited {
+    
+            }
         </code>
     </pre>
 </body>

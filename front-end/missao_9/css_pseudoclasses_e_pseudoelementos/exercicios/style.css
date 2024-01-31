@@ -21,6 +21,10 @@ pre code {
     margin: 10px 0;
 }
 
+img {
+    width: 250px;
+}
+
 
 /* //======= QUESTÕES =======// */
 
@@ -33,11 +37,11 @@ pre code {
     border-left: 3px solid blue;
 }
 
-p:nth-child(2) {
+.q8892 p:nth-child(2) {
     background-color: red;
 }
 
-p:nth-child(odd) {
+.q8892 p:nth-child(odd) {
     font-weight: bold;
 }
 
@@ -76,7 +80,7 @@ section img:last-child {
     width: 100%;
 }
 
-.q8910 section span:last-of-type {
+.q8910 section span:last-child {
     border: solid red 3px;
 }
 
@@ -104,4 +108,49 @@ section img:last-child {
 
 .q8929 tbody tr:nth-of-type(even) {
     color: green;
+}
+
+.q8912 tbody tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+.q8912 tbody tr:nth-child(even) {
+    background-color: green;
+}
+
+.q8893 img {
+    opacity: 0.5;
+}
+
+.q8893 img:hover {
+    opacity: 1;
+}
+
+.q8924 section p:nth-child(3) {
+    color: red;
+}
+
+.q8928 div p:nth-of-type(3) {
+    color: red;
+}
+
+.q8933 section:last-child {
+    background-color: blue;
+}
+
+.q8916 div p:nth-child(even) {
+    font-style: italic;
+}
+
+.q8925 img:last-of-type {
+    background-color: red;
+    padding: 20px;
+}
+
+.q8922 div:hover {
+    background-color: blue;
+}
+
+.q8918 section img:last-of-type {
+    padding-bottom: 10px;
 }
