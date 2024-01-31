@@ -79,3 +79,29 @@ section img:last-child {
 .q8910 section span:last-of-type {
     border: solid red 3px;
 }
+
+.q8931 section:nth-child(even){
+    background-color: grey;
+}
+
+.q8940 section p:hover {
+    color: yellow;
+}
+
+.q8919{
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+}
+
+.q8919:hover {
+    background-color: red;
+}
+
+.q8929 tbody tr:nth-of-type(odd) {
+    color: blue;
+}
+
+.q8929 tbody tr:nth-of-type(even) {
+    color: green;
+}
