@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --white:#fff;
+    --snow: #ffffffcc;
+    --black: #000000;
+    --blackSnow: #000000cc;
+    --midnightBlack: #0200006e;
+    --gold: #ffdf00;
+    --forestGreen: #009c3b;
+}
+
+/* Seção Banner Seção Banner Seção Banner Seção Banner Seção Banner  */
+.secao_banner {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.container_informacoes {
+
+}
+
+.logo_neymar {
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 20px;
+}
+
+.container_links {
+    width: 768px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container_links li {
+    background-color: var(--midnightBlack);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links_redes_sociais {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.imagens_links {
+    width: 30px;
+    position: absolute;
+    left: 8px;
+}
+
+/* Seção Estatísticas Seção Estatísticas Seção Estatísticas Seção Estatísticas  */
+.secao_estatisticas {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../assets/img/imagem-de-fundo.jpg');
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.tabela tr th, .tabela tr td {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.tabela tr td:first-child {
+
+}
+
+.tabela thead tr th {
+    background-color: var(--blackSnow);
+    color: var(--white);
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+    background-color: var(--white);
+}
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: var(--blackSnow);
+    color: var(--white);
+}
+
+.icone_tabela {
+    width: 30px;
+}
