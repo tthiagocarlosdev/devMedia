@@ -18,7 +18,7 @@ passo_3_especificacoes_do_layout, passo_4_orientacoes_basicas, passo_5_arquivos_
 
 - Na Seção Banner, teremos os seguintes elementos:
 
-  - [ ] Um vídeo como plano de fundo;
+  - [x] Um vídeo como plano de fundo;
 
   - [x] Uma imagem (logo);
 
@@ -31,22 +31,22 @@ passo_3_especificacoes_do_layout, passo_4_orientacoes_basicas, passo_5_arquivos_
 
 
 - Já a Seção Estatísticas terá como parte da estrutura os seguintes elementos:
-  - [ ] Uma imagem como plano de fundo;
-  - [ ] Um subtítulo;
-  - [ ] Uma tabela informativa com as estatísticas do Neymar.
+  - [x] Uma imagem como plano de fundo;
+  - [x] Um subtítulo;
+  - [x] Uma tabela informativa com as estatísticas do Neymar.
 
 ![Seção Estatísticas](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig3.png)
 
 ## Conhecendo as especificações do projeto
 
-- [ ] ##### 1- O site deve ter um vídeo que será aplicado como plano de fundo da Seção Banner
+- [x] ##### 1- O site deve ter um vídeo que será aplicado como plano de fundo da Seção Banner
   
-  - [ ] O vídeo deve ser executado automaticamente, em looping e não deve reproduzir áudio.
+  - [x] O vídeo deve ser executado automaticamente, em looping e não deve reproduzir áudio.
 
 
 
 
-- [ ] ##### 2- A imagem que será usada como logo da Seção Banner deve ter um formato circular e ter uma borda com uma cor gradiente
+- [x] ##### 2- A imagem que será usada como logo da Seção Banner deve ter um formato circular e ter uma borda com uma cor gradiente
 
 ![Imagem (logo) da Seção Banner](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig4.png)
 
@@ -54,23 +54,23 @@ passo_3_especificacoes_do_layout, passo_4_orientacoes_basicas, passo_5_arquivos_
 
 ![Título da Seção Banner](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig5.png)
 
-- [ ] ##### 4- Os links externos do site devem direcionar o usuário para as redes sociais do Neymar Jr.
+- [x] ##### 4- Os links externos do site devem direcionar o usuário para as redes sociais do Neymar Jr.
 
 ![Especificações do Projeto](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig6.png)
 
 ![Especificações do Projeto](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig7.png)
 
-- [ ] ##### 5- A cor de fundo de um link deve ser modificada sempre que um usuário passar o cursor do mouse sobre o link
+- [x] ##### 5- A cor de fundo de um link deve ser modificada sempre que um usuário passar o cursor do mouse sobre o link
 
 ![Link sofrendo alteração](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig8.png)
 
-- [ ] ##### 6- Na Seção Estatísticas, uma imagem deve ser aplicada como plano de fundo e também possuir o efeito Parallax
+- [x] ##### 6- Na Seção Estatísticas, uma imagem deve ser aplicada como plano de fundo e também possuir o efeito Parallax
 
 ![Especificações do Projeto](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/31.png)
 
 
 
-- [ ] ##### 7- O título da Seção Banner e o subtítulo da Seção Estatísticas devem ter um efeito de sombreamento
+- [x] ##### 7- O título da Seção Banner e o subtítulo da Seção Estatísticas devem ter um efeito de sombreamento
 
 ![Título com efeito sombreado](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig9.png)
 
@@ -78,13 +78,13 @@ passo_3_especificacoes_do_layout, passo_4_orientacoes_basicas, passo_5_arquivos_
 
 
 
-- [ ] ##### 8- A tabela da Seção Estatísticas terá as informações sobre o Neymar Jr.
+- [x] ##### 8- A tabela da Seção Estatísticas terá as informações sobre o Neymar Jr.
 
 ![Tabela informativa](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/fig11.png)
 
 
 
-- [ ] ##### 9 - As linhas da tabela devem ter um efeito "zebrado"
+- [x] ##### 9 - As linhas da tabela devem ter um efeito "zebrado"
 
 ![Especificações do Projeto](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo2/35.png)
 
@@ -178,7 +178,7 @@ O projeto deve utilizar como padrão as fontes __Ysabeau Infant__ e __Montserrat
 
   
 
-  - [ ] 2 - A imagem de perfil da Seção Banner terá largura e altura de 200px e ficará espaçada a 20px (gap) do título.
+  - [x] 2 - A imagem de perfil da Seção Banner terá largura e altura de 200px e ficará espaçada a 20px (gap) do título.
 
   ![Dimensões da imagem de perfil](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo3/fig5.png)
 
@@ -214,13 +214,13 @@ O projeto deve utilizar como padrão as fontes __Ysabeau Infant__ e __Montserrat
 
   
 
-  - [ ] 8- As células da primeira coluna terão seus elementos alinhados lado a lado na horizontal, com cada imagem tendo uma largura de 30px e um espaçamento de 10px (gap) entre elas e os textos
+  - [x] 8- As células da primeira coluna terão seus elementos alinhados lado a lado na horizontal, com cada imagem tendo uma largura de 30px e um espaçamento de 10px (gap) entre elas e os textos
 
   ![Alinhamento e espaçamento das células da primeira coluna](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo3/fig11.png)
 
   
 
-  - [ ] 9- Os elementos da página devem estar centralizados
+  - [x] 9- Os elementos da página devem estar centralizados
 
   ![Layout centralizado](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/linkbio/passo3/fig12.png)
 
@@ -254,7 +254,7 @@ Títulos -> 2 / 6 / 8 / 13 / 0
 
 ## 6º passo: Dicas de Implementação
 
-- [ ] ### 1 - Como definir um vídeo de plano de fundo
+- [x] ### 1 - Como definir um vídeo de plano de fundo
 
 Para que o vídeo do projeto seja aplicado como plano de fundo da Seção Banner, você pode realizar os seguintes passos:
 
@@ -297,7 +297,7 @@ __A tag HTML `<video>` permite definir as dimensões (largura e altura) de um v�
 
 
 
-- [ ] ### 2 - Como criar uma borda cor gradiente
+- [x] ### 2 - Como criar uma borda cor gradiente
 
 Você pode criar o efeito de uma borda com cor gradiente na imagem de perfil da Seção Banner utilizando o pseudo-elemento CSS ::before
 
@@ -349,7 +349,7 @@ Um gradiente pode ser linear ou circular e pode ser personalizado conforme a pre
 
 
 
-- [ ] ### 3 - Como criar uma "tarja" gradiente
+- [x] ### 3 - Como criar uma "tarja" gradiente
 
 Você pode criar o efeito de uma "tarja" com cor gradiente abaixo das letras "Ne" do título "Neymar Jr." utilizando o pseudo-elemento CSS ::before,
 
@@ -376,7 +376,7 @@ Você pode criar o efeito de uma "tarja" com cor gradiente abaixo das letras "Ne
 
 
 
-- [ ] ### 4 - Como criar efeito de sombra no título e subtítulo
+- [x] ### 4 - Como criar efeito de sombra no título e subtítulo
 
 Você pode criar um efeito de sombra no título e no subtítulo da página utilizando a propriedade CSS text-shadow, 
 
@@ -392,9 +392,7 @@ div h2 {
 }
 ```
 
-- [ ] Certifique-se de definir o vídeo como plano de fundo da Seção Banner.
-- [ ] Certifique-se de criar o efeito de borda gradiente na imagem de perfil da Seção Banner.
-- [ ] Certifique-se de criar o efeito de "tarja" gradiente abaixo das letras "Ne" do título da página.
-- [ ] Certifique-se de criar o efeito de sombra para o título da página utilizando a propriedade text-shadow.
-
-- [ ] 
+- [x] Certifique-se de definir o vídeo como plano de fundo da Seção Banner.
+- [x] Certifique-se de criar o efeito de borda gradiente na imagem de perfil da Seção Banner.
+- [x] Certifique-se de criar o efeito de "tarja" gradiente abaixo das letras "Ne" do título da página.
+- [x] Certifique-se de criar o efeito de sombra para o título da página utilizando a propriedade text-shadow.

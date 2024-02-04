@@ -25,25 +25,86 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
-.container_informacoes {
+.secao_banner video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.container_informacoes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_logo {
+    width: 200px;
+    height: 200px;
+    background-color: var(--black);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_logo::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, var(--gold), var(--forestGreen));
+    width: 215px;
+    height: 215px;
+    border-radius: 100%;
+    z-index: -1;
 }
 
 .logo_neymar {
     width: 200px;
     height: 200px;
+    border-radius: 100%;
+}
 
-    margin-bottom: 20px;
+.container_informacoes h1 {
+    color: var(--white);
+    text-shadow: 3px 6px 1px var(--black);
+    font-size: 58px;
+    position: relative;
+}
+
+.container_informacoes h1::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gold), var(--forestGreen));
+    bottom: 2px;
+    left: 5px;
+    border-radius: 4px;
+}
+
+.box_titulo_banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.box_titulo_banner img {
+    width: 20px;
+    margin-bottom: 10px;
 }
 
 .container_links {
     width: 768px;
-    margin-top: 40px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,22 +113,31 @@
 }
 
 .container_links li {
-    background-color: var(--midnightBlack);
-    border-radius: 10px;
     width: 100%;
-    padding: 10px;
     list-style: none;
     position: relative;
+}
 
+.links_redes_sociais {
+    text-decoration: none;
+    background-color: var(--midnightBlack);
+    color: var(--white);
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.links_redes_sociais {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
+
+.links_redes_sociais:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .imagens_links {
@@ -94,13 +164,23 @@
     gap: 40px;
 }
 
+.secao_estatisticas h2 {
+    color: var(--white);
+    text-shadow: 3px 6px 1px var(--black);
+    font-size: 74px;
+}
+
 .tabela tr th, .tabela tr td {
     padding: 20px;
     font-weight: bold;
+    font-size: 28px;
+    text-align: center;
 }
 
 .tabela tr td:first-child {
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .tabela thead tr th {
