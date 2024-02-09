@@ -11552,9 +11552,163 @@ Lembre-se que quando escrevemos uma página web estamos preparando um conteúdo 
 
 
 
+## CSS Media Queries
+
+### Trabalhando com Design Responsivo em HTML5
+
+- Características essenciais a um site responsivo, destacam-se:
+  - Adaptar o layout da página de acordo com a resolução em que está sendo visualizada;
+  - O layout deve ser fluido e não deve fazer uso de medidas fixas, possibilitando a adaptação natural ao dispositivo em questão;
+  - Simplificar elementos da tela para dispositivos móveis, onde o usuário normalmente tem menos tempo e menos atenção durante a navegação;
+  - Redimensionar as imagens e vídeos para que não sobrecarreguem a transferência de dados e também para que se adaptem ao dispositivo garantindo que os mesmos se apresentem de forma nítida, sem cortes e que não façam uso da barra de rolagem para serem visualizados;
+  - Ocultar ou remover elementos desnecessários nos dispositivos menores;
+  - Adaptar o tamanho de botões, links e menus para interfaces touch onde o ponteiro do mouse é substituído pelo dedo do usuário.
+
+#### Mobile First
+
+O Mobile First é uma estratégia de desenvolvimento que diz que todo o planejamento de um projeto web deve iniciar pelos dispositivos móveis e somente depois gradualmente para os outros dispositivos, até chegar nos notebooks e desktops.
+
+#### A Necessidade de Adaptatividade
+
+#### Progressive Enhancement x Graceful Degradation
+
+#### Meta Tag Viewport
+
+O termo __viewport__ corresponde à área disponível para exibição de conteúdo que cada dispositivo possui.
+
+```html
+<meta name="viewport"content="">
+```
+
+Na declaração do content é possível especificar uma diversidade de parâmetros, tais como:
+
+- __width__: define a largura do viewport.
+- __height__: define a altura do viewport.
+- __initial-scale__: define a escala inicial (zoom) do viewport.
+
+Para que possamos assegurar o funcionamento das regras responsivas em todos os dispositivos, devemos declarar que a largura do viewport será igual à mesma largura do dispositivo e que a escala inicial (zoom) é 1, conforme demonstrado a seguir:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+#### Media Type
+
+O atributo __Media Type__ é o responsável por designar quais regras CSS serão interpretadas por um determinado tipo de dispositivo, oferecendo a melhor apresentação possível do conteúdo sem a necessidade de alteração do mesmo.
+
+Através desse atributo é possível apresentar o site de maneira diferente aplicando o estilo mais apropriado de acordo com o tipo do dispositivo utilizado.
+
+Dentre os diversos tipos de Media Type, alguns se destacam e são importantes ao conhecimento do leitor:
+
+- All: Se refere a todos os tipos de dispositivos.
+- Braille: Se refere aos dispositivos táteis.
+- Embossed: Se refere aos dispositivos que imprimem em braille.
+- Handheld: Se refere aos dispositivos de mão, normalmente com telas pequenas de baixa resolução e largura de banda limitada.
+- Print: Se refere aos dispositivos de impressão.
+- Projection: Se refere a apresentações do tipo slides.
+- Screen: Se refere a monitores ou dispositivos com telas coloridas e resolução adequada.
+- Speech: Se refere a sintetizadores de voz ou leitores de tela.
+- TTY: Se refere a terminais, teletypes e dispositivos portáteis com display limitado.
+- TV: Se refere a televisores ou dispositivos com baixa resolução, quantidade de cores e scroll limitado.
 
 
 
+- Utilizando o atributo media na chamada de um arquivo CSS em um arquivo HTML.
+
+```html
+<link rel="stylesheet" href="arquivo.css" type="text/css" media="print" >
+```
+
+- Utilizando o atributo media na chamada de um arquivo CSS em um arquivo XML.
+
+```xml
+<? xml-stylesheet rel="stylesheet" href="arquivo.css" media="all" ?>
+```
+
+- Utilizando a tag `@import` dentro da tag `style` em um arquivo HTML.
+
+```html
+<style type="text/css" media="screen">
+@import "arquivo.css";
+</style>
+```
+
+- Utilizando a tag `@import` em um arquivo CSS.
+
+```css
+@import url(“estilo.css”) print;
+```
+
+- Utilizando a tag @media em um arquivo CSS.
+
+```css
+@media screen {
+
+    body {
+
+        background-color: #F00;
+
+    }
+
+}
+```
+
+#### Media Queries
+
+São simples expressões que foram adicionadas na versão 3 do CSS e, juntamente com o `Media Type`, formam a base de todo layout responsivo. Na prática, funcionam como uma extensão do atributo `Media Type`, adicionando e combinando características com o uso de operadores lógicos, permitindo que sejam criadas regras mais especificas e eficientes e garantindo um controle maior para a apresentação do conteúdo em diferentes tipos de screens.
+
+Essas expressões possuem, como resultado, um valor booleano, ou seja, são necessariamente verdadeiras ou falsas. As regras associadas a essas expressões somente serão aplicadas quando o resultado for verdadeiro.
+
+As Media Queries adicionam características detectáveis, que são denominadas como Media Features. Cada uma delas possui funções e valores específicos.
+
+Para realizar a combinação entre os Media Types e as Media Features que formam as regras condicionais e resultam nas Media Queries, são utilizados os **operadores**. Dentre eles, podemos destacar:
+
+- **not:** É utilizado quando se deseja que o resultado de uma determinada expressão seja o oposto ao real.
+
+```css
+@media not print and (min-width: 768px) {
+  body {
+      background-color: #FF0000;
+  }
+}
+```
+
+- **only:** É utilizado quando se deseja prevenir que navegadores antigos que não suportam Media Features tentem processar a expressão.
+
+```css
+@media only screen and (max-width: 320px) {
+  h1 {
+      text-decoration: underline;
+  }
+}
+```
+
+- **and:** É utilizado em todas as Media Queries, tendo como função primária ser o elo entre o Media Type e a Media Feature. É também responsável pelas expressões múltiplas, isto é, quando usamos mais de uma Media Feature para compor a expressão.
+- **“,“:** É utilizado para juntar duas ou mais expressões diferentes que deverão executar um mesmo conjunto de regras. Funciona como um “ou” condicional na lógica de programação.
+
+Expressão múltipla relacionada aos dispositivos do tipo screen, onde duas Media Features são utilizadas dentro de uma mesma expressão. Uma Media Feature corresponde à largura mínima de __320 pixels__ e outra à largura máxima de __480 pixels__. Portanto, caso positiva, o elemento __header__ terá a largura de __100%__ em dispositivos do tipo screen com a largura entre __320__ e __480 pixels__.
+
+```css
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+      width: 100%;
+  }
+}
+```
+
+Aqui há duas expressões diferentes, uma para dispositivos do tipo __handheld__ com largura máxima de 500 pixels e outra para dispositivos do tipo screen com largura máxima de __620 pixels__.
+
+Ambas as expressões são totalmente independentes uma da outra, mas será executada, caso positivas, a mesma regra CSS, que consiste justamente em deixar negrito todo o texto existente dentro de um elemento de parágrafo p.
+
+```css
+@media only handheld and (max-width: 500px), only screen and (max-width: 620px) {
+  p {
+      font-weight: bold;
+  }
+}
+```
+
+#### Breakpoints
 
 
 
