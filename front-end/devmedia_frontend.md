@@ -11710,6 +11710,524 @@ Ambas as expressões são totalmente independentes uma da outra, mas será execu
 
 #### Breakpoints
 
+- SUPORTE AO ALUNO
+- ANOTAÇÕES
+- FAVORITAR
+- CONCLUÍDO
+- **416**GOSTEI
+- COMPARTILHAR
+
+- **416**
+- 
+- 
+
+**Por que eu devo ler este artigo:**Esse artigo tem o objetivo de dar ao leitor uma compreensão geral e completa sobre as técnicas e conceitos mais importantes para o planejamento e desenvolvimento de sites responsivos.
+
+
+
+Através da criação de um exemplo de interface e menu de navegação responsivos, nós abordaremos desde os conceitos de desenvolvimento móvel, mobile first, as meta tags que o HTML5 usa para incutir responsividade, até um comparativo com a forma como esse tipo de recurso era implementado antigamente.
+
+Veremos ainda também o que são media types, breakpoints e como eles se encaixam no ciclo de vida da criação de projetos totalmente responsivos.
+
+Ver mais
+
+[Voltar](https://www.devmedia.com.br/carreira-programador/carreira.php?id=453#topico-6)Suporte ao alunoAnotarMarcar como concluídoCódigo fonte
+
+[Artigos](https://www.devmedia.com.br/artigos/)[HTML](https://www.devmedia.com.br/artigos/front-end-web)Trabalhando com Design Responsivo em HTML5
+
+
+
+
+
+Em um passado recente, os sites eram desenvolvidos visando atender a um público oriundo, em sua grande maioria, de computadores. Os computadores eram a grande maioria.
+
+A variação existente entre os modelos de monitores utilizados era muito pouca, o que tornava possível a definição de uma estratégia que visava definir uma largura máxima que não comprometesse a experiência dos usuários.
+
+Essa estratégia foi bastante satisfatória até pouco tempo atrás, mas atualmente ela se tornou obsoleta devido ao fato de não conseguirmos mais definir uma largura máxima, em função da existência de uma grande variedade de dispositivos utilizados para navegar na internet.
+
+São celulares, tablets, netbooks, notebooks, computadores, videogames, televisores, etc., o que torna a tarefa de proporcionar uma boa experiência para todos esses tipos de dispositivos um grande desafio.
+
+Como podemos desenvolver um site que atenda a cada um desses milhares de dispositivos? Uma resposta pode ser a criação de versões especificas e independentes voltadas a atender cada tipo utilizado separadamente.
+
+Porém, a evolução constante e a criação de novos dispositivos a todo momento tornam essa tarefa inviável tanto pelas constantes mudanças quanto pelo altíssimo custo de criação/manutenção.
+
+Buscando uma solução para isso, **Ethan Marcotte** publicou no site “A List Apart” um artigo com o nome de “Responsive Web Design”. Neste artigo, entre outras coisas, Ethan diz que devemos aceitar que diferentemente do design impresso (restrito a limitação física de uma página ou superfície), no design para internet essas restrições físicas não existem.
+
+Ademais, também não devemos nos sustentar em soluções que restrinjam a internet, pelo contrário, devemos projetar soluções flexíveis e adaptativas. Esse artigo deu origem a uma nova forma de se enxergar o design e o desenvolvimento de sites, resultando no conceito hoje conhecido como: **design responsivo**.
+
+O design responsivo visa solucionar esse problema apresentando um layout que seja adaptável aos mais diversos tipos de dispositivos existentes hoje no mercado. Essa adaptação acontece através da detecção de algumas características presentes nos mesmos que possibilitam a criação de regras especificas para cada um, possibilitando, assim, a manipulação do layout e oferecendo uma navegação mais simples, intuitiva e contável aos seus usuários de acordo com o dispositivo utilizado.
+
+
+
+*Tornar um site que não é responsivo em um site responsivo não significa somente diminuir ou aumentar o tamanho dos elementos para que se encaixem nos mais variados tamanhos de tela, pois isso comprometeria toda a experiência do usuário.*
+
+
+
+Dentre as características essenciais a um site responsivo, destacam-se:
+
+- Adaptar o layout da página de acordo com a resolução em que está sendo visualizada;
+- O layout deve ser fluido e não deve fazer uso de medidas fixas, possibilitando a adaptação natural ao dispositivo em questão;
+- Simplificar elementos da tela para dispositivos móveis, onde o usuário normalmente tem menos tempo e menos atenção durante a navegação;
+- Redimensionar as imagens e vídeos para que não sobrecarreguem a transferência de dados e também para que se adaptem ao dispositivo garantindo que os mesmos se apresentem de forma nítida, sem cortes e que não façam uso da barra de rolagem para serem visualizados;
+- Ocultar ou remover elementos desnecessários nos dispositivos menores;
+- Adaptar o tamanho de botões, links e menus para interfaces *touch* onde o ponteiro do mouse é substituído pelo dedo do usuário.
+
+### Mobile First
+
+O *Mobile First* é uma estratégia de desenvolvimento que diz que todo o planejamento de um projeto web deve iniciar pelos dispositivos móveis e somente depois gradualmente para os outros dispositivos, até chegar nos notebooks e desktops.
+
+Em um passado recente, a prática de planejar e desenvolver projetos web voltados para dispositivos como computadores era bastante comum, até por questões históricas, para atender a demanda dos computadores, e onde se concentrava a web até então.
+
+Começar pelos dispositivos móveis permite que a atividade de priorização do conteúdo seja feita de forma mais intuitiva, uma vez que em um dispositivo móvel somente as principais informações e funcionalidades de um projeto web serão disponibilizadas por conta do pouco espaço disponível e também pelas diferentes condições de uso e necessidades.
+
+O processo de criação dos layouts também é beneficiado pelo uso da estratégia. Primeiramente serão produzidas versões mais simples voltadas para os dispositivos móveis, estas versões irão conter somente as informações principais, pois não há espaço disponível o suficiente para exibir tudo que teríamos na versão desktop.
+
+Outrossim, se isso for um pré-requisito por parte do cliente, então uma estratégia de design, estruturação e usabilidade deverá ser iniciada visando reduzir as dificuldades por trás da mesma.
+
+Posteriormente serão produzidas versões mais complexas voltadas para outros dispositivos, estas versões poderão conter mais informações de acordo com o espaço disponível proveniente de cada um.
+
+Podemos dizer que para os dispositivos móveis é essencial que o layout seja objetivo e focado totalmente no conteúdo.
+
+
+
+Segundo a 9ª pesquisa TIC Domicílios divulgada pelo CETIC.br (Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação), somente em 2013 o número de brasileiros que acessaram a internet por meio de celular ou tablet atingiu 52,5 milhões, o que corresponde a 31% da população do país.
+
+
+
+*O percentual mais que dobrou nos últimos 2 anos, quando em 2011 esse número era apenas de 15%.*
+
+
+
+### A Necessidade de Adaptatividade
+
+Como a web em landscape (modo paisagem de visualização) torna-se cada vez mais complexa, está se tornando extremamente importante oferecer experiências web sólidas para um crescente número de contextos. Felizmente, o web design responsivo dá aos criadores web algumas ferramentas para fazer layouts que respondam a qualquer tamanho de tela.
+
+Desde grades fluídicas, imagens flexíveis até consultas de mídia para obter bons layouts, independentemente do tamanho de dimensões da tela do dispositivo.
+
+No entanto, o contexto móvel é muito mais do que apenas o tamanho da tela. Os nossos dispositivos móveis estão conosco onde quer que vamos, desbloqueando novos casos de uso todos os dias. Porque temos constantemente nossos dispositivos móveis com a gente, a conectividade pode ser todo o tabuleiro, variando de sinais wi-fi fortes no sofá para 3G ou EDGE quando fora de casa.
+
+Além disso, telas de toque abrem novas oportunidades de interagir diretamente com o conteúdo e a ergonomia móvel leva a diferentes considerações ao projetar layout e funcionalidade.
+
+A fim de criar um site que é realmente concebido para o contexto móvel e não apenas para pequenas telas, queremos garantir que vamos enfrentar os muitos desafios do desenvolvimento móvel upfront. As restrições do contexto móvel nos forçam a focar em qual conteúdo é essencial e como apresentar esse conteúdo o mais rápido possível.
+
+### Progressive Enhancement x Graceful Degradation
+
+A internet é um ambiente extremante dinâmico, devido às constantes evoluções das tecnologias que a envolvem. Um navegador que hoje é o mais moderno do mercado pode se tornar obsoleto amanhã com a chegada de uma nova tecnologia, caso essa não seja devidamente suportada.
+
+E o mesmo pode ocorrer a um site que seja considerado moderno da mesma forma. Por essa razão, abordagens como SEO (*Search Engine Optimization*), cache e *traffic tracking* (onde se foca em analisar de onde os tráficos de acesso vêm e quais conteúdos num site são preferidos pelos usuários), ganham cada vez mais popularidade em empresas que conseguem enxergar essa realidade.
+
+Como fazer para utilizar o que há de mais moderno em termos de desenvolvimento web sem consequentemente perder os usuários de navegadores mais antigos que não suportam certas tecnologias?
+
+Para resolver esse dilema, podemos utilizar os conceitos do **Progressive Enhancement** (Melhoria Progressiva) e do **Graceful Degradation** (Degradação Graciosa). Eles constituem dois conceitos diferentes, mas que possuem em comum um mesmo objetivo: suportar o maior número possível de usuários oferecendo a mesma experiência ou funcionalidade independentemente do dispositivo, conexão ou navegador utilizado.
+
+O Graceful Degradation segue a linha de raciocínio na qual devemos utilizar no desenvolvimento o que há de melhor e mais moderno disponível em termos de tecnologia, visando primeiramente os navegadores mais recentes que suportam as mesmas e para os navegadores mais antigos que não as suportam, realizando adaptações e viabilizando a navegação de modo que a experiência do usuário não seja comprometida.
+
+Já o Progressive Enhancement segue uma linha de raciocínio oposta, na qual devemos utilizar para o desenvolvimento recursos que possam ser suportados por todos os tipos de navegadores, inclusive os mais antigos, realizando melhorias progressivamente para os navegadores mais novos que suportem tecnologias mais modernas.
+
+Podemos dizer que entre os dois conceitos não existe um melhor a ser escolhido quanto a forma de oferecer suporte aos navegadores, pois ambos têm o mesmo objetivo. Entretanto, uma vez que estamos seguindo uma estratégia Mobile First é aconselhável ir de encontro ao segundo, pois desta forma conseguimos apresentar uma versão simplificada, que utiliza um menor número de recursos tecnológicos para um smartphone, por exemplo, que geralmente possui limitações quanto a processamento e conexão; e apresentar uma versão mais completa, que utiliza um maior número de recursos tecnológicos para um computador ou notebook, que possui maior poder de processamento e melhor conexão.
+
+### Meta Tag Viewport
+
+O termo **viewport** corresponde à área disponível para exibição de conteúdo que cada dispositivo possui.
+
+O valor do viewport varia de acordo com o dispositivo. Por exemplo, em um computador, o viewport corresponde a área (altura e largura) em pixels ocupada pelo navegador. Portanto, quando o navegador é redimensionado para uma tela menor, automaticamente o seu viewport também se torna menor.
+
+A mesma lógica acontece quando o navegador é redimensionado para uma dimensão maior. Já em dispositivos móveis, não existe a possibilidade de redimensionar o navegador, pois as aplicações ocupam 100% da área disponível, ou seja, 100% do viewport.
+
+Os sites não projetados e desenvolvidos com foco em dispositivos móveis, quando são acessados a partir dos mesmos, tem o zoom ajustado automaticamente fazendo com eles sejam encaixados de acordo com a largura do dispositivo. Isso ocorre porque nos dispositivos móveis a largura do viewport foi padronizada para 980 pixels na maioria das fabricantes.
+
+Esse valor relacionado ao viewport foi adicionado pelo fato de que quando a navegação ocorre a partir de um dispositivo móvel (de viewport reduzido) seria exibida somente uma parte do conteúdo, o que obrigaria o usuário a navegar fazendo o uso das barras de rolagem, e prejudicando, consequentemente, a experiência de navegação, ao passo que implementando desta forma o usuário poderá usar manualmente de acordo com a necessidade.
+
+Consequentemente, essa característica causa diversos problemas em sites já projetados para o mundo mobile. Isso porque o dispositivo irá encolher o site para exibi-lo de acordo com a largura de 980 pixels, o que impossibilita o funcionamento das regras responsivas, cujo problema a Meta Tag Viewport visa solucionar a partir de agora.
+
+A meta tag viewport possui um formato semelhante ao de outras tags meta, conforme podemos observar a seguir:
+
+```
+<meta name="viewport"content="">
+```
+
+Na declaração do content é possível especificar uma diversidade de parâmetros, tais como:
+
+- **width:** define a largura do viewport.
+- **height:** define a altura do viewport.
+- **initial-scale:** define a escala inicial (zoom) do viewport.
+
+Para que possamos assegurar o funcionamento das regras responsivas em todos os dispositivos, devemos declarar que a largura do viewport será igual à mesma largura do dispositivo e que a escala inicial (zoom) é 1, conforme demonstrado a seguir:
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### Media Type
+
+O atributo Media Type é o responsável por designar quais regras CSS serão interpretadas por um determinado tipo de dispositivo, oferecendo a melhor apresentação possível do conteúdo sem a necessidade de alteração do mesmo.
+
+Através desse atributo é possível apresentar o site de maneira diferente aplicando o estilo mais apropriado de acordo com o tipo do dispositivo utilizado. Por exemplo, um determinado conteúdo é apresentado de uma forma para um computador e de uma outra forma completamente diferente para uma impressora, e assim sucessivamente.
+
+Dentre os diversos tipos de Media Type, alguns se destacam e são importantes ao conhecimento do leitor:
+
+- **All:** Se refere a todos os tipos de dispositivos.
+- **Braille:** Se refere aos dispositivos táteis.
+- **Embossed:** Se refere aos dispositivos que imprimem em braille.
+- **Handheld:** Se refere aos dispositivos de mão, normalmente com telas pequenas de baixa resolução e largura de banda limitada.
+- **Print:** Se refere aos dispositivos de impressão.
+- **Projection:** Se refere a apresentações do tipo slides.
+- **Screen:** Se refere a monitores ou dispositivos com telas coloridas e resolução adequada.
+- **Speech:** Se refere a sintetizadores de voz ou leitores de tela.
+- **TTY:** Se refere a terminais, teletypes e dispositivos portáteis com display limitado.
+- **TV:** Se refere a televisores ou dispositivos com baixa resolução, quantidade de cores e scroll limitado.
+
+Nós podemos incluir o atributo Media Type em um site de diversas formas. Para sintetizar, observe o conteúdo da **Tabela 1** e as situações com os respectivos exemplos para cada uma.
+
+**Tabela 1.** Lista de situações e exemplos de inclusão dos atributos media type.
+
+| Descrição                                                    | Exemplo                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Utilizando o atributo media na chamada de um arquivo CSS em um arquivo HTML. | `<link rel="stylesheet" href="arquivo.css" type="text/css" media="print" >` |
+| Utilizando o atributo media na chamada de um arquivo CSS em um arquivo XML. | `<? xml-stylesheet rel="stylesheet" href="arquivo.css" media="all" ?>` |
+| Utilizando a tag @import dentro da tag style em um arquivo HTML. | `<style type="text/css" media="screen"> @import "arquivo.css"; </style>` |
+| Utilizando a tag @import em um arquivo CSS.                  | @import url(“estilo.css”) print;                             |
+| Utilizando a tag @media em um arquivo CSS.                   | `@media screen {     body {         background-color: #F00;     } }` |
+
+Fazendo um rápido comparativo de usabilidade em relação a estes termos, é possível observar que com o passar dos anos o uso de Media Types se tornou obsoleto devido à modernização e à grande quantidade de dispositivos com características totalmente diferentes pertencentes a um mesmo tipo. Com isso, somente os tipos **screen** e **print** ainda são utilizados em grande escala.
+
+Por exemplo, os smartphones não pertencem ao tipo **handheld**. Embora sejam considerados dispositivos de mão, eles possuem monitores com telas coloridas e de alta resolução e por isso serão interpretados como sendo do tipo **screen**.
+
+### Media Queries
+
+São simples expressões que foram adicionadas na versão 3 do CSS e, juntamente com o Media Type, formam a base de todo layout responsivo. Na prática, funcionam como uma extensão do atributo Media Type, adicionando e combinando características com o uso de operadores lógicos, permitindo que sejam criadas regras mais especificas e eficientes e garantindo um controle maior para a apresentação do conteúdo em diferentes tipos de screens.
+
+Essas expressões possuem, como resultado, um valor booleano, ou seja, são necessariamente verdadeiras ou falsas. As regras associadas a essas expressões somente serão aplicadas quando o resultado for verdadeiro.
+
+As Media Queries adicionam características detectáveis, que são denominadas como Media Features. Cada uma delas possui funções e valores específicos, tais como os definidos na **Tabela 2**.
+
+**Tabela 2.** Lista de atributos aceitos pelas media queries.
+
+| Atributo                | Descrição                                                    |
+| ----------------------- | ------------------------------------------------------------ |
+| **aspect-ratio**        | Se refere à proporção entre os valores de largura e altura. Os valores são compostos pela divisão da largura/valor da altura. Não aceita os prefixos min/max. |
+| **device-aspect-ratio** | Se refere à proporção entre os valores de largura e altura **do dispositivo**. Os valores são compostos por valor da largura/valor da altura. Não aceita os prefixos min/max. |
+| **Color**               | Se refere ao número de bits por cor. Os valores são numéricos. Aceita os prefixos min/max. |
+| **color-index**         | Se refere ao número de entradas na tabela de pesquisa de cores do dispositivo de saída. Os valores são numéricos. Aceita os prefixos min/max. |
+| **Height**              | Se refere à altura da janela do navegador. Os valores são medidas de comprimento. Aceita os prefixos min/max. |
+| **device-height**       | Se refere à altura da mídia. Os valores são medidas de comprimento. Aceita os prefixos min/max. |
+| **Width**               | Se refere à largura da janela do navegador. Os valores são medidas de comprimento. Aceita os prefixos min/max. |
+| **device-width**        | Se refere à largura da mídia. Os valores são medidas de comprimento. Aceita os prefixos min/max. |
+| **Grid**                | Se refere ao tipo de dispositivo, se é orientado a bitmaps ou grids. Os valores são **1** para dispositivos orientados a grid e **0** para dispositivos orientados a bitmap. Não aceita os prefixos min/max. |
+| **Monochrome**          | Se refere ao número de bits por pixel em um buffer de quadros monocromáticos. Os valores são numéricos. Aceita os prefixos min/max. |
+| **Orientation**         | Se refere à orientação da mídia. Os valores são **portrait** para vertical / retrato e **landscape** para horizontal / paisagem. Não aceita os prefixos min/max. |
+| **Resolution**          | Se refere à resolução, densidade por pixel, utilizada pelo dispositivo. Os valores são em **DPI** ou **DCM**. Aceita os prefixos min/max. |
+| **Scan**                | Se refere ao tipo de formação de imagens para televisores. Os valores são **progressive** ou **interlace**. Não aceita os prefixos min/max. |
+
+Para realizar a combinação entre os Media Types e as Media Features que formam as regras condicionais e resultam nas Media Queries, são utilizados os **operadores**. Dentre eles, podemos destacar:
+
+- **not:** É utilizado quando se deseja que o resultado de uma determinada expressão seja o oposto ao real. Veja na **Listagem 1** um exemplo do seu uso.
+- **only:** É utilizado quando se deseja prevenir que navegadores antigos que não suportam Media Features tentem processar a expressão. Na **Listagem 2** podemos ver um exemplo fiel disso.
+- **and:** É utilizado em todas as Media Queries, tendo como função primária ser o elo entre o Media Type e a Media Feature. É também responsável pelas expressões múltiplas, isto é, quando usamos mais de uma Media Feature para compor a expressão.
+- **“,“:** É utilizado para juntar duas ou mais expressões diferentes que deverão executar um mesmo conjunto de regras. Funciona como um “ou” condicional na lógica de programação.
+
+**Listagem 1.** Exemplo de utilização do operador lógico “not”.
+
+```
+@media not print and (min-width: 768px) {
+  body {
+      background-color: #FF0000;
+  }
+}
+```
+
+Neste exemplo, todos os dispositivos que não forem do tipo print com largura mínima de 768 pixels terão a cor de fundo do corpo do documento vermelha. Sem o uso do operador not, o resultado seria o oposto, e a cor de fundo do corpo do documento seria vermelha para todos os dispositivos do tipo print com a largura mínima de 768 pixels.
+
+**Listagem 2.** Exemplo de utilização do operador lógico “only”.
+
+```
+@media only screen and (max-width: 320px) {
+  h1 {
+      text-decoration: underline;
+  }
+}
+```
+
+Já neste exemplo, em dispositivos do tipo screen que tenham largura até 320 pixels, os elementos h1 terão seus textos exibidos com *underline*. Sem o operador only, a expressão iria ser executada por todos os dispositivos, e no caso de dispositivos que não suportam Media Features, somente o Media Type seria reconhecido e as mesmas seriam ignoradas.
+
+O que resultaria na execução da regra referente ao h1 em dispositivos nos quais esta não deveria ser executada.
+
+Na **Listagem 3** temos uma expressão múltipla relacionada aos dispositivos do tipo screen, onde duas Media Features são utilizadas dentro de uma mesma expressão. Uma Media Feature corresponde à largura mínima de 320 pixels e outra à largura máxima de 480 pixels. Portanto, caso positiva, o elemento header terá a largura de 100% em dispositivos do tipo screen com a largura entre 320 e 480 pixels.
+
+**Listagem 3.** Exemplo de utilização do operador lógico “and”.
+
+```
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+      width: 100%;
+  }
+}
+```
+
+Na **Listagem 4** há duas expressões diferentes, uma para dispositivos do tipo handheld com largura máxima de 500 pixels e outra para dispositivos do tipo screen com largura máxima de 620 pixels.
+
+Ambas as expressões são totalmente independentes uma da outra, mas será executada, caso positivas, a mesma regra CSS, que consiste justamente em deixar negrito todo o texto existente dentro de um elemento de parágrafo p.
+
+**Listagem 4.** Exemplo de utilização do operador lógico “,”.
+
+```
+@media only handheld and (max-width: 500px), only screen and (max-width: 620px) {
+  p {
+      font-weight: bold;
+  }
+}
+```
+
+### Breakpoints
+
+Os **breakpoints** são delimitadores das regras CSS para atenderem diferentes especificações, que são criados pelo uso de Media Queries. Tratam-se também de uma forma de organizar o uso das Media Queries, visando a criação de blocos previamente definidos de acordo com os dispositivos que serão suportados, e onde serão inseridas as respectivas regras CSS.
+
+Isso evitará, desta forma, a utilização de diversas regras pontuais para a resolução de casos específicos.
+
+Não existe um número ou um grupo exato de breakpoints a serem utilizados. A definição dos breakpoints está diretamente ligada a características especificas do site em questão, como o conteúdo e os dispositivos que serão suportados.
+
+Portanto, um novo breakpoint deve ser criado sempre que a apresentação do conteúdo em determinado dispositivo não oferecer a melhor experiência possível ou simplesmente não for satisfatória.
+
+
+
+### Colocando em prática
+
+Agora que já conhecemos em detalhes o que são os termos `Media Types`, `Media Features` e `Media Queries`, é hora de colocar em prática o conhecimento adquirido. Neste exemplo, vamos criar um site responsivo que deverá apresentar quatro versões de layout diferentes. A saber:
+
+- **Primeira versão:** Se refere aos dispositivos considerados pequenos, com largura até __480 pixels__;
+- **Segunda versão:** Se refere aos dispositivos considerados médios, com largura maior que __480 pixels e até 1024 pixels__;
+- **Terceira versão:** Se refere aos dispositivos considerados grandes, com largura maior que __1024 pixels__;
+- **Quarta versão:** Se refere aos dispositivos de __impressão__.
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+      <!-- INICIO META TAGS -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- FIM META TAGS -->
+
+      <!-- INICIO TITULO DO DOCUMENTO -->
+      <title>Teste Layout Responsivo</title>
+      <!-- FIM TITULO DO DOCUMENTO -->
+
+      <link type="text/css" rel="stylesheet" href="ex_class01.css">
+
+  </head>
+  <body>
+
+        <!-- INICIO TITULO DA PÁGINA -->
+        <h1 class="titulo">Teste Layout Responsivo</h1>
+        <!-- FIM TITULO DA PÁGINA -->
+
+        <!-- INICIO CONTEUDO PRIMEIRA VERSAO -->
+        <section class="conteudo-dispositivo pequeno">
+            <h2 class="tipo">Dispositivo Pequeno</h2>
+            <p class="descricao">Esse texto será exibido somente em dispositivos com largura até 480 pixels.</p>
+        </section>
+        <!-- FIM CONTEUDO PRIMEIRA VERSAO -->
+
+        <!-- INICIO CONTEUDO SEGUNDA VERSAO -->
+        <section class="conteudo-dispositivo medio">
+            <h2 class="tipo">Dispositivo Médio</h2>
+            <p class="descricao">Esse texto será exibido somente em dispositivos com largura maior que 480 pixels e até 1024 pixels.</p>
+        </section>
+        <!-- FIM CONTEUDO SEGUNDA VERSAO -->
+
+        <!-- INICIO CONTEUDO TERCEIRA VERSAO -->
+        <section class="conteudo-dispositivo grande">
+            <h2 class="tipo">Dispositivo Grande</h2>
+            <p class="descricao">Esse texto será exibido somente em dispositivos com largura maior que 1024 pixels.</p>
+        </section>
+        <!-- FIM CONTEUDO TERCEIRA VERSAO -->
+
+        <!-- INICIO CONTEUDO QUARTA VERSAO -->
+        <section class="conteudo-dispositivo impressao">
+            <h2 class="tipo">Dispositivo de Impressão</h2>
+            <p class="descricao">Esse texto será exibido somente em dispositivos de impressão.
+        </section>
+        <!-- FIM CONTEUDO QUARTA VERSAO -->
+  </body>
+</html>
+```
+
+```css
+/* INICIO REGRAS CSS COMUNS À TODOS OS DISPOSITIVOS */
+.titulo {
+    margin: 20px 0 80px;
+    text-align: center;
+  }
+  
+  .conteudo-dispositivo {
+    display: none;
+    text-align: center;
+  }
+  /* FIM REGRAS CSS COMUNS À TODOS OS DISPOSITIVOS */
+
+  /* INICIO REGRAS CSS REFERENTES À PRIMEIRA VERSÃO */
+@media only screen and (max-width: 480px) {
+
+    body {
+        background-color: #D46A6A;
+        color: #FFF;
+    }
+  
+    .conteudo-dispositivo.pequeno {
+        display: block;
+    }
+  
+  }
+  
+  /* INICIO REGRAS CSS REFERENTES À SEGUNDA VERSÃO */
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+  
+    body {
+        background-color: #758AA8;
+        color: #FFF;
+    }
+  
+    .conteudo-dispositivo.medio {
+        display: block;
+    }
+  
+  }
+  /* INICIO REGRAS CSS REFERENTES À TERCEIRA VERSÃO */
+  @media only screen and (min-width: 1025px) {
+  
+    body {
+        background-color: #D4CE6A;
+        color: #000;
+    }
+  
+    .conteudo-dispositivo.grande {
+        display: block;
+    }
+  
+  }
+  /* INICIO REGRAS CSS REFERENTES À QUARTA VERSÃO */
+  @media print {
+  
+    .titulo {
+        margin: 0 0 50px;
+        text-align: left;
+    }
+  
+    .conteudo-dispositivo {
+        text-align: left;
+    }
+  
+    body {
+        background-color: #FFF;
+        color: #000;
+    }
+  
+    .conteudo-dispositivo.impressao {
+        display: block;
+    }
+  
+  }
+```
+
+
+
+### CSS3: Media Queries
+
+#### Motivação
+
+A regra **@media**, inserida na versão 2 das CSS, permitia a aplicação condicional de estilos, dependendo do tipo de dispositivo/mídia (media types) por meio do qual a página fosse acessada. Assim, era possível utilizar, por exemplo, uma formatação padrão quando o site fosse acessado via browser, e um estilo diferenciado para o modo de impressão.
+
+Nas **CSS3, esse recurso foi expandido para permitir o uso de queries (filtros)**, capazes de avaliar não só o tipo de mídia, mas também parâmetros como orientação da página, largura e altura. Isso permite, por exemplo, a aplicação de estilos diferentes para telas maiores (desktops) e menores (tablets e smartphones), adequando a forma como o conteúdo é exibido para o usuário, a fim de oferecer sempre a melhor experiência.
+
+
+
+#### Media types
+
+Até as CSS2, para aplicar um estilo com base na regra **@media**, bastava utilizar a seguinte sintaxe:
+
+```css
+@media [media type] {
+         estilos
+}
+```
+
+Para o argumento **[media type]**, os valores suportados são: **screen**, para visualização em telas quaisquer; **print**, para telas de impressão; **speech** para sintetizadores de voz ou leitores de tela; ou **all**, para todos os tipos, **all** é o valor padrão caso não tenha sido definido uma media type. Na parte interna da regra, mantemos a sintaxe padrão das CSS, com seus seletores e demais regras.
+
+A **Listagem 1** apresenta um exemplo de uso do **@media** que altera a cor do texto dependendo do tipo de mídia. Dessa forma, quando a página for acessada de um browser, visualizaremos a cor azul; já em modo de impressão, visualizaremos a cor vermelha.
+
+```css
+@media screen {
+    body {
+        color: blue;
+    }
+}
+@media print {
+    body {
+        color: red;
+    }
+}
+```
+
+
+
+![Cor do texto alterado em media types diferentes](https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/mediaquerie/image1.png)
+
+
+
+#### Media Queries
+
+Nas CSS3, a sintaxe para uso das media queries deriva daquela que vimos anteriormente, adicionando apenas alguns argumentos e operadores, como podemos observar a seguir:
+
+```css
+@media [not|only] [media type] and ([query]) {
+       estilos
+}
+```
+
+Os operadores **not** e **only** permitem negar um tipo de mídia, ou especificar que apenas determinado tipo seja atendido, respectivamente. Por exemplo, a expressão **not speech** faria com que as regras não fossem aplicadas a leitores de tela, enquanto que **only screen** faria com que apenas telas fossem atendidas.
+
+Por sua vez, o operador **and** faz a ligação entre o tipo de mídia e o filtro adicional que será especificado entre parênteses, no lugar de **query**. Nesse ponto podemos utilizar as diversas propriedades da mídia, como orientação, largura e altura, para obter os resultados desejados.
+
+Na **Listagem 2** temos um exemplo de uso das media queries. Com esse código, aplicamos o plano de fundo azul para páginas com até 640px de largura e vermelho para aquelas com até 480px de largura. Acima de 640px, o comportamento padrão será assumido, ou seja, será mantida a página branca.
+
+```css
+@media screen and (max-width: 640px){
+    body {
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 480px){
+    body {
+        background-color: red;
+    }
+}
+```
+
+![Resultado do uso das media queries](https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/mediaquerie/image2.png)
+
+
+
+Entre as várias propriedades que podem ser usadas, as mais comuns são: **min-width**, **min-height**, **max-width**, **max-height**, **width** e **height**. A partir delas podemos, por exemplo, adaptar as páginas para apresentar o comportamento responsivo, ajustando-as adequadamente conforme os diferentes tamanhos de tela.
+
+
+
+### Desenvolvimento responsivo: como resetar os estilos com CSS
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
