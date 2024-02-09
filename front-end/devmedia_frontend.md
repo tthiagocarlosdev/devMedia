@@ -12216,17 +12216,59 @@ Entre as várias propriedades que podem ser usadas, as mais comuns são: **min-w
 
 ### Desenvolvimento responsivo: como resetar os estilos com CSS
 
+Com o alto número de navegadores no mercado, um dos principais problemas para quem constrói websites responsivos é que cada um deles pode possuir diferentes valores padrão para a margem e o padding (margem interna) dos elementos. Isso faz com que sejam obtidos resultados visuais distintos, o que acaba prejudicando, exatamente, a [responsividade](https://www.devmedia.com.br/dominando-design-responsivo-com-html5-e-css3/34214). Pensando nisso, veremos nesse artigo **como resetar esses valores através de algumas técnicas simples de CSS**, evitando assim esse problema.
+
+
+
+#### Seção 1: Entendendo o problema
+
+Para entendermos esse problema na prática, criamos um HTML básico, com apenas um texto, como mostrado a seguir:
+
+```html
+<body>
+  <h2>DevMedia - Reset com CSS para desenvolvimento responsivo</h2>
+</body>
+```
+
+A partir desse código, conseguimos observar as diferenças entre o visual do elemento sem o **CSS Reset** aplicado (**Figura 1**) e com esse recurso (**Figura 2**). Na **Figura 1**, nota-se, com muita clareza, que existe uma certa distância do texto para a margem nos três navegadores (Google Chrome, Mozilla Firefox e Microsoft Edge). Isso é muito prejudicial ao desenvolvimento responsivo, principalmente por um motivo: o desenvolvimento responsivo, em geral, baseia-se em porcentagens. Imagine um layout com quatro colunas, cada uma com 25% da largura da página. Caso não haja o reset, esses 100% seriam somados aos pixels de margem/*padding* do navegador, quebrando o layout e fazendo com que a quarta coluna fique na linha de baixo.
+
+![html sem css](https://arquivo.devmedia.com.br/artigos/henrique_gasparotto/desenvolvimento_responsivo/html_sem_css.png)
 
 
 
 
 
+![html com css](https://arquivo.devmedia.com.br/artigos/henrique_gasparotto/desenvolvimento_responsivo/html_com_css.png)
 
 
 
+#### Seção 2: Reset específico para alguns elementos
+
+O **reset do CSS dos elementos é uma operação bastante simples**, porém, muitas vezes acabamos esquecendo desse passo quando começamos a desenvolver de forma responsiva. No geral, isso leva a designs “quebrados” em alguns navegadores, mas que potencialmente funcionam bem em outros.
+
+No caso de nosso exemplo, precisamos resetar apenas os elementos `<html>`, `<body>` e `<h2>`, uma vez que estamos utilizando somente eles. Dessa forma, um CSS como o da **Listagem 1** seria suficiente.
+
+```css
+html, body, h2
+{
+    margin: 0;
+    padding: 0;
+}
+```
+
+Uma ação simples como essa é suficiente para termos o layout mostrado na **Figura 2**, possibilitando um design idêntico em todos os navegadores. Também é importante ressaltar que, caso tivéssemos mais elementos no HTML, bastaria zerá-los também. Por exemplo, se tivéssemos um elemento `<div>`, teríamos que zerá-lo da mesma maneira que a ensinada na **Listagem 1**.
 
 
 
+#### Seção 3: Reset para todos os elementos
+
+Caso a complexidade do HTML aumente, podemos concluir que a abordagem anterior pode prejudicar a construção da interface. Seria necessário controlar o reset de muitos elementos. Diante disso, o CSS traz uma outra possibilidade de reset, mais simples, e que permite que tenhamos todos os [elementos do DOM](https://www.devmedia.com.br/trabalhando-com-dom-em-javascript/29039) como alvo: através do operador `*`. Vejamos um exemplo no código abaixo:
+
+```css
+* { margin: 0; padding: 0; }
+```
+
+Com isso, ao invés de informarmos cada elemento do DOM que será resetado, com o operador `*` determinamos que todos eles o serão. Assim, é garantido que, independentemente do que for inserido no HTML, teremos um design responsivo sem diferenças entre os navegadores.
 
 
 
