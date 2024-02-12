@@ -24,3 +24,7 @@ pre code {
 img {
     width: 250px;
 }
+
+@media only print and (max-width: 600px){
+    h1 { font-size: 30px;}
+}

@@ -71,9 +71,95 @@
             </code>
         </pre>
     </section>
-    
+
     <section>
-        <h2 class="questoes">Questão 6 - #3902</h2>
+        <h2 class="questoes">Questão 6 - #3893</h2>
+        <div>
+            <p>Crie as seguintes media queries para telas coloridas e de resolução adequada:</p>
+        </div>
+        <pre>
+            <code>
+                @media screen and ( max-width: 475px ) {
+                    a { text-decoration: none; }
+                }
+
+                @media screen and ( max-width: 1024px ) {
+                    p { padding: 20px; }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 7 - #3897</h2>
+        <div>
+            <p>Crie uma media query para que aplique o estilo em resoluções de no mínimo 850px e com orientação retrato:</p>
+        </div>
+        <pre>
+            <code>
+                @media only screen and (orientation: portrait) 
+                    and (min-width: 850px) 
+                    and (max-width: 1024px) {
+                        .container {
+                            display: flex;
+                        }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 8 - #3914</h2>
+        <div>
+            
+        </div>
+        <pre>
+            <code>
+                @media not print and (min-width: 400px)
+                    and (orientation: portrait){
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                    };
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 9 - #3883</h2>
+        <div>
+            
+        </div>
+        <pre>
+            <code>
+                @media only screen and (max-width: 475px) {
+                    a { text-decoration: none; }
+                }
+                
+                @media only screen and (max-width: 1024px) {
+                    p { padding: 20px; }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 10 - #</h2>
+        <div>
+            <p>Quais operadores devem ser usados para que o estilo seja aplicado apenas em dispositivos de impressão com a resolução de até 600px:</p>
+        </div>
+        <pre>
+            <code>
+                @media only print and (max-width: 600px){
+                    h1 { font-size: 30px;}
+                }    
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 11 - #3902</h2>
         <div>
             <p>Qual alternativa cria corretamente uma media query?</p>
         </div>

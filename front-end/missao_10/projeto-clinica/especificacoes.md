@@ -92,11 +92,24 @@ O responsivo do nosso projeto:
 
 
 
+## Projeto passo a passo: Construa um site responsivo para uma clínica
+
+### 2º passo: HTML da página principal
+
+### O que será feito?
+
+Neste passo vamos criar o documento HTML da página home que pode ser vista na **Animação 1**.
+
+[Animação 1](https://www.devmedia.com.br/arquivos/projeto_guiado/front-end/segunda_pagina_clinica_medica/1_etapa/anime1.gif)
+
+O objetivo deste passo não é estilizar a página e sim estruturar e organizar os elementos HTML utilizando as tags semânticas onde for possível o seu uso.
+
+Ao finalizar este passo sua página principal vai parecer com a __Animação 2__.
+
+[Animação 2](http://www.devmedia.com.br/arquivos/projeto_guiado/front-end/segunda_pagina_clinica_medica/1_etapa/etapa-1-finalizada.gif)
 
 
 
+## Projeto passo a passo: Construa um site responsivo para uma clínica
 
-
-
-
-
+### 3º passo: CSS da página Home
