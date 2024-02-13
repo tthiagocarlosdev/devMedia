@@ -12,9 +12,11 @@
 :root {
     --corDaFonte:#0000008c;
     --white:#fff;
+    --mediumTurquoise:#00CAD1;
+    --teal:#0C6E71;
 }
 
-.divFlex {
+.display_flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +25,11 @@
 .largura_da_pagina {
     width: 1024px;
     margin: 0 auto;
-    border: 1px solid greenyellow;
 }
 
 /* container topo container topo container topo container topo  */
 .container_topo {
-    background-color: rgb(1, 189, 189);
+    background-color: var(--mediumTurquoise);
     width: 100%;
     height: 80px;
 }
@@ -59,7 +60,7 @@
 /* container titulo container titulo container titulo container titulo  */
 .container_titulo {
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-image: url("../assets/img/recepcao.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -139,11 +140,10 @@
     line-height: 20px;
 }
 
-/* PAREI */
-
 .cards_especialidades {
     width: 100%;
     gap: 35px;
+    margin-top: 20px;
 }
 .cards_especialidades figure {
     width: calc((100% / 3) - 30px);
@@ -175,6 +175,57 @@
     color: var(--white);
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(1, 189, 189);
+    background-color: var(--mediumTurquoise);
     padding: 10px 24px;
+}
+
+/* container contato container contato container contato container contato  */
+.container_contato {
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.box_informacoes_contato {
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+}
+
+.box_informacoes_contato h2 {
+    color: var(--corDaFonte);
+    font-size: 24px;
+}
+
+.box_informacoes_contato p {
+    color: var(--corDaFonte);
+    text-align: center;
+}
+
+.box_informacoes_contato span {
+    font-weight: bold;
+}
+
+.box_iframe {
+    width: 100%;
+}
+
+/* footer footer footer footer footer footer footer footer footer  */
+
+footer {
+    background-color: var(--teal);
+    flex-direction: column;
+    padding: 24px 0;
+    color: var(--white);
+}
+
+.box_imagem_rodape img {
+    height:70px;
+}
+
+.box_informacoes_rodape {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
 }
