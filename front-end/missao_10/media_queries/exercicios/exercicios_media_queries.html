@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1 class="titulo_principal">Exercícios HTML Semântico</h1>
+    <h1 class="titulo_principal">Exercícios Media Queries</h1>
 
     <section>
         <h2 class="questoes">Questão 1 - #3868</h2>
@@ -154,6 +154,78 @@
                 @media only print and (max-width: 600px){
                     h1 { font-size: 30px;}
                 }    
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 11 - #3901</h2>
+        <div>
+            <p>Quando utilizamos o operador and?</p>
+        </div>
+        <pre>
+            <code>
+                Quando queremos unir media types e media feature e expressões múltiplas
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 12 - #3875</h2>
+        <div>
+            <p>Faça com que a tag p seja estilizada em dispositivos que não sejam sintetizadores de voz e que a resolução seja pelo menos 320px:</p>
+        </div>
+        <pre>
+            <code>
+                @media not speech and (min-width: 320px){
+                    p { line-height: 50px;}
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 13 - #3876</h2>
+        <div>
+            <p>Crie uma media query que estilize a tag 'div' apenas na orientação retrato e com o mínimo de 400px de resolução:</p>
+        </div>
+        <pre>
+            <code>
+                @media screen and (orientation: portrait) and (min-width: 400px){
+                    div { display: flex};
+                  }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 14 - #3899</h2>
+        <div>
+            <p>Qual das alternativas abaixo tem um código que oculta a tag img em telas coloridas com tamanho até 1024px?</p>
+        </div>
+        <pre>
+            <code>
+                @media only screen and (max-width: 1024px){
+                    img { display: none};
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 15 - #3873</h2>
+        <div>
+            <p>Defina o tamanho da fonte da classe 'text-item'. Em telas de resolução adequada a fonte será de 18px já em dispositivos de impressão terá 12px. Previna para que navegadores antigos tentem processar a expressão:</p>
+        </div>
+        <pre>
+            <code>
+                @media only screen {
+                    .text-item { font-size: 18px; }
+                }
+                
+                @media only print {
+                    .text-item { font-size: 12px; }
+                }
             </code>
         </pre>
     </section>
