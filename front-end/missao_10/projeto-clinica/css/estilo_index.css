@@ -17,15 +17,14 @@
 }
 
 /* configurações gerais configurações gerais configurações gerais  */
-.display_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    width: 100%;
 }
 
 .largura_da_pagina {
     width: 1024px;
     margin: 0 auto;
+    /* border: 1px solid greenyellow; */
 }
 
 /* container topo container topo container topo container topo  */
@@ -34,46 +33,67 @@
     width: 100%;
 }
 
-.container_topo div {
+.container_largura_da_pagina {
+    /* background-color: pink; */
+    height: 100%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.boxLogo {
-    width: 100%;
-    height: 100%;
+.container_link_logo {
+    /* background-color: palegoldenrod; */
+    flex: 1 1 50%;
 }
 
-.boxLogo a {
-    width: 100%;
-    height: 100%;
+.link_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.container_links_topo {
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.boxLogo img {
+.imagem_logo {
     height: 70px;
 }
 
-.container_links_topo a {
+.container_links_topo {
+    /* background-color: peru; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 50%;
+}
+
+.link_topo {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    padding:  8px 0 8px 24px;
+    padding:  8px 0 8px 50px;
 
     transition: color 0.5s;
 }
 
-.container_links_topo a:hover {
+.link_topo:hover {
     color: var(--corDaFonte);
 }
 
-
 /* container titulo container titulo container titulo container titulo  */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .container_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 500px;
     background-image: url("../assets/img/recepcao.png");
@@ -83,30 +103,39 @@
 }
 
 .box_titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     height: 100%;
-    justify-content: start;
 }
 
-.box_titulo h1 {
+.titulo {
     text-transform: uppercase;
     color: var(--white);
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 600;
-    width: 400px;
-    padding: 16px;
+    padding-left: 16px;
 }
 
 /* container sobre container sobre container sobre container sobre  */
 #container_sobre {
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+    justify-content: center;
     padding: 24px 160px;
     color: var(--corDaFonte);
-    gap: 20px;
+    
 }
 
 .box_titulo_sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .box_titulo_sobre h2 {
@@ -119,7 +148,11 @@
 }
 
 .box_informacoes_e_imagem_sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .box_informacoes_sobre {
@@ -135,11 +168,17 @@
 
 /* container especialidades container especialidades container especialidades  */
 #container_especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .box_informacoes_especialidades {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
     padding: 16px;
     color: var(--corDaFonte);
@@ -147,6 +186,7 @@
 
 .box_informacoes_especialidades h2 {
     font-size: 20px;
+    flex: 1 1 100%;
 }
 
 .box_informacoes_especialidades p {
@@ -157,16 +197,21 @@
 
 .cards_especialidades {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 35px;
-    margin-top: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 16px;
 }
-.cards_especialidades figure {
+
+.card {
     width: calc((100% / 3) - 30px);
     box-shadow: 0px 0px 15px var(--corDaFonte);
 }
 
-.cards_especialidades figure img {
+.card img {
     width: 100%;
 }
 
@@ -197,14 +242,20 @@
 
 /* container contato container contato container contato container contato  */
 .container_contato {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 24px 0;
     gap: 20px;
     margin-bottom: 24px;
 }
 
 .box_informacoes_contato {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     width: 60%;
 }
@@ -227,17 +278,21 @@
     width: 100%;
 }
 
-/* footer footer footer footer footer footer footer footer footer  */
-
-footer {
-    background-color: var(--teal);
-    flex-direction: column;
-    padding: 24px 0;
-    color: var(--white);
+iframe {
+    width: 100%;
+    height: 400px;
 }
 
-.box_imagem_rodape img {
-    height:70px;
+/* footer footer footer footer footer footer footer footer footer  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--teal);
+    padding: 24px 0;
+    color: var(--white);
 }
 
 .box_informacoes_rodape {
@@ -250,47 +305,89 @@ footer {
 
 /* 425px 425px 425px 425px 425px 425px 425px 425px 425px 425px  */
 @media(max-width: 425px){
-    .container_topo div{
+     .container_largura_da_pagina{
         flex-wrap: wrap;
+        width: 100%;
     }
-
-    .boxLogo {
+    
+    .link_logo {
         justify-content: center;
         align-items: center;
-    }
-
-    .boxLogo a {
-        margin: 0 10px;
+        width: 95%;
+        margin: 0 auto;
         border-bottom: 1px solid var(--corDaFonte);
     }
     
     .container_links_topo {
-        justify-content: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .link_topo {
+        padding: 8px;
     }
 
     .container_titulo {
         height: 200px;
     }
 
-    .box_titulo h1 {
-        font-size: 32px;
+    .titulo {
+        font-size: 20px;
+    }
+
+    #container_sobre{
+        width: 100%;
+    }
+
+    #container_especialidades {
+        width: 100%;
+    }
+
+    .cards_especialidades {
+        padding: 16px 32px;
+    }
+    
+    .box_informacoes_e_imagem_sobre img {
+        display: none;
+    }
+
+    .cards_especialidades {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container_contato {
+        width: 100%;
     }
 }
 
 
 /* 768px 768px 768px 768px 768px 768px 768px 768px 768px 768px  */
-@media(max-width: 768px){
-    .container_titulo {
+@media (min-width: 426px) and (max-width: 768px){
+     .container_titulo {
         height: 300px;
     }
 
+    #container_sobre{
+        width: 100%;
+    }
+
+    #container_especialidades {
+        width: 100%;
+    }
+
+    
     .box_informacoes_e_imagem_sobre img {
         display: none;
     }
 }
 
 /* 1024px 1024px 1024px 1024px 1024px 1024px 1024px 1024px  */
-@media(max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px){
     .container_titulo {
         height: 400px;
     }
