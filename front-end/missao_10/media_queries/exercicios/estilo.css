@@ -32,10 +32,10 @@ p {
 }
 
 
-@media only screen {
-    .text-item { font-size: 18px; }
-}
-
-@media only print {
-    .text-item { font-size: 12px; }
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 1024px){
+        .container {
+            margin: 10px 20px 30px 40px;
+        }
 }

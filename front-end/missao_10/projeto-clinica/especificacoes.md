@@ -113,3 +113,31 @@ Ao finalizar este passo sua página principal vai parecer com a __Animação 2__
 ## Projeto passo a passo: Construa um site responsivo para uma clínica
 
 ### 3º passo: CSS da página Home
+
+
+
+## Projeto passo a passo: Construa um site responsivo para uma clínica
+
+### 4º passo: CSS responsivo da página home
+
+### O que será feito?
+
+Neste passo vamos cuidar do responsivo da página home que atualmente se comporta como visto na [__Animação 1__](http://www.devmedia.com.br/arquivos/projeto_guiado/front-end/segunda_pagina_clinica_medica/3_etapa/etapa-2-finalizada.gif)
+
+### Como fazer?
+
+Para fazer as adaptações no site para que ele fique responsivo você vai precisar tratar as seguintes resoluções:
+
+1. Telas até 425px.
+2. Telas até 768px.
+3. Telas até 1024px.
+4. Demais telas.
+
+
+
+
+
+
+
+
+
