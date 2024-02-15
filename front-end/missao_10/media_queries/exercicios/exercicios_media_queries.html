@@ -293,6 +293,7 @@
             </code>
         </pre>
     </section>
+
     <section>
         <h2 class="questoes">Questão 20 - #3879</h2>
         <div>
@@ -301,6 +302,100 @@
         <pre>
             <code>
                 @media (max-width: 640px){
+                    h1 { font-size: 30px;}
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 21 - #3907</h2>
+        <div>
+            <p>Esconda a classe 'container-img' para apenas sintetizadores de voz e utilize Flexbox apenas para dispositivos de impressão:</p>
+        </div>
+        <pre>
+            <code>
+                @media speech {
+                    .container-img {
+                        display: none;
+                    }
+                }
+                
+                @media print {
+                    .container-img {
+                        display: flex;
+                    }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 22 - #3903</h2>
+        <div>
+            <p>Crie as seguintes media queries para a classe 'botao' com as seguintes observações:</p>
+            <ol>
+                <li>Para telas incluindo as de impressão e resolução de no mínimo 1024px terá um padding de 30px.</li>
+                <li>Para dispositivos que não são de impressão e com resolução de no máximo 1024px, terá uma margem de 30px.</li>
+            </ol>
+        </div>
+        <pre>
+            <code>
+                @media (min-width: 1024px) {
+                    .botao {
+                        padding: 30px;
+                    }
+                }
+                
+                @media not print and (max-width: 1024px) {
+                    .botao {
+                        margin: 30px;
+                    }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 23 - #3866</h2>
+        <div>
+            <p>Qual alternativa seta a margin-bottom com o valor 10px para dispositivos de impressão?</p>
+        </div>
+        <pre>
+            <code>
+                @media only print {
+                    body { margin: 0px 0px 10px 0px;}
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 24 - #3887</h2>
+        <div>
+            <p>Garanta que a classe 'container' utilize Flexbox apenas nas larguras de 780px até 1024px:</p>
+        </div>
+        <pre>
+            <code>
+                @media only print
+                and (min-width: 780px)
+                and (max-width: 1024px)
+                and (grid: 0)
+                {
+                    .container { display: flex;}
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 25 - #</h2>
+        <div>
+            <p>Quais operadores devem ser usados para que o estilo seja aplicado apenas em dispositivos de impressão com a resolução até 600px?</p>
+        </div>
+        <pre>
+            <code>
+                @media only print and (max-width: 600px){
                     h1 { font-size: 30px;}
                 }
             </code>
