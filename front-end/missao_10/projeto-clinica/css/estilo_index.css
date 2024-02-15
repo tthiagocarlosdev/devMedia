@@ -175,6 +175,7 @@ body{
 }
 
 .box_informacoes_especialidades {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,6 +191,7 @@ body{
 }
 
 .box_informacoes_especialidades p {
+    width: 100%;
     padding: 0 200px;
     text-align: center;
     line-height: 20px;
@@ -305,6 +307,10 @@ iframe {
 
 /* 425px 425px 425px 425px 425px 425px 425px 425px 425px 425px  */
 @media(max-width: 425px){
+    .largura_da_pagina {
+        width: 100%;
+    }
+
      .container_largura_da_pagina{
         flex-wrap: wrap;
         width: 100%;
@@ -335,14 +341,6 @@ iframe {
         font-size: 20px;
     }
 
-    #container_sobre{
-        width: 100%;
-    }
-
-    #container_especialidades {
-        width: 100%;
-    }
-
     .cards_especialidades {
         padding: 16px 32px;
     }
@@ -368,18 +366,13 @@ iframe {
 
 /* 768px 768px 768px 768px 768px 768px 768px 768px 768px 768px  */
 @media (min-width: 426px) and (max-width: 768px){
-     .container_titulo {
+    .largura_da_pagina {
+        width: 100%;
+    } 
+    
+    .container_titulo {
         height: 300px;
     }
-
-    #container_sobre{
-        width: 100%;
-    }
-
-    #container_especialidades {
-        width: 100%;
-    }
-
     
     .box_informacoes_e_imagem_sobre img {
         display: none;
@@ -388,6 +381,10 @@ iframe {
 
 /* 1024px 1024px 1024px 1024px 1024px 1024px 1024px 1024px  */
 @media (min-width: 769px) and (max-width: 1024px){
+    .largura_da_pagina {
+        width: 100%;
+    } 
+    
     .container_titulo {
         height: 400px;
     }
