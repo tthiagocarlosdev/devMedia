@@ -32,6 +32,9 @@ p {
 }
 
 
-@media only print and (max-width: 600px){
-    h1 { font-size: 30px;}
+@media (min-width: 320px) and (max-width : 480px){
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
