@@ -478,18 +478,97 @@
     </section>
 
     <section>
-        <h2 class="questoes">Questão 11 - #3902</h2>
+        <h2 class="questoes">Questão 31 - #3884</h2>
+        <div>
+            <p>Faça com que a tag body utilize Flexbox para dispositivos que não sejam de impressão:</p>
+        </div>
+        <pre>
+            <code>
+                @media not print {
+                    body {
+                        display: flex;
+                    }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 32 - #3881</h2>
+        <div>
+            <p>Qual alternativa possui exemplos de operadores de media query?</p>
+        </div>
+        <pre>
+            <code>
+                not, only, and
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 33 - #3904</h2>
+        <div>
+            <p>Alinhe a classe 'primeiro-paragrafo' para os seus elementos serem apresentados na vertical, ou seja, em coluna quando a orientação for retrato.</p>
+        </div>
+        <pre>
+            <code>
+                
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 34 - #3912</h2>
+        <div>
+            <p>Defina o estilo da tag 'img' para:</p>
+            <p>Em telas de resolução adequada tenha tamanho 100x100.</p>
+            <p>Em telas que não tenham resolução adequada tenha tamanho 10x10.
+            </p>
+        </div>
+        <pre>
+            <code>
+                @media screen and (max-width: 1024px) {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    };
+                }
+                
+                @media not screen and (max-width: 1024px) {
+                    img {
+                        width: 10px;
+                        height: 10px;
+                    };
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 35 - #3902</h2>
         <div>
             <p>Qual alternativa cria corretamente uma media query?</p>
         </div>
         <pre>
             <code>
-                reposta errada
+                Todas as alternativas estão corretas
+                
+                @media (orientation: landscape) and (min-width: 1024px) {
+                    p {
+                      text-align: center;
+                      padding: 20px;
+                    }
+                }
+                
                 @media (min-width: 320px) and (max-width: 475px) {
                     div {
                       flex: 1 1 auto;
                       border: 1px solid #000;
                     }
+                }
+
+                @media only screen and (grid: 0) {
+                    * { display: flex; margin:0;}
                 }
             </code>
         </pre>
