@@ -573,5 +573,114 @@
             </code>
         </pre>
     </section>
+
+    <section>
+        <h2 class="questoes">Questão 36 - #3913</h2>
+        <div>
+            <p></p>
+        </div>
+        <pre>
+            <code>
+                @media only speech {
+                    img {
+                        display: none;
+                    }
+                }
+                
+                @media only print {
+                    img, figcaption{
+                        display: none;
+                    }
+                }
+                
+                @media only screen{
+                    h1{
+                        font-size: 26px;
+                    }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 37 - #3896</h2>
+        <div>
+            <p>Os estilos abaixo são aplicados com as seguintes condições:.</p>
+            <p>Para a orientação paisagem e resolução de no mínimo 780px.</p>
+            <p>Para a orientação retrato e resolução de no mínimo 320px.</p>
+            <p>Não utilize media type</p>
+        </div>
+        <pre>
+            <code>
+                @media (min-width: 780px) and ( orientation : landscape ) {
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                    };
+                }
+                
+                @media (min-width: 320px) and (orientation: portrait) {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                    };
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 38 - #3890</h2>
+        <div>
+            <p>Como definir o estilo abaixo para que seja aplicado para telas de 800px a 1024px que não sejam sintetizadores de voz?:</p>
+        </div>
+        <pre>
+            <code>
+                @media not speech and (min-width: 800px) and (max-width: 1024px){
+                    * { display: flex;}
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 39 - #3886</h2>
+        <div>
+            <p>Estilize a tag 'div' baseado na sua orientação:</p>
+            <p>No modo retrato os elementos serão organizados em linhas.</p>
+            <p>No modo paisagem os elementos serão organizados em colunas.</p>
+        </div>
+        <pre>
+            <code>
+                @media ( orientation: landscape ) {
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                    };
+                }
+                
+                @media ( orientation: portrait ) {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                    };
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 40 - #3877</h2>
+        <div>
+            <p>Defina o estilo para a classe 'container' qualquer dispositivo que tenha telas de no mínimo 780px:</p>
+        </div>
+        <pre>
+            <code>
+                @media all and (min-width: 780px) {
+                    .container { display: flex;}
+                }
+            </code>
+        </pre>
+    </section>
 </body>
 </html>

@@ -33,16 +33,7 @@ p {
 
 
 
- @media screen and (max-width: 1024px) {
-    img {
-        width: 100px;
-        height: 100px;
-    };
-}
 
-@media not screen and (max-width: 1024px) {
-    img {
-        width: 10px;
-        height: 10px;
-    };
+@media all and (min-width: 780px) {
+    .container { display: flex;}
 }
