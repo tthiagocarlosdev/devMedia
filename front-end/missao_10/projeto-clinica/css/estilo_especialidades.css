@@ -1,0 +1,78 @@
+.container_links_especialidades {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 24px;
+}
+
+.container_links_especialidades h2 {
+    font-size: 24px;
+    color: var(--corDaFonte);
+}
+
+.container_links_especialidades nav {
+    /* border: 1px solid purple; */
+}
+
+.links_especialidades {
+    text-decoration: none;
+    margin: 8px;
+    border-bottom: 2px solid var(--mediumTurquoise);
+    color: var(--black);
+    transition: color 0.5s;
+}
+
+.links_especialidades:hover {
+    color: var(--teal);
+}
+
+.secao_especialidade {
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 0;
+}
+
+.container_titulos {
+    border: 1px solid peru;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.container_titulos h3 {
+    font-size: 20px;
+    color: var(--corDaFonte);
+}
+
+.container_titulos p {
+    text-align: center;
+}
+
+.container_horarios {
+    border: 1px solid palevioletred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container_horarios img {
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.container_horarios table {
+    border: 1px solid green;
+    width: 100%;
+    height: 205px;
+}
