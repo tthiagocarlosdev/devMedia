@@ -512,7 +512,11 @@
         </div>
         <pre>
             <code>
-                
+                @media (orientation: portrait) {
+                    .primeiro-paragrafo {
+                        flex-direction: column;
+                    }
+                }
             </code>
         </pre>
     </section>
@@ -679,6 +683,81 @@
                 @media all and (min-width: 780px) {
                     .container { display: flex;}
                 }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 41 - #3906</h2>
+        <div>
+            <p>Centralize os elementos de 'posts' utilizando Flexbox para dispositivos de impressão:</p>
+        </div>
+        <pre>
+            <code>
+                @media print {
+                    .posts {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 42 - #3891</h2>
+        <div>
+            <p>Quando utilizamos o operador only?</p>
+        </div>
+        <pre>
+            <code>
+                Quando queremos prevenir que navegadores antigos tentem processar a expressão
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 43 - #3904</h2>
+        <div>
+            
+        </div>
+        <pre>
+            <code>
+                @media (orientation: portrait) {
+                    .primeiro-paragrafo {
+                        flex-direction: column;
+                    }
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 44 - #3880</h2>
+        <div>
+            <p>Qual operador deve ser usados para que o estilo seja aplicado em um dispositivo com a resolução de 900px?</p>
+        </div>
+        <pre>
+            <code>
+                @media (min-width: 800px) and (max-width: 1024px){
+                    body { padding: 30px;}
+                }
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2 class="questoes">Questão 45 - #3882</h2>
+        <div>
+            <p>Qual alternativa é um exemplo de media feature?</p>
+        </div>
+        <pre>
+            <code>
+                Todas as alternativas estão corretas
+                @media (scan: interlace) { ? }
+                @media (grid: 0) { ? }
+                @media (orientation: landscape) { ? }
             </code>
         </pre>
     </section>
