@@ -31,6 +31,6 @@ p {
     line-height: 24px;
 }
 
-@media (min-width: 800px) and (max-width: 1024px){
-    body { padding: 30px;}
+@media only screen and (max-width: 475px) {
+    img { display: none; }
 }
