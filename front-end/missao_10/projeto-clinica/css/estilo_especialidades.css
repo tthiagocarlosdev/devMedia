@@ -28,11 +28,12 @@
     border-bottom: 2px solid var(--mediumTurquoise);
     color: var(--corDaFonte);
     font-weight: 600;
-    transition: color 0.5s;
+    transition: color 1s;
 }
 
 .links_especialidades:hover {
     color: var(--teal);
+    border-bottom: 2px solid var(--teal);
 }
 
 .secao_especialidade {

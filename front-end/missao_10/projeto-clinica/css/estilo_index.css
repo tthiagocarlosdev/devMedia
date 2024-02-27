@@ -244,6 +244,11 @@ body{
     font-weight: 600;
     background-color: var(--mediumTurquoise);
     padding: 10px 24px;
+    transition: color 0.5s;
+}
+
+.link_ver_horario a:hover {
+    color: var(--corDaFonte);
 }
 
 /* container contato container contato container contato container contato  */
