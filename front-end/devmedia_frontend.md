@@ -12285,11 +12285,66 @@ Neste curso veremos como criar formulários em HTML na nossa página, mas para i
 
 ![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/4.png)
 
+__Formulários podem ser usados em uma variedade de contextos. Páginas de contato, login e cadastro, são alguns exemplos de uso de formulário.__
 
+
+
+Agora que sabemos o que são formulários, veremos a seguir quando um formulário é utilizado.
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/6.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/7.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/8.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/9.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/10.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/11.png)
+
+
+
+Agora que entendemos o funcionamento de um formulário, veja alguns exemplos de sites que utilizam esse recurso:
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/15.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/16.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/17.png)
+
+
+
+Você notou que cada um dos formulários tinha seu visual ajustado de acordo com o site?
+
+Isso é feito através do CSS. Apesar de não ser o foco deste curso, veja como ficaria um formulário estilizado com CSS:
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/20.png)
+
+![Introdução](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula1/21.png)
+
+
+
+Neste curso aprenderemos a criar formulários que recebem:
+
+- Textos
+- Números
+- Opções
+- Telefone
+- Data
+- Caixas de seleção
+- Listas de seleção
+- Botões
+
+__No geral, uma página web mostra informações para o usuário, mas através dos formulários podemos fazer o caminho inverso: permitir ao usuário enviar informações para o back-end da página, preenchendo campos com os dados que precisamos.__
 
 
 
 ### 2. Tag Form
+
+
+
+
 
 ### 3. Inputs
 
