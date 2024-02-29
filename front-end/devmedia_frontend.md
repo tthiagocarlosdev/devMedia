@@ -12342,7 +12342,245 @@ __No geral, uma página web mostra informações para o usuário, mas através d
 
 ### 2. Tag Form
 
+Vamos conhecer em mais detalhes a tag `form`, utilizada na criação de formulários.
 
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/24.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/25.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/26.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/27.png)
+
+
+
+Sintaxe da tag `form`:
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/30.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/31.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/32.png)
+
+
+
+Agora que vimos a sintaxe da tag `form`, vamos conhecer um pouco dos elementos internos que utilizamos no nosso exemplo, começando pelo `textarea`:
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/36.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/37.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/38.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/39.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/40.png)
+
+Agora vamos entender o funcionamento do `button`:
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/43.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/44.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/45.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/46.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/47.png)
+
+__Quando não informamos o atributo `action` na tag `form` o formulário não é enviado para o back-end, mas sim para a própria página em que se encontra.__
+
+
+
+Como os dados de um formulário podem ser enviados de formas diferentes:
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/49.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/50.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/51.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/52.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/53.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/54.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/55.png)
+
+
+
+Quando devemos utilizar `get` e quando utilizamos `post`:
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/57.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/58.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/59.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/60.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/61.png)
+
+#### Exemplo prático
+
+Para esse exemplo prático apresentado na [__Animação__](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/anime1.gif) construímos uma caixa de sugestões para o site de um Ciber Café. 
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/63.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/64.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/65.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/66.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/67.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberExpress - Caixa de sugestões</title>
+    <link rel="stylesheet" type="text/css" href="ex_class02.css"/>
+</head>
+<body>
+    <header>
+        <span>CyberExpress</span>
+    </header>
+    <main>
+        <h1>Caixa de Sugestões</h1>
+
+        <p>Escreva na caixa de texto abaixo o que podemos fazer para melhorar
+        o espaço do CyberExpress. Deixe seu elogio, crítica ou sugestão abaixo e
+        envie pra gente!</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula2/">
+            <textarea name="sugestao"></textarea>
+            <button type="submit">Enviar sugestão</button>
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - CyberExpress
+    </footer>
+</body>
+</html>
+```
+
+```css
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #00318b;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #00318b;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    height: 120px;
+    margin: 30px 0 25px 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button {
+    background: #00318b;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #00318b;
+}
+```
+
+
+
+Antes de entrar em detalhes sobre o código do exemplo prático, vamos entender um pouco o funcionamento do back-end:
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/69.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/70.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/71.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/72.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/73.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/74.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/75.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/76.png)
+
+
+
+Como já vimos o funcionamento do nosso back-end, chegou a hora de ver em detalhes como nosso exemplo prático - front-end, foi criado
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/79.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/80.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/81.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/82.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/83.png)
+
+![Tag Form](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula2/84.png)
+
+__Através do uso de formulários conseguimos enviar dados informados pelo usuário do front-end para o back-end, criando assim, comunicação entre as duas partes da página dinâmica. Saber utilizar os formulários em HTML nos permite participar da construção de páginas mais interativas.__
 
 
 
