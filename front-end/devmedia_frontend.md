@@ -12586,7 +12586,267 @@ __Através do uso de formulários conseguimos enviar dados informados pelo usuá
 
 ### 3. Inputs
 
+Como utilizar textarea para a digitação de textos longos.
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/86.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/87.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/88.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/89.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/90.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/91.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/92.png)
+
+
+
+Os tipos de input existentes:
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/94.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/95.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/96.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/97.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/98.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/99.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/100.png)
+
+__O tipo `text` cria um campo genérico e pode ser usado para todo tipo de dado, tais como e-mails e telefones, porém, o indicado é sempre optar pelos inputs de tipos específicos como email e tel, e usar o text apenas se uma opção específica não estiver disponível.__
+
+```html
+<form>
+    <input type="text" name="nome"/>
+    <input type="date" name="data_nascimento"/>
+    <input type="email" name="email" />
+    <input type="tel" name="telefone" />
+    <input type="number" name="codigo_confirmacao" />
+    <input type="text" name="login" />
+    <input type="password" name="senha" />
+    <button type="submit">Enviar Matrícula</button>
+</form>
+```
+
+
+
+Na maioria das vezes, um formulário possui diferentes inputs e sem uma identificação adequada, o preenchimento do formulário fica complicado como pode ser visto na figura abaixo:
+
+![Formulário que não dá pra saber do que se trata cada input](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/fig2.png)
+
+Como podemos resolver essa situação:
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/2.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/3.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/4.png)
+
+
+
+Como utilizamos o `label`:
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/7.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/8.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/9.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/10.png)
+
+```html
+<form>
+    <label>Nome</label>
+    <input type="text">
+    <label>Email</label>
+    <input type="email">
+    <label>Login</label>
+    <input type="text">
+    <label>Senha</label>
+    <input type="password">
+    <button type="submit">Entrar</button>
+</form>
+```
+
+
+
+#### Exemplo prático
+
+Agora que conhecemos tudo que precisamos sobre inputs, vamos conferir o nosso exemplo prático. Veja na  [Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/anime1.gif) o projeto em funcionamento.
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/12.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/13.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/14.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/15.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/16.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade - Matrícula</title>
+    <link rel="stylesheet" type="text/css" href="ex_class03.css"/>
+</head>
+<body>
+    <header>
+        <span>Faculdade</span>
+    </header>
+    <main>
+        <h1>Matrícula</h1>
+
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+            <label>Nome: </label>
+            <input type="text" name="nome"/>
+            <label>Data de Nascimento: </label>
+            <input type="date" name="data_nascimento"/>
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" />
+            <label>Melhor dia para vencimento:</label>
+            <input type="number" name="dia_vencimento" />
+            <label>Login:</label>
+            <input type="text" name="login" />
+            <label>Senha:</label>
+            <input type="password" name="senha" />
+            <button type="submit">Enviar Matrícula</button>
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Faculdade
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #8b0600;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #8b0600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #8b0600;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #8b0600;
+}
+```
+
+
+
+Como o formulário da página foi criado:
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/18.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/19.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/20.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/21.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/22.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/24.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/25.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/26.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/27.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/28.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/29.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/30.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/31.png)
+
+![Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula3/32.png)
+
+__Os inputs são necessários na construção de quase todo tipo de formulário, isso se dá pela sua variedade de tipos, que permitem ao desenvolvedor criar formulários mais ricos e dinâmicos, permitindo até mesmo a validação de dados, como é o caso do input do tipo email e o uso de um teclado personalizado em smartphones, como é o caso do campo tel.__
+
+
+
 ### 4. Atributos dos Inputs
+
+
 
 ### 5. Checkbox
 
