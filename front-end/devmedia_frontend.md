@@ -12846,9 +12846,264 @@ __Os inputs são necessários na construção de quase todo tipo de formulário,
 
 ### 4. Atributos dos Inputs
 
+Inputs e seus tipos:
+
+![Formulário com inputs de múltiplos tipos](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/fig1.png)
+
+
+
+Vamos aprender outros atributos de inputs além de `name` e `type`:
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/34.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/35.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/36.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/38.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/39.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/40.png)
+
+Eexemplo de uso do `placeholder`:
+
+```html
+<input type="text" name="nome" placeholder="Digite seu nome"/>
+```
+
+
+
+Como validar nossos inputs através do `required`:
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/42.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/43.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/44.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/45.png)
+
+Exemplo de uso do `required`:
+
+```html
+<input type="text" name="nome" placeholder="Digite seu nome" required/>
+```
+
+
+
+Dois atributos que nos ajudarão a limitar a quantidade de caracteres nos nossos inputs:
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/47.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/48.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/49.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/50.png)
+
+Exemplo de uso de `minlength` e `maxlength`.
+
+```html
+<input type="password" name="senha" minlength="4" maxlength="6"/>
+```
+
+
+
+Os dois atributos que veremos a seguir são exclusivos dos inputs `number` e `date` e nos ajudam a definir valores mínimos e máximos:
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/52.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/53.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/54.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/55.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/56.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/57.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/58.png)
+
+__Os atributos dos inputs permitem uma melhor validação de dados no front-end, reduzindo as chances de envios de dados incorretos para o back-end.__
+
+Exemplo de uso de `min` e `max`:
+
+```html
+<input type="number" name="idade" min="18" max="21"/>
+<input type="date" name="idade" min="2022-03-01" max="2022-03-15"/>
+```
+
+
+
+#### Exemplo prático
+
+Agora que conhecemos tudo que precisamos sobre os atributos de inputs, confira o nosso exemplo prático. Veja na [Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/anime1.gif) o projeto em funcionamento.
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/60.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/61.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/62.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/63.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade - Matrícula</title>
+    <link rel="stylesheet" type="text/css" href="ex_class04.css"/>
+</head>
+<body>
+    <header>
+        <span>Faculdade</span>
+    </header>
+    <main>
+        <h1>Matrícula</h1>
+
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+
+            <label>Nome: </label>
+            <input placeholder="Digite seu nome completo" type="text" name="nome" required />
+
+            <label>Data de Nascimento: </label>
+            <input type="date" name="data_nascimento" max="2004-03-01" required/>
+
+            <label>Email:</label>
+            <input placeholder="exemplo@email.com" type="email" name="email" required />
+
+            <label>Telefone:</label>
+            <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone" minlength="14" required />
+
+            <label>Melhor dia para vencimento:</label>
+            <input placeholder="Valores entre 10 e 20" type="number" name="dia_vencimento" min="10" max="20" required />
+
+            <label>Login:</label>
+            <input placeholder="Digite seu login" type="text" name="login" minlength="3" required/>
+
+            <label>Senha:</label>
+            <input placeholder="Digite sua senha" type="password" name="senha" minlength="4" maxlength="8" required />
+
+            <button type="submit">Enviar Matrícula</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Faculdade
+    </footer>
+</body>
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #8b0600;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #8b0600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #8b0600;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #8b0600;
+}
+```
+
+
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/65.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/66.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/67.png)
+
+Além de deixar os campos informativos, também diminuímos as chances de dados serem digitados incorretamente através de validações:
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/69.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/70.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/71.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/72.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/73.png)
+
+![Atributos dos Inputs](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula4/74.png)
+
+__Os atributos que utilizamos nos inputs nos ajudam não apenas a deixar nossos campos mais informativos, mas também a deixá-los mais úteis através de validações que ajudam a diminuir as chances de dados incorretos serem preenchidos.__
+
 
 
 ### 5. Checkbox
+
+PAREI
 
 ### 6. Radio
 
