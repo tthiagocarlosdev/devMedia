@@ -13103,9 +13103,366 @@ __Os atributos que utilizamos nos inputs nos ajudam não apenas a deixar nossos 
 
 ### 5. Checkbox
 
-PAREI
+Nas aulas anteriores vimos diversos tipos de inputs e os seus atributos. Nesta aula conheceremos um outro tipo de input que é utilizado quando campos textuais não resolvem problemas como o abaixo:
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/2.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/3.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/4.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/5.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/6.png)
+
+Como implementar um `checkbox`:
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/8.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/9.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/10.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/11.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/12.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/13.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/14.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/15.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/16.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Tel</title>
+</head>
+<body>
+    <main>
+        <form>
+            Quais seus esportes favoritos?<br><br>
+            <input type="checkbox" name="esportes[]" value="futebol"/>
+            <label>Futebol</label>
+            <input type="checkbox" name="esportes[]" value="volei"/>
+            <label>Vôlei</label>
+            <input type="checkbox" name="esportes[]" value="basquete"/>
+            <label>Basquete</label>
+            <button type="submit">Enviar formulário</button>
+        </form>
+    </main>
+</body>
+</html>
+```
+
+
+
+Como identificar `checkbox`:
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/18.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/19.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/20.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/21.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/22.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/23.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Tel</title>
+</head>
+<body>
+    <main>
+        <form>
+            Quais seus esportes favoritos?<br><br>
+            <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="futebol"/>
+            <label for="checkbox-futebol">Futebol</label>
+            <input type="checkbox" id="checkbox-volei" name="esportes[]" value="volei"/>
+            <label for="checkbox-volei">Vôlei</label>
+            <input type="checkbox" id="checkbox-basquete" name="esportes[]" value="basquete"/>
+            <label for="checkbox-basquete">Basquete</label>
+            <button type="submit">Enviar formulário</button>
+        </form>
+    </main>
+</body>
+</html>
+```
+
+__O uso do `checkbox` no formulário possibilita coletar dados do usuário dentro de um contexto limitado pelo desenvolvedor.__
+
+
+
+#### Exemplo prático
+
+Agora que conhecemos tudo que precisamos sobre `checkbox`, vamos ao nosso exemplo prático.
+
+[Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/anime1.gif)  do projeto em funcionamento.
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/25.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/26.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/27.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/28.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/29.png)
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Seu tipo de jogo favorito</title>
+    <link rel="stylesheet" type="text/css" href="ex_class05.css"/>
+</head>
+<body>
+    <header>
+        <span>Questionário</span>
+    </header>
+    <main>
+        <h1>Questionário</h1>
+
+        <p>Responda o questionário abaixo marcando as opções que correspondem as suas preferências por jogos.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula5/">
+
+
+            <div class="categoria categoria-plataformas">
+                <h2 class="titulo-categoria">Quais plataformas de jogos você utiliza?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-xbox" name="plataformas[]" value="Xbox">
+                    <label for="check-xbox">Xbox</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-ps" name="plataformas[]" value="PlayStation">
+                    <label for="check-ps">PlayStation</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-switch" name="plataformas[]" value="Switch">
+                    <label for="check-switch">Switch</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-stadia" name="plataformas[]" value="Stadia">
+                    <label for="check-stadia">Stadia</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-pc" name="plataformas[]" value="PC">
+                    <label for="check-pc">PC</label>
+                </div>
+            </div>
+
+            <div class="categoria categoria-generos">
+                <h2 class="titulo-categoria">Quais seus gêneros de jogo preferidos?</h2>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-acao" name="generos[]" value="Acao">
+                    <label for="check-acao">Ação</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-aventura" name="generos[]" value="Aventura">
+                    <label for="check-aventura">Aventura</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-plataforma" name="generos[]" value="Plataforma">
+                    <label for="check-plataforma">Plataforma</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-rpg" name="generos[]" value="RPG">
+                    <label for="check-rpg">RPG</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-tiro" name="generos[]" value="Tiro">
+                    <label for="check-tiro">Tiro</label>
+                </div>
+
+                <div class="grupo-opcao">
+                    <input type="checkbox" id="check-corrida" name="generos[]" value="Corrida">
+                    <label for="check-corrida">Corrida</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Questionário</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Questionário
+    </footer>
+</body>
+</html>
+```
+
+```css
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: calc(100% - 85px);
+}
+
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #7c008b;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #7c008b;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+.categoria .titulo-categoria{
+    padding: 20px 0;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+button {
+    background: #7c008b;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #7c008b;
+}
+```
+
+
+
+Construíndo o projeto: 
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/31.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/32.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/33.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/34.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/35.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/36.png)
+
+
+
+Inserindo os `checkboxes`:
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/38.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/39.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/40.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/41.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/42.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/43.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/44.png)
+
+Todo `checkbox` precisa de um `label` para identificá-lo, veja como adicionamos os `labels` dos `checkboxes` ao formulário:
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/46.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/47.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/48.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/49.png)
+
+Diferenças para a categoria gêneros:
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/51.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/52.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/53.png)
+
+![checkbox](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula5/54.png)
+
+__O uso do checkbox em formulários é uma ótima alternativa aos inputs de texto quando precisamos limitar as escolhas de um usuário. Enquanto num campo de texto o usuário pode escrever o que quiser, com o checkbox o desenvolvedor é quem vai definir as opções que ficarão disponíveis para o usuário escolher.__
+
+
 
 ### 6. Radio
+
+PAREI
 
 ### 7. Select
 
