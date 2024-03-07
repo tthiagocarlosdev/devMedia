@@ -13462,9 +13462,308 @@ __O uso do checkbox em formulários é uma ótima alternativa aos inputs de text
 
 ### 6. Radio
 
-PAREI
+Na aula anterior, conhecemos um input de marcação de múltiplas opções chamado `checkbox`. Nesta aula conheça um input de __marcação única__.
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/56.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/57.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/58.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/59.png)
+
+
+
+Como criar um input `radio`:
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/61.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/62.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/63.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/64.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/65.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/66.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/67.png)
+
+__Apesar de funcionar sozinho, o `radio` ganha utilidade quando usamos ao menos dois inputs em uma mesma categoria.__
+
+
+
+É possível validar se ao menos um `radio` foi selecionado dentro de uma categoria através do atributo `required`: 
+
+![Utilizando o atributo required no radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/fig1.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio - Animal</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h2>Possui animal de estimação?</h2>
+            <input type="radio" name="resposta" id="animal-sim" value="sim" required/>
+            <label for="animal-sim">Sim</label>
+            <input type="radio" name="resposta" id="animal-nao" value="nao"/>
+            <label for="animal-nao">Não</label>
+            <button type="submit">Enviar formulário</button>
+        </form>
+    </main>
+</body>
+</html>
+```
+
+
+
+#### Exemplo prático
+
+Agora que já entendemos o uso do `radio`, vamos ver um exemplo prático utilizando tudo que aprendemos, começando pela [Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/anime1.gif).
+
+Conhecendo o exemplo prático:
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/70.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/71.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/72.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/73.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/74.png)
+
+
+
+Código do exemplo prático:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCompany - Formulário de Exame</title>
+    <link rel="stylesheet" type="text/css" href="ex_class06.css"/>
+</head>
+<body>
+    <header>
+        <span>MedCompany</span>
+    </header>
+    <main>
+        <h1>Formulário de exame</h1>
+
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula6/">
+            <label>Nome</label>
+            <input type="text" name="nome" class="inputText" required />
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" class="inputText" required />
+            <label>Email</label>
+            <input type="email" name="email" class="inputText" placeholder="email@provedor.com" required />
+
+            <div class="categoria categoria-tatuagem">
+                <h2 class="titulo-categoria">Você possui tatuagem?</h2>
+                <div class="grupo-opcao">
+                    <input type="radio" name="tatuagem" value="sim" id="tatuagem-sim" required />
+                    <label for="tatuagem-sim">Sim</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="tatuagem" value="não" id="tatuagem-nao" />
+                    <label for="tatuagem-nao">Não</label>
+                </div>
+            </div>
+
+            <div class="categoria categoria-doacao">
+                <h2 class="titulo-categoria">Última vez que doou sangue?</h2>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="6 meses" id="doacao-meses" required />
+                    <label for="doacao-meses">Nos últimos 6 meses</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="1 ano" id="doacao-ano" />
+                    <label for="doacao-ano">Há 1 ano ou mais</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="nunca" id="doacao-nunca" />
+                    <label for="doacao-nunca">Nunca doei sangue</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Formulário</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - MedCompany
+    </footer>
+</body>
+</html>
+```
+
+```css
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+}
+
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ff7321;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #ff7321;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+.inputText {
+    height: 32px;
+    margin: 20px 0;
+}
+
+.titulo-categoria{
+    padding: 20px 0;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+button {
+    background: #ff7321;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #ff7321;
+}
+```
+
+
+
+URL do back-end para inserir na propriedade `action` da tag `form`.
+
+```html
+https://www.devmedia.com.br/codigos/formularios/aula6/
+```
+
+
+
+Como implementar o exemplo prático:
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/76.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/77.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/78.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/79.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/80.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/81.png)
+
+
+
+Como foi feita a implementação dos `radios`:
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/83.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/84.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/85.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/86.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/87.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/88.png)
+
+
+
+Diferenças da categoria doação em comparação a categoria tatuagem:
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/90.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/91.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/92.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/93.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/94.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/95.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/96.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula6/97.png)
+
+__O uso de radio em formulários é importante para a construção de formulários por permitir a criação de inputs de escolha única de maneira fácil, rápida e totalmente resolvida no HTML, sem necessidade de códigos back-end.__
+
+
 
 ### 7. Select
+
+PAREI
 
 ### 8. Fieldset
 
