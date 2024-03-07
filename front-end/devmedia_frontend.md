@@ -13763,9 +13763,493 @@ __O uso de radio em formulários é importante para a construção de formulári
 
 ### 7. Select
 
-PAREI
+Nesta aula vamos aprender a criar listas de seleção utilizando a tag `select`.
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/2.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/3.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/4.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/5.png)
+
+
+
+Agora que já entendemos a utilidade da lista de seleção, veja como criamos um `select`:
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/7.png)
+
+![radio](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/8.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/9.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/10.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/11.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/12.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/13.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h2>Selecione uma cor:</h2>
+    <form>
+        <select name="cores">
+            <option value="blue">Azul</option>
+            <option value="red">Vermelho</option>
+            <option value="yellow">Amarelo</option>
+            <option value="pink">Rosa</option>
+        </select>
+        <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html>
+```
+
+
+
+Como trabalhamos com o atributo `selected`:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/15.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/16.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/17.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/18.png)
+
+```html
+<option selected value="RJ">Rio de Janeiro</option>
+```
+
+
+
+O que fazer quando precisamos forçar o usuário a fazer uma escolha:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/20.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/21.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/22.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/23.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/24.png)
+
+__Não é uma boa prática criar um option sem o atributo **value**, pois quando fazemos isso o value é definido internamente com o conteúdo digitado entre tags, porém, isso pode não funcionar em certos navegadores.__
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+  </head>
+   <body>
+      <h2 class="titulo-categoria">Selecione um estado:</h2>
+      <form>
+           <select name="estado" required>
+              <option value="">Selecione seu estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+        <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html>
+```
+
+
+
+Organizando as opções de uma lista por categoria:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/26.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/27.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/28.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/29.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/30.png)
+
+```html
+<select name="jogo">
+  <optgroup label="Xbox">
+    <option value="gearsofwar">Gears of War</option>
+    <option value="haloinfinite">Halo Infinite</option>
+    <option value="forzamotorsport">Forza Motorsport</option>
+    <option value="forzahorizon">Forza Horizon</option>
+  </optgroup>
+
+  <optgroup label="PlayStation">
+    <option value="godofwar">God of War</option>
+    <option value="uncharted">Uncharted</option>
+    <option value="thelastofus">The Last of Us</option>
+    <option value="granturismo">Gran Turismo</option>
+  </optgroup>
+
+  <optgroup label="Nintendo">
+    <option value="mariokart">Mario Kart 8 Deluxe</option>
+    <option value="zelda">The Legend of Zelda</option>
+    <option value="mario">Super Mario Odyssey</option>
+  </optgroup>
+</select>
+```
+
+
+
+Como podemos criar listas que suportam a seleção de múltiplas opções:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/32.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/33.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/34.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/35.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/37.png)
+
+```html
+<select name="jogo[]" multiple>
+  <optgroup label="Xbox">
+    <option value="gearsofwar">Gears of War</option>
+    <option value="haloinfinite">Halo Infinite</option>
+    <option value="forzamotorsport">Forza Motorsport</option>
+    <option value="forzahorizon">Forza Horizon</option>
+  </optgroup>
+
+  <optgroup label="PlayStation">
+    <option value="godofwar">God of War</option>
+    <option value="uncharted">Uncharted</option>
+    <option value="thelastofus">The Last of Us</option>
+    <option value="granturismo">Gran Turismo</option>
+  </optgroup>
+
+  <optgroup label="Nintendo">
+    <option value="mariokart">Mario Kart 8 Deluxe</option>
+    <option value="zelda">The Legend of Zelda</option>
+    <option value="mario">Super Mario Odyssey</option>
+  </optgroup>
+</select>
+```
+
+
+
+Uma lista múltipla exibe por padrão até quatro opções por vez. O que fazemos quando precisamos mostrar mais ou menos opções:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/39.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/40.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/41.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/42.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/43.png)
+
+```html
+<select name="jogo[]" size="8" multiple>
+  <optgroup label="Xbox">
+    <option value="gearsofwar">Gears of War</option>
+    <option value="haloinfinite">Halo Infinite</option>
+    <option value="forzamotorsport">Forza Motorsport</option>
+    <option value="forzahorizon">Forza Horizon</option>
+  </optgroup>
+
+  <optgroup label="PlayStation">
+    <option value="godofwar">God of War</option>
+    <option value="uncharted">Uncharted</option>
+    <option value="thelastofus">The Last of Us</option>
+    <option value="granturismo">Gran Turismo</option>
+  </optgroup>
+
+  <optgroup label="Nintendo">
+    <option value="mariokart">Mario Kart 8 Deluxe</option>
+    <option value="zelda">The Legend of Zelda</option>
+    <option value="mario">Super Mario Odyssey</option>
+  </optgroup>
+</select>
+```
+
+
+
+#### Exemplo prático
+
+Agora que já aprendemos tudo que precisamos sobre `select`, veja um exemplo prático utilizando o que aprendemos, na [Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/anime1.gif).
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/45.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/46.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/47.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/48.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/49.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas para programadores</title>
+    <link rel="stylesheet" href="ex_class07.css"/>
+  </head>
+  <body>
+    <header>
+      <span>Vagas</span>
+    </header>
+    <main>
+      <h1>Formulário de vagas para programadores</h1>
+      <p>Preencha o formulário abaixo com suas informações.</p>
+      <form action="https://www.devmedia.com.br/codigos/formularios/aula7/">
+        <label>Nome</label>
+        <input type="text" name="nome" class="inputText" required />
+        <label>Data de Nascimento</label>
+        <input type="date" name="data_nascimento" class="inputText" required />
+        <label>Email</label>
+        <input type="email" name="email" class="inputText" placeholder="email@provedor.com" required />
+        <label>Estado:</label>
+        <select class="select" name="estado" required>
+          <option value="">Selecione seu estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <label>Tecnologias:</label>
+        <select class="selectMultiple" name="tecnologias[]" size="6" multiple>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="C#">C#</option>
+          <option value="HTML">HTML</option>
+          <option value="Java">Java</option>
+          <option value="Javascript">Javascript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Ruby">Ruby</option>
+          <option value="XML">XML</option>
+        </select>
+        <button type="submit">Enviar Formulário</button>
+      </form>
+    </main>
+  <footer>
+    Copyright 2022 - MedCompany
+  </footer>
+</body>
+</html> 
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100%;
+  }
+  
+  header {
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ff21c5;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+  }
+  
+  p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    font-family: sans-serif;
+    color: #ff21c5;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+  }
+  
+  .inputText {
+    height: 32px;
+    margin: 20px 0;
+  }
+  
+  .select {
+    height: 32px;
+    margin: 20px 0;
+  }
+  
+  .selectMultiple {
+    margin: 20px 0;
+  }
+  
+  button {
+    background: #ff21c5;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+  }
+  
+  footer {
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #ff21c5;
+  }
+```
+
+
+
+URL do back-end para inserir na propriedade action da tag form:
+
+```tex
+https://www.devmedia.com.br/codigos/formularios/aula7/
+```
+
+
+
+Como criamos o formulário deste exemplo prático:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/51.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/52.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/53.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/54.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/55.png)
+
+
+
+Como o `select` que exibe os estados foi criado:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/57.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/58.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/59.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/60.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/61.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/62.png)
+
+
+
+Como criamos o `select` de tecnologias:
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/64.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/65.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/66.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/67.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/68.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/69.png)
+
+![Select](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula7/70.png)
+
+__A utilização do select em formulários permite a criação de listas selecionáveis limitadas de maneira organizada. Através do select podemos criar listas de seleção única ou mesmo listas que permitem ao usuário selecionar múltiplas opções.__
+
+
 
 ### 8. Fieldset
+
+PAREI
 
 ### 9. Exemplo prático
 
