@@ -14249,7 +14249,247 @@ __A utilização do select em formulários permite a criação de listas selecio
 
 ### 8. Fieldset
 
-PAREI
+Como agrupar dados do formulário utilizando a tag `fieldset`:
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/2.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/3.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/4.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/5.png)
+
+
+
+Como adiconar `fieldset`em um formulário HTML:
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/8.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/9.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/10.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/11.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/12.png)
+
+__O uso do `fieldset` ajuda não somente a organizar visualmente nossos formulários, mas também ajuda muito aos usuários a encontrar os campos na hora de preencher as informações.__
+
+```html
+<form>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+            <label>Nome</label>
+            <input type="text" name="nome"/>
+        </div>
+        <div>
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento"/>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email"/>
+        </div>
+    </fieldset>
+    <button type="submit">Enviar</button>
+</form>
+```
+
+
+
+#### Exemplo prático
+Veja um exemplo prático utilizando o que aprendemos, na [Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/anime1.gif).
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/14.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/15.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/16.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/17.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/18.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Receba um brince casa</title>
+    <link rel="stylesheet" type="text/css" href="ex_class08.css"/>
+</head>
+<body>
+    <header>
+        <span>Revista</span>
+    </header>
+    <main>
+        <h1>Cadastro</h1>
+
+        <p>Estamos lançando uma nova revista e enviaremos o primeiro exemplar grátis para todos que se cadastrarem hoje no site.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula8/">
+
+            <fieldset>
+                <legend>Dados de contato</legend>
+
+                <label>Nome: </label>
+                <input placeholder="Digite seu nome completo" required type="text" name="nome"/>
+
+                <label>Email:</label>
+                <input placeholder="exemplo@email.com" type="email" name="email" />
+
+                <label>Telefone:</label>
+                <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de entrega</legend>
+
+                <label>Endereço:</label>
+                <input placeholder="Rua, Avenida, Travessa..." type="text" name="endereco" />
+
+                <label>Número:</label>
+                <input type="number" name="numero" />
+
+                <label>Complemento:</label>
+                <input type="text" name="complemento" />
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Revista
+    </footer>
+</body>
+</html>
+```
+
+```css
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #0f52a5;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #0f52a5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    margin: 10px 0 15px 0;
+}
+
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #0f52a5;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #0f52a5;
+}
+```
+
+
+
+URL do back-end que disponibilizamos para você inserir na propriedade `action` da tag `form`:
+
+```html
+https://www.devmedia.com.br/codigos/formularios/aula8/
+```
+
+
+
+Como criamos o nosso formulário com duas seções:
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/20.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/21.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/22.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/23.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/24.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/25.png)
+
+![Fieldset](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula8/26.png)
+
+
+__O uso de `fieldsets` em formulário, apesar de não ser obrigatório, é uma ótima ferramenta para organização dos campos mostrados para o usuário. Além da organização, com o uso do `legend` é possível identificar cada `fieldset` do formulário.__
+
+
+
+
+
+
+
+
+
+
 
 ### 9. Exemplo prático
 
