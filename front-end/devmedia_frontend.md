@@ -14483,17 +14483,325 @@ __O uso de `fieldsets` em formulário, apesar de não ser obrigatório, é uma �
 
 
 
-
-
-
-
-
-
-
-
 ### 9. Exemplo prático
 
+[Animação](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/anime1.gif) do exemplo prático.
+
+Conhecendo a página:
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/28.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/29.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/30.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/31.png)
+
+
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/32.png)
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AluCar - Aluguel de Carros</title>
+    <link rel="stylesheet" href="ex_class09.css">
+</head>
+<body>
+  <header class="secao-topo">
+    <p class="secao-largura-limitada">AluCar</p>
+  </header>
+
+  <section class="secao-background-capa">
+    <div class="secao-background-conteudo">
+      <div class="secao-largura-limitada">
+        <h1>AluCar</h1>
+        <h2>Aluguel de Carros</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao-largura-limitada secao-conteudo">
+    <h3>Sobre nós</h3>
+    <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.</p>
+    <img class="img-conteudo" src="./img/img1.jpg" alt="Imagem 1">
+    <img class="img-conteudo" src="./img/img2.jpg" alt="Imagem 2">
+    <img class="img-conteudo" src="./img/img3.jpg" alt="Imagem 3">
+    <p><span>O compromisso da AluCar é com a qualidade.</span></p>
+    <p><span>Os melhores carros estão aqui!</span></p>
+    <p><span>Assistência 24hrs.</span></p>
+  </section>
+
+  <div class="secao-background-divisao">
+    <h3>Contato</h3>
+  </div>
+
+  <main>
+    <section class="secao-largura-limitada secao-conteudo">
+      <h3>Análise de cadastro</h3>
+      <p>Preencha os campos abaixo e analisaremos seus dados.<br>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
+      <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <div class="grupo-campo">
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="digite seu nome" required>
+          </div>
+          <div class="grupo-campo">
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" required>
+          </div>
+          <div class="grupo-campo">
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>CNH</legend>
+          <div class="grupo-campo">
+            <label>Número do Registro</label>
+            <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+          </div>
+          <div class="grupo-campo">
+            <label>Validade</label>
+            <input type="date" name="validade" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Carro</legend>
+          <div class="grupo-campo">
+            <label>Modelo do Carro</label>
+            <select name="carro" required>
+              <option value="">Escolha um carro</option>
+              <optgroup label="Volkswagem">
+                <option value="gol">Gol</option>
+                <option value="golf">Golf</option>
+                <option value="fox">Fox</option>
+              </optgroup>
+              <optgroup label="Fiat">
+                <option value="uno">Uno</option>
+                <option value="siena">Siena</option>
+                <option value="Palio">Palio</option>
+              </optgroup>
+              <optgroup label="Nissan">
+                <option value="frontier">Frontier</option>
+                <option value="versa">Versa</option>
+                <option value="skyline">Skyline GT-R</option>
+              </optgroup>
+            </select>
+          </div>
+        </fieldset>
+        <button type="submit">Enviar dados</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2022 - AluCar</p>
+  </footer>
+</body>
+</html>
+```
+
+```css
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AluCar - Aluguel de Carros</title>
+    <link rel="stylesheet" href="ex_class09.css">
+</head>
+<body>
+  <header class="secao-topo">
+    <p class="secao-largura-limitada">AluCar</p>
+  </header>
+
+  <section class="secao-background-capa">
+    <div class="secao-background-conteudo">
+      <div class="secao-largura-limitada">
+        <h1>AluCar</h1>
+        <h2>Aluguel de Carros</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao-largura-limitada secao-conteudo">
+    <h3>Sobre nós</h3>
+    <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.</p>
+    <img class="img-conteudo" src="./img/img1.jpg" alt="Imagem 1">
+    <img class="img-conteudo" src="./img/img2.jpg" alt="Imagem 2">
+    <img class="img-conteudo" src="./img/img3.jpg" alt="Imagem 3">
+    <p><span>O compromisso da AluCar é com a qualidade.</span></p>
+    <p><span>Os melhores carros estão aqui!</span></p>
+    <p><span>Assistência 24hrs.</span></p>
+  </section>
+
+  <div class="secao-background-divisao">
+    <h3>Contato</h3>
+  </div>
+
+  <main>
+    <section class="secao-largura-limitada secao-conteudo">
+      <h3>Análise de cadastro</h3>
+      <p>Preencha os campos abaixo e analisaremos seus dados.<br>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
+      <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <div class="grupo-campo">
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="digite seu nome" required>
+          </div>
+          <div class="grupo-campo">
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" required>
+          </div>
+          <div class="grupo-campo">
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>CNH</legend>
+          <div class="grupo-campo">
+            <label>Número do Registro</label>
+            <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+          </div>
+          <div class="grupo-campo">
+            <label>Validade</label>
+            <input type="date" name="validade" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Carro</legend>
+          <div class="grupo-campo">
+            <label>Modelo do Carro</label>
+            <select name="carro" required>
+              <option value="">Escolha um carro</option>
+              <optgroup label="Volkswagem">
+                <option value="gol">Gol</option>
+                <option value="golf">Golf</option>
+                <option value="fox">Fox</option>
+              </optgroup>
+              <optgroup label="Fiat">
+                <option value="uno">Uno</option>
+                <option value="siena">Siena</option>
+                <option value="Palio">Palio</option>
+              </optgroup>
+              <optgroup label="Nissan">
+                <option value="frontier">Frontier</option>
+                <option value="versa">Versa</option>
+                <option value="skyline">Skyline GT-R</option>
+              </optgroup>
+            </select>
+          </div>
+        </fieldset>
+        <button type="submit">Enviar dados</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2022 - AluCar</p>
+  </footer>
+</body>
+</html>
+```
+
+
+
+URL do back-end que disponibilizamos para você inserir na propriedade `action` da tag `form`:
+
+```tex
+https://www.devmedia.com.br/codigos/formularios/aula9/
+```
+
+
+
+Entendendo o código usado para criação do formulário:
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/35.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/36.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/37.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/38.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/39.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/40.png)
+
+
+
+O código utilizado na construção dos `fieldsets`:
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/42.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/43.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/44.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/45.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/46.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/47.png)
+
+
+
+Conteúdo de cada `fieldset`  - dados pessoais:
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/49.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/50.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/51.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/52.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/53.png)
+
+
+
+Conteúdo de cada `fieldset`  - CNH:
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/55.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/56.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/57.png)
+
+
+
+Conteúdo de cada `fieldset`  - carro:
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/59.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/60.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/61.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/62.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/63.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/64.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/65.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/66.png)
+
+![Exemplo prático](https://www.devmedia.com.br/arquivos/cursos/html_forms/aula9/67.png)
+
+__A página de aluguel de carros apresenta de maneira simples o uso de um formulário dentro de uma situação real. Durante o curso e através desta página podemos perceber como o formulário é importante em diversas situações.__
+
+
+
 ### 10. Faça você mesmo
+
+PAREI
 
 ### 11. Exercícios
 
