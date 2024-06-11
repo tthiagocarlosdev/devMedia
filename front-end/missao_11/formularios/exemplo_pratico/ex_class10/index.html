@@ -7,55 +7,51 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <p>Alucar</p>
+    <header class="secao_topo">
+        <p class="secao_largura_limitada">Alucar</p>
     </header>
     
-    <section id="secao_cabecalho">
-        <div>
-            <div>
+    <section id="secao_cabecalho" class="secao_background_capa">
+        <div class="secao_background_conteudo">
+            <div class="secao_largura_limitada">
                 <h1>Alucar</h1>
                 <h2>Aluguel de Carros</h2>
             </div>
         </div>
     </section>
 
-    <section id="secao_conteudo">
+    <section id="secao_conteudo" class="secao_largura_limitada secao_conteudo">
         <h3>Sobre nós</h3>
         <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.</p>
-        <figure>
-            <img class="imagens" src="./img/img1.jpg" alt="Imagem 1">
-            <img class="imagens" src="./img/img2.jpg" alt="Imagem 2">
-            <img class="imagens" src="./img/img3.jpg" alt="Imagem 3">
-        </figure>
+        <img class="img_conteudo" src="./img/img1.jpg" alt="Imagem 1">
+        <img class="img_conteudo" src="./img/img2.jpg" alt="Imagem 2">
+        <img class="img_conteudo" src="./img/img3.jpg" alt="Imagem 3">
         <p><span>O compromisso da AluCar é com a qualidade.</span></p>
         <p><span>Os melhores carros estão aqui!</span></p>
         <p><span>Assistência 24hrs.</span></p>
     </section>
-
-    <section id="contato">
-        <div>
-            <h3>Contato</h3>
-        </div>
-    </section>
+    <div class="secao_background_divisao">
+        <h3>Contato</h3>
+    </div>
 
     <main>
-        <section id="secao_conteudo_principal">
+        <section id="secao_conteudo_principal" class="secao_largura_limitada secao_conteudo" >
             <h3>Análise de cadastro</h3>
             <p>Preencha os campos abaixo e analisaremos seus dados. <br> Se tudo estiver correto ligaremos para marcar uma visita sua à loja. </p>
-            <form method="post" action="">
+            <form method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/
+            ">
                 
                 <fieldset>
                     <legend>Dados Pessoais</legend>
-                    <div class="grupo_de_dados">
+                    <div class="grupo_campo">
                         <label>Nome</label>
                         <input type="text" name="nome" placeholder="digite seu nome" required>
                     </div>
-                    <div class="grupo_de_dados">
+                    <div class="grupo_campo">
                         <label>Data de Nascimento</label>
                         <input type="date" name="data_nascimento" required>
                     </div>
-                    <div class="grupo_de_dados">
+                    <div class="grupo_campo">
                         <label>Telefone</label>
                         <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
                     </div>
@@ -63,11 +59,11 @@
 
                 <fieldset>
                     <legend>CNH</legend>
-                    <div class="grupo_de_dados">
+                    <div class="grupo_campo">
                         <label>Número de Registro</label>
                         <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
                     </div>
-                    <div class="grupo_de_dados">
+                    <div class="grupo_campo">
                         <label>Validade</label>
                         <input type="date" name="validade" required>
                     </div>
@@ -75,8 +71,8 @@
 
                 <fieldset>
                     <legend>Carro</legend>
-                    <div class="grupo_de_dados">
-                        <label>modelo do carro</label>
+                    <div class="grupo_campo">
+                        <label>Modelo do carro</label>
                         <select name="carro" required>
                             <option value="">Escolha um carro</option>
                             <optgroup label="Volkswagem">
@@ -106,5 +102,3 @@
     </footer>
 </body>
 </html>
-
-<!-- PAREI - Criando o código CSS -->
